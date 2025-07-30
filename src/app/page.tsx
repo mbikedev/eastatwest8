@@ -1,32 +1,12 @@
 'use client'
 
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useTheme } from '@/context/ThemeContext'
-import { motion, easeInOut } from 'framer-motion'
+import { useTheme } from '../context/ThemeContext'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useRef, useEffect } from 'react'
 
-import dynamic from 'next/dynamic'
-
-// Dynamically import RealTimeSections to reduce initial bundle
-const RealTimeSections = dynamic(() => import('../components/RealTimeSections'), {
-  loading: () => (
-    <div className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto text-center">
-        <div className="animate-pulse">
-          <div className="h-8 bg-gray-300 rounded w-64 mx-auto mb-8"></div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map(i => (
-              <div key={i} className="h-48 bg-gray-300 rounded"></div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  ),
-  ssr: false
-})
 
 export default function HomePage() {
   const { t } = useTranslation('common')

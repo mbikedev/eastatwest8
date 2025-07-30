@@ -86,15 +86,15 @@ const Lightbox = ({ image, isOpen, onClose, title, description }: {
 export default function GalleryPage() {
   const { t } = useTranslation('common')
   const { theme } = useTheme()
-  const [lightboxImage, setLightboxImage] = useState<string | null>(null)
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState<{
     src: string
     title: string
     description: string
   } | null>(null)
 
-  // All available images from the public/images directory
-  const allImages = [
+  // All available images from the public/images directory - wrapped in useMemo
+  const allImages = useMemo(() => [
     // Gallery images
     '/images/gallery/aish el saraya.webp',
     '/images/gallery/traditional-ice-cream.webp',
@@ -166,7 +166,7 @@ export default function GalleryPage() {
     '/images/banner.webp',
     '/images/about-us.webp',
     '/images/hanna.webp'
-  ]
+  ], [])
 
   // Randomize and select 12 images each time the page loads
   const randomizedImages = useMemo(() => {
@@ -273,11 +273,11 @@ export default function GalleryPage() {
       title: details.title,
       description: details.description
     })
-    setLightboxImage(image)
+    setIsLightboxOpen(true)
   }
 
   const closeLightbox = () => {
-    setLightboxImage(null)
+    setIsLightboxOpen(false)
     setSelectedImage(null)
   }
 
@@ -420,12 +420,12 @@ export default function GalleryPage() {
 
       {/* Lightbox */}
       <AnimatePresence>
-        {lightboxImage && selectedImage && (
+        {isLightboxOpen && selectedImage && (
           <Lightbox
             image={selectedImage.src}
             title={selectedImage.title}
             description={selectedImage.description}
-            isOpen={!!lightboxImage}
+            isOpen={isLightboxOpen}
             onClose={closeLightbox}
           />
         )}
