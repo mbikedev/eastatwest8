@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from '../context/ThemeContext'
-import { motion } from 'framer-motion'
+import { motion, easeInOut } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
 
