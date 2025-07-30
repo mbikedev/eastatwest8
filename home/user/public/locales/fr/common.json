@@ -1,0 +1,902 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Carte",
+    "reservations": "Réservations",
+    "takeaway": "À Emporter",
+    "gallery": "Galerie",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "East at West",
+    "subtitle": "Où l'Est Rencontre l'Ouest dans Chaque Bouchée",
+    "description": "Découvrez la fusion parfaite des cuisines orientales et occidentales dans notre restaurant élégant. Des favoris traditionnels aux plats fusion innovants, nous vous apportons le meilleur des deux mondes.",
+    "cta": "Réserver une Table",
+    "hero": {
+      "title": "Bienvenue chez East at West",
+      "subtitle": "Un Voyage Culinaire Entre Deux Mondes"
+    },
+    "features": {
+      "title": "Pourquoi Nous Choisir",
+      "fusion": "Cuisine Fusion",
+      "fusion_desc": "Mélange unique de saveurs orientales et occidentales",
+      "fresh": "Ingrédients Frais",
+      "fresh_desc": "Ingrédients locaux et de saison",
+      "ambiance": "Ambiance Élégante",
+      "ambiance_desc": "Atmosphère de restauration sophistiquée"
+    }
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "subtitle": "Découvrez Nos Créations Fusion",
+    "categories": {
+      "setMenus": "Menus",
+      "coldMezzes": "Mezzés Froids",
+      "hotMezzes": "Mezzés Chauds",
+      "salads": "Salades",
+      "lunchDishes": "Plats du Déjeuner",
+      "sandwiches": "Sandwiches",
+      "skewers": "Brochettes",
+      "mains": "Plats Principaux",
+      "desserts": "Desserts",
+      "drinks": "Boissons"
+    },
+    "items": {
+      "spring_rolls": "Rouleaux de Printemps Asiatiques",
+      "spring_rolls_desc": "Légumes frais enveloppés dans du papier de riz avec sauce chili douce",
+      "bruschetta": "Bruschetta Méditerranéenne",
+      "bruschetta_desc": "Pain grillé avec tomates, basilic et huile d'olive",
+      "pad_thai": "Pad Thai Fusion",
+      "pad_thai_desc": "Nouilles de riz avec crevettes, tofu et notre sauce spéciale",
+      "steak": "Steak de Rumsteak Grillé",
+      "steak_desc": "Bœuf premium avec légumes rôtis et réduction de vin rouge",
+      "curry": "Curry à la Noix de Coco",
+      "curry_desc": "Curry riche avec choix de protéines et riz jasmin",
+      "tiramisu": "Tiramisu Matcha",
+      "tiramisu_desc": "Dessert italien classique avec touche de thé vert japonais",
+      "ice_cream": "Glace au Litchi",
+      "ice_cream_desc": "Glace rafraîchissante au litchi avec baies fraîches"
+    },
+    "menuDisplay": {
+      "title": "Menu East@West",
+      "pricePerPerson": "64€/2pers.",
+      "setMenuTitle": "Menu Fixe East @ West 64€/2pers",
+      "items": {
+        "hummus": "Houmous (purée de pois chiches au tahini (pâte de sésame))",
+        "moutabal": "Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame))",
+        "moussaka": "Moussaka (aubergine, oignon, pois chiches et tomates)",
+        "fattoush": "Salade Fattoush (tomates, laitue, chou rouge, radis, concombre, oignon, pain frit aux mélasses de grenade et herbes spéciales)",
+        "falafel": "Falafel x2 (boulettes de pois chiches frits)",
+        "rkakat": "Rkakat x2 (pâte feuilletée frite roulée farcie au fromage)",
+        "kebabSkewers": "Brochettes de kebab x2 (brochettes de bœuf haché grillé)",
+        "chichTaouk": "Brochettes chich taouk x2 (brochettes de cubes de poulet grillé)",
+        "dessert": "Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)"
+      }
+    },
+    "veganMenuDisplay": {
+      "title": "Menu Végan East@West",
+      "pricePerPerson": "63€",
+      "setMenuTitle": "Menu Végan 63€",
+      "description": "Aubergine grillée, poivron, tomate et oignon avec une sauce spéciale, accompagnés de houmous, moutabal, Fattoush",
+      "items": {
+        "grilledEggplant": "Aubergine grillée avec poivron, tomate et oignon",
+        "specialSauce": "Servie avec notre sauce méditerranéenne spéciale",
+        "hummus": "Houmous traditionnel (purée de pois chiches au tahini)",
+        "moutabal": "Moutabal (caviar d'aubergine grillée au tahini)",
+        "fattoush": "Salade Fattoush fraîche aux légumes de saison",
+        "extraBread": "Servie avec du pain pita chaud"
+      }
+    },
+    "lazeezMenuDisplay": {
+      "title": "Menu Lazeez (Végan)",
+      "pricePerPerson": "63€/2pers.",
+      "setMenuTitle": "Menu Fixe Lazeez Végan 63€/2pers",
+      "description": "Houmous (purée de pois chiches au tahini (pâte de sésame)). Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame)). Foul moudamas (Fèves marinées dans le jus de citron, tomates, cumin, ail, huile d'olive et sauce tahini (pâte de sésame)). Muhammara (Trempette de poivrons rouges grillés, mélasse de grenade et noix). Warak enab (Feuilles de vigne farcies au riz et aux herbes, marinées à l'huile d'olive, menthe et mélasse de grenade). Tabbouleh (Persil, tomates, oignon, jus de citron, boulgour, menthe et huile d'olive). Batata harra (Cubes de pommes de terre frits avec poivrons rouges, coriandre et ail). Falafel x2 (boulettes de pois chiches frits). Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)."
+    },
+    "setMenus": {
+      "veganEastWest": {
+        "description": "Houmous (purée de pois chiches au tahini (pâte de sésame)). Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame)). Foul moudamas (Fèves marinées dans le jus de citron, tomates, cumin, ail, huile d'olive et sauce tahini (pâte de sésame)). Muhammara (Trempette de poivrons rouges grillés, mélasse de grenade et noix). Warak enab (Feuilles de vigne farcies au riz et aux herbes, marinées à l'huile d'olive, menthe et mélasse de grenade). Tabbouleh (Persil, tomates, oignon, jus de citron, boulgour, menthe et huile d'olive). Batata harra (Cubes de pommes de terre frits avec poivrons rouges, coriandre et ail). Falafel x2 (boulettes de pois chiches frits). Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)."
+      },
+      "readMore": "Lire Plus",
+      "readLess": "Lire Moins"
+    },
+    "coldMezzes": {
+      "taratorChicken": {
+        "title": "Poulet Tarator",
+        "description": "Poulet cuit écrasé et tahini (pâte de sésame)",
+        "price": "8,5€"
+      },
+      "muhammara": {
+        "title": "Muhammara (Végan)",
+        "description": "Trempette de poivrons rouges grillés, mélasse de grenade et noix",
+        "price": "8€"
+      },
+      "makdous": {
+        "title": "Makdous (Végan)",
+        "description": "Petites aubergines farcies aux noix et poivrons marinées à l'huile d'olive",
+        "price": "7€"
+      },
+      "itch": {
+        "title": "Itch (Végan)",
+        "description": "Boulgour cuit en sauce tomate avec poivrons, oignon, persil et mélasse de grenade",
+        "price": "7,5€"
+      },
+      "hummus": {
+        "title": "Houmous (Végan)",
+        "description": "Purée de pois chiches au tahini (pâte de sésame)",
+        "price": "7,5"
+      },
+      "moutabal": {
+        "title": "Moutabal (Végan)",
+        "description": "Caviar d'aubergine grillée au tahini (pâte de sésame)",
+        "price": "8€"
+      },
+      "warakEnab": {
+        "title": "Warak enab (Vgn)",
+        "description": "Feuilles de vigne farcies au riz aux herbes, marinées à l'huile d'olive, menthe, mélasse de grenade",
+        "price": "7€"
+      },
+      "moussaka": {
+        "title": "Moussakan (Végan)",
+        "description": "Aubergine, oignon, pois chiches et tomate",
+        "price": "7,5€"
+      }
+    },
+    "hotMezzes": {
+      "foulMoudamas": {
+        "title": "Foul moudamas (Végan)",
+        "description": "Fèves marinées dans le jus de citron, tomates, cumin, ail, huile d'olive et sauce tahini",
+        "price": "8€"
+      },
+      "arayesCheese": {
+        "title": "Arayes fromage",
+        "description": "Pain pita grillé farci au fromage et aux herbes",
+        "price": "10€"
+      },
+      "sujuk": {
+        "title": "Sujuk",
+        "description": "Saucisse libanaise épicée grillée avec légumes",
+        "price": "12.50€"
+      },
+      "kibbeh2pcs": {
+        "title": "Kibbeh (2pcs)",
+        "description": "Coquilles de boulgour frites farcies à la viande hachée et aux pignons",
+        "price": "5€"
+      },
+      "batataHarraVegan": {
+        "title": "Batata harra (Végan)",
+        "description": "Cubes de pommes de terre frits avec poivrons rouges, coriandre et ail",
+        "price": "8€"
+      },
+      "batataHarra": {
+        "title": "Batata harra",
+        "description": "Cubes de pommes de terre frits avec poivrons rouges, coriandre, ail et viande",
+        "price": "10€"
+      },
+      "rkakat": {
+        "title": "Rkakat",
+        "description": "Pâte feuilletée frite roulée farcie au fromage",
+        "price": "8€"
+      },
+      "falafelVegan": {
+        "title": "Falafel (Végan)",
+        "description": "Boulettes de pois chiches frits servies avec sauce tahini",
+        "price": "7€"
+      },
+      "kibbehVeganist": {
+        "title": "Kibbeh végan",
+        "description": "Version végane du kibbeh traditionnel avec boulgour et légumes",
+        "price": "8€"
+      },
+      "grilledSyrianCheese": {
+        "title": "Fromage syrien grillé",
+        "description": "Fromage syrien traditionnel grillé à la perfection",
+        "price": "10€"
+      },
+      "nakanek": {
+        "title": "Nakanek",
+        "description": "Mini saucisses avec mélasse de grenade",
+        "price": "9€"
+      },
+      "toshka": {
+        "title": "Toshka",
+        "description": "Pain libanais cuit farci de bœuf haché et fromage syrien",
+        "price": "12,50€"
+      }
+    },
+    "salads": {
+      "originalTabouleh": {
+        "title": "Taboulé Original (Vgn)",
+        "description": "Persil, tomate, oignon, jus de citron, boulgour, menthe et huile d'olive",
+        "price": "8€"
+      },
+      "fattoush": {
+        "title": "Fattoush (Végan)",
+        "description": "Tomate, laitue, chou rouge, radis, concombre, oignon, pain frit, etc",
+        "price": "8€"
+      },
+      "falafel": {
+        "title": "Falafel(Vgn)",
+        "description": "Falafel, laitue, concombre, tomate, cornichons et sauce tahini (pâte de sésame)",
+        "price": "13€"
+      }
+    },
+    "lunchDishes": {
+      "vegan": {
+        "title": "Végan (Végan)",
+        "description": "Aubergine grillée, poivron, tomate et oignon avec une sauce spéciale, accompagnés de houmous, moutabal, Fattoush",
+        "price": "18,50€"
+      },
+      "aleppoMix": {
+        "title": "Mélange d'Alep",
+        "description": "1 brochette de kebab, 1 brochette chich taouk, Rkakat, kibbeh, tarator de poulet, muhammara et fattoush",
+        "price": "23,50€"
+      },
+      "sujuk": {
+        "title": "Sujuk",
+        "description": "Pain libanais cuit farci de bœuf haché assaisonné, tomate et cornichons accompagné de houmous, moutabal Fattoush",
+        "price": "20,80€"
+      },
+      "falafel": {
+        "title": "Falafel (Végan)",
+        "description": "4 pièces de falafel accompagnées de houmous, moutabal, Fattoush, sauce tahini (pâte de sésame), cornichons",
+        "price": "18€"
+      },
+      "toshka": {
+        "title": "Toshka",
+        "description": "Pain libanais cuit farci de bœuf haché et fromage syrien accompagné de houmous, moutabal, Fattoush",
+        "price": "20,80€"
+      },
+      "kebab": {
+        "title": "Kebab",
+        "description": "2 brochettes de bœuf haché grillé et assaisonné accompagnées de houmous, fattoush",
+        "price": "19€"
+      },
+      "chichTaouk": {
+        "title": "Chich Taouk",
+        "description": "2 brochettes de poulet grillé accompagnées de houmous, itch (boulgour), fattoush, cornichons, sauce à l'ail",
+        "price": "19€"
+      },
+      "grillMix": {
+        "title": "Mélange Grillé",
+        "description": "1 brochette de kebab et 1 brochette chich taouk accompagnées de houmous, itch (boulgour), fattoush",
+        "price": "19€"
+      }
+    },
+    "sandwiches": {
+      "takeAwayOnly": "À Emporter Uniquement",
+      "hummus": {
+        "title": "Houmous(Végan)",
+        "description": "Houmous, tomate, cornichons et laitue",
+        "price": "6,50€"
+      },
+      "chichTaouk": {
+        "title": "Chich Taouk",
+        "description": "Brochette de poulet grillé, laitue, tomate et sauce à l'ail",
+        "price": "7,00€"
+      },
+      "moutabal": {
+        "title": "Moutabal(Végan)",
+        "description": "Caviar d'aubergine grillée au tahini (pâte de sésame), tomate, cornichons et persil",
+        "price": "6,50€"
+      },
+      "toshka": {
+        "title": "Toshka",
+        "description": "Bœuf haché cuit et fromage syrien",
+        "price": "7,00€"
+      },
+      "falafel": {
+        "title": "Falafel(Végan)",
+        "description": "Falafel, tomate, cornichons et laitue",
+        "price": "7,00€"
+      },
+      "kebab": {
+        "title": "Kebab",
+        "description": "Brochette de bœuf haché grillé et assaisonné, houmous, tomate, laitue, oignon et sumac",
+        "price": "7,00€"
+      },
+      "veganGrill": {
+        "title": "Grill Végan(Végan)",
+        "description": "Aubergine grillée, paprika et oignon avec une sauce spéciale et tomate",
+        "price": "7,00€"
+      },
+      "makdous": {
+        "title": "Makdous(Végan)(C)",
+        "description": "Petites aubergines farcies aux noix et poivrons, tomate et persil",
+        "price": "7,00€"
+      },
+      "toratorChicken": {
+        "title": "Poulet Torator",
+        "description": "Poulet torator, persil, tomate et noix",
+        "price": "7,00€"
+      },
+      "cheese": {
+        "title": "Fromage(Végét)",
+        "description": "Fromage blanc syrien, menthe, poivron rouge et huile d'olive",
+        "price": "6,50€"
+      }
+    },
+    "skewers": {
+      "kebab": {
+        "title": "2x Kebab",
+        "description": "Cornichons et sauce à l'ail",
+        "price": "10€"
+      },
+      "chichTaouk": {
+        "title": "2x Chich Taouk",
+        "description": "Cornichons et sauce à l'ail",
+        "price": "10€"
+      }
+    },
+    "desserts": {
+      "aishElSaraya": {
+        "title": "Aish el Saraya (Vgn)",
+        "description": "Une couche de biscuit sucré, une couche de pudding végan, eau de fleur d'oranger et pistache",
+        "price": "3,5€"
+      },
+      "halw": {
+        "title": "Halw(Végan)",
+        "description": "Pâte de sésame et pistache",
+        "price": "3,50€"
+      },
+      "traditionalIceCream": {
+        "title": "Glace traditionnelle",
+        "description": "Dessert lacté glacé fait avec mastic, salep et pistache",
+        "price": "6€"
+      },
+      "assortmentArabicSweets": {
+        "title": "Assortiment de douceurs arabes",
+        "description": "Assortiment de douceurs arabes",
+        "price": "6€"
+      }
+    }
+  },
+  "reservations": {
+    "title": "Faire une Réservation",
+    "subtitle": "Réservez Votre Table en Ligne",
+    "howToMakeReservation": "Comment réserver ?",
+    "makeReservation": "Faire une Réservation",
+    "fullName": "Votre nom",
+    "email": "Votre e-mail",
+    "phone": "Numéro de téléphone",
+    "contactQuestion": "Comment pouvons-nous vous contacter ?",
+    "phoneNumber": "Numéro de téléphone ici",
+    "chooseTime": "Choisir une heure",
+    "startTime": "Heure de début ici",
+    "endTime": "Heure de fin ici",
+    "time": "Heure",
+    "numberOfGuests": "Nombre d'invités",
+    "selectGuests": "Sélectionner le nombre d'invités",
+    "guest": "invité",
+    "guests": "invités",
+    "selectTime": "Sélectionner l'heure",
+    "specialRequests": "Demandes spéciales",
+    "specialRequestsPlaceholder": "Demandes spéciales ou restrictions alimentaires...",
+    "additionalInfo": "Informations supplémentaires",
+    "messagePlaceholder": "Entrez votre message ici",
+    "confirmReservation": "Confirmer la réservation",
+    "bookTable": "RÉSERVER UNE TABLE",
+    "requestCancellation": "DEMANDE D'ANNULATION",
+    "cancel": "Annuler",
+    "reservationSubmitted": "Réservation soumise avec succès !",
+    "confirmationMessage": "Votre réservation a été envoyée avec succès. Vous recevrez un e-mail de confirmation sous peu.",
+    "namePlaceholder": "Nom ici",
+    "emailPlaceholder": "Email ici",
+    "phonePlaceholder": "Numéro de téléphone ici",
+    "businessHours": "Heures d'ouverture",
+    "bookingTimes": "Heures de réservation",
+    "lunch": "DÉJEUNER",
+    "lastReservationLunch": "Dernière réservation à 13h30",
+    "dinner": "DÎNER",
+    "lastReservationDinner": "Dernière réservation à 20h30",
+    "saturday": "Samedi",
+    "invoiceNumber": "Numéro de facture",
+    "invoiceKeepForCancellation": "Conservez ce numéro pour les annulations",
+    "reservationDetails": "Détails de la réservation",
+    "importantInformation": "Informations importantes",
+    "thankYouForChoosing": "Merci d'avoir choisi East at West",
+    "contactUsForQuestions": "Si vous avez des questions, veuillez nous contacter",
+    "unsubscribeFromEmails": "Se désabonner des e-mails",
+    "lastReservationAt": "Dernière réservation à",
+    "until": "Jusqu'à",
+    "approvalRequiredMessage": "Les réservations pour 10 personnes ou plus nécessitent une approbation. Votre réservation sera marquée comme en attente jusqu'à confirmation par notre équipe.",
+    "contactPhone": "+32 465 20 60 24",
+    "contactEmail": "contact@eastatwest.com",
+    "contactAddress": "Bld de l'Empereur 26\n1000 Brussels\nBelgium",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "guests": "Nombre d'Invitations",
+      "special_requests": "Demandes Spéciales",
+      "submit": "Réserver Table",
+      "success": "Réservation soumise avec succès !",
+      "error": "Veuillez remplir tous les champs requis."
+    },
+    "info": {
+      "hours": "Heures d'Ouverture",
+      "hours_detail": "Mardi - Dimanche : 11h00 - 22h00",
+      "closed": "Fermé le Lundi",
+      "contact": "Contact",
+      "phone": "Téléphone : +32 465 20 60 24",
+      "email": "Email : contact@eastatwest.com"
+    },
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "confirmed": "Votre réservation est confirmée !",
+    "pending": "Votre réservation est en attente. Nous vous enverrons une confirmation une fois approuvée.",
+    "validation": {
+      "required": "Ce champ est obligatoire",
+      "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+      "invalidPhone": "Veuillez saisir un numéro de téléphone valide (minimum 10 chiffres)",
+      "pastDate": "Impossible de faire des réservations pour des dates passées",
+      "sundayNotAllowed": "Les réservations ne sont pas disponibles le dimanche. Nous sommes fermés le dimanche.",
+      "invalidTimeSlot": "Veuillez sélectionner un créneau horaire valide. Disponible : Déjeuner (12:00-13:30), Dîner (18:00-21:30)",
+      "endTimeAfterStart": "L'heure de fin doit être après l'heure de début",
+      "outsideBusinessHours": "Les réservations ne sont disponibles que pendant les heures de déjeuner (12:00-14:00) ou de dîner (18:00-22:00)",
+      "lunchEndTime": "Les réservations de déjeuner doivent se terminer avant 14:00",
+      "dinnerEndTime": "Les réservations de dîner doivent se terminer avant 22:00",
+      "minGuests": "Minimum 1 invité requis",
+      "maxGuests": "Maximum 22 invités autorisés. Veuillez nous contacter directement pour des groupes plus importants.",
+      "approvalRequired": "Les réservations pour 10 personnes ou plus nécessitent une approbation. Votre réservation sera marquée comme en attente jusqu'à confirmation par notre équipe.",
+    "approvalWarning": "Les réservations pour 10 personnes ou plus nécessitent une approbation. Votre réservation sera marquée comme en attente jusqu'à confirmation par notre équipe."
+    }
+  },
+  "takeaway": {
+    "title": "À Emporter",
+    "subtitle": "Commandez vos plats préférés à emporter ou en livraison",
+    "description": "Vous ne pouvez pas dîner sur place ? Pas de problème ! Commandez vos plats préférés pour la livraison ou à emporter.",
+    "order_online": "Commander en Ligne",
+    "delivery_info": "Livraison disponible dans un rayon de 8 km",
+    "pickup_info": "Retrait disponible en 20-30 minutes",
+    "categories": {
+      "title": "Catégories",
+      "all": "Tous les Produits",
+      "coldMezzes": "Mezzes Froids",
+      "hotMezzes": "Mezzes Chauds",
+      "salads": "Salades",
+      "sandwiches": "Sandwichs",
+      "lunchDishes": "Plats du Déjeuner",
+      "desserts": "Desserts"
+    },
+    "allProducts": "Tous les Produits",
+    "cart": "Panier",
+    "addToCart": "Ajouter au Panier",
+    "removeFromCart": "Supprimer",
+    "updateQuantity": "Modifier la Quantité",
+    "emptyCart": "Votre panier est vide",
+    "total": "Total",
+    "checkout": "Passer à la Commande",
+    "noProducts": "Aucun produit trouvé dans cette catégorie",
+    "loading": "Chargement des produits...",
+    "error": "Échec du chargement des produits",
+    "products": {
+      "hummus": {
+        "name": "Houmous",
+        "description": "Purée de pois chiches au tahini (pâte de sésame)"
+      },
+      "moutabal": {
+        "name": "Moutabal",
+        "description": "Caviar d'aubergine grillée au tahini (pâte de sésame)"
+      },
+      "mousaka": {
+        "name": "Moussaka",
+        "description": "Plat traditionnel en couches avec aubergines, viande hachée et sauce béchamel"
+      },
+      "iche": {
+        "name": "Iche",
+        "description": "Salade de boulgour arménienne traditionnelle aux herbes et légumes"
+      },
+      "muhamara": {
+        "name": "Mouhamara",
+        "description": "Trempette épicée aux poivrons rouges et noix avec mélasse de grenade"
+      },
+      "warakEnab": {
+        "name": "Feuilles de Vigne",
+        "description": "Feuilles de vigne farcies au riz, herbes et légumes"
+      },
+      "makdous": {
+        "name": "Makdous",
+        "description": "Petites aubergines farcies aux noix, ail et poivrons dans l'huile d'olive"
+      },
+      "chickenTarator": {
+        "name": "Poulet Tarator",
+        "description": "Poulet froid avec sauce crémeuse au tahini et aux noix"
+      },
+      "falafel": {
+        "name": "Falafel",
+        "description": "Boulettes de pois chiches frits servies avec sauce tahini"
+      },
+      "kibbeh": {
+        "name": "Kibbeh (2pcs)",
+        "description": "Croquettes de boulgour frites farcies à la viande hachée, oignon et noix"
+      },
+      "sujuk": {
+        "name": "Sujuk",
+        "description": "Saucisse arménienne épicée grillée à la perfection"
+      },
+      "nakanek": {
+        "name": "Nakanek",
+        "description": "Saucisse arménienne traditionnelle aux épices uniques"
+      },
+      "foulMoudamas": {
+        "name": "Foul Moudamas",
+        "description": "Ragoût traditionnel de fèves avec ail, citron et huile d'olive"
+      },
+      "arayesCheese": {
+        "name": "Arayes au Fromage",
+        "description": "Pain pita grillé farci au fromage fondu et aux herbes"
+      },
+      "batataHarra": {
+        "name": "Pommes de Terre Épicées",
+        "description": "Pommes de terre frites épicées à l'ail, coriandre et piment"
+      },
+      "rkakat": {
+        "name": "Rkakat",
+        "description": "Rouleaux de fromage croustillants enveloppés dans de la pâte phyllo"
+      },
+      "kibbeVegan": {
+        "name": "Kebbe Végétalien (2pcs)",
+        "description": "Version végétalienne du kebbe traditionnel au boulgour et légumes"
+      },
+      "grilledCheese": {
+        "name": "Fromage Grillé",
+        "description": "Fromage grillé traditionnel aux herbes méditerranéennes"
+      },
+      "fattoushSalad": {
+        "name": "Salade Fattoush",
+        "description": "Tomates, laitue, chou rouge, radis, concombre, oignon, pain frit aux mélasses de grenade"
+      },
+      "falafelSalad": {
+        "name": "Salade de Falafel",
+        "description": "Mélange de légumes verts frais avec falafel croustillant et sauce tahini"
+      },
+      "taboule": {
+        "name": "Taboulé",
+        "description": "Salade de persil traditionnelle aux tomates, menthe, boulgour et vinaigrette au citron"
+      },
+      "shishTaouk": {
+        "name": "Shish Taouk",
+        "description": "Cubes de poulet grillés avec riz et légumes grillés"
+      },
+      "falafelPlate": {
+        "name": "Assiette de Falafel",
+        "description": "Falafel croustillant servi avec riz, salade et sauce tahini"
+      },
+      "toshkaLeban": {
+        "name": "Toshka Leban",
+        "description": "Plat traditionnel avec sauce au yaourt et viande épicée"
+      },
+      "aleppoMix": {
+        "name": "Mélange d'Alep",
+        "description": "Plateau de grillades mixtes avec diverses viandes et accompagnements traditionnels"
+      },
+      "veganPlate": {
+        "name": "Assiette Végétalienne",
+        "description": "Repas végétalien complet avec légumes mélangés, céréales et tahini"
+      },
+      "kebabDish": {
+        "name": "Assiette Kebab",
+        "description": "Kebab grillé servi avec riz, légumes grillés et sauce à l'ail"
+      },
+      "aishElSaraya": {
+        "name": "Aish el Saraya",
+        "description": "Biscuit sucré, pudding végétalien, eau de fleur d'oranger et pistache"
+      },
+      "traditionalIceCream": {
+        "name": "Glace Traditionnelle",
+        "description": "Glace maison du Moyen-Orient à l'eau de rose et aux pistaches"
+      },
+      "hummusSandwich": {
+        "name": "Sandwich Hummus",
+        "description": "Pain pita frais garni de houmous crémeux, légumes et herbes"
+      },
+      "shishTaoukSandwich": {
+        "name": "Sandwich Chich Taouk",
+        "description": "Blanc de poulet grillé mariné dans pita avec sauce à l'ail et légumes"
+      },
+      "moutabalSandwich": {
+        "name": "Sandwich Moutabal",
+        "description": "Trempette d'aubergine grillée fumée au tahini dans pain pita frais"
+      },
+      "toshkaSandwich": {
+        "name": "Sandwich Toshka",
+        "description": "Sandwich traditionnel à la viande épicée avec sauce yaourt et légumes"
+      },
+      "falafelSandwich": {
+        "name": "Sandwich Falafel",
+        "description": "Boules de falafel croustillantes dans pita avec sauce tahini, salade et cornichons"
+      },
+      "taratorChickenSandwich": {
+        "name": "Sandwich Poulet Tarator",
+        "description": "Poulet froid avec sauce crémeuse tahini-noix dans pita frais"
+      },
+      "cheeseSandwich": {
+        "name": "Sandwich au Fromage",
+        "description": "Fromage grillé aux herbes méditerranéennes dans pain pita croustillant"
+      }
+    }
+  },
+  "checkout": {
+    "title": "Commande",
+    "orderSummary": "Résumé de la Commande",
+    "orderDetails": "Détails de la Commande",
+    "customerInfo": "Informations Client",
+    "deliveryOptions": "Options de Livraison",
+    "dateTime": "Date et Heure",
+    "total": "Total",
+    "processing": "Traitement en cours...",
+    "proceedToPayment": "Procéder au Paiement",
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "street": "Adresse",
+      "city": "Ville",
+      "postalCode": "Code Postal",
+      "notes": "Notes Additionnelles",
+      "namePlaceholder": "Entrez votre nom complet",
+      "emailPlaceholder": "Entrez votre adresse email",
+      "phonePlaceholder": "Entrez votre numéro de téléphone",
+      "streetPlaceholder": "Entrez votre adresse",
+      "cityPlaceholder": "Entrez votre ville",
+      "postalCodePlaceholder": "Entrez le code postal",
+      "notesPlaceholder": "Instructions spéciales ou notes..."
+    },
+    "pickup": {
+      "title": "À Emporter",
+      "description": "Récupérer au restaurant"
+    },
+    "delivery": {
+      "title": "Livraison",
+      "description": "Livré à votre adresse"
+    },
+    "validation": {
+      "nameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Veuillez entrer une adresse email valide",
+      "phoneRequired": "Le numéro de téléphone est requis",
+      "phoneInvalid": "Veuillez entrer un numéro de téléphone valide",
+      "dateRequired": "La date est requise",
+      "timeRequired": "L'heure est requise",
+      "streetRequired": "L'adresse est requise",
+      "cityRequired": "La ville est requise",
+      "postalCodeRequired": "Le code postal est requis"
+    }
+  },
+  "footer": {
+    "design": "Design par Mbagnick Gaye",
+    "copyright": "Copyright © 2025 Tous droits réservés east@west",
+    "phone": "+32 465 20 60 24",
+    "email": "contact@eastatwest.com",
+    "address": "Boulevard de l'Empereur 26 1000 Bruxelles-Belgique",
+    "hours": "Lundi - Vendredi : 11h30 - 14h00\nSamedi : 18h00 - 22h00",
+    "social": "Suivez-nous",
+    "newsletter": "Bulletin d'information",
+    "newsletter_placeholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "quickLinks": "Liens rapides"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "back": "Retour",
+    "next": "Suivant",
+    "close": "Fermer",
+    "menu": "Menu",
+    "search": "Rechercher",
+    "contact": "Contact",
+    "about": "À Propos",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "tryAgain": "Réessayer",
+    "success": "Succès"
+  },
+  "about": {
+    "title": "Découvrez la cuisine libanaise à Bruxelles",
+    "part1": "Bienvenue sur notre site, célébrant le monde captivant de la cuisine libanaise ! Chez \u201c East @ West \u201c, nous nous engageons à présenter les saveurs riches, les couleurs vibrantes et l'héritage culturel des traditions culinaires libanaises, au cœur de Bruxelles !",
+    "part2": "La cuisine libanaise est un véritable chef-d'œuvre culinaire, fusionnant le meilleur des saveurs méditerranéennes, arabes et levantines. Nous vous invitons à embarquer pour un voyage qui vous fera découvrir une gamme d'épices aromatiques, d'ingrédients frais, de repas sains et une diversité de plats aussi exquis que satisfaisants.",
+    "heading": "Chef Hanna !",
+    "subheading": "Un Maître de la Cuisine",
+    "paragraph1": "Découvrez le Chef Hanna, le maître culinaire derrière les saveurs extraordinaires et l'art gastronomique du restaurant \"East @ West\" à Bruxelles. Animé par une profonde passion pour la cuisine libanaise et doté d'une grande expérience, le Chef Hanna est à l'origine de l'art de nos plats. Avec des racines profondément ancrées dans les traditions culinaires libanaises, il a perfectionné ses compétences dans des cuisines renommées et adopte la philosophie d'utiliser uniquement les meilleurs ingrédients frais pour créer des expériences culinaires mémorables.",
+    "paragraph2": "Avec des racines profondément ancrées dans les traditions culinaires libanaises, il a perfectionné ses compétences dans des cuisines renommées et adopte la philosophie d'utiliser uniquement les meilleurs ingrédients frais pour créer des expériences culinaires mémorables. Son parcours culinaire l'a mené à travers le Liban, où il a appris auprès de chefs locaux, découvrant la richesse des saveurs, des techniques et des nuances culturelles qui définissent la cuisine libanaise. Animé par la passion d'explorer la diversité de cette cuisine, le Chef Hanna continue d'expérimenter de nouveaux ingrédients, saveurs et méthodes de cuisson pour élever les recettes traditionnelles à un niveau culinaire moderne. Son talent pour équilibrer les saveurs et créer des expériences uniques lui a valu des éloges tant des locaux que des visiteurs. Au-delà de son expertise culinaire, le Chef Hanna incarne l'hospitalité libanaise avec chaleur et convivialité, s'assurant que chaque invité se sente chez lui dans son restaurant. Son dévouement à offrir un service exceptionnel et des expériences culinaires inoubliables témoigne de son engagement envers l'excellence."
+  },
+  "gallery": {
+    "title": "Notre restaurant en images",
+    "description": "Un aperçu de nos plats, de notre ambiance et de notre service.",
+    "image_alt_1": "Plateau de mezzé libanais",
+    "image_alt_2": "Salle à manger East@West",
+    "image_alt_3": "Brochettes grillées fraîches",
+    "aish": {
+      "title": "Aïsh El Saraya",
+      "description": "Un dessert libanais classique à base de crème riche et de pain imbibé de sirop."
+    },
+    "icecream": {
+      "title": "Glace Traditionnelle",
+      "description": "Crème glacée libanaise onctueuse parfumée à l'eau de rose et aux pistaches."
+    },
+    "image3": {
+      "title": "Mezzé Libanais",
+      "description": "Un assortiment riche d'entrées libanaises chaudes et froides."
+    },
+    "image4": {
+      "title": "Grillade Mixte",
+      "description": "Viandes grillées juteuses préparées à la libanaise."
+    },
+    "image5": {
+      "title": "Houmous Frais",
+      "description": "Crème de pois chiches onctueuse au tahini et citron."
+    },
+    "image6": {
+      "title": "Salade Tabbouleh",
+      "description": "Salade rafraîchissante au persil, à la menthe et au boulgour."
+    },
+    "image7": {
+      "title": "Falafel",
+      "description": "Beignets de pois chiches croustillants servis avec sauce tahini."
+    },
+    "image8": {
+      "title": "Douceurs Libanaises",
+      "description": "Une sélection de pâtisseries et douceurs libanaises authentiques."
+    },
+    "image9": {
+      "title": "Feuilles de Vigne Farcies",
+      "description": "Feuilles de vigne farcies de riz, d'herbes et d'épices."
+    },
+    "image10": {
+      "title": "Manakish au Zaatar",
+      "description": "Pain plat libanais garni de thym et de sésame."
+    }
+  },
+  "hero": {
+    "headline": "East At West Cuisine Méditerranéenne Moderne au Cœur de Bruxelles",
+    "cta": "Réservez Vôtre Table",
+    "viewMenu": "Voir la Carte"
+  },
+  "realtime": {
+    "todaysSpecials": "Suggestions du Jour",
+    "upcomingEvents": "Événements à Venir",
+    "reserveEvents": "Réservez vos événements avec nous",
+    "seasonalPromotions": "Promotions Saisonnières"
+  },
+  "specials": {
+    "taratorChicken": {
+      "title": "Poulet Tarator",
+      "description": "Poulet cuit écrasé et tahini (pâte de sésame)."
+    },
+    "kibbeh": {
+      "title": "Kibbeh x2pcs",
+      "description": "Croquettes de boulghour frites farcies de bœuf haché, oignon et noix."
+    },
+    "vegan": {
+      "title": "Vegan (Végétalien)",
+      "description": "Aubergine grillée, paprika, tomate et oignon avec une sauce spéciale, accompagnés de houmous, moutabal, Fattoush."
+    }
+  },
+  "events": {
+    "title": "Événements & Traiteur",
+    "subtitle": "Créer des Expériences Culinaires Mémorables",
+    "hero": {
+      "welcome": "Bienvenue chez East@West",
+      "breadcrumb": "Accueil / Événements & Traiteur"
+    },
+    "forAllEvents": {
+      "title": "Pour Tous Vos Événements",
+      "description": "Des dîners intimes aux grandes célébrations, nous créons des expériences culinaires inoubliables adaptées à vos occasions spéciales."
+    },
+    "kibbehVegan": {
+      "title": "Saveurs Authentiques",
+      "subtitle": "Cuisine Libanaise Traditionnelle",
+      "description": "Découvrez le goût authentique du Liban avec nos plats traditionnels faits à la main, préparés avec des recettes transmises de génération en génération."
+    },
+    "specialities": {
+      "title": "Nos Spécialités",
+      "description": "Découvrez nos plats signature qui mélangent les saveurs libanaises traditionnelles avec une présentation moderne, créant une expérience culinaire unique."
+    },
+    "bookEvent": {
+      "title": "Réservez Votre Événement",
+      "description": "Laissez-nous rendre votre occasion spéciale extraordinaire avec nos services de traiteur",
+      "email": "contact@eastatwest.com",
+      "phone": "+32 465 20 60 24",
+      "emailLabel": "Écrivez-nous",
+      "phoneLabel": "Appelez-nous"
+    },
+    "latestNews": {
+      "title": "Dernières Nouvelles",
+      "description": "Restez informé de nos innovations culinaires et des événements à venir",
+      "blogCta": "Visitez Notre Blog"
+    },
+    "catering": {
+      "title": "Notre Galerie Traiteur",
+      "description": "Parcourez notre collection d'événements mémorables et de célébrations que nous avons eu le plaisir de servir"
+    },
+    "gallery": {
+      "image1_alt": "Expérience culinaire du restaurant East at West à Bruxelles",
+      "image2_alt": "Service de traiteur professionnel par East at West",
+      "image3_alt": "Plateau de mezze libanais traditionnel du restaurant",
+      "image4_alt": "Intérieur du restaurant East at West Bruxelles",
+      "image5_alt": "Ambiance authentique du restaurant libanais",
+      "image6_alt": "Service de traiteur East at West à Bruxelles"
+    },
+    "images": {
+      "mezze": "Plateau de mezze libanais traditionnel",
+      "fattoush": "Salade fattoush fraîche avec pain croustillant",
+      "bruxelles": "Cuisine libanaise dans un cadre bruxellois",
+      "event": "Service de traiteur professionnel pour événements",
+      "platter": "Plateau de nourriture libanaise authentique"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contactez-nous pour des réservations, des questions ou des événements spéciaux",
+    "contactInformation": "Informations de Contact",
+    "phone": "Téléphone",
+    "email": "Email",
+    "address": "Adresse",
+    "openingHours": "Heures d'Ouverture",
+    "mondayFriday": "Lundi-Vendredi: 11:00 - 14:00 et 18:00 - 22:00",
+    "saturday": "Samedi : 18:00 - 22:00",
+    "sundayClosed": "Dimanche: Fermé",
+    "findUs": "Nous Trouver",
+    "locationDescription": "Situé au cœur de Bruxelles, facilement accessible par les transports en commun",
+    "interactiveMap": "Carte Interactive",
+    "mapIntegration": "L'intégration de carte peut être ajoutée ici",
+    "followUs": "Suivez-Nous",
+    "socialDescription": "Restez informés de nos derniers plats, événements et offres spéciales",
+    "restaurantImageAlt": " East at West Restaurant",
+    "restaurantDescription": "Découvrez la meilleure cuisine méditerranéenne au cœur de Bruxelles"
+  },
+  "blog": {
+    "title": "Nos Histoires et Perspectives",
+    "subtitle": "Découvrez la riche culture, les recettes authentiques et l'hospitalité chaleureuse qui rendent East at West spécial.",
+    "featured": "À la une",
+    "readMore": "Lire la suite",
+    "backToBlog": "Retour au Blog",
+    "tableOfContents": "Table des Matières",
+    "shareArticle": "Partager cet article",
+    "relatedArticles": "Articles Connexes",
+    "authorAt": "Auteur chez",
+    "minRead": "min de lecture",
+    "searchPlaceholder": "Rechercher des articles...",
+    "filterAll": "Tous",
+    "noPostsFound": "Aucun article trouvé",
+    "noPostsFoundDesc": "Essayez d'ajuster vos filtres ou termes de recherche.",
+    "checkBackSoon": "Revenez bientôt pour de nouvelles histoires et perspectives !",
+    "leaveReply": "Laisser un Commentaire",
+    "thankYouMessage": "Merci pour votre commentaire ! Il sera publié après révision.",
+    "emailNotPublished": "Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont marqués",
+    "enterName": "Entrez votre Nom *",
+    "enterEmail": "Entrez votre E-mail *",
+    "enterWebsite": "Entrez votre Site Web",
+    "enterComments": "Entrez vos Commentaires *",
+    "posting": "Publication...",
+    "postComment": "Publier le Commentaire",
+    "commentsUnavailable": "Les commentaires sont temporairement indisponibles",
+    "checkBackLater": "Veuillez revenir plus tard ou contacter le support si cela persiste.",
+    "loadingComments": "Chargement des commentaires...",
+    "beFirstComment": "Soyez le premier à laisser un commentaire !",
+    "commentsCount": "Commentaires",
+    "team": "Équipe",
+    "replyAsAdmin": "Répondre en tant qu'admin...",
+    "reply": "Répondre",
+    "vegetarianPost": {
+      "title": "Restaurant Végétarien Bruxelles – East @ West",
+      "excerpt": "Aucune viande, poisson ou volaille n'est servi au restaurant végétarien Brussels East @ West. Découvrez nos diverses options végétariennes et le riche patrimoine culinaire belge à base de plantes.",
+      "whyChoose": "Pourquoi Choisir un Restaurant Végétarien à Bruxelles ?",
+      "whatIs": "Qu'est-ce qu'un Restaurant Végétarien ?",
+      "history": "Depuis Quand Existe-t-il des Restaurants Végétariens ?",
+      "menu": "Que Trouve-t-on au Menu d'un Restaurant Végétarien ?",
+      "belgianDishes": "Plats Végétariens Belges Incontournables",
+      "cost": "Quel est le Coût d'Ouverture d'un Restaurant Végétarien ?",
+      "howToStart": "Comment Démarrer un Restaurant Végétarien ?",
+      "types": "Types Communs de Restaurants Végétariens à Bruxelles",
+      "conclusion": "Conclusion",
+      "bestRestaurants": "Meilleurs Restaurants Végétariens Bruxelles, Belgique"
+    }
+  }
+} 
