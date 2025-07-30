@@ -721,8 +721,9 @@ export default function HomePage() {
                   <div
                     id="rest_circ5"
                     onClick={(e) => {
-                      if (e.target.nodeName.toLowerCase() !== 'a') {
-                        const link = e.currentTarget.querySelector('.circ_top_title');
+                      const target = e.target as Element;
+                      if (target.nodeName.toLowerCase() !== 'a') {
+                        const link = e.currentTarget.querySelector('.circ_top_title') as HTMLAnchorElement;
                         if (link) window.open(link.href);
                         return false;
                       }
