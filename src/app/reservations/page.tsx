@@ -578,11 +578,11 @@ export default function ReservationsPage() {
       
       {/* Enhanced Header Section */}
       <div className="relative z-10 w-full pt-16 pb-6 flex flex-col items-center px-4">
-        <div className="text-center mb-4">
+        <div className="text-center mb-4 mt-12">
           <h1 className={`text-5xl font-black mb-2 md:mt-12 ${
             theme === "dark"
-              ? "text-transparent bg-clip-text bg-gradient-to-r from-[#1A1A1A] via-[#1A1A1A] to-[#1A1A1A]"
-              : "text-transparent bg-clip-text bg-gradient-to-r from-[#A8D5BA] via-[#A8D5BA] to-[#A8D5BA]"
+              ? "text-white"
+              : "text-black"
           } drop-shadow-2xl`}>
             {t("reservations.howToMakeReservation")}
           </h1>
@@ -606,13 +606,13 @@ export default function ReservationsPage() {
               {/* Enhanced Calendar Section */}
               <div className={`p-4 sm:p-5 rounded-2xl shadow-xl border-2 ${
                 theme === "dark"
-                  ? "bg-gradient-to-br from-[#1A1A1A]/95 to-[#1A1A1A]/95 border-[#A8D5BA]/50"
-                  : "bg-gradient-to-br from-[#FFFFFF]/95 to-[#FFFFFF]/95 border-[#A8D5BA]/70"
+                  ? "bg-[#1e2b05]"
+                  : "bg-[#3d3a3a]"
               }`}>
             <div className={`text-center text-lg font-bold py-3 rounded-xl mb-5 ${
               theme === "dark"
-                ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                ? "bg-[#1e2b05] text-[#f8faf5]"
+                : "bg-[#404f14]"
             } shadow-lg`}>
               ��� {t("reservations.chooseTime")}
             </div>
@@ -699,16 +699,16 @@ export default function ReservationsPage() {
           } p-4 sm:p-5`}>
           <form onSubmit={handleSubmit} className={`p-4 sm:p-5 rounded-2xl shadow-xl border-2 ${
             theme === "dark"
-              ? "bg-gradient-to-br from-[#1A1A1A]/95 to-[#1A1A1A]/95 border-[#A8D5BA]/50"
-              : "bg-gradient-to-br from-[#FFFFFF]/95 to-[#FFFFFF]/95 border-[#A8D5BA]/70"
+              ? "bg-beige"
+              : "bg-[#313b1f]"
           }`}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               {/* Name Field */}
               <div className="flex flex-col">
                 <label htmlFor="name-field" className={`text-xs font-bold mb-2 px-2 py-1 rounded-lg ${
                   theme === "dark"
-                    ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                    : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                    ? "bg-beige"
+                    : "bg-beige"
                 }`}>
                   👤 {t("reservations.fullName")}*
                 </label>
@@ -727,8 +727,8 @@ export default function ReservationsPage() {
                   placeholder={t("reservations.namePlaceholder")}
                   className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 ${
                     theme === "dark"
-                      ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-[#A8D5BA]/30 focus:border-[#A8D5BA]"
-                      : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-[#A8D5BA]/50 focus:border-[#A8D5BA]"
+                      ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
+                      : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                   } ${getFieldError('name') ? 'border-red-500' : ''}`}
                 />
                 {getFieldError('name') && (
@@ -740,8 +740,8 @@ export default function ReservationsPage() {
               <div className="flex flex-col">
                 <label htmlFor="email-field" className={`text-xs font-bold mb-2  px-2 py-1 rounded-lg ${
                   theme === "dark"
-                    ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                    : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                    ? "bg-beige"
+                    : "bg-beige"
                 }`}>
                   📧 {t("reservations.email")}*
                 </label>
@@ -758,8 +758,8 @@ export default function ReservationsPage() {
                   title="Please enter a valid email address (e.g., user@example.com)"
                   className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 ${
                     theme === "dark"
-                      ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-[#A8D5BA]/30 focus:border-[#A8D5BA]"
-                      : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-[#A8D5BA]/50 focus:border-[#A8D5BA]"
+                      ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
+                      : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                   } ${getFieldError('email') ? 'border-red-500' : ''}`}
                 />
                 {getFieldError('email') && (
@@ -772,8 +772,8 @@ export default function ReservationsPage() {
             <div className="flex flex-col mb-4">
               <label htmlFor="phone-field" className={`text-xs font-bold mb-2 text-xs px-2 py-1 rounded-lg ${
                 theme === "dark"
-                  ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                  : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                  ? "bg-beige"
+                  : "bg-beige"
               }`}>
                 📱 {t("reservations.phone")}*
               </label>
@@ -793,8 +793,8 @@ export default function ReservationsPage() {
                 title="Please enter a phone number"
                 className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 ${
                   theme === "dark"
-                    ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-[#A8D5BA]/30 focus:border-[#A8D5BA]"
-                    : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-[#A8D5BA]/50 focus:border-[#A8D5BA]"
+                    ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
+                    : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                 } ${getFieldError('phone') ? 'border-red-500' : ''}`}
               />
               {getFieldError('phone') && (
@@ -808,8 +808,8 @@ export default function ReservationsPage() {
               <div className="flex flex-col">
                 <label htmlFor="start-time-field" className={`text-xs font-bold mb-2 text-xs px-2 py-1 rounded-lg ${
                   theme === "dark"
-                    ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                    : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                    ? "bg-beige"
+                    : "bg-beige"
                 }`}>
                   🕐 {t("reservations.time")}*
                 </label>
@@ -821,8 +821,8 @@ export default function ReservationsPage() {
                   required
                   className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 ${
                     theme === "dark"
-                      ? "text-[#F5F0E6] bg-[#1A1A1A]/50 border-2 border-[#A8D5BA]/30 focus:border-[#A8D5BA]"
-                      : "text-[#1A1A1A] bg-[#FFFFFF]/50 border-2 border-[#A8D5BA]/50 focus:border-[#A8D5BA]"
+                      ? "text-[#F5F0E6] bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
+                      : "text-[#1A1A1A] bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                   } ${getFieldError('startTime') ? 'border-red-500' : ''}`}
                 >
                   <option value="" className={theme === "dark" ? "text-gray-300" : "text-gray-700"}>
@@ -848,8 +848,8 @@ export default function ReservationsPage() {
               <div className="flex flex-col">
                 <label htmlFor="end-time-field" className={`text-xs font-bold mb-2 text-xs px-2 py-1 rounded-lg ${
                   theme === "dark"
-                    ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                    : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                    ? "bg-beige"
+                    : "bg-beige"
                 }`}>
                   🕐 {t("reservations.until")}*
                 </label>
@@ -861,8 +861,8 @@ export default function ReservationsPage() {
                   required
                   className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 ${
                     theme === "dark"
-                      ? "text-[#F5F0E6] bg-[#1A1A1A]/50 border-2 border-[#A8D5BA]/30 focus:border-[#A8D5BA]"
-                      : "text-[#1A1A1A] bg-[#FFFFFF]/50 border-2 border-[#A8D5BA]/50 focus:border-[#A8D5BA]"
+                      ? "text-[#F5F0E6] bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
+                      : "text-[#1A1A1A] bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                   } ${getFieldError('endTime') ? 'border-red-500' : ''}`}
                 >
                   <option value="" className={theme === "dark" ? "text-gray-300" : "text-gray-700"}>
@@ -888,8 +888,8 @@ export default function ReservationsPage() {
             <div className="flex flex-col mb-4">
               <label htmlFor="guests-field" className={`text-xs font-bold mb-2 px-2 py-1 rounded-lg ${
                 theme === "dark"
-                  ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                  : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                  ? "bg-beige"
+                  : "bg-beige"
               }`}>
                 👥 {t("reservations.numberOfGuests")}*
               </label>
@@ -901,8 +901,8 @@ export default function ReservationsPage() {
                 required
                 className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 ${
                   theme === "dark"
-                    ? "text-[#F5F0E6] bg-[#1A1A1A]/50 border-2 border-[#A8D5BA]/30 focus:border-[#A8D5BA]"
-                    : "text-[#1A1A1A] bg-[#FFFFFF]/50 border-2 border-[#A8D5BA]/50 focus:border-[#A8D5BA]"
+                    ? "text-[#F5F0E6] bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
+                    : "text-[#1A1A1A] bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                 } ${getFieldError('guests') ? 'border-red-500' : ''}`}
               >
                 <option value="" className={theme === "dark" ? "text-gray-300" : "text-gray-700"}>
@@ -937,8 +937,8 @@ export default function ReservationsPage() {
             <div className="flex flex-col mb-4">
               <label htmlFor="special-requests-field" className={`text-xs font-bold mb-2 px-2 py-1 rounded-lg ${
                 theme === "dark"
-                  ? "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#1A1A1A]"
-                  : "bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-[#FFFFFF]"
+                  ? "bg-beige"
+                  : "bg-beige"
               }`}>
                 💭 {t("reservations.specialRequests")}
               </label>
@@ -951,7 +951,7 @@ export default function ReservationsPage() {
                 placeholder={t("reservations.specialRequestsPlaceholder")}
                 className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 resize-none ${
                   theme === "dark"
-                    ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-[#A8D5BA]/30 focus:border-[#A8D5BA]"
+                    ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
                     : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-[#A8D5BA]/50 focus:border-[#A8D5BA]"
                 }`}
               />
