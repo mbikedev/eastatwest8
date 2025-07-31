@@ -40,7 +40,7 @@
       "skewers": "Skewers",
       "mains": "Main Courses",
       "desserts": "Desserts",
-      "drinks": "Beverages"
+      "drinks": "Drinks"
     },
     "items": {
       "spring_rolls": "Asian Spring Rolls",
@@ -356,6 +356,113 @@
         "title": "Assortiment of Arabic sweets",
         "description": "Assortiment of Arabic sweets",
         "price": "6€"
+      }
+    },
+    "drinks": {
+      "lebaneseBeer": {
+        "title": "Lebanese beer",
+        "description": "Traditional Lebanese beer",
+        "price": "4.50€"
+      },
+      "hoegaardenBeer": {
+        "title": "Hoegaarden white beer",
+        "description": "Belgian wheat beer",
+        "price": "4.50€"
+      },
+      "jupilerBeer": {
+        "title": "Jupiler beer",
+        "description": "Belgian lager beer",
+        "price": "3.50€"
+      },
+      "leffeLindemans": {
+        "title": "Leffe brown beer / Lindemans Kriek",
+        "description": "Belgian brown ale / Cherry beer",
+        "price": "4.50€"
+      },
+      "chateauKsaraRed": {
+        "title": "Chateau Ksara",
+        "description": "Le grand vin libanais",
+        "price": "25€ / 7.50€"
+      },
+      "chateauKsaraReserve": {
+        "title": "Chateau Ksara",
+        "description": "Reserve du couvent rouge",
+        "price": "20€"
+      },
+      "chateauKefrayaRed": {
+        "title": "Chateau Kefraya",
+        "description": "Breteche rouge",
+        "price": "20€"
+      },
+      "chateauKsaraWhite": {
+        "title": "Chateau Ksara",
+        "description": "Blanc de Blancs",
+        "price": "25€ / 7.50€"
+      },
+      "chateauKsaraBlanc": {
+        "title": "Chateau Ksara",
+        "description": "Blanc de l'observatoire",
+        "price": "20€"
+      },
+      "chateauKefrayaWhite": {
+        "title": "Chateau Kefraya",
+        "description": "Blanc de l'observatoire",
+        "price": "20€"
+      },
+      "chateauKsaraRose": {
+        "title": "Chateau Ksara Rosé",
+        "description": "Rosé wine",
+        "price": "20€"
+      },
+      "roseDamascusJuice": {
+        "title": "Home Made 'Rose Of Damascus' Juice",
+        "description": "Rose of Damascus",
+        "price": "5€"
+      },
+      "cocaCola": {
+        "title": "Coca Cola / Cola Zero / Sprite",
+        "description": "Soft drinks",
+        "price": "3.50€"
+      },
+      "schweppesAgrumes": {
+        "title": "Schweppes (Agrumes / Virgin Mojito)",
+        "description": "Citrus soft drinks",
+        "price": "4€"
+      },
+      "ayran": {
+        "title": "Ayran",
+        "description": "Traditional yogurt drink",
+        "price": "3.50€"
+      },
+      "waterSpa": {
+        "title": "Water (Spa) 0.5L",
+        "description": "Mineral water",
+        "price": "3€"
+      },
+      "fantaIceTea": {
+        "title": "Fanta Orange / Ice Tea",
+        "description": "Orange soda / Iced tea",
+        "price": "3€"
+      },
+      "schweppesTonic": {
+        "title": "Schweppes (Indian Tonic)",
+        "description": "Tonic water",
+        "price": "4€"
+      },
+      "arabianCoffee": {
+        "title": "Arabian Coffee",
+        "description": "Traditional Arabic coffee",
+        "price": "3.50€"
+      },
+      "cafeEspresso": {
+        "title": "Café / Espresso",
+        "description": "Coffee / Espresso",
+        "price": "3.25€"
+      },
+      "tea": {
+        "title": "Tea (Mint Tea / Black Tea / Chamomile)",
+        "description": "Hot tea varieties",
+        "price": "3.25€"
       }
     }
   },

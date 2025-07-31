@@ -10,7 +10,7 @@ import Image from 'next/image'
 // Note: MenuDisplay and VeganMenuDisplay components are currently not used in the main menu
 // but are available for future implementation
 
-type Category = 'setMenus' | 'coldMezzes' | 'hotMezzes' | 'salads' | 'lunchDishes' | 'sandwiches' | 'skewers' | 'desserts'
+type Category = 'setMenus' | 'coldMezzes' | 'hotMezzes' | 'salads' | 'lunchDishes' | 'sandwiches' | 'skewers' | 'desserts' | 'drinks'
 
 type MenuItem = {
   name: string
@@ -22,6 +22,7 @@ type MenuItem = {
   isVeganMenuDisplay?: boolean
   image?: string
   id?: string
+  section?: string
 }
 
 export default function MenuPage() {
@@ -76,6 +77,7 @@ export default function MenuPage() {
     { id: 'sandwiches', name: t('menu.categories.sandwiches') },
     { id: 'skewers', name: t('menu.categories.skewers') },
     { id: 'desserts', name: t('menu.categories.desserts') },
+    { id: 'drinks', name: t('menu.categories.drinks') },
   ]
 
   const menuItems: Record<Category, MenuItem[]> = {
@@ -480,6 +482,197 @@ export default function MenuPage() {
         vegetarian: true
       }
     ],
+    drinks: [
+      {
+        name: t('menu.drinks.lebaneseBeer.title'),
+        description: t('menu.drinks.lebaneseBeer.description'),
+        price: t('menu.drinks.lebaneseBeer.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Beers"
+      },
+      {
+        name: t('menu.drinks.hoegaardenBeer.title'),
+        description: t('menu.drinks.hoegaardenBeer.description'),
+        price: t('menu.drinks.hoegaardenBeer.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Beers"
+      },
+      {
+        name: t('menu.drinks.jupilerBeer.title'),
+        description: t('menu.drinks.jupilerBeer.description'),
+        price: t('menu.drinks.jupilerBeer.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Beers"
+      },
+      {
+        name: t('menu.drinks.leffeLindemans.title'),
+        description: t('menu.drinks.leffeLindemans.description'),
+        price: t('menu.drinks.leffeLindemans.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Beers"
+      },
+      {
+        name: t('menu.drinks.chateauKsaraRed.title'),
+        description: t('menu.drinks.chateauKsaraRed.description'),
+        price: t('menu.drinks.chateauKsaraRed.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Red Wines"
+      },
+      {
+        name: t('menu.drinks.chateauKsaraReserve.title'),
+        description: t('menu.drinks.chateauKsaraReserve.description'),
+        price: t('menu.drinks.chateauKsaraReserve.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Red Wines"
+      },
+      {
+        name: t('menu.drinks.chateauKefrayaRed.title'),
+        description: t('menu.drinks.chateauKefrayaRed.description'),
+        price: t('menu.drinks.chateauKefrayaRed.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Red Wines"
+      },
+      {
+        name: t('menu.drinks.chateauKsaraWhite.title'),
+        description: t('menu.drinks.chateauKsaraWhite.description'),
+        price: t('menu.drinks.chateauKsaraWhite.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "White Wines"
+      },
+      {
+        name: t('menu.drinks.chateauKsaraBlanc.title'),
+        description: t('menu.drinks.chateauKsaraBlanc.description'),
+        price: t('menu.drinks.chateauKsaraBlanc.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "White Wines"
+      },
+      {
+        name: t('menu.drinks.chateauKefrayaWhite.title'),
+        description: t('menu.drinks.chateauKefrayaWhite.description'),
+        price: t('menu.drinks.chateauKefrayaWhite.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "White Wines"
+      },
+      {
+        name: t('menu.drinks.chateauKsaraRose.title'),
+        description: t('menu.drinks.chateauKsaraRose.description'),
+        price: t('menu.drinks.chateauKsaraRose.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Rosé Wines"
+      },
+      {
+        name: t('menu.drinks.roseDamascusJuice.title'),
+        description: t('menu.drinks.roseDamascusJuice.description'),
+        price: t('menu.drinks.roseDamascusJuice.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Soft Drinks"
+      },
+      {
+        name: t('menu.drinks.cocaCola.title'),
+        description: t('menu.drinks.cocaCola.description'),
+        price: t('menu.drinks.cocaCola.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Soft Drinks"
+      },
+      {
+        name: t('menu.drinks.schweppesAgrumes.title'),
+        description: t('menu.drinks.schweppesAgrumes.description'),
+        price: t('menu.drinks.schweppesAgrumes.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Soft Drinks"
+      },
+      {
+        name: t('menu.drinks.ayran.title'),
+        description: t('menu.drinks.ayran.description'),
+        price: t('menu.drinks.ayran.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Soft Drinks"
+      },
+      {
+        name: t('menu.drinks.waterSpa.title'),
+        description: t('menu.drinks.waterSpa.description'),
+        price: t('menu.drinks.waterSpa.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Soft Drinks"
+      },
+      {
+        name: t('menu.drinks.fantaIceTea.title'),
+        description: t('menu.drinks.fantaIceTea.description'),
+        price: t('menu.drinks.fantaIceTea.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Soft Drinks"
+      },
+      {
+        name: t('menu.drinks.schweppesTonic.title'),
+        description: t('menu.drinks.schweppesTonic.description'),
+        price: t('menu.drinks.schweppesTonic.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Soft Drinks"
+      },
+      {
+        name: t('menu.drinks.arabianCoffee.title'),
+        description: t('menu.drinks.arabianCoffee.description'),
+        price: t('menu.drinks.arabianCoffee.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Hot Drinks"
+      },
+      {
+        name: t('menu.drinks.cafeEspresso.title'),
+        description: t('menu.drinks.cafeEspresso.description'),
+        price: t('menu.drinks.cafeEspresso.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Hot Drinks"
+      },
+      {
+        name: t('menu.drinks.tea.title'),
+        description: t('menu.drinks.tea.description'),
+        price: t('menu.drinks.tea.price'),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/placeholder.svg",
+        section: "Hot Drinks"
+      }
+    ],
   }
 
   return (
@@ -568,7 +761,7 @@ export default function MenuPage() {
       {/* Menu Items */}
       <section className="px-4 sm:px-6 lg:px-8 pb-20">
         <div className="max-w-4xl mx-auto">
-          {(activeCategory === 'setMenus' || activeCategory === 'coldMezzes' || activeCategory === 'hotMezzes' || activeCategory === 'salads' || activeCategory === 'lunchDishes' || activeCategory === 'sandwiches' || activeCategory === 'skewers' || activeCategory === 'desserts') ? (
+          {(activeCategory === 'setMenus' || activeCategory === 'coldMezzes' || activeCategory === 'hotMezzes' || activeCategory === 'salads' || activeCategory === 'lunchDishes' || activeCategory === 'sandwiches' || activeCategory === 'skewers' || activeCategory === 'desserts' || activeCategory === 'drinks') ? (
             <div>
               {/* Fresh & Delicious title for Cold Mezzes section */}
               {activeCategory === 'coldMezzes' && (
@@ -667,6 +860,24 @@ export default function MenuPage() {
                     theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
                   }`}>
                     Indulgent traditional desserts crafted with authentic flavors
+                  </p>
+                </div>
+              )}
+
+              {/* Refreshing Beverages title for Drinks section */}
+              {activeCategory === 'drinks' && (
+                <div className="text-center mb-8 sm:mb-10 md:mb-12">
+                  <h2 className={`text-2xl sm:text-3xl md:text-4xl font-black px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-pulse ${
+                    theme === 'dark' 
+                      ? 'bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70' 
+                      : 'bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80'
+                  }`}>
+                    🍹 Refreshing Beverages 🍹
+                  </h2>
+                  <p className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${
+                    theme === 'dark' ? 'text-[#E6E6E6]' : 'text-[#1A1A1A]'
+                  }`}>
+                    Traditional and modern drinks to complement your meal
                   </p>
                 </div>
               )}

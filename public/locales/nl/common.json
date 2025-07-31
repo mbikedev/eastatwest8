@@ -356,6 +356,113 @@
         "description": "Assortiment van Arabische zoetigheden",
         "price": "6€"
       }
+    },
+    "drinks": {
+      "lebaneseBeer": {
+        "title": "Libanees bier",
+        "description": "Traditioneel Libanees bier",
+        "price": "4,50€"
+      },
+      "hoegaardenBeer": {
+        "title": "Hoegaarden wit bier",
+        "description": "Belgisch tarwebier",
+        "price": "4,50€"
+      },
+      "jupilerBeer": {
+        "title": "Jupiler bier",
+        "description": "Belgisch lager bier",
+        "price": "3,50€"
+      },
+      "leffeLindemans": {
+        "title": "Leffe bruin bier / Lindemans Kriek",
+        "description": "Belgisch bruin bier / Kersenbier",
+        "price": "4,50€"
+      },
+      "chateauKsaraRed": {
+        "title": "Chateau Ksara",
+        "description": "Le grand vin libanais",
+        "price": "25€ / 7,50€"
+      },
+      "chateauKsaraReserve": {
+        "title": "Chateau Ksara",
+        "description": "Réserve du couvent rouge",
+        "price": "20€"
+      },
+      "chateauKefrayaRed": {
+        "title": "Chateau Kefraya",
+        "description": "Breteche rouge",
+        "price": "20€"
+      },
+      "chateauKsaraWhite": {
+        "title": "Chateau Ksara",
+        "description": "Blanc de Blancs",
+        "price": "25€ / 7,50€"
+      },
+      "chateauKsaraBlanc": {
+        "title": "Chateau Ksara",
+        "description": "Blanc de l'observatoire",
+        "price": "20€"
+      },
+      "chateauKefrayaWhite": {
+        "title": "Chateau Kefraya",
+        "description": "Blanc de l'observatoire",
+        "price": "20€"
+      },
+      "chateauKsaraRose": {
+        "title": "Chateau Ksara Rosé",
+        "description": "Rosé wijn",
+        "price": "20€"
+      },
+      "roseDamascusJuice": {
+        "title": "Thuisgemaakte 'Roos van Damascus' Sappen",
+        "description": "Roos van Damascus",
+        "price": "5€"
+      },
+      "cocaCola": {
+        "title": "Coca Cola / Cola Zero / Sprite",
+        "description": "Frisdranken",
+        "price": "3,50€"
+      },
+      "schweppesAgrumes": {
+        "title": "Schweppes (Agrumes / Virgin Mojito)",
+        "description": "Citrus frisdranken",
+        "price": "4€"
+      },
+      "ayran": {
+        "title": "Ayran",
+        "description": "Traditionele yoghurtdrank",
+        "price": "3,50€"
+      },
+      "waterSpa": {
+        "title": "Water (Spa) 0,5L",
+        "description": "Mineraalwater",
+        "price": "3€"
+      },
+      "fantaIceTea": {
+        "title": "Fanta Orange / Ice Tea",
+        "description": "Oranje frisdrank / IJsthee",
+        "price": "3€"
+      },
+      "schweppesTonic": {
+        "title": "Schweppes (Indian Tonic)",
+        "description": "Tonic water",
+        "price": "4€"
+      },
+      "arabianCoffee": {
+        "title": "Arabische Koffie",
+        "description": "Traditionele Arabische koffie",
+        "price": "3,50€"
+      },
+      "cafeEspresso": {
+        "title": "Koffie / Espresso",
+        "description": "Koffie / Espresso",
+        "price": "3,25€"
+      },
+      "tea": {
+        "title": "Thee (Munt Thee / Zwarte Thee / Kamille)",
+        "description": "Warme theesoorten",
+        "price": "3,25€"
+      }
     }
   },
   "reservations": {
