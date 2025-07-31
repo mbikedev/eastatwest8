@@ -42,22 +42,21 @@ const Header = () => {
   }, [isMobileMenuOpen])
 
   return (
-    <motion.header 
-      className={`fixed w-full top-0 z-50 transition-all duration-700 ${
-        scrolled 
-          ? theme === 'dark' 
-            ? 'bg-black/20 backdrop-blur-md border-b border-white/10 shadow-lg' 
-            : 'bg-white/30 backdrop-blur-md border-b border-gray-900/10 shadow-lg'
-          : theme === 'dark' 
-            ? 'bg-black/10 backdrop-blur-sm' 
-            : 'bg-white/20 backdrop-blur-sm'
-      }`}
+    <motion.header
+      className={`fixed w-full top-0 z-50 transition-all duration-700 ${scrolled
+          ? theme === 'dark'
+            ? 'bg-gray-900/50 backdrop-blur-md border-b border-white/10 shadow-lg'
+            : 'bg-gray-900/50 backdrop-blur-md border-b border-gray-900/10 shadow-lg'
+          : theme === 'dark'
+            ? 'bg-gray-900 backdrop-blur-sm'
+            : 'bg-gray-900/75 backdrop-blur-sm'
+        }`}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'}`} style={{ backgroundColor: 'rgba(36, 34, 34, 1)' }}>
+        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'}`}>
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -77,27 +76,23 @@ const Header = () => {
                   height={40}
                   sizes="(max-width: 768px) 32px, 40px"
                   priority
-                  className={`transition-all duration-500 group-hover:scale-110 ${
-                    scrolled ? 'h-8' : 'h-10'
-                  } w-auto ${
-                    theme === 'dark'
+                  className={`transition-all duration-500 group-hover:scale-110 ${scrolled ? 'h-8' : 'h-10'
+                    } w-auto ${theme === 'dark'
                       ? 'drop-shadow-[0_0_8px_rgba(251,146,60,0.4)] group-hover:drop-shadow-[0_0_12px_rgba(251,146,60,0.6)]'
                       : 'drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)] group-hover:drop-shadow-[0_4px_16px_rgba(251,146,60,0.3)]'
-                  }`}
+                    }`}
                 />
                 <motion.div
-                  className={`absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 ${
-                    theme === 'dark'
-                      ? 'bg-gradient-to-r from-[#1A1A1A]/20 via-[#1A1A1A]/20 to-[#1A1A1A]/20'
-                      : 'bg-gradient-to-r from-[#A8D5BA]/20 via-[#A8D5BA]/20 to-[#A8D5BA]/20'
-                  }`}
+                  className={`absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 ${theme === 'dark'
+                      ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 via-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/20'
+                      : 'bg-gradient-to-r from-[rgb(168,213,186)]/20 via-[rgb(168,213,186)]/20 to-[rgb(168,213,186)]/20'
+                    }`}
                   transition={{ duration: 0.3 }}
                 />
               </motion.div>
               <div
-                className={`relative ml-5 h-auto italic hidden lg:block ${
-                  theme === 'dark' ? 'text-[#FFFFFF]' : 'text-[#A8D5BA]'
-                }`}
+                className={`relative ml-5 h-auto italic hidden lg:block ${theme === 'dark' ? 'text-[rgb(255,255,255)]' : 'text-[rgb(168,213,186)]'
+                  }`}
                 style={{ font: 'italic 30px Rozha One, serif' }}
               >
                 <p>
@@ -134,27 +129,24 @@ const Header = () => {
                 >
                   <Link
                     href={item.href}
-                    className={`relative px-3 lg:px-4 py-2 rounded-xl text-sm lg:text-base font-medium transition-all duration-300 group backdrop-blur-sm ${
-                      theme === 'dark'
+                    className={`relative px-3 lg:px-4 py-2 rounded-xl text-sm lg:text-base font-medium transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
                         ? 'text-white/90 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20'
                         : 'text-white/90 hover:text-white hover:bg-black/10 border border-transparent hover:border-black/20'
-                    }`}
+                      }`}
                   >
                     <span className="relative z-10">{item.label}</span>
                     <motion.div
-                      className={`absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 ${
-                        theme === 'dark'
-                          ? 'bg-gradient-to-r from-[#1A1A1A]/20 to-[#1A1A1A]/20'
-                          : 'bg-gradient-to-r from-[#A8D5BA]/20 to-[#A8D5BA]/20'
-                      }`}
+                      className={`absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 ${theme === 'dark'
+                          ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/20'
+                          : 'bg-gradient-to-r from-[rgb(168,213,186)]/20 to-[rgb(168,213,186)]/20'
+                        }`}
                       transition={{ duration: 0.3 }}
                     />
                     <motion.div
-                      className={`absolute bottom-0 left-1/2 w-0 h-0.5 group-hover:w-full group-hover:left-0 transition-all duration-300 ${
-                        theme === 'dark'
-                          ? 'bg-gradient-to-r from-[#1A1A1A] to-[#1A1A1A]'
-                          : 'bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA]'
-                      }`}
+                      className={`absolute bottom-0 left-1/2 w-0 h-0.5 group-hover:w-full group-hover:left-0 transition-all duration-300 ${theme === 'dark'
+                          ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                          : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
+                        }`}
                     />
                   </Link>
                 </motion.div>
@@ -165,11 +157,10 @@ const Header = () => {
             <div className="md:hidden">
               <motion.button
                 onClick={toggleMobileMenu}
-                className={`relative p-3 rounded-xl transition-all duration-300 group backdrop-blur-sm ${
-                  theme === 'dark'
-                    ? 'text-white hover:text-[#FFFFFF] hover:bg-[#1A1A1A]/10'
-                    : 'text-white hover:text-[#A8D5BA] hover:bg-black/10'
-                }`}
+                className={`relative p-3 rounded-xl transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
+                    ? 'text-white hover:text-[rgb(255,255,255)] hover:bg-[rgb(26,26,26)]/10'
+                    : 'text-white hover:text-[rgb(168,213,186)] hover:bg-black/10'
+                  }`}
                 aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -208,11 +199,10 @@ const Header = () => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              className={`absolute top-full left-0 right-0 md:hidden z-40 ${
-                theme === 'dark'
+              className={`absolute top-full left-0 right-0 md:hidden z-40 ${theme === 'dark'
                   ? 'bg-black/95 border-b border-white/10'
                   : 'bg-white/95 border-b border-black/10'
-              } backdrop-blur-xl shadow-2xl`}
+                } backdrop-blur-xl shadow-2xl`}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -236,14 +226,13 @@ const Header = () => {
                     <Link
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`flex items-center space-x-3 p-4 rounded-xl transition-all duration-300 group ${
-                        theme === 'dark'
+                      className={`flex items-center space-x-3 p-4 rounded-xl transition-all duration-300 group ${theme === 'dark'
                           ? 'text-white hover:bg-white/10 border border-transparent hover:border-white/20'
                           : 'text-gray-900 hover:bg-black/10 border border-transparent hover:border-black/20'
-                      }`}
+                        }`}
                     >
                       <span className="text-xl">{item.icon}</span>
-                      <span className="font-medium">{item.label}</span>
+                      <span className="font-bold">{item.label}</span>
                       <motion.div
                         className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                       >
@@ -258,9 +247,8 @@ const Header = () => {
                 {/* Mobile Controls */}
                 <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <span className={`text-sm font-medium ${
-                      theme === 'dark' ? 'text-white/70' : 'text-gray-700'
-                    }`}>
+                    <span className={`text-sm font-medium ${theme === 'dark' ? 'text-white/70' : 'text-gray-700'
+                      }`}>
                       Settings
                     </span>
                     <LanguageSwitcher />
