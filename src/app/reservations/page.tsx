@@ -731,9 +731,6 @@ export default function ReservationsPage() {
                       : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                   } ${getFieldError('name') ? 'border-red-500' : ''}`}
                 />
-                {getFieldError('name') && (
-                  <span className="text-red-400 text-xs mt-1 font-medium">{getFieldError('name')}</span>
-                )}
               </div>
 
               {/* Email Field */}
@@ -762,9 +759,6 @@ export default function ReservationsPage() {
                       : "text-[#F5F0E6] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                   } ${getFieldError('email') ? 'border-red-500' : ''}`}
                 />
-                {getFieldError('email') && (
-                  <span className="text-red-400 text-xs mt-1 font-medium">{getFieldError('email')}</span>
-                )}
               </div>
             </div>
 
@@ -797,9 +791,6 @@ export default function ReservationsPage() {
                     : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                 } ${getFieldError('phone') ? 'border-red-500' : ''}`}
               />
-              {getFieldError('phone') && (
-                <span className="text-red-400 text-xs mt-1 font-medium">{getFieldError('phone')}</span>
-              )}
             </div>
 
             {/* Time Fields Row */}
@@ -839,9 +830,7 @@ export default function ReservationsPage() {
                     </option>
                   ))}
                 </select>
-                {getFieldError('startTime') && (
-                  <span className="text-red-400 text-xs mt-1 font-medium">{getFieldError('startTime')}</span>
-                )}
+
               </div>
 
               {/* End Time Field */}
@@ -878,9 +867,7 @@ export default function ReservationsPage() {
                     </option>
                   ))}
                 </select>
-                {getFieldError('endTime') && (
-                  <span className="text-red-400 text-xs mt-1 font-medium">{getFieldError('endTime')}</span>
-                )}
+
               </div>
             </div>
 
@@ -918,9 +905,7 @@ export default function ReservationsPage() {
                   </option>
                 ))}
               </select>
-              {getFieldError('guests') && (
-                <span className="text-red-400 text-xs mt-1 font-medium">{getFieldError('guests')}</span>
-              )}
+
               {/* Enhanced warnings for guest count */}
               {validationWarnings.length > 0 && (
                 <div className="mt-2">
