@@ -710,7 +710,7 @@ export default function ReservationsPage() {
                     ? "bg-beige"
                     : "bg-beige"
                 }`}>
-                  👤 {t("reservations.fullName")}*
+                  👤 {t("reservations.fullName")}<span className="text-red-500">*</span>
                 </label>
                 <input
                   id="name-field"
@@ -743,7 +743,7 @@ export default function ReservationsPage() {
                     ? "bg-beige"
                     : "bg-beige"
                 }`}>
-                  📧 {t("reservations.email")}*
+                  📧 {t("reservations.email")}<span className="text-red-500">*</span>
                 </label>
                 <input
                   id="email-field"
@@ -759,7 +759,7 @@ export default function ReservationsPage() {
                   className={`p-3 rounded-xl font-medium text-xs transition-all duration-300 focus:scale-105 ${
                     theme === "dark"
                       ? "text-[#F5F0E6] placeholder-gray-400 bg-[#1A1A1A]/50 border-2 border-white focus:border-white"
-                      : "text-[#1A1A1A] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
+                      : "text-[#F5F0E6] placeholder-gray-500 bg-[#FFFFFF]/50 border-2 border-white/50 focus:border-white"
                   } ${getFieldError('email') ? 'border-red-500' : ''}`}
                 />
                 {getFieldError('email') && (
@@ -775,7 +775,7 @@ export default function ReservationsPage() {
                   ? "bg-beige"
                   : "bg-beige"
               }`}>
-                📱 {t("reservations.phone")}*
+                📱 {t("reservations.phone")}<span className="text-red-500">*</span>
               </label>
               <input
                 id="phone-field"
@@ -811,7 +811,7 @@ export default function ReservationsPage() {
                     ? "bg-beige"
                     : "bg-beige"
                 }`}>
-                  🕐 {t("reservations.time")}*
+                  🕐 {t("reservations.time")}<span className="text-red-500">*</span>
                 </label>
                 <select
                   id="start-time-field"
@@ -851,7 +851,7 @@ export default function ReservationsPage() {
                     ? "bg-beige"
                     : "bg-beige"
                 }`}>
-                  🕐 {t("reservations.until")}*
+                  🕐 {t("reservations.until")}<span className="text-red-500">*</span>
                 </label>
                 <select
                   id="end-time-field"
@@ -891,7 +891,7 @@ export default function ReservationsPage() {
                   ? "bg-beige"
                   : "bg-beige"
               }`}>
-                👥 {t("reservations.numberOfGuests")}*
+                👥 {t("reservations.numberOfGuests")}<span className="text-red-500">*</span>
               </label>
               <select
                 id="guests-field"
