@@ -1501,13 +1501,13 @@ export default function MenuPage() {
                           >
                             Chateau Ksara
                           </h3>
-                          <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
-                          >
-                            <p>Blanc de l'observatoire glass| bottle</p>
-                          </div>
+                                                  <div
+                          className={`text-sm mb-4 leading-relaxed flex-grow ${
+                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                          }`}
+                        >
+                          <p>Blanc de l&apos;observatoire glass| bottle</p>
+                        </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
                               className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
@@ -1556,7 +1556,7 @@ export default function MenuPage() {
                             theme === "dark" ? "text-white" : "text-[#1A1A1A]"
                           }`}
                         >
-                          <p>Blanc de l'observatoire glass| bottle</p>
+                          <p>Blanc de l&apos;observatoire glass| bottle</p>
                         </div>
                         <div className="flex justify-center mt-auto pt-4">
                           <span
@@ -1590,7 +1590,7 @@ export default function MenuPage() {
                           <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
                             <Image
                               src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7714855b08404cf6a1f3fb6b94a27bc8"
-                              alt="rosé"
+                              alt="ros&eacute;"
                               width={96}
                               height={96}
                               className="w-full h-full object-cover transition-transform duration-300"
@@ -2315,8 +2315,8 @@ export default function MenuPage() {
                     }`}
                   />
 
-                  {activeCategory !== "drinks" &&
-                    menuItems[activeCategory]?.map((item, index) => {
+                  {(activeCategory as string) !== "drinks" && menuItems[activeCategory as keyof typeof menuItems] && 
+                    menuItems[activeCategory as keyof typeof menuItems].map((item, index) => {
                       const totalItems = menuItems[activeCategory]?.length || 0;
                       const isLastTwo = index >= totalItems - 2;
                       const isLastItem = index === totalItems - 1;
