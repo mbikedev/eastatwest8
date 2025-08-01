@@ -495,7 +495,7 @@ export default function MenuPage() {
         price: t("menu.drinks.lebaneseBeer.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9b5ac6ab7d3748b498a36e199b1e3709?format=webp",
         section: "Beers",
       },
       {
@@ -504,7 +504,7 @@ export default function MenuPage() {
         price: t("menu.drinks.hoegaardenBeer.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fe5c0b4c6662a4751862f4ec1744091d7",
         section: "Beers",
       },
       {
@@ -513,7 +513,7 @@ export default function MenuPage() {
         price: t("menu.drinks.jupilerBeer.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fb03af9e1892647cd8115ffe77722a869",
         section: "Beers",
       },
       {
@@ -522,7 +522,7 @@ export default function MenuPage() {
         price: t("menu.drinks.leffeLindemans.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F59548c417ee04e21ad2bff463252e713",
         section: "Beers",
       },
       {
@@ -531,7 +531,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraRed.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f5c0b4c6662a4751862f4ec1744091d7",
         section: "Red Wines",
       },
       {
@@ -540,7 +540,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraReserve.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7f5c0b4c6662a4751862f4ec1744091d7",
         section: "Red Wines",
       },
       {
@@ -549,7 +549,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKefrayaRed.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F6f5c0b4c6662a4751862f4ec1744091d7",
         section: "Red Wines",
       },
       {
@@ -558,7 +558,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraWhite.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5f5c0b4c6662a4751862f4ec1744091d7",
         section: "White Wines",
       },
       {
@@ -567,7 +567,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraBlanc.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4f5c0b4c6662a4751862f4ec1744091d7",
         section: "White Wines",
       },
       {
@@ -576,7 +576,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKefrayaWhite.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F3f5c0b4c6662a4751862f4ec1744091d7",
         section: "White Wines",
       },
       {
@@ -585,7 +585,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraRose.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F2f5c0b4c6662a4751862f4ec1744091d7",
         section: "Rosé Wines",
       },
       {
@@ -594,7 +594,7 @@ export default function MenuPage() {
         price: t("menu.drinks.roseDamascusJuice.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F1f5c0b4c6662a4751862f4ec1744091d7",
         section: "Soft Drinks",
       },
       {
@@ -603,7 +603,7 @@ export default function MenuPage() {
         price: t("menu.drinks.cocaCola.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F0f5c0b4c6662a4751862f4ec1744091d7",
         section: "Soft Drinks",
       },
       {
@@ -612,7 +612,7 @@ export default function MenuPage() {
         price: t("menu.drinks.schweppesAgrumes.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9f5c0b4c6662a4751862f4ec1744091d7",
         section: "Soft Drinks",
       },
       {
@@ -621,7 +621,7 @@ export default function MenuPage() {
         price: t("menu.drinks.ayran.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f5c0b4c6662a4751862f4ec1744091d7",
         section: "Soft Drinks",
       },
       {
@@ -630,7 +630,7 @@ export default function MenuPage() {
         price: t("menu.drinks.waterSpa.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7f5c0b4c6662a4751862f4ec1744091d7",
         section: "Soft Drinks",
       },
       {
@@ -639,7 +639,7 @@ export default function MenuPage() {
         price: t("menu.drinks.fantaIceTea.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F6f5c0b4c6662a4751862f4ec1744091d7",
         section: "Soft Drinks",
       },
       {
@@ -648,7 +648,7 @@ export default function MenuPage() {
         price: t("menu.drinks.schweppesTonic.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5f5c0b4c6662a4751862f4ec1744091d7",
         section: "Soft Drinks",
       },
       {
@@ -657,7 +657,7 @@ export default function MenuPage() {
         price: t("menu.drinks.arabianCoffee.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4f5c0b4c6662a4751862f4ec1744091d7",
         section: "Hot Drinks",
       },
       {
@@ -666,7 +666,7 @@ export default function MenuPage() {
         price: t("menu.drinks.cafeEspresso.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F3f5c0b4c6662a4751862f4ec1744091d7",
         section: "Hot Drinks",
       },
       {
@@ -675,7 +675,7 @@ export default function MenuPage() {
         price: t("menu.drinks.tea.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/placeholder.svg",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F2f5c0b4c6662a4751862f4ec1744091d7",
         section: "Hot Drinks",
       },
     ],
@@ -683,26 +683,23 @@ export default function MenuPage() {
 
   return (
     <div
-      className={`min-h-screen pt-16 transition-colors duration-300 ${
-        theme === "dark"
-          ? "bg-[#1A1A1A] text-white"
-          : "bg-[#F5F0E6] text-[#1A1A1A]"
-      }`}
+      className={`min-h-screen pt-16 transition-colors duration-300 ${theme === "dark"
+        ? "bg-[#1A1A1A] text-white"
+        : "bg-[#F5F0E6] text-[#1A1A1A]"
+        }`}
     >
       {/* Header */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1
-            className={`text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 ${
-              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-            }`}
+            className={`text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+              }`}
           >
             {t("menu.title")}
           </h1>
           <p
-            className={`text-xl max-w-3xl mx-auto ${
-              theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
-            }`}
+            className={`text-xl max-w-3xl mx-auto ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
+              }`}
           >
             {t("menu.subtitle")}
           </p>
@@ -718,15 +715,14 @@ export default function MenuPage() {
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id as Category)}
-                className={`px-4 py-3 md:px-6 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm md:text-base ${
-                  activeCategory === category.id
-                    ? theme === "dark"
-                      ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
-                      : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
-                    : theme === "dark"
+                className={`px-4 py-3 md:px-6 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm md:text-base ${activeCategory === category.id
+                  ? theme === "dark"
+                    ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
+                    : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
+                  : theme === "dark"
                     ? "bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 hover:border-white/40 shadow-md"
                     : "bg-white/90 text-[#1A1A1A] hover:bg-white border-2 border-[#A8D5BA]/40 hover:border-[#A8D5BA]/70 shadow-md"
-                }`}
+                  }`}
               >
                 {category.name}
               </button>
@@ -740,15 +736,14 @@ export default function MenuPage() {
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id as Category)}
-                  className={`flex-shrink-0 px-5 py-3 rounded-xl font-semibold transition-all duration-300 text-sm whitespace-nowrap min-w-max ${
-                    activeCategory === category.id
-                      ? theme === "dark"
-                        ? "bg-white text-[#1A1A1A] shadow-xl shadow-white/40 border-2 border-white/60"
-                        : "bg-[#A8D5BA] text-white shadow-xl shadow-[#A8D5BA]/40 border-2 border-[#A8D5BA]/60"
-                      : theme === "dark"
+                  className={`flex-shrink-0 px-5 py-3 rounded-xl font-semibold transition-all duration-300 text-sm whitespace-nowrap min-w-max ${activeCategory === category.id
+                    ? theme === "dark"
+                      ? "bg-white text-[#1A1A1A] shadow-xl shadow-white/40 border-2 border-white/60"
+                      : "bg-[#A8D5BA] text-white shadow-xl shadow-[#A8D5BA]/40 border-2 border-[#A8D5BA]/60"
+                    : theme === "dark"
                       ? "bg-white/10 text-white border-2 border-white/30 shadow-lg"
                       : "bg-white text-[#1A1A1A] border-2 border-[#A8D5BA]/50 shadow-lg"
-                  }`}
+                    }`}
                 >
                   {category.name}
                 </button>
@@ -758,19 +753,16 @@ export default function MenuPage() {
             {/* Mobile Scroll Indicator */}
             <div className="flex justify-center mt-2">
               <div
-                className={`h-1 w-16 rounded-full ${
-                  theme === "dark" ? "bg-white/30" : "bg-[#A8D5BA]/40"
-                }`}
+                className={`h-1 w-16 rounded-full ${theme === "dark" ? "bg-white/30" : "bg-[#A8D5BA]/40"
+                  }`}
               >
                 <div
-                  className={`h-full w-4 rounded-full transition-transform duration-300 ${
-                    theme === "dark" ? "bg-white" : "bg-[#A8D5BA]"
-                  }`}
+                  className={`h-full w-4 rounded-full transition-transform duration-300 ${theme === "dark" ? "bg-white" : "bg-[#A8D5BA]"
+                    }`}
                   style={{
-                    transform: `translateX(${
-                      categories.findIndex((cat) => cat.id === activeCategory) *
+                    transform: `translateX(${categories.findIndex((cat) => cat.id === activeCategory) *
                       12
-                    }px)`,
+                      }px)`,
                   }}
                 />
               </div>
@@ -783,24 +775,23 @@ export default function MenuPage() {
       <section className="px-4 sm:px-6 lg:px-8 pb-20">
         <div className="max-w-4xl mx-auto">
           {activeCategory === "setMenus" ||
-          activeCategory === "coldMezzes" ||
-          activeCategory === "hotMezzes" ||
-          activeCategory === "salads" ||
-          activeCategory === "lunchDishes" ||
-          activeCategory === "sandwiches" ||
-          activeCategory === "skewers" ||
-          activeCategory === "desserts" ||
-          activeCategory === "drinks" ? (
+            activeCategory === "coldMezzes" ||
+            activeCategory === "hotMezzes" ||
+            activeCategory === "salads" ||
+            activeCategory === "lunchDishes" ||
+            activeCategory === "sandwiches" ||
+            activeCategory === "skewers" ||
+            activeCategory === "desserts" ||
+            activeCategory === "drinks" ? (
             <div>
               {/* Fresh & Delicious title for Cold Mezzes section */}
               {activeCategory === "coldMezzes" && (
                 <div className="text-center mb-6 sm:mb-8">
                   <h2
-                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-bounce ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
-                        : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
-                    }`}
+                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-bounce ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
+                      : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
+                      }`}
                   >
                     🥗 Fresh & Delicious 🥗
                   </h2>
@@ -811,11 +802,10 @@ export default function MenuPage() {
               {activeCategory === "hotMezzes" && (
                 <div className="text-center mb-6 sm:mb-8">
                   <h2
-                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-pulse ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
-                        : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
-                    }`}
+                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-pulse ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
+                      : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
+                      }`}
                   >
                     🌶️ Hot & Spicy 🌶️
                   </h2>
@@ -826,11 +816,10 @@ export default function MenuPage() {
               {activeCategory === "salads" && (
                 <div className="text-center mb-6 sm:mb-8">
                   <h2
-                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-bounce ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
-                        : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
-                    }`}
+                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-bounce ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
+                      : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
+                      }`}
                   >
                     🥬 Garden Fresh
                   </h2>
@@ -841,11 +830,10 @@ export default function MenuPage() {
               {activeCategory === "lunchDishes" && (
                 <div className="text-center mb-6 sm:mb-8">
                   <h2
-                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-pulse ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
-                        : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
-                    }`}
+                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-pulse ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
+                      : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
+                      }`}
                   >
                     🍽️ Hearty & Satisfying 🍽️
                   </h2>
@@ -856,11 +844,10 @@ export default function MenuPage() {
               {activeCategory === "sandwiches" && (
                 <div className="text-center mb-6 sm:mb-8">
                   <h2
-                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-bounce ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
-                        : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
-                    }`}
+                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-bounce ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
+                      : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
+                      }`}
                   >
                     <span className="block sm:inline">
                       🥪 {t("menu.sandwiches.takeAwayOnly")} 🥪
@@ -873,20 +860,18 @@ export default function MenuPage() {
               {activeCategory === "skewers" && (
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
                   <h2
-                    className={`text-2xl sm:text-3xl md:text-4xl font-bold px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-bounce ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70"
-                        : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
-                    }`}
+                    className={`text-2xl sm:text-3xl md:text-4xl font-bold px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-bounce ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70"
+                      : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
+                      }`}
                   >
                     <span className="block sm:inline">
                       🔥 Authentic Grilled Skewers 🔥
                     </span>
                   </h2>
                   <p
-                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${
-                      theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
-                    }`}
+                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
+                      }`}
                   >
                     Perfectly marinated and grilled over open flames
                   </p>
@@ -897,18 +882,16 @@ export default function MenuPage() {
               {activeCategory === "desserts" && (
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
                   <h2
-                    className={`text-2xl sm:text-3xl md:text-4xl font-black px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-pulse ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70"
-                        : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
-                    }`}
+                    className={`text-2xl sm:text-3xl md:text-4xl font-black px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-pulse ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70"
+                      : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
+                      }`}
                   >
                     🍰 Sweet Delights 🍰
                   </h2>
                   <p
-                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${
-                      theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
-                    }`}
+                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
+                      }`}
                   >
                     Indulgent traditional desserts crafted with authentic
                     flavors
@@ -920,25 +903,23 @@ export default function MenuPage() {
               {activeCategory === "drinks" && (
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
                   <h2
-                    className={`text-2xl sm:text-3xl md:text-4xl font-black px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-pulse ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70"
-                        : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
-                    }`}
+                    className={`text-2xl sm:text-3xl md:text-4xl font-black px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-xl sm:rounded-2xl inline-block animate-pulse ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 md:border-3 border-white/80 shadow-2xl md:shadow-3xl shadow-white/70"
+                      : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
+                      }`}
                   >
                     🍹 Refreshing Beverages 🍹
                   </h2>
                   <p
-                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${
-                      theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                    }`}
+                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                      }`}
                   >
                     Traditional and modern drinks to complement your meal
                   </p>
                 </div>
               )}
 
-                                {/* Special layout for drinks category */}
+              {/* Special layout for drinks category */}
               {activeCategory === "drinks" ? (
                 <div>
                   {/* Beers Section */}
@@ -949,11 +930,10 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -972,9 +952,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -988,26 +967,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.lebaneseBeer.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.lebaneseBeer.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.lebaneseBeer.price')}
                             </span>
@@ -1016,11 +992,10 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1039,9 +1014,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1055,26 +1029,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.hoegaardenBeer.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.hoegaardenBeer.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.hoegaardenBeer.price')}
                             </span>
@@ -1088,11 +1059,10 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1111,9 +1081,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1127,26 +1096,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.jupilerBeer.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.jupilerBeer.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.jupilerBeer.price')}
                             </span>
@@ -1155,11 +1121,10 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1178,9 +1143,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1194,26 +1158,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.leffeLindemans.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.leffeLindemans.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.leffeLindemans.price')}
                             </span>
@@ -1236,11 +1197,10 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1259,9 +1219,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1275,26 +1234,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.chateauKsaraRed.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.chateauKsaraRed.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.chateauKsaraRed.price')}
                             </span>
@@ -1303,11 +1259,10 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1326,9 +1281,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1342,26 +1296,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.chateauKsaraReserve.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.chateauKsaraReserve.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.chateauKsaraReserve.price')}
                             </span>
@@ -1374,44 +1325,60 @@ export default function MenuPage() {
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
                       <div
-                        className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col relative ${
-                          theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
-                        }`}
+                        className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col relative ${theme === "dark"
+                          ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                          : "bg-white"
+                          }`}
                       >
                         <div className="flex justify-center mb-4">
-                          <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                          <div
+                            className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                            onClick={() => openLightbox(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F22c5aa78ee434a1a99a81f7140a61ef1",
+                              "Chateau Kefraya"
+                            )}
+                          >
                             <Image
                               src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F22c5aa78ee434a1a99a81f7140a61ef1"
                               alt="Chateau Kefraya"
                               width={96}
                               height={96}
-                              className="w-full h-full object-cover transition-transform duration-300"
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                             />
+                            {/* Hover Overlay */}
+                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                              <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                } backdrop-blur-sm`}>
+                                <svg
+                                  className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <h3
-                          className={`text-lg font-bold mb-2 ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
+                          className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                            }`}
                         >
                           Chateau Kefraya
                         </h3>
                         <div
-                          className={`text-sm mb-4 leading-relaxed flex-grow ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
+                          className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                            }`}
                         >
                           Bretéche bottle
                         </div>
                         <div className="flex justify-center mt-auto pt-4">
                           <span
-                            className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                              theme === "dark"
-                                ? "bg-white text-[#1A1A1A]"
-                                : "bg-[#252927] text-white"
-                            }`}
+                            className={`px-4 py-2 rounded-full text-sm font-bold ${theme === "dark"
+                              ? "bg-white text-[#1A1A1A]"
+                              : "bg-[#252927] text-white"
+                              }`}
                           >
                             36€
                           </span>
@@ -1431,44 +1398,60 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
-                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                            <div
+                              className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                              onClick={() => openLightbox(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab",
+                                "Chateau Ksara - Blanc de Blanc bottle"
+                              )}
+                            >
                               <Image
                                 src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab"
-                                alt="Café Espresso"
+                                alt="Chateau Ksara - Blanc de Blanc bottle"
                                 width={96}
                                 height={96}
-                                className="w-full h-full object-cover transition-transform duration-300"
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                               />
+                              {/* Hover Overlay */}
+                              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
+                                  <svg
+                                    className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                  </svg>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             Chateau Ksara
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             <p>Blanc de Blanc bottle</p>
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               36€
                             </span>
@@ -1477,44 +1460,60 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
-                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                            <div
+                              className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                              onClick={() => openLightbox(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab",
+                                "Chateau Ksara - Blanc de l'observatoire glass | bottle"
+                              )}
+                            >
                               <Image
                                 src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab"
-                                alt="Café Espresso"
+                                alt="Chateau Ksara - Blanc de l'observatoire glass | bottle"
                                 width={96}
                                 height={96}
-                                className="w-full h-full object-cover transition-transform duration-300"
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                               />
+                              {/* Hover Overlay */}
+                              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
+                                  <svg
+                                    className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                  </svg>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             Chateau Ksara
                           </h3>
-                                                  <div
-                          className={`text-sm mb-4 leading-relaxed flex-grow ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
-                        >
-                          <p>Blanc de l&apos;observatoire glass| bottle</p>
-                        </div>
+                          <div
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
+                          >
+                            <p>Blanc de l&apos;observatoire glass| bottle</p>
+                          </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               6€ | 29€
                             </span>
@@ -1523,48 +1522,53 @@ export default function MenuPage() {
                       </div>
                     </div>
                   </div>
+                  {/*Chateau Kefraya*/}
 
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
                       <div
-                        className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${
-                          theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
-                        }`}
+                        className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative 
+        ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10 text-white" : "bg-white text-[#1A1A1A]"}`}
                       >
                         <div className="flex justify-center mb-4">
-                          <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                          <div
+                            className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                            onClick={() => openLightbox(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Ff87dfc73492d41e790f06dc45c5aa7b5?format=webp",
+                              "Chateau Kefraya - Blanc de l'observatoire glass | bottle"
+                            )}
+                          >
                             <Image
                               src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Ff87dfc73492d41e790f06dc45c5aa7b5?format=webp"
-                              alt="Café Espresso"
+                              alt="Chateau Kefraya - Blanc de l'observatoire glass | bottle"
                               width={96}
                               height={96}
-                              className="w-full h-full object-cover transition-transform duration-300"
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                             />
+                            {/* Hover Overlay */}
+                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                              <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                } backdrop-blur-sm`}>
+                                <svg
+                                  className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <h3
-                          className={`text-lg font-bold mb-2 ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
-                        >
-                          Chateau Kefraya
-                        </h3>
-                        <div
-                          className={`text-sm mb-4 leading-relaxed flex-grow ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
-                        >
-                          <p>Blanc de l&apos;observatoire glass| bottle</p>
+                        <h3 className="text-lg font-bold mb-2">Chateau Kefraya</h3>
+                        <div className="text-sm mb-4 leading-relaxed flex-grow">
+                          <p>Blanc de l&apos;observatoire glass | bottle</p>
                         </div>
                         <div className="flex justify-center mt-auto pt-4">
                           <span
-                            className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                              theme === "dark"
-                                ? "bg-white text-[#1A1A1A]"
-                                : "bg-[#252927] text-white"
-                            }`}
+                            className={`px-4 py-2 rounded-full text-sm font-bold 
+            ${theme === "dark" ? "bg-white text-[#1A1A1A]" : "bg-[#252927] text-white"}`}
                           >
                             36€
                           </span>
@@ -1573,65 +1577,79 @@ export default function MenuPage() {
                     </section>
                   </div>
 
+
                   {/* Wine Rose Section */}
-                  <div className="relative mt-5 h-auto text-center text-2xl font-semibold">
-                    <h4 className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>WINE ROSE</h4>
+                  <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
+                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.wineRose.title')}</p>
                   </div>
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
                       <div
-                        className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${
-                          theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
-                        }`}
+                        className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative 
+        ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10 text-white" : "bg-white text-[#1A1A1A]"}`}
                       >
                         <div className="flex justify-center mb-4">
-                          <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                          <div
+                            className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                            onClick={() => openLightbox(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7714855b08404cf6a1f3fb6b94a27bc8",
+                              t('menu.drinks.chateauKsaraRose.title')
+                            )}
+                          >
                             <Image
                               src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7714855b08404cf6a1f3fb6b94a27bc8"
-                              alt="ros&eacute;"
+                              alt={t('menu.drinks.chateauKsaraRose.title')}
                               width={96}
                               height={96}
-                              className="w-full h-full object-cover transition-transform duration-300"
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                             />
+                            {/* Hover Overlay */}
+                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                              <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                } backdrop-blur-sm`}>
+                                <svg
+                                  className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <h3
-                          className={`text-lg font-bold mb-2 ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
-                        >
-                          Chateau Ksara Rosé (Bottle)
+                        <h3 className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>
+                          {t('menu.drinks.chateauKsaraRose.title')}
                         </h3>
+                        <div className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>
+                          <p>{t('menu.drinks.chateauKsaraRose.description')}</p>
+                        </div>
                         <div className="flex justify-center mt-auto pt-4">
                           <span
-                            className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                              theme === "dark"
-                                ? "bg-white text-[#1A1A1A]"
-                                : "bg-[#252927] text-white"
-                            }`}
+                            className={`px-4 py-2 rounded-full text-sm font-bold 
+            ${theme === "dark" ? "bg-white text-[#1A1A1A]" : "bg-[#252927] text-white"}`}
                           >
-                            30€
+                            {t('menu.drinks.chateauKsaraRose.price')}
                           </span>
                         </div>
                       </div>
                     </section>
                   </div>
 
+----------------------------------------------------------------------Soft Drinks----------------------------------------------------------------------
                   {/* Soft Drinks Section */}
                   <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
-                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>SOFT DRINKS</p>
+                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.softDrinks.title')}</p>
                   </div>
                   <div className="flex flex-col relative mt-5">
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1650,9 +1668,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1666,26 +1683,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.roseDamascusJuice.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.roseDamascusJuice.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.roseDamascusJuice.price')}
                             </span>
@@ -1694,11 +1708,10 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1717,9 +1730,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1733,26 +1745,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.cocaCola.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.cocaCola.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.cocaCola.price')}
                             </span>
@@ -1766,58 +1775,69 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
-                            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                            <div
+                              className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                              onClick={() => openLightbox(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9fa09b196784402f99a3937f271bf532?format=webp",
+                                t('menu.drinks.schweppesAgrumes.title')
+                              )}
+                            >
                               <Image
                                 src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9fa09b196784402f99a3937f271bf532?format=webp"
-                                alt="Café Espresso"
+                                alt={t('menu.drinks.schweppesAgrumes.title')}
                                 width={96}
                                 height={96}
-                                className="w-full h-full object-cover transition-transform duration-300"
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                               />
+                              {/* Hover Overlay */}
+                              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
+                                  <svg
+                                    className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                  </svg>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
-                            <p>
-                              <a
-                                href="https://eastatwest.com/menu/#"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                Schweppes (Agrumes I Virgin Mojito){" "}
-                              </a>
-                            </p>
+                            {t('menu.drinks.schweppesAgrumes.title')}
                           </h3>
+                          <div className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>
+                            {t('menu.drinks.schweppesAgrumes.description')}
+                          </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
-                              4€
+                              {t('menu.drinks.schweppesAgrumes.price')}
                             </span>
                           </div>
                         </div>
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1836,9 +1856,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1852,26 +1871,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.ayran.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.ayran.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.ayran.price')}
                             </span>
@@ -1885,11 +1901,10 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1908,9 +1923,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1924,26 +1938,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.waterSpa.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.waterSpa.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.waterSpa.price')}
                             </span>
@@ -1952,11 +1963,10 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          }`}
+                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            }`}
                         >
                           <div className="flex justify-center mb-4">
                             <div
@@ -1975,9 +1985,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1991,26 +2000,23 @@ export default function MenuPage() {
                             </div>
                           </div>
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.fantaIceTea.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.fantaIceTea.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {t('menu.drinks.fantaIceTea.price')}
                             </span>
@@ -2023,64 +2029,76 @@ export default function MenuPage() {
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
                       <div
-                        className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${
-                          theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
-                        }`}
+                        className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${theme === "dark"
+                          ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                          : "bg-white"
+                          }`}
                       >
                         <div className="flex justify-center mb-4">
-                          <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300">
+                          <div
+                            className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                            onClick={() => openLightbox(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F1c1247860000492eb3a3a045b86662a7?format=webp",
+                              t('menu.drinks.schweppesTonic.title')
+                            )}
+                          >
                             <Image
                               src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F1c1247860000492eb3a3a045b86662a7?format=webp"
-                              alt="Café Espresso"
+                              alt={t('menu.drinks.schweppesTonic.title')}
                               width={96}
                               height={96}
-                              className="w-full h-full object-cover transition-transform duration-300"
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                             />
+                            {/* Hover Overlay */}
+                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                              <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                } backdrop-blur-sm`}>
+                                <svg
+                                  className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <h3
-                          className={`text-lg font-bold mb-2 ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
+                          className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                            }`}
                         >
-                          <p>
-                            <a
-                              href="https://eastatwest.com/menu/#"
-                              rel="noopener noreferrer"
-                              target="_blank"
-                            >
-                              Schweppes (Indian tonic){" "}
-                            </a>
-                          </p>
+                          {t('menu.drinks.schweppesTonic.title')}
                         </h3>
+                        <div className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>
+                          {t('menu.drinks.schweppesTonic.description')}
+                        </div>
                         <div className="flex justify-center mt-auto pt-4">
                           <span
-                            className={`px-4 py-2 rounded-full text-sm font-bold shadow-md text-white ${
-                              theme === "dark"
-                                ? "bg-white text-[#1A1A1A]"
-                                : "bg-[#252927] text-white"
-                            }`}
+                            className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                              ? "bg-white text-[#1A1A1A]"
+                              : "bg-[#252927] text-white"
+                              }`}
                           >
-                            4€
+                            {t('menu.drinks.schweppesTonic.price')}
                           </span>
                         </div>
                       </div>
                     </section>
                   </div>
+----------------------------------------------------------------------Hot Drinks----------------------------------------------------------------------
 
                   {/* Hot Drinks Section */}
                   <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
-                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>HOT DRINKS</p>
+                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.hotDrinks.title')}</p>
                   </div>
 
                   <div className="flex flex-col relative mt-5">
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
-                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                        }`}>
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                          }`}>
                           <div className="flex justify-center mb-4">
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
@@ -2098,9 +2116,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -2113,31 +2130,27 @@ export default function MenuPage() {
                               </div>
                             </div>
                           </div>
-                          <h3 className={`text-lg font-bold mb-2 ${
-                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
-                          }`}>
+                          <h3 className={`text-lg font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                            }`}>
                             {t('menu.drinks.arabianCoffee.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.arabianCoffee.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
-                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
-                            }`}>
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                              }`}>
                               {t('menu.drinks.arabianCoffee.price')}
                             </span>
                           </div>
                         </div>
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
-                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${
-                          theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                        }`}>
+                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                          }`}>
                           <div className="flex justify-center mb-4">
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
@@ -2155,9 +2168,8 @@ export default function MenuPage() {
                               />
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <div className={`p-2 rounded-full ${
-                                  theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                  } backdrop-blur-sm`}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -2170,22 +2182,19 @@ export default function MenuPage() {
                               </div>
                             </div>
                           </div>
-                          <h3 className={`text-lg font-bold mb-2 ${
-                            theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
-                          }`}>
+                          <h3 className={`text-lg font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                            }`}>
                             {t('menu.drinks.cafeEspresso.title')}
                           </h3>
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {t('menu.drinks.cafeEspresso.description')}
                           </div>
                           <div className="flex justify-center mt-auto pt-4">
-                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                              theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
-                            }`}>
+                            <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                              }`}>
                               {t('menu.drinks.cafeEspresso.price')}
                             </span>
                           </div>
@@ -2196,9 +2205,8 @@ export default function MenuPage() {
 
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
-                      <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${
-                        theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                      }`}>
+                      <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
+                        }`}>
                         <div className="flex justify-center mb-4">
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
@@ -2216,9 +2224,8 @@ export default function MenuPage() {
                             />
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                              <div className={`p-2 rounded-full ${
-                                theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                              } backdrop-blur-sm`}>
+                              <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
+                                } backdrop-blur-sm`}>
                                 <svg
                                   className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                   fill="none"
@@ -2231,22 +2238,19 @@ export default function MenuPage() {
                             </div>
                           </div>
                         </div>
-                        <h3 className={`text-lg font-bold mb-2 ${
-                          theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
-                        }`}>
+                        <h3 className={`text-lg font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                          }`}>
                           {t('menu.drinks.tea.title')}
                         </h3>
                         <div
-                          className={`text-sm mb-4 leading-relaxed flex-grow ${
-                            theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                          }`}
+                          className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                            }`}
                         >
                           {t('menu.drinks.tea.description')}
                         </div>
                         <div className="flex justify-center mt-auto pt-4">
-                          <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                            theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
-                          }`}>
+                          <span className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === 'dark' ? 'bg-white text-[#1A1A1A]' : 'bg-[#252927] text-white'
+                            }`}>
                             {t('menu.drinks.tea.price')}
                           </span>
                         </div>
@@ -2255,67 +2259,67 @@ export default function MenuPage() {
                   </div>
                 </div>
               ) : (
+                //----------------------------------------------------------------------End of Hot Drinks----------------------------------------------------------------------
+               
                 // Universal card layout for all other categories
                 <div
                   className={`gap-6 relative ${
                     // Special layouts for categories with last-2-items-span-full-width requirement
                     activeCategory === "coldMezzes" ||
-                    activeCategory === "hotMezzes" ||
-                    activeCategory === "lunchDishes"
+                      activeCategory === "hotMezzes" ||
+                      activeCategory === "lunchDishes"
                       ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6" // Use 6-column grid for flexible spanning
                       : activeCategory === "skewers"
-                      ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Skewers: 2 items side by side
-                      : activeCategory === "desserts"
-                      ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Desserts: 2 columns, 2 rows
-                      : activeCategory === "sandwiches"
-                      ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Sandwiches: default with last item full width
-                      : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Default: 3 columns
-                  } ${theme === "dark" ? "shadow-2xl shadow-white/10" : ""}`}
+                        ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Skewers: 2 items side by side
+                        : activeCategory === "desserts"
+                          ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Desserts: 2 columns, 2 rows
+                          : activeCategory === "sandwiches"
+                            ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Sandwiches: default with last item full width
+                            : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Default: 3 columns
+                    } ${theme === "dark" ? "shadow-2xl shadow-white/10" : ""}`}
                 >
                   {/* Enhanced background for each section */}
                   <div
-                    className={`absolute inset-0 -m-8 rounded-2xl ${
-                      activeCategory === "coldMezzes"
-                        ? theme === "dark"
-                          ? "bg-gradient-to-br from-[#F5F0E6]/60 to-[#A8D5BA]/20"
-                          : "bg-gradient-to-br from-[#FFFFFF]/90 to-[#A8D5BA]/30"
-                        : activeCategory === "hotMezzes"
+                    className={`absolute inset-0 -m-8 rounded-2xl ${activeCategory === "coldMezzes"
+                      ? theme === "dark"
+                        ? "bg-gradient-to-br from-[#F5F0E6]/60 to-[#A8D5BA]/20"
+                        : "bg-gradient-to-br from-[#FFFFFF]/90 to-[#A8D5BA]/30"
+                      : activeCategory === "hotMezzes"
                         ? theme === "dark"
                           ? "bg-gradient-to-br from-orange-900/30 to-red-900/20"
                           : "bg-gradient-to-br from-orange-50/90 to-red-50/60"
                         : activeCategory === "salads"
-                        ? theme === "dark"
-                          ? "bg-gradient-to-br from-green-900/30 to-lime-900/20"
-                          : "bg-gradient-to-br from-green-50/90 to-lime-50/60"
-                        : activeCategory === "lunchDishes"
-                        ? theme === "dark"
-                          ? "bg-gradient-to-br from-blue-900/30 to-indigo-900/20"
-                          : "bg-gradient-to-br from-blue-50/90 to-indigo-50/60"
-                        : activeCategory === "sandwiches"
-                        ? theme === "dark"
-                          ? "bg-gradient-to-br from-purple-900/30 to-pink-900/20"
-                          : "bg-gradient-to-br from-purple-50/90 to-pink-50/60"
-                        : activeCategory === "skewers"
-                        ? theme === "dark"
-                          ? "bg-gradient-to-br from-red-900/50 to-orange-900/40"
-                          : "bg-gradient-to-br from-red-50/95 to-orange-50/80"
-                        : activeCategory === "desserts"
-                        ? theme === "dark"
-                          ? "bg-gradient-to-br from-pink-900/50 to-purple-900/40"
-                          : "bg-gradient-to-br from-pink-50/95 to-purple-50/80"
-                        : activeCategory === "setMenus"
-                        ? theme === "dark"
-                          ? "bg-gradient-to-br from-[#F5F0E6] to-[#A8D5BA]/60"
-                          : "bg-gradient-to-br from-[#FFFFFF] to-[#A8D5BA]/30"
-                        : theme === "dark"
-                        ? "bg-gradient-to-br from-gray-800/60 to-gray-700/20"
-                        : "bg-gradient-to-br from-gray-50/90 to-gray-100/30"
-                    } backdrop-blur-sm -z-10 ${
-                      theme === "dark" ? "shadow-xl shadow-white/5" : ""
-                    }`}
+                          ? theme === "dark"
+                            ? "bg-gradient-to-br from-green-900/30 to-lime-900/20"
+                            : "bg-gradient-to-br from-green-50/90 to-lime-50/60"
+                          : activeCategory === "lunchDishes"
+                            ? theme === "dark"
+                              ? "bg-gradient-to-br from-blue-900/30 to-indigo-900/20"
+                              : "bg-gradient-to-br from-blue-50/90 to-indigo-50/60"
+                            : activeCategory === "sandwiches"
+                              ? theme === "dark"
+                                ? "bg-gradient-to-br from-purple-900/30 to-pink-900/20"
+                                : "bg-gradient-to-br from-purple-50/90 to-pink-50/60"
+                              : activeCategory === "skewers"
+                                ? theme === "dark"
+                                  ? "bg-gradient-to-br from-red-900/50 to-orange-900/40"
+                                  : "bg-gradient-to-br from-red-50/95 to-orange-50/80"
+                                : activeCategory === "desserts"
+                                  ? theme === "dark"
+                                    ? "bg-gradient-to-br from-pink-900/50 to-purple-900/40"
+                                    : "bg-gradient-to-br from-pink-50/95 to-purple-50/80"
+                                  : activeCategory === "setMenus"
+                                    ? theme === "dark"
+                                      ? "bg-gradient-to-br from-[#F5F0E6] to-[#A8D5BA]/60"
+                                      : "bg-gradient-to-br from-[#FFFFFF] to-[#A8D5BA]/30"
+                                    : theme === "dark"
+                                      ? "bg-gradient-to-br from-gray-800/60 to-gray-700/20"
+                                      : "bg-gradient-to-br from-gray-50/90 to-gray-100/30"
+                      } backdrop-blur-sm -z-10 ${theme === "dark" ? "shadow-xl shadow-white/5" : ""
+                      }`}
                   />
 
-                  {(activeCategory as string) !== "drinks" && menuItems[activeCategory as keyof typeof menuItems] && 
+                  {menuItems[activeCategory as keyof typeof menuItems] &&
                     menuItems[activeCategory as keyof typeof menuItems].map((item, index) => {
                       const totalItems = menuItems[activeCategory]?.length || 0;
                       const isLastTwo = index >= totalItems - 2;
@@ -2349,11 +2353,10 @@ export default function MenuPage() {
                       return (
                         <div
                           key={index}
-                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${
-                            theme === "dark"
-                              ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                              : "bg-white"
-                          } ${columnSpanClass}`}
+                          className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                            : "bg-white"
+                            } ${columnSpanClass}`}
                         >
                           {/* Circular Image */}
                           {item.image && (
@@ -2375,18 +2378,16 @@ export default function MenuPage() {
                                 {/* Hover Overlay */}
                                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                   <div
-                                    className={`p-2 rounded-full ${
-                                      theme === "dark"
-                                        ? "bg-white/90"
-                                        : "bg-black/80"
-                                    } backdrop-blur-sm`}
+                                    className={`p-2 rounded-full ${theme === "dark"
+                                      ? "bg-white/90"
+                                      : "bg-black/80"
+                                      } backdrop-blur-sm`}
                                   >
                                     <svg
-                                      className={`w-4 h-4 ${
-                                        theme === "dark"
-                                          ? "text-gray-900"
-                                          : "text-white"
-                                      }`}
+                                      className={`w-4 h-4 ${theme === "dark"
+                                        ? "text-gray-900"
+                                        : "text-white"
+                                        }`}
                                       fill="none"
                                       stroke="currentColor"
                                       viewBox="0 0 24 24"
@@ -2406,9 +2407,8 @@ export default function MenuPage() {
 
                           {/* Title */}
                           <h3
-                            className={`text-lg font-bold mb-2 ${
-                              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                              }`}
                           >
                             {item.name}
                           </h3>
@@ -2417,11 +2417,10 @@ export default function MenuPage() {
                           {item.spicy && (
                             <div className="flex justify-center mb-3">
                               <span
-                                className={`text-xs font-medium px-3 py-1 rounded-full ${
-                                  theme === "dark"
-                                    ? "bg-red-900/50 text-red-200 border border-red-400/40"
-                                    : "bg-red-100 text-red-700 border border-red-400"
-                                }`}
+                                className={`text-xs font-medium px-3 py-1 rounded-full ${theme === "dark"
+                                  ? "bg-red-900/50 text-red-200 border border-red-400/40"
+                                  : "bg-red-100 text-red-700 border border-red-400"
+                                  }`}
                               >
                                 🌶️ Spicy
                               </span>
@@ -2432,11 +2431,10 @@ export default function MenuPage() {
                           {item.vegetarian && (
                             <div className="flex justify-center mb-3">
                               <span
-                                className={`text-xs font-medium px-3 py-1 rounded-full ${
-                                  theme === "dark"
-                                    ? "bg-emerald-900/50 text-emerald-200 border border-emerald-400/40"
-                                    : "bg-emerald-100 text-emerald-700 border border-emerald-400"
-                                }`}
+                                className={`text-xs font-medium px-3 py-1 rounded-full ${theme === "dark"
+                                  ? "bg-emerald-900/50 text-emerald-200 border border-emerald-400/40"
+                                  : "bg-emerald-100 text-emerald-700 border border-emerald-400"
+                                  }`}
                               >
                                 {(() => {
                                   switch (activeCategory) {
@@ -2466,11 +2464,10 @@ export default function MenuPage() {
 
                           {/* Description - with Read more button for set menus */}
                           <div
-                            className={`text-sm mb-4 leading-relaxed flex-grow ${
-                              theme === "dark"
-                                ? "text-[#E6E6E6]"
-                                : "text-[#1A1A1A]"
-                            }`}
+                            className={`text-sm mb-4 leading-relaxed flex-grow ${theme === "dark"
+                              ? "text-[#E6E6E6]"
+                              : "text-[#1A1A1A]"
+                              }`}
                           >
                             {activeCategory === "setMenus" && item.id ? (
                               <div className="flex justify-center">
@@ -2481,11 +2478,10 @@ export default function MenuPage() {
                                       item.description
                                     )
                                   }
-                                  className={`text-sm font-medium transition-colors duration-200 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md px-3 py-2 ${
-                                    theme === "dark"
-                                      ? "text-white hover:text-white focus:ring-white"
-                                      : "text-[#A8D5BA] hover:text-[#1A1A1A] focus:ring-[#A8D5BA]"
-                                  }`}
+                                  className={`text-sm font-medium transition-colors duration-200 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md px-3 py-2 ${theme === "dark"
+                                    ? "text-white hover:text-white focus:ring-white"
+                                    : "text-[#A8D5BA] hover:text-[#1A1A1A] focus:ring-[#A8D5BA]"
+                                    }`}
                                 >
                                   {t("menu.setMenus.readMore")}
                                 </button>
@@ -2498,11 +2494,10 @@ export default function MenuPage() {
                           {/* Price Badge */}
                           <div className="flex justify-center mt-auto pt-4">
                             <span
-                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${
-                                theme === "dark"
-                                  ? "bg-white text-[#1A1A1A]"
-                                  : "bg-[#252927] text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                ? "bg-white text-[#1A1A1A]"
+                                : "bg-[#252927] text-white"
+                                }`}
                             >
                               {item.price}
                             </span>
@@ -2520,11 +2515,10 @@ export default function MenuPage() {
               {activeCategory === "setMenus" && (
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
                   <h2
-                    className={`text-2xl sm:text-3xl md:text-4xl font-bold px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-5 rounded-xl sm:rounded-2xl inline-block animate-pulse ${
-                      theme === "dark"
-                        ? "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA] text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/60"
-                        : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/30 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/30"
-                    }`}
+                    className={`text-2xl sm:text-3xl md:text-4xl font-bold px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-5 rounded-xl sm:rounded-2xl inline-block animate-pulse ${theme === "dark"
+                      ? "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA] text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/60"
+                      : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/30 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/30"
+                      }`}
                   >
                     <span className="block sm:inline">
                       👨‍🍳 Chef&apos;s Special Menus 👨‍🍳
@@ -2534,27 +2528,24 @@ export default function MenuPage() {
               )}
 
               <div
-                className={`grid gap-6 sm:gap-8 ${
-                  theme === "dark" ? "shadow-2xl shadow-white/10" : ""
-                }`}
+                className={`grid gap-6 sm:gap-8 ${theme === "dark" ? "shadow-2xl shadow-white/10" : ""
+                  }`}
               >
                 {(menuItems[activeCategory] as MenuItem[])?.map(
                   (item, index) => (
                     <div
                       key={index}
-                      className={`rounded-lg transition-all duration-300 hover:transform hover:scale-105 shadow-md ${
-                        item.isMenuDisplay || item.isVeganMenuDisplay
-                          ? "overflow-hidden"
-                          : "p-6"
-                      } ${
-                        activeCategory === "setMenus"
+                      className={`rounded-lg transition-all duration-300 hover:transform hover:scale-105 shadow-md ${item.isMenuDisplay || item.isVeganMenuDisplay
+                        ? "overflow-hidden"
+                        : "p-6"
+                        } ${activeCategory === "setMenus"
                           ? theme === "dark"
                             ? "bg-[#F5F0E6]/95 hover:bg-[#F5F0E6]/90 border-2 border-[#A8D5BA]/40 shadow-[#A8D5BA]/30 hover:shadow-[#A8D5BA]/50 backdrop-blur-sm shadow-xl shadow-white/10"
                             : "bg-[#FFFFFF]/98 hover:bg-[#FFFFFF] border-2 border-[#A8D5BA]/60 shadow-[#A8D5BA]/20 hover:shadow-[#A8D5BA]/40 backdrop-blur-sm"
                           : theme === "dark"
-                          ? "bg-[#F5F0E6] hover:bg-[#F5F0E6] border border-[#A8D5BA] shadow-[#A8D5BA]/30 shadow-xl shadow-white/10"
-                          : "bg-[#FFFFFF] hover:bg-[#A8D5BA] shadow-[#A8D5BA]/50"
-                      }`}
+                            ? "bg-[#F5F0E6] hover:bg-[#F5F0E6] border border-[#A8D5BA] shadow-[#A8D5BA]/30 shadow-xl shadow-white/10"
+                            : "bg-[#FFFFFF] hover:bg-[#A8D5BA] shadow-[#A8D5BA]/50"
+                        }`}
                     >
                       {item.isMenuDisplay || item.isVeganMenuDisplay ? (
                         // Special layout for menu display items
@@ -2579,18 +2570,16 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div
-                                  className={`p-2 sm:p-3 rounded-full ${
-                                    theme === "dark"
-                                      ? "bg-[#A8D5BA]/90"
-                                      : "bg-[#A8D5BA]/80"
-                                  } backdrop-blur-sm`}
+                                  className={`p-2 sm:p-3 rounded-full ${theme === "dark"
+                                    ? "bg-[#A8D5BA]/90"
+                                    : "bg-[#A8D5BA]/80"
+                                    } backdrop-blur-sm`}
                                 >
                                   <svg
-                                    className={`w-6 h-6 sm:w-8 sm:h-8 ${
-                                      theme === "dark"
-                                        ? "text-[#1A1A1A]"
-                                        : "text-[#FFFFFF]"
-                                    }`}
+                                    className={`w-6 h-6 sm:w-8 sm:h-8 ${theme === "dark"
+                                      ? "text-[#1A1A1A]"
+                                      : "text-[#FFFFFF]"
+                                      }`}
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -2611,40 +2600,37 @@ export default function MenuPage() {
                           <div className="flex flex-col justify-center order-2 lg:order-2">
                             <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2 sm:mb-3">
                               <h3
-                                className={`text-xl sm:text-2xl font-bold ${
-                                  activeCategory === "setMenus"
-                                    ? theme === "dark"
-                                      ? "text-white"
-                                      : "text-[#1A1A1A]"
-                                    : theme === "dark"
+                                className={`text-xl sm:text-2xl font-bold ${activeCategory === "setMenus"
+                                  ? theme === "dark"
                                     ? "text-white"
                                     : "text-[#1A1A1A]"
-                                }`}
+                                  : theme === "dark"
+                                    ? "text-white"
+                                    : "text-[#1A1A1A]"
+                                  }`}
                               >
                                 {item.name}
                               </h3>
                               {item.vegetarian && (
                                 <span
-                                  className={`text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full ${
-                                    activeCategory === "setMenus"
-                                      ? theme === "dark"
-                                        ? "bg-white/20 text-white border border-white/40"
-                                        : "bg-[#A8D5BA]/100 text-white border border-[#A8D5BA]"
-                                      : theme === "dark"
+                                  className={`text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full ${activeCategory === "setMenus"
+                                    ? theme === "dark"
+                                      ? "bg-white/20 text-white border border-white/40"
+                                      : "bg-[#A8D5BA]/100 text-white border border-[#A8D5BA]"
+                                    : theme === "dark"
                                       ? "text-white"
                                       : "text-[#1A1A1A]"
-                                  }`}
+                                    }`}
                                 >
                                   🌱 Vegan
                                 </span>
                               )}
                             </div>
                             <div
-                              className={`text-base sm:text-lg mb-3 sm:mb-4 italic ${
-                                theme === "dark"
-                                  ? "text-[#E6E6E6]"
-                                  : "text-[#1A1A1A]"
-                              }`}
+                              className={`text-base sm:text-lg mb-3 sm:mb-4 italic ${theme === "dark"
+                                ? "text-[#E6E6E6]"
+                                : "text-[#1A1A1A]"
+                                }`}
                             >
                               {activeCategory === "setMenus" && item.id ? (
                                 <div className="flex justify-center">
@@ -2655,11 +2641,10 @@ export default function MenuPage() {
                                         item.description
                                       )
                                     }
-                                    className={`text-sm sm:text-base font-medium transition-colors duration-200 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md px-3 py-2 ${
-                                      theme === "dark"
-                                        ? "text-white hover:text-white focus:ring-white"
-                                        : "text-[#A8D5BA] hover:text-[#1A1A1A] focus:ring-[#A8D5BA]"
-                                    }`}
+                                    className={`text-sm sm:text-base font-medium transition-colors duration-200 hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md px-3 py-2 ${theme === "dark"
+                                      ? "text-white hover:text-white focus:ring-white"
+                                      : "text-[#A8D5BA] hover:text-[#1A1A1A] focus:ring-[#A8D5BA]"
+                                      }`}
                                   >
                                     {t("menu.setMenus.readMore")}
                                   </button>
@@ -2672,11 +2657,10 @@ export default function MenuPage() {
                             </div>
                             <div className="text-center sm:text-right">
                               <span
-                                className={`text-2xl sm:text-3xl font-bold ${
-                                  theme === "dark"
-                                    ? "text-white"
-                                    : "text-[#1A1A1A]"
-                                }`}
+                                className={`text-2xl sm:text-3xl font-bold ${theme === "dark"
+                                  ? "text-white"
+                                  : "text-[#1A1A1A]"
+                                  }`}
                               >
                                 {item.price}
                               </span>
@@ -2689,11 +2673,10 @@ export default function MenuPage() {
                           <div className="flex-1 mb-3 sm:mb-0">
                             <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 mb-2">
                               <h3
-                                className={`text-lg sm:text-xl font-semibold ${
-                                  theme === "dark"
-                                    ? "text-white"
-                                    : "text-[#1A1A1A]"
-                                }`}
+                                className={`text-lg sm:text-xl font-semibold ${theme === "dark"
+                                  ? "text-white"
+                                  : "text-[#1A1A1A]"
+                                  }`}
                               >
                                 {item.name}
                               </h3>
@@ -2711,22 +2694,20 @@ export default function MenuPage() {
                               </div>
                             </div>
                             <p
-                              className={`text-sm sm:text-base ${
-                                theme === "dark"
-                                  ? "text-[#E6E6E6]"
-                                  : "text-[#1A1A1A]"
-                              }`}
+                              className={`text-sm sm:text-base ${theme === "dark"
+                                ? "text-[#E6E6E6]"
+                                : "text-[#1A1A1A]"
+                                }`}
                             >
                               {item.description}
                             </p>
                           </div>
                           <div className="text-center sm:text-right sm:ml-4">
                             <span
-                              className={`text-xl sm:text-2xl font-bold ${
-                                theme === "dark"
-                                  ? "text-white"
-                                  : "text-[#1A1A1A]"
-                              }`}
+                              className={`text-xl sm:text-2xl font-bold ${theme === "dark"
+                                ? "text-white"
+                                : "text-[#1A1A1A]"
+                                }`}
                             >
                               {item.price}
                             </span>
@@ -2744,45 +2725,40 @@ export default function MenuPage() {
 
       {/* CTA Section */}
       <section
-        className={`py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 ${
-          theme === "dark"
-            ? "bg-[#1A1A1A] border-t border-white/20"
-            : "bg-[#F5F0E6]"
-        }`}
+        className={`py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 ${theme === "dark"
+          ? "bg-[#1A1A1A] border-t border-white/20"
+          : "bg-[#F5F0E6]"
+          }`}
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2
-            className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ${
-              theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-            }`}
+            className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+              }`}
           >
             Ready to Experience Our Cuisine?
           </h2>
           <p
-            className={`text-lg sm:text-xl mb-6 sm:mb-8 px-4 ${
-              theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
-            }`}
+            className={`text-lg sm:text-xl mb-6 sm:mb-8 px-4 ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
+              }`}
           >
             Book a table and enjoy our fusion dishes in our elegant restaurant.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
               href="/reservations"
-              className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${
-                theme === "dark"
-                  ? "bg-white text-[#1A1A1A] hover:bg-white/90 focus:ring-white/30"
-                  : "bg-[#A8D5BA] text-white hover:bg-[#A8D5BA]/90 focus:ring-[#A8D5BA]/30"
-              }`}
+              className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${theme === "dark"
+                ? "bg-white text-[#1A1A1A] hover:bg-white/90 focus:ring-white/30"
+                : "bg-[#A8D5BA] text-white hover:bg-[#A8D5BA]/90 focus:ring-[#A8D5BA]/30"
+                }`}
             >
               {t("nav.reservations")}
             </a>
             <a
               href="/takeaway"
-              className={`inline-block border-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${
-                theme === "dark"
-                  ? "border-white text-white hover:bg-white hover:text-[#1A1A1A] focus:ring-white/30"
-                  : "border-[#A8D5BA] text-[#A8D5BA] hover:bg-[#A8D5BA] hover:text-white focus:ring-[#A8D5BA]/30"
-              }`}
+              className={`inline-block border-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${theme === "dark"
+                ? "border-white text-white hover:bg-white hover:text-[#1A1A1A] focus:ring-white/30"
+                : "border-[#A8D5BA] text-[#A8D5BA] hover:bg-[#A8D5BA] hover:text-white focus:ring-[#A8D5BA]/30"
+                }`}
             >
               {t("nav.takeaway")}
             </a>
@@ -2801,33 +2777,29 @@ export default function MenuPage() {
           onClick={closeModal}
         >
           <div
-            className={`relative max-w-2xl w-full max-h-[80vh] overflow-y-auto rounded-2xl shadow-2xl ${
-              theme === "dark"
-                ? "bg-[#1A1A1A] text-white"
-                : "bg-white text-[#1A1A1A]"
-            }`}
+            className={`relative max-w-2xl w-full max-h-[80vh] overflow-y-auto rounded-2xl shadow-2xl ${theme === "dark"
+              ? "bg-[#1A1A1A] text-white"
+              : "bg-white text-[#1A1A1A]"
+              }`}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
             <div
-              className={`sticky top-0 z-10 flex justify-between items-center p-6 border-b ${
-                theme === "dark"
-                  ? "border-white/20 bg-[#1A1A1A]"
-                  : "border-gray-200 bg-white"
-              }`}
+              className={`sticky top-0 z-10 flex justify-between items-center p-6 border-b ${theme === "dark"
+                ? "border-white/20 bg-[#1A1A1A]"
+                : "border-gray-200 bg-white"
+                }`}
             >
               <h2
-                className={`text-xl sm:text-2xl font-bold ${
-                  theme === "dark" ? "text-white" : "text-[#1A1A1A]"
-                }`}
+                className={`text-xl sm:text-2xl font-bold ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                  }`}
               >
                 {modalContent.title}
               </h2>
               <button
                 onClick={closeModal}
-                className={`p-2 rounded-full transition-colors duration-200 ${
-                  theme === "dark" ? "hover:bg-white/10" : "hover:bg-gray-100"
-                }`}
+                className={`p-2 rounded-full transition-colors duration-200 ${theme === "dark" ? "hover:bg-white/10" : "hover:bg-gray-100"
+                  }`}
                 aria-label="Close modal"
               >
                 <svg
@@ -2849,9 +2821,8 @@ export default function MenuPage() {
             {/* Content */}
             <div className="p-6">
               <div
-                className={`prose prose-lg max-w-none ${
-                  theme === "dark" ? "prose-invert" : ""
-                }`}
+                className={`prose prose-lg max-w-none ${theme === "dark" ? "prose-invert" : ""
+                  }`}
               >
                 <div className="whitespace-pre-line leading-relaxed text-base sm:text-lg">
                   {modalContent.description}
@@ -2861,19 +2832,17 @@ export default function MenuPage() {
 
             {/* Footer */}
             <div
-              className={`sticky bottom-0 flex justify-end p-6 border-t ${
-                theme === "dark"
-                  ? "border-gray-700 bg-gray-800"
-                  : "border-gray-200 bg-white"
-              }`}
+              className={`sticky bottom-0 flex justify-end p-6 border-t ${theme === "dark"
+                ? "border-gray-700 bg-gray-800"
+                : "border-gray-200 bg-white"
+                }`}
             >
               <button
                 onClick={closeModal}
-                className={`px-6 py-2 rounded-lg font-medium transition-colors duration-200 ${
-                  theme === "dark"
-                    ? "bg-[#A8D5BA] text-[#1A1A1A] hover:bg-[#A8D5BA]/90"
-                    : "bg-[#A8D5BA] text-white hover:bg-[#A8D5BA]/90"
-                }`}
+                className={`px-6 py-2 rounded-lg font-medium transition-colors duration-200 ${theme === "dark"
+                  ? "bg-[#A8D5BA] text-[#1A1A1A] hover:bg-[#A8D5BA]/90"
+                  : "bg-[#A8D5BA] text-white hover:bg-[#A8D5BA]/90"
+                  }`}
               >
                 {t("menu.setMenus.readLess")}
               </button>

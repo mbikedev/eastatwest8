@@ -463,6 +463,15 @@
         "title": "Tea (Mint Tea / Black Tea / Chamomile)",
         "description": "Hot tea varieties",
         "price": "3.25€"
+      },
+      "wineRose": {
+        "title": "WINE ROSE"
+      },
+      "softDrinks": {
+        "title": "SOFT DRINKS"
+      },
+      "hotDrinks": {
+        "title": "HOT DRINKS"
       }
     }
   },

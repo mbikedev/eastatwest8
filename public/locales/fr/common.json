@@ -462,6 +462,15 @@
         "title": "Thé (Thé à la Menthe / Thé Noir / Camomille)",
         "description": "Variétés de thé chaud",
         "price": "3,25€"
+      },
+      "wineRose": {
+        "title": "VIN ROSÉ"
+      },
+      "softDrinks": {
+        "title": "BOISSONS RAFRAÎCHISSANTES"
+      },
+      "hotDrinks": {
+        "title": "BOISSONS CHAUDES"
       }
     }
   },

@@ -462,6 +462,15 @@
         "title": "Thee (Munt Thee / Zwarte Thee / Kamille)",
         "description": "Warme theesoorten",
         "price": "3,25€"
+      },
+      "wineRose": {
+        "title": "ROSE WIJN"
+      },
+      "softDrinks": {
+        "title": "FRISDRANKEN"
+      },
+      "hotDrinks": {
+        "title": "WARME DRANKEN"
       }
     }
   },
