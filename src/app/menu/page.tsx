@@ -495,7 +495,7 @@ export default function MenuPage() {
         price: t("menu.drinks.lebaneseBeer.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/drinks/leffe brown beer lindemans kriek.webp",
+        image: "/images/drinks/lebanese-beer.webp",
         section: "Beers",
       },
       {
@@ -531,7 +531,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraRed.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/drinks/chateau-ksara-rosé.webp",
+        image: "/images/drinks/chateau-kefraya-red-wine.webp",
         section: "Red Wines",
       },
       {
@@ -639,7 +639,7 @@ export default function MenuPage() {
         price: t("menu.drinks.fantaIceTea.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/drinks/fanta orange-ice-tea.webp",
+        image: "/images/drinks/fanta-ice-tea.webp",
         section: "Soft Drinks",
       },
       {
@@ -648,7 +648,7 @@ export default function MenuPage() {
         price: t("menu.drinks.schweppesTonic.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+        image: "/images/drinks/indian-tonic.webp",
         section: "Soft Drinks",
       },
       {
@@ -657,7 +657,7 @@ export default function MenuPage() {
         price: t("menu.drinks.arabianCoffee.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+        image: "/images/drinks/arabian-coffee.webp",
         section: "Hot Drinks",
       },
       {
@@ -666,7 +666,7 @@ export default function MenuPage() {
         price: t("menu.drinks.cafeEspresso.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+        image: "/images/drinks/espresso.webp",
         section: "Hot Drinks",
       },
       {
@@ -675,7 +675,7 @@ export default function MenuPage() {
         price: t("menu.drinks.tea.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+        image: "/images/drinks/the-camomille.webp",
         section: "Hot Drinks",
       },
     ],
@@ -939,12 +939,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/leffe brown beer lindemans kriek.webp",
+                                "/images/drinks/lebanese-beer.webp",
                                 t('menu.drinks.lebaneseBeer.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/leffe brown beer lindemans kriek.webp"
+                                src="/images/drinks/lebanese-beer.webp"
                                 alt={t('menu.drinks.lebaneseBeer.title')}
                                 width={96}
                                 height={96}
@@ -1206,12 +1206,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/chateau-ksara-rosé.webp",
+                                "/images/drinks/chateau-ksara-red.webp",
                                 t('menu.drinks.chateauKsaraRed.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/chateau-ksara-rosé.webp"
+                                src="/images/drinks/chateau-ksara-red.webp"
                                 alt={t('menu.drinks.chateauKsaraRed.title')}
                                 width={96}
                                 height={96}
@@ -1268,12 +1268,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/chateau-ksara-rosé.webp",
+                                "/images/drinks/chateau-ksara-red.webp",
                                 t('menu.drinks.chateauKsaraReserve.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/chateau-ksara-rosé.webp"
+                                src="/images/drinks/chateau-ksara-red.webp"
                                 alt={t('menu.drinks.chateauKsaraReserve.title')}
                                 width={96}
                                 height={96}
@@ -1334,12 +1334,12 @@ export default function MenuPage() {
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                             onClick={() => openLightbox(
-                              "/images/drinks/chateau-ksara-rosé.webp",
+                              "/images/drinks/chateau-kefraya-red.webp",
                               "Chateau Kefraya"
                             )}
                           >
                             <Image
-                              src="/images/drinks/chateau-ksara-rosé.webp"
+                              src="/images/drinks/chateau-kefraya-red.webp"
                               alt="Chateau Kefraya"
                               width={96}
                               height={96}
@@ -1407,12 +1407,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/chateau-ksara-rosé.webp",
+                                "/images/drinks/chateau-kefraya-white.webp",
                                 "Chateau Ksara - Blanc de Blanc bottle"
                               )}
                             >
                               <Image
-                                src="/images/drinks/chateau-ksara-rosé.webp"
+                                src="/images/drinks/chateau-kefraya-white.webp"
                                 alt="Chateau Ksara - Blanc de Blanc bottle"
                                 width={96}
                                 height={96}
@@ -1469,12 +1469,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/chateau-ksara-rosé.webp",
+                                "/images/drinks/chateau-ksara-white.webp",
                                 "Chateau Ksara - Blanc de l'observatoire glass | bottle"
                               )}
                             >
                               <Image
-                                src="/images/drinks/chateau-ksara-rosé.webp"
+                                src="/images/drinks/chateau-ksara-white.webp"
                                 alt="Chateau Ksara - Blanc de l'observatoire glass | bottle"
                                 width={96}
                                 height={96}
@@ -1534,12 +1534,12 @@ export default function MenuPage() {
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                             onClick={() => openLightbox(
-                              "/images/drinks/chateau-ksara-rosé.webp",
+                              "/images/drinks/chateau-kefraya-white.webp",
                               "Chateau Kefraya - Blanc de l'observatoire glass | bottle"
                             )}
                           >
                             <Image
-                              src="/images/drinks/chateau-ksara-rosé.webp"
+                              src="/images/drinks/chateau-kefraya-white.webp"
                               alt="Chateau Kefraya - Blanc de l'observatoire glass | bottle"
                               width={96}
                               height={96}
@@ -1653,12 +1653,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+                                "/images/drinks/rose-damascus.webp",
                                 t('menu.drinks.roseDamascusJuice.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
+                                src="/images/drinks/rose-damascus.webp"
                                 alt={t('menu.drinks.roseDamascusJuice.title')}
                                 width={96}
                                 height={96}
@@ -2024,12 +2024,12 @@ export default function MenuPage() {
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                                                           onClick={() => openLightbox(
-                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+                                "/images/drinks/indian-tonic.webp",
                                 t('menu.drinks.schweppesTonic.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
+                                src="/images/drinks/indian-tonic.webp"
                                 alt={t('menu.drinks.schweppesTonic.title')}
                               width={96}
                               height={96}
@@ -2091,12 +2091,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+                                "/images/drinks/arabian-coffee.webp",
                                 t('menu.drinks.arabianCoffee.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
+                                src="/images/drinks/arabian-coffee.webp"
                                 alt={t('menu.drinks.arabianCoffee.title')}
                                 width={96}
                                 height={96}
@@ -2145,12 +2145,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+                                "/images/drinks/espresso.webp",
                                 t('menu.drinks.cafeEspresso.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
+                                src="/images/drinks/espresso.webp"
                                 alt={t('menu.drinks.cafeEspresso.title')}
                                 width={96}
                                 height={96}
@@ -2203,12 +2203,12 @@ export default function MenuPage() {
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                                                           onClick={() => openLightbox(
-                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+                                "/images/drinks/the-camomille.webp",
                                 t('menu.drinks.tea.title')
                               )}
                             >
                               <Image
-                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
+                                src="/images/drinks/the-camomille.webp"
                                 alt={t('menu.drinks.tea.title')}
                               width={96}
                               height={96}
