@@ -1637,7 +1637,7 @@ export default function MenuPage() {
                     </section>
                   </div>
 
-----------------------------------------------------------------------Soft Drinks----------------------------------------------------------------------
+                  {/* ----------------------------------------------------------------------Soft Drinks---------------------------------------------------------------------- */}
                   {/* Soft Drinks Section */}
                   <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
                     <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.softDrinks.title')}</p>
@@ -1646,9 +1646,7 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
                             }`}
                         >
                           <div className="flex justify-center mb-4">
@@ -1708,9 +1706,7 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
                             }`}
                         >
                           <div className="flex justify-center mb-4">
@@ -1775,9 +1771,7 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
                             }`}
                         >
                           <div className="flex justify-center mb-4">
@@ -1834,9 +1828,7 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
                             }`}
                         >
                           <div className="flex justify-center mb-4">
@@ -1901,9 +1893,7 @@ export default function MenuPage() {
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
                             }`}
                         >
                           <div className="flex justify-center mb-4">
@@ -1963,9 +1953,7 @@ export default function MenuPage() {
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
                         <div
-                          className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark"
-                            ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                            : "bg-white"
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
                             }`}
                         >
                           <div className="flex justify-center mb-4">
@@ -2029,9 +2017,7 @@ export default function MenuPage() {
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
                       <div
-                        className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${theme === "dark"
-                          ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
-                          : "bg-white"
+                        className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
                           }`}
                       >
                         <div className="flex justify-center mb-4">
@@ -2087,7 +2073,7 @@ export default function MenuPage() {
                       </div>
                     </section>
                   </div>
-----------------------------------------------------------------------Hot Drinks----------------------------------------------------------------------
+                  ----------------------------------------------------------------------Hot Drinks----------------------------------------------------------------------
 
                   {/* Hot Drinks Section */}
                   <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
@@ -2097,8 +2083,10 @@ export default function MenuPage() {
                   <div className="flex flex-col relative mt-5">
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
-                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                          }`}>
+                        <div
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
+                            }`}
+                        >
                           <div className="flex justify-center mb-4">
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
@@ -2149,8 +2137,10 @@ export default function MenuPage() {
                         </div>
                       </div>
                       <div className="flex flex-col w-[50%] ml-5 max-md:ml-0 max-md:w-full">
-                        <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                          }`}>
+                        <div
+                          className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
+                            }`}
+                        >
                           <div className="flex justify-center mb-4">
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
@@ -2205,8 +2195,10 @@ export default function MenuPage() {
 
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
-                      <div className={`flex flex-col bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 text-center relative ${theme === 'dark' ? 'bg-[#1A1A1A] shadow-xl shadow-white/10' : 'bg-white'
-                        }`}>
+                      <div
+                        className={`flex flex-col rounded-2xl p-6 shadow-lg transition-all duration-300 text-center h-full ${theme === "dark" ? "bg-[#1A1A1A] shadow-white/10" : "bg-white"
+                          }`}
+                      >
                         <div className="flex justify-center mb-4">
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
@@ -2260,7 +2252,7 @@ export default function MenuPage() {
                 </div>
               ) : (
                 //----------------------------------------------------------------------End of Hot Drinks----------------------------------------------------------------------
-               
+
                 // Universal card layout for all other categories
                 <div
                   className={`gap-6 relative ${
