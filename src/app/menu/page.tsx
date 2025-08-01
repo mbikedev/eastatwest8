@@ -495,7 +495,7 @@ export default function MenuPage() {
         price: t("menu.drinks.lebaneseBeer.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9b5ac6ab7d3748b498a36e199b1e3709?format=webp",
+        image: "/images/drinks/leffe brown beer lindemans kriek.webp",
         section: "Beers",
       },
       {
@@ -504,7 +504,7 @@ export default function MenuPage() {
         price: t("menu.drinks.hoegaardenBeer.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fe5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/hoegaarden-white-beer.webp",
         section: "Beers",
       },
       {
@@ -513,7 +513,7 @@ export default function MenuPage() {
         price: t("menu.drinks.jupilerBeer.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fb03af9e1892647cd8115ffe77722a869",
+        image: "/images/drinks/jupiler-beer.webp",
         section: "Beers",
       },
       {
@@ -522,7 +522,7 @@ export default function MenuPage() {
         price: t("menu.drinks.leffeLindemans.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F59548c417ee04e21ad2bff463252e713",
+        image: "/images/drinks/leffe brown beer lindemans kriek.webp",
         section: "Beers",
       },
       {
@@ -531,7 +531,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraRed.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/chateau-ksara-rosé.webp",
         section: "Red Wines",
       },
       {
@@ -540,7 +540,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraReserve.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/chateau-ksara-rosé.webp",
         section: "Red Wines",
       },
       {
@@ -549,7 +549,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKefrayaRed.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F6f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/chateau-ksara-rosé.webp",
         section: "Red Wines",
       },
       {
@@ -558,7 +558,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraWhite.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/chateau-ksara-rosé.webp",
         section: "White Wines",
       },
       {
@@ -567,7 +567,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraBlanc.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/chateau-ksara-rosé.webp",
         section: "White Wines",
       },
       {
@@ -576,7 +576,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKefrayaWhite.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F3f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/chateau-ksara-rosé.webp",
         section: "White Wines",
       },
       {
@@ -585,7 +585,7 @@ export default function MenuPage() {
         price: t("menu.drinks.chateauKsaraRose.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F2f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/chateau-ksara-rosé.webp",
         section: "Rosé Wines",
       },
       {
@@ -594,7 +594,7 @@ export default function MenuPage() {
         price: t("menu.drinks.roseDamascusJuice.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F1f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
         section: "Soft Drinks",
       },
       {
@@ -603,7 +603,7 @@ export default function MenuPage() {
         price: t("menu.drinks.cocaCola.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F0f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/coca-cola -cola-zero -sprite.webp",
         section: "Soft Drinks",
       },
       {
@@ -612,7 +612,7 @@ export default function MenuPage() {
         price: t("menu.drinks.schweppesAgrumes.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
         section: "Soft Drinks",
       },
       {
@@ -621,7 +621,7 @@ export default function MenuPage() {
         price: t("menu.drinks.ayran.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/ayran.webp",
         section: "Soft Drinks",
       },
       {
@@ -630,7 +630,7 @@ export default function MenuPage() {
         price: t("menu.drinks.waterSpa.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/water-spa.webp",
         section: "Soft Drinks",
       },
       {
@@ -639,7 +639,7 @@ export default function MenuPage() {
         price: t("menu.drinks.fantaIceTea.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F6f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/fanta orange-ice-tea.webp",
         section: "Soft Drinks",
       },
       {
@@ -648,7 +648,7 @@ export default function MenuPage() {
         price: t("menu.drinks.schweppesTonic.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
         section: "Soft Drinks",
       },
       {
@@ -657,7 +657,7 @@ export default function MenuPage() {
         price: t("menu.drinks.arabianCoffee.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
         section: "Hot Drinks",
       },
       {
@@ -666,7 +666,7 @@ export default function MenuPage() {
         price: t("menu.drinks.cafeEspresso.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F3f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
         section: "Hot Drinks",
       },
       {
@@ -675,7 +675,7 @@ export default function MenuPage() {
         price: t("menu.drinks.tea.price"),
         spicy: false,
         vegetarian: false,
-        image: "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F2f5c0b4c6662a4751862f4ec1744091d7",
+        image: "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
         section: "Hot Drinks",
       },
     ],
@@ -939,12 +939,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9b5ac6ab7d3748b498a36e199b1e3709?format=webp",
+                                "/images/drinks/leffe brown beer lindemans kriek.webp",
                                 t('menu.drinks.lebaneseBeer.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9b5ac6ab7d3748b498a36e199b1e3709?format=webp"
+                                src="/images/drinks/leffe brown beer lindemans kriek.webp"
                                 alt={t('menu.drinks.lebaneseBeer.title')}
                                 width={96}
                                 height={96}
@@ -1001,12 +1001,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fe5c0b4c6662a4751862f4ec1744091d7",
+                                "/images/drinks/hoegaarden-white-beer.webp",
                                 t('menu.drinks.hoegaardenBeer.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fe5c0b4c6662a4751862f4ec1744091d7"
+                                src="/images/drinks/hoegaarden-white-beer.webp"
                                 alt={t('menu.drinks.hoegaardenBeer.title')}
                                 width={96}
                                 height={96}
@@ -1068,12 +1068,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fb03af9e1892647cd8115ffe77722a869",
+                                "/images/drinks/jupiler-beer.webp",
                                 t('menu.drinks.jupilerBeer.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fb03af9e1892647cd8115ffe77722a869"
+                                src="/images/drinks/jupiler-beer.webp"
                                 alt={t('menu.drinks.jupilerBeer.title')}
                                 width={96}
                                 height={96}
@@ -1130,12 +1130,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F59548c417ee04e21ad2bff463252e713",
+                                "/images/drinks/leffe brown beer lindemans kriek.webp",
                                 t('menu.drinks.leffeLindemans.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F59548c417ee04e21ad2bff463252e713"
+                                src="/images/drinks/leffe brown beer lindemans kriek.webp"
                                 alt={t('menu.drinks.leffeLindemans.title')}
                                 width={96}
                                 height={96}
@@ -1206,12 +1206,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f6c11231c6440c1a14b434462f6082b",
+                                "/images/drinks/chateau-ksara-rosé.webp",
                                 t('menu.drinks.chateauKsaraRed.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f6c11231c6440c1a14b434462f6082b"
+                                src="/images/drinks/chateau-ksara-rosé.webp"
                                 alt={t('menu.drinks.chateauKsaraRed.title')}
                                 width={96}
                                 height={96}
@@ -1268,12 +1268,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f6c11231c6440c1a14b434462f6082b",
+                                "/images/drinks/chateau-ksara-rosé.webp",
                                 t('menu.drinks.chateauKsaraReserve.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F8f6c11231c6440c1a14b434462f6082b"
+                                src="/images/drinks/chateau-ksara-rosé.webp"
                                 alt={t('menu.drinks.chateauKsaraReserve.title')}
                                 width={96}
                                 height={96}
@@ -1334,12 +1334,12 @@ export default function MenuPage() {
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                             onClick={() => openLightbox(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F22c5aa78ee434a1a99a81f7140a61ef1",
+                              "/images/drinks/chateau-ksara-rosé.webp",
                               "Chateau Kefraya"
                             )}
                           >
                             <Image
-                              src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F22c5aa78ee434a1a99a81f7140a61ef1"
+                              src="/images/drinks/chateau-ksara-rosé.webp"
                               alt="Chateau Kefraya"
                               width={96}
                               height={96}
@@ -1407,12 +1407,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab",
+                                "/images/drinks/chateau-ksara-rosé.webp",
                                 "Chateau Ksara - Blanc de Blanc bottle"
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab"
+                                src="/images/drinks/chateau-ksara-rosé.webp"
                                 alt="Chateau Ksara - Blanc de Blanc bottle"
                                 width={96}
                                 height={96}
@@ -1469,12 +1469,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab",
+                                "/images/drinks/chateau-ksara-rosé.webp",
                                 "Chateau Ksara - Blanc de l'observatoire glass | bottle"
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F5219becb00d140c8a5676a1e9f98cdab"
+                                src="/images/drinks/chateau-ksara-rosé.webp"
                                 alt="Chateau Ksara - Blanc de l'observatoire glass | bottle"
                                 width={96}
                                 height={96}
@@ -1534,12 +1534,12 @@ export default function MenuPage() {
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                             onClick={() => openLightbox(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Ff87dfc73492d41e790f06dc45c5aa7b5?format=webp",
+                              "/images/drinks/chateau-ksara-rosé.webp",
                               "Chateau Kefraya - Blanc de l'observatoire glass | bottle"
                             )}
                           >
                             <Image
-                              src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Ff87dfc73492d41e790f06dc45c5aa7b5?format=webp"
+                              src="/images/drinks/chateau-ksara-rosé.webp"
                               alt="Chateau Kefraya - Blanc de l'observatoire glass | bottle"
                               width={96}
                               height={96}
@@ -1591,14 +1591,14 @@ export default function MenuPage() {
                         <div className="flex justify-center mb-4">
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
-                            onClick={() => openLightbox(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7714855b08404cf6a1f3fb6b94a27bc8",
-                              t('menu.drinks.chateauKsaraRose.title')
-                            )}
-                          >
-                            <Image
-                              src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F7714855b08404cf6a1f3fb6b94a27bc8"
-                              alt={t('menu.drinks.chateauKsaraRose.title')}
+                                                          onClick={() => openLightbox(
+                                "/images/drinks/chateau-ksara-rosé.webp",
+                                t('menu.drinks.chateauKsaraRose.title')
+                              )}
+                            >
+                              <Image
+                                src="/images/drinks/chateau-ksara-rosé.webp"
+                                alt={t('menu.drinks.chateauKsaraRose.title')}
                               width={96}
                               height={96}
                               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -1653,12 +1653,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F68fd3d56b56a4192a7a6af65b47a6d05?format=webp",
+                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
                                 t('menu.drinks.roseDamascusJuice.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F68fd3d56b56a4192a7a6af65b47a6d05?format=webp"
+                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
                                 alt={t('menu.drinks.roseDamascusJuice.title')}
                                 width={96}
                                 height={96}
@@ -1713,12 +1713,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4664f2210f944666878ee8d499861665?format=webp",
+                                "/images/drinks/coca-cola -cola-zero -sprite.webp",
                                 t('menu.drinks.cocaCola.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4664f2210f944666878ee8d499861665?format=webp"
+                                src="/images/drinks/coca-cola -cola-zero -sprite.webp"
                                 alt={t('menu.drinks.cocaCola.title')}
                                 width={96}
                                 height={96}
@@ -1778,12 +1778,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9fa09b196784402f99a3937f271bf532?format=webp",
+                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
                                 t('menu.drinks.schweppesAgrumes.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F9fa09b196784402f99a3937f271bf532?format=webp"
+                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
                                 alt={t('menu.drinks.schweppesAgrumes.title')}
                                 width={96}
                                 height={96}
@@ -1835,12 +1835,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fd7f08e12375b4f13a0c7c648692d7003?format=webp",
+                                "/images/drinks/ayran.webp",
                                 t('menu.drinks.ayran.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fd7f08e12375b4f13a0c7c648692d7003?format=webp"
+                                src="/images/drinks/ayran.webp"
                                 alt={t('menu.drinks.ayran.title')}
                                 width={96}
                                 height={96}
@@ -1900,12 +1900,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Ff0f3f4beae6d49eb819c6d4805670114?format=webp",
+                                "/images/drinks/water-spa.webp",
                                 t('menu.drinks.waterSpa.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Ff0f3f4beae6d49eb819c6d4805670114?format=webp"
+                                src="/images/drinks/water-spa.webp"
                                 alt={t('menu.drinks.waterSpa.title')}
                                 width={96}
                                 height={96}
@@ -1960,12 +1960,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F51e2fd9a8d2d432caa1cbdbe06bad30a?format=webp",
+                                "/images/drinks/fanta orange-ice-tea.webp",
                                 t('menu.drinks.fantaIceTea.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F51e2fd9a8d2d432caa1cbdbe06bad30a?format=webp"
+                                src="/images/drinks/fanta orange-ice-tea.webp"
                                 alt={t('menu.drinks.fantaIceTea.title')}
                                 width={96}
                                 height={96}
@@ -2023,14 +2023,14 @@ export default function MenuPage() {
                         <div className="flex justify-center mb-4">
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
-                            onClick={() => openLightbox(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F1c1247860000492eb3a3a045b86662a7?format=webp",
-                              t('menu.drinks.schweppesTonic.title')
-                            )}
-                          >
-                            <Image
-                              src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F1c1247860000492eb3a3a045b86662a7?format=webp"
-                              alt={t('menu.drinks.schweppesTonic.title')}
+                                                          onClick={() => openLightbox(
+                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+                                t('menu.drinks.schweppesTonic.title')
+                              )}
+                            >
+                              <Image
+                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
+                                alt={t('menu.drinks.schweppesTonic.title')}
                               width={96}
                               height={96}
                               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -2073,7 +2073,7 @@ export default function MenuPage() {
                       </div>
                     </section>
                   </div>
-                  ----------------------------------------------------------------------Hot Drinks----------------------------------------------------------------------
+                 {/* ----------------------------------------------------------------------Hot Drinks---------------------------------------------------------------------- */}
 
                   {/* Hot Drinks Section */}
                   <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
@@ -2091,12 +2091,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fd5e955f5cef54a22ab0376690f1e0594?format=webp",
+                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
                                 t('menu.drinks.arabianCoffee.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fd5e955f5cef54a22ab0376690f1e0594?format=webp"
+                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
                                 alt={t('menu.drinks.arabianCoffee.title')}
                                 width={96}
                                 height={96}
@@ -2145,12 +2145,12 @@ export default function MenuPage() {
                             <div
                               className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
                               onClick={() => openLightbox(
-                                "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F3c8b8b2812ef455abca20a0c78d6fcf7?format=webp",
+                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
                                 t('menu.drinks.cafeEspresso.title')
                               )}
                             >
                               <Image
-                                src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F3c8b8b2812ef455abca20a0c78d6fcf7?format=webp"
+                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
                                 alt={t('menu.drinks.cafeEspresso.title')}
                                 width={96}
                                 height={96}
@@ -2202,14 +2202,14 @@ export default function MenuPage() {
                         <div className="flex justify-center mb-4">
                           <div
                             className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
-                            onClick={() => openLightbox(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4fd7c3b5ba4142aa8b60056a2f879e03?format=webp",
-                              t('menu.drinks.tea.title')
-                            )}
-                          >
-                            <Image
-                              src="https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2F4fd7c3b5ba4142aa8b60056a2f879e03?format=webp"
-                              alt={t('menu.drinks.tea.title')}
+                                                          onClick={() => openLightbox(
+                                "/images/drinks/schweppes-agrumes-virgin-mojito.webp",
+                                t('menu.drinks.tea.title')
+                              )}
+                            >
+                              <Image
+                                src="/images/drinks/schweppes-agrumes-virgin-mojito.webp"
+                                alt={t('menu.drinks.tea.title')}
                               width={96}
                               height={96}
                               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
