@@ -908,13 +908,13 @@ export default function MenuPage() {
                       : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
                       }`}
                   >
-                    🍹 Refreshing Beverages 🍹
+                    {t('menu.drinks.refreshingBeverages.title')}
                   </h2>
                   <p
                     className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
                       }`}
                   >
-                    Traditional and modern drinks to complement your meal
+                    {t('menu.drinks.refreshingBeverages.subtitle')}
                   </p>
                 </div>
               )}
@@ -924,7 +924,7 @@ export default function MenuPage() {
                 <div>
                   {/* Beers Section */}
                   <div className="text-center mb-5 font-semibold text-2xl">
-                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>BEERS</p>
+                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.beers.title')}</p>
                   </div>
                   <div className="flex flex-col mb-5">
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -1186,12 +1186,12 @@ export default function MenuPage() {
 
                   {/* Wines Section */}
                   <div className="text-center mb-5 font-semibold text-2xl">
-                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>WINES</p>
+                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.wines.title')}</p>
                   </div>
 
                   {/* Red Wines */}
                   <div className="text-center mb-5 font-semibold text-xl">
-                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>RED WINE</p>
+                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.redWine.title')}</p>
                   </div>
                   <div className="flex flex-col mb-5">
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -1389,7 +1389,7 @@ export default function MenuPage() {
 
                   {/* White Wine Section */}
                   <div className="relative mt-5 h-auto text-center text-2xl font-semibold">
-                    <h4 className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>WHITE WINE</h4>
+                    <h4 className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.whiteWine.title')}</h4>
                     <p>
                       <br />
                     </p>
@@ -1580,7 +1580,7 @@ export default function MenuPage() {
 
                   {/* Wine Rose Section */}
                   <div className="relative mt-5 h-auto text-center font-semibold text-2xl">
-                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.wineRose.title')}</p>
+                    <p className={`${theme === "dark" ? "text-white" : "text-[#1A1A1A]"}`}>{t('menu.drinks.roseWine.title')}</p>
                   </div>
                   <div className="flex flex-col min-h-[100px] p-5">
                     <section className="flex flex-col min-h-[100px] p-5 max-w-[1200px] mx-auto">
@@ -2727,13 +2727,13 @@ export default function MenuPage() {
             className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
               }`}
           >
-            Ready to Experience Our Cuisine?
+            {t('menu.cta.title')}
           </h2>
           <p
             className={`text-lg sm:text-xl mb-6 sm:mb-8 px-4 ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
               }`}
           >
-            Book a table and enjoy our fusion dishes in our elegant restaurant.
+            {t('menu.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a

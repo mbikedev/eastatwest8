@@ -283,12 +283,12 @@ export default function GalleryPage() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
-      theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
+      theme === 'dark' ? 'bg-black' : 'bg-gray-50'
     }`}>
       {/* Hero Section */}
       <div className={`relative py-20 px-4 sm:px-6 lg:px-8 ${
         theme === 'dark' 
-          ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' 
+          ? 'bg-gradient-to-br from-black via-gray-900 to-black' 
           : 'bg-gradient-to-br from-orange-50 via-white to-orange-50'
       }`}>
         <div className="max-w-7xl mx-auto text-center">
@@ -298,16 +298,16 @@ export default function GalleryPage() {
             transition={{ duration: 0.6 }}
           >
             <div className="text-6xl mb-4">🖼️</div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 text-gray-900" style={{fontFamily: 'Times New Roman, serif'}}>
+            <h1 className={`text-4xl sm:text-5xl lg:text-6xl font-black mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`} style={{fontFamily: 'Times New Roman, serif'}}>
               <span
-                className="font-black text-transparent bg-clip-text"
-                style={{ backgroundColor: 'rgba(212, 142, 26, 1)' }}
+                className={`font-black ${theme === 'dark' ? 'text-orange-400' : 'text-transparent bg-clip-text'}`}
+                style={theme === 'dark' ? {} : { backgroundColor: 'rgba(212, 142, 26, 1)' }}
               >
                 {t('gallery.title')}
               </span>
             </h1>
             <div className="w-32 h-1.5 bg-gradient-to-r from-orange-500 to-red-500 mx-auto rounded-full mb-6"></div>
-            <p className="text-lg sm:text-xl max-w-3xl mx-auto text-black">
+            <p className={`text-lg sm:text-xl max-w-3xl mx-auto ${theme === 'dark' ? 'text-gray-300' : 'text-black'}`}>
               {t('gallery.description')}
             </p>
           </motion.div>
@@ -331,7 +331,7 @@ export default function GalleryPage() {
                   key={image}
                   className={`group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 cursor-pointer ${
                     theme === 'dark' 
-                      ? 'bg-gray-800 hover:bg-gray-700' 
+                      ? 'bg-gray-900 hover:bg-gray-800' 
                       : 'bg-white hover:bg-gray-50'
                   }`}
                   initial={{ opacity: 0, y: 20 }}

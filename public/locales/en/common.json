@@ -30,6 +30,10 @@
   "menu": {
     "title": "Our Menu",
     "subtitle": "Discover Our Fusion Creations",
+    "cta": {
+      "title": "Ready to Experience Our Cuisine?",
+      "subtitle": "Book a table and enjoy our fusion dishes in our elegant restaurant."
+    },
     "categories": {
       "setMenus": "Set Menus",
       "coldMezzes": "Cold Mezzes",
@@ -360,62 +364,62 @@
     },
     "drinks": {
       "lebaneseBeer": {
-        "title": "Lebanese beer",
+        "title": "Lebanese Beer",
         "description": "Traditional Lebanese beer",
         "price": "4.50€"
       },
       "hoegaardenBeer": {
-        "title": "Hoegaarden white beer",
+        "title": "Hoegaarden White Beer",
         "description": "Belgian wheat beer",
         "price": "4.50€"
       },
       "jupilerBeer": {
-        "title": "Jupiler beer",
+        "title": "Jupiler Beer",
         "description": "Belgian lager beer",
         "price": "3.50€"
       },
       "leffeLindemans": {
-        "title": "Leffe brown beer / Lindemans Kriek",
+        "title": "Leffe Brown Beer / Lindemans Kriek",
         "description": "Belgian brown ale / Cherry beer",
         "price": "4.50€"
       },
       "chateauKsaraRed": {
-        "title": "Chateau Ksara",
+        "title": "Château Ksara Red Wine",
         "description": "Le grand vin libanais",
         "price": "25€ / 7.50€"
       },
       "chateauKsaraReserve": {
-        "title": "Chateau Ksara",
+        "title": "Château Ksara Reserve",
         "description": "Reserve du couvent rouge",
         "price": "20€"
       },
       "chateauKefrayaRed": {
-        "title": "Chateau Kefraya",
+        "title": "Château Kefraya Red Wine",
         "description": "Breteche rouge",
         "price": "20€"
       },
       "chateauKsaraWhite": {
-        "title": "Chateau Ksara",
+        "title": "Château Ksara White Wine",
         "description": "Blanc de Blancs",
         "price": "25€ / 7.50€"
       },
       "chateauKsaraBlanc": {
-        "title": "Chateau Ksara",
+        "title": "Château Ksara Blanc",
         "description": "Blanc de l'observatoire",
         "price": "20€"
       },
       "chateauKefrayaWhite": {
-        "title": "Chateau Kefraya",
+        "title": "Château Kefraya White Wine",
         "description": "Blanc de l'observatoire",
         "price": "20€"
       },
       "chateauKsaraRose": {
-        "title": "Chateau Ksara Rosé",
+        "title": "Château Ksara Rosé Wine",
         "description": "Rosé wine",
         "price": "20€"
       },
       "roseDamascusJuice": {
-        "title": "Home Made 'Rose Of Damascus' Juice",
+        "title": "Homemade 'Rose of Damascus' Juice",
         "description": "Rose of Damascus",
         "price": "5€"
       },
@@ -425,7 +429,7 @@
         "price": "3.50€"
       },
       "schweppesAgrumes": {
-        "title": "Schweppes (Agrumes / Virgin Mojito)",
+        "title": "Schweppes (Citrus / Virgin Mojito)",
         "description": "Citrus soft drinks",
         "price": "4€"
       },
@@ -455,7 +459,7 @@
         "price": "3.50€"
       },
       "cafeEspresso": {
-        "title": "Café / Espresso",
+        "title": "Coffee / Espresso",
         "description": "Coffee / Espresso",
         "price": "3.25€"
       },
@@ -465,7 +469,26 @@
         "price": "3.25€"
       },
       "wineRose": {
-        "title": "WINE ROSE"
+        "title": "ROSE WINE"
+      },
+      "beers": {
+        "title": "BEERS"
+      },
+      "wines": {
+        "title": "WINES"
+      },
+      "redWine": {
+        "title": "RED WINE"
+      },
+      "whiteWine": {
+        "title": "WHITE WINE"
+      },
+      "roseWine": {
+        "title": "ROSE WINE"
+      },
+      "refreshingBeverages": {
+        "title": "🍹 Refreshing Beverages 🍹",
+        "subtitle": "Traditional and modern drinks to complement your meal"
       },
       "softDrinks": {
         "title": "SOFT DRINKS"

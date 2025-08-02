@@ -42,7 +42,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className={`min-h-screen pt-16 transition-colors duration-300 relative overflow-hidden ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'
+    <div className={`min-h-screen pt-16 transition-colors duration-300 relative overflow-hidden ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-gray-900'
       }`}>
       
       {/* Floating Background Elements */}
@@ -94,7 +94,7 @@ export default function ContactPage() {
 
       {/* Contact Information */}
       <motion.section 
-        className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-50'
+        className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
         }`}
         initial="hidden"
         whileInView="visible"
@@ -110,7 +110,7 @@ export default function ContactPage() {
             <motion.div 
               className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${
                 theme === 'dark' 
-                  ? 'bg-gray-700/80 border-orange-500/30 shadow-orange-500/20' 
+                  ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20' 
                   : 'bg-white/80 border-orange-300/50 shadow-orange-200/50'
               }`}
               variants={itemVariants}
@@ -236,7 +236,7 @@ export default function ContactPage() {
           <motion.div 
             className={`rounded-xl overflow-hidden shadow-2xl h-96 border-2 transform hover:scale-105 transition-all duration-300 ${
               theme === 'dark' 
-                ? 'bg-gray-800/80 border-blue-500/30 shadow-blue-500/20' 
+                ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20' 
                 : 'bg-gray-100/80 border-blue-300/50 shadow-blue-200/50'
             } flex items-center justify-center backdrop-blur-sm`}
             variants={itemVariants}
@@ -268,7 +268,7 @@ export default function ContactPage() {
 
       {/* Social Media */}
       <motion.section 
-        className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-50'
+        className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
         }`}
         initial="hidden"
         whileInView="visible"

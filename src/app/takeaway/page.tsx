@@ -194,7 +194,7 @@ export default function TakeawayPage() {
   if (loading) {
     return (
       <div className={`min-h-screen pt-16 flex items-center justify-center ${
-        theme === 'dark' ? 'bg-[#5C4300] text-[#F5F1EC]' : 'bg-[#F5F1EC] text-[#5C4300]'
+        theme === 'dark' ? 'bg-black text-white' : 'bg-[#F5F1EC] text-[#5C4300]'
       }`}>
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#f99747] mx-auto mb-4"></div>
@@ -207,7 +207,7 @@ export default function TakeawayPage() {
   if (error) {
     return (
       <div className={`min-h-screen pt-16 flex items-center justify-center ${
-        theme === 'dark' ? 'bg-[#5C4300] text-[#F5F1EC]' : 'bg-[#F5F1EC] text-[#5C4300]'
+        theme === 'dark' ? 'bg-black text-white' : 'bg-[#F5F1EC] text-[#5C4300]'
       }`}>
         <div className="text-center">
           <p className="text-lg text-red-500 mb-4">{error}</p>
@@ -224,7 +224,7 @@ export default function TakeawayPage() {
 
   return (
     <div className={`min-h-screen pt-16 transition-colors duration-300 ${
-      theme === 'dark' ? 'bg-[#5C4300] text-[#F5F1EC]' : 'bg-[#F5F1EC] text-[#5C4300]'
+      theme === 'dark' ? 'bg-black text-white' : 'bg-[#F5F1EC] text-[#5C4300]'
     }`}>
       {/* Header */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
@@ -240,7 +240,7 @@ export default function TakeawayPage() {
           </h1>
           <p 
             className={`text-xl max-w-3xl mx-auto ${
-              theme === 'dark' ? 'text-[#F5F1EC]/80' : 'text-[#5C4300]/80'
+              theme === 'dark' ? 'text-gray-300' : 'text-[#5C4300]/80'
             }`}
           >
             {t('takeaway.subtitle')}
@@ -254,7 +254,7 @@ export default function TakeawayPage() {
           <div className="lg:col-span-1">
             <div className={`p-6 rounded-xl sticky top-24 ${
               theme === 'dark' 
-                ? 'bg-[#5C4300]/20 backdrop-blur-sm border border-[#bc906b]/20' 
+                ? 'bg-gray-900/80 backdrop-blur-sm border border-gray-700' 
                 : 'bg-white/80 backdrop-blur-sm border border-[#bc906b]/20'
             }`}>
               <h3 className="text-xl font-bold mb-4">{t('takeaway.categories.title')}</h3>
@@ -283,7 +283,7 @@ export default function TakeawayPage() {
                           ? 'bg-[#f99747] text-[#000000]'
                           : 'bg-[#f99747] text-white'
                         : theme === 'dark'
-                          ? 'hover:bg-[#5C4300]/30 text-[#000000]'
+                          ? 'hover:bg-gray-800 text-white'
                           : 'hover:bg-[#bc906b]/10 text-[#5C4300]'
                     }`}
                   >
@@ -334,7 +334,7 @@ export default function TakeawayPage() {
                     key={product.id}
                     className={`group p-6 rounded-xl transition-all duration-300 hover:transform hover:scale-105 ${
                       theme === 'dark'
-                        ? 'bg-[#5C4300]/20 hover:bg-[#5C4300]/30 backdrop-blur-sm border border-[#bc906b]/20'
+                        ? 'bg-gray-900/80 hover:bg-gray-800 backdrop-blur-sm border border-gray-700'
                         : 'bg-white hover:bg-white/80 backdrop-blur-sm border border-[#bc906b]/20 shadow-lg hover:shadow-xl'
                     }`}
                   >
@@ -376,7 +376,7 @@ export default function TakeawayPage() {
                     </div>
                     
                     <p className={`mb-4 ${
-                      theme === 'dark' ? 'text-[#F5F1EC]/70' : 'text-[#5C4300]/70'
+                      theme === 'dark' ? 'text-gray-300' : 'text-[#5C4300]/70'
                     }`}>
                       {getLocalizedText(product.description, true)}
                     </p>
@@ -395,7 +395,7 @@ export default function TakeawayPage() {
             {filteredProducts.length === 0 && (
               <div className="text-center py-12">
                 <p className={`text-lg ${
-                  theme === 'dark' ? 'text-[#F5F1EC]/70' : 'text-[#5C4300]/70'
+                  theme === 'dark' ? 'text-gray-300' : 'text-[#5C4300]/70'
                 }`}>
                   {t('takeaway.noProducts')}
                 </p>
@@ -414,7 +414,7 @@ export default function TakeawayPage() {
           >
             <div
               className={`absolute right-0 top-0 h-full w-full max-w-md ${
-                theme === 'dark' ? 'bg-[#5C4300]' : 'bg-white'
+                theme === 'dark' ? 'bg-black' : 'bg-white'
               } shadow-2xl overflow-y-auto`}
               onClick={(e) => e.stopPropagation()}
             >
@@ -425,7 +425,7 @@ export default function TakeawayPage() {
                     onClick={() => setIsCartOpen(false)}
                     className={`p-2 rounded-lg ${
                       theme === 'dark' 
-                        ? 'hover:bg-[#5C4300]/30' 
+                        ? 'hover:bg-gray-800' 
                         : 'hover:bg-gray-100'
                     }`}
                   >
@@ -437,7 +437,7 @@ export default function TakeawayPage() {
 
                 {cart.items.length === 0 ? (
                   <p className={`text-center py-8 ${
-                    theme === 'dark' ? 'text-[#F5F1EC]/70' : 'text-[#5C4300]/70'
+                    theme === 'dark' ? 'text-gray-300' : 'text-[#5C4300]/70'
                   }`}>
                     {t('takeaway.emptyCart')}
                   </p>
@@ -446,7 +446,7 @@ export default function TakeawayPage() {
                     <div className="space-y-4 mb-6">
                       {cart.items.map((item) => (
                         <div key={item.product.id} className={`p-4 rounded-lg ${
-                          theme === 'dark' ? 'bg-[#5C4300]/20' : 'bg-gray-50'
+                          theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
                         }`}>
                           <div className="flex items-center space-x-4">
                             {/* Only show image in cart if product has an image_url */}
@@ -484,7 +484,7 @@ export default function TakeawayPage() {
                                 onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
                                 className={`w-8 h-8 rounded-full flex items-center justify-center ${
                                   theme === 'dark' 
-                                    ? 'bg-[#A8D5BA]/50 hover:bg-[#A8D5BA]' 
+                                    ? 'bg-gray-700 hover:bg-gray-600 text-white' 
                                     : 'bg-gray-200 hover:bg-gray-300'
                                 }`}
                               >
@@ -495,7 +495,7 @@ export default function TakeawayPage() {
                                 onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
                                 className={`w-8 h-8 rounded-full flex items-center justify-center ${
                                   theme === 'dark' 
-                                    ? 'bg-[#A8D5BA]/50 hover:bg-[#A8D5BA]' 
+                                    ? 'bg-gray-700 hover:bg-gray-600 text-white' 
                                     : 'bg-gray-200 hover:bg-gray-300'
                                 }`}
                               >
@@ -516,7 +516,7 @@ export default function TakeawayPage() {
                     </div>
 
                     <div className={`border-t pt-4 mb-6 ${
-                      theme === 'dark' ? 'border-[#A8D5BA]/20' : 'border-[#A8D5BA]/20'
+                      theme === 'dark' ? 'border-gray-700' : 'border-[#A8D5BA]/20'
                     }`}>
                       <div className="flex justify-between items-center text-xl font-bold">
                         <span>{t('takeaway.total')}</span>

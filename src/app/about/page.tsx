@@ -42,7 +42,7 @@ export default function AboutPage() {
   }
 
   return (
-    <div className={`min-h-screen pt-16 transition-colors duration-300 ${theme === 'dark' ? 'bg-[#5C4300] text-white' : 'bg-white text-black'
+    <div className={`min-h-screen pt-16 transition-colors duration-300 ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'
       }`}>
       {/* Enhanced Header */}
       <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/images/about-us.webp')"}}>
@@ -97,7 +97,7 @@ export default function AboutPage() {
 
       {/* Enhanced About Section */}
       <motion.section
-        className={`relative py-20 px-4 sm:px-8 shadow-2xl backdrop-blur-md ${theme === 'dark' ? 'bg-gradient-to-br from-[#5C4300]/90 to-orange-200' : 'bg-gradient-to-br from-gray-100 to-gray-300'
+        className={`relative py-20 px-4 sm:px-8 shadow-2xl backdrop-blur-md ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-100 to-gray-300'
           }`}
         style={{ fontFamily: '"Times New Roman", sans-serif' }}
         variants={containerVariants}
@@ -124,32 +124,32 @@ export default function AboutPage() {
             <div className="w-32 h-1.5 bg-gradient-to-r from-[#f99747] to-[#bc906b] mx-auto rounded-full mb-8"></div>
           </motion.div>
 
-          <motion.div
-            className={`text-lg sm:text-xl leading-relaxed mb-8 p-8 rounded-3xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-[#5C4300]/50 border-[#bc906b]/50' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
-              }`}
-            variants={itemVariants}
-          >
-            <p className={`text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'
-              } leading-relaxed text-center mb-6`}>
-              {t('about.part1')}
-            </p>
-          </motion.div>
+                      <motion.div
+              className={`text-lg sm:text-xl leading-relaxed mb-8 p-8 rounded-3xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+                }`}
+              variants={itemVariants}
+            >
+              <p className={`text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'
+                } leading-relaxed text-center mb-6`}>
+                {t('about.part1')}
+              </p>
+            </motion.div>
 
-          <motion.div
-            className={`text-lg sm:text-xl leading-relaxed p-8 rounded-3xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-[#5C4300]/50 border-[#bc906b]/50' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
-              }`}
-            variants={itemVariants}
-          >
-            <p className={`text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'
-              } leading-relaxed text-center`}>
-              {t('about.part2')}
-            </p>
-          </motion.div>
+            <motion.div
+              className={`text-lg sm:text-xl leading-relaxed p-8 rounded-3xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+                }`}
+              variants={itemVariants}
+            >
+              <p className={`text-gray-700 ${theme === 'dark' ? 'text-white' : 'text-black'
+                } leading-relaxed text-center`}>
+                {t('about.part2')}
+              </p>
+            </motion.div>
         </div>
       </motion.section>
 
       {/* Enhanced Chef Hanna Section */}
-      <section className={`relative py-24 px-4 sm:px-6 lg:px-8 shadow-2xl overflow-hidden ${theme === 'dark' ? 'bg-gradient-to-br from-[#5C4300] via-[#bc906b]/20 to-[#5C4300]' : 'bg-gradient-to-br from-[#F5F1EC] via-[#f99747]/30 to-[#F5F1EC]'
+      <section className={`relative py-24 px-4 sm:px-6 lg:px-8 shadow-2xl overflow-hidden ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' : 'bg-gradient-to-br from-[#F5F1EC] via-[#f99747]/30 to-[#F5F1EC]'
         }`}>
         {/* Floating Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -247,7 +247,7 @@ export default function AboutPage() {
               </h4>
 
               <motion.div
-                className={`p-6 rounded-2xl backdrop-blur-sm border mb-6 ${theme === 'dark' ? 'bg-[#5C4300]/50 border-[#bc906b]/50' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+                className={`p-6 rounded-2xl backdrop-blur-sm border mb-6 ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
                   }`}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
@@ -259,7 +259,7 @@ export default function AboutPage() {
               </motion.div>
 
               <motion.div
-                className={`p-6 rounded-2xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-[#5C4300]/50 border-[#bc906b]/50' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+                className={`p-6 rounded-2xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
                   }`}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
@@ -276,7 +276,7 @@ export default function AboutPage() {
 
       {/* Enhanced Features Section */}
       <motion.section
-        className={`relative py-24 px-4 sm:px-6 lg:px-8 shadow-2xl overflow-hidden ${theme === 'dark' ? 'bg-gradient-to-br from-[#5C4300] via-[#bc906b]/20 to-[#5C4300]' : 'bg-gradient-to-br from-[#F5F1EC] via-[#f99747]/30 to-[#F5F1EC]'
+        className={`relative py-24 px-4 sm:px-6 lg:px-8 shadow-2xl overflow-hidden ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' : 'bg-gradient-to-br from-[#F5F1EC] via-[#f99747]/30 to-[#F5F1EC]'
           }`}
         variants={containerVariants}
         initial="hidden"
@@ -317,7 +317,7 @@ export default function AboutPage() {
             {/* Enhanced Fusion Cuisine */}
             <motion.div
               className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm border-2 ${theme === 'dark'
-                  ? 'bg-gradient-to-br from-[#5C4300]/80 to-[#bc906b]/80 hover:from-[#5C4300]/90 hover:to-[#bc906b]/90 border-[#f99747]/30 hover:border-[#f99747]/60'
+                  ? 'bg-gradient-to-br from-gray-900/80 to-gray-800/80 hover:from-gray-900/90 hover:to-gray-800/90 border-gray-600 hover:border-gray-500'
                   : 'bg-gradient-to-br from-[#F5F1EC]/80 to-[#f99747]/50 hover:from-[#F5F1EC]/90 hover:to-[#f99747]/60 border-[#bc906b]/50 hover:border-[#bc906b]/70'
                 }`}
               variants={itemVariants}
@@ -350,7 +350,7 @@ export default function AboutPage() {
             {/* Enhanced Fresh Ingredients */}
             <motion.div
               className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm border-2 ${theme === 'dark'
-                  ? 'bg-gradient-to-br from-[#5C4300]/80 to-[#bc906b]/80 hover:from-[#5C4300]/90 hover:to-[#bc906b]/90 border-[#f99747]/30 hover:border-[#f99747]/60'
+                  ? 'bg-gradient-to-br from-gray-900/80 to-gray-800/80 hover:from-gray-900/90 hover:to-gray-800/90 border-gray-600 hover:border-gray-500'
                   : 'bg-gradient-to-br from-[#F5F1EC]/80 to-[#f99747]/50 hover:from-[#F5F1EC]/90 hover:to-[#f99747]/60 border-[#bc906b]/50 hover:border-[#bc906b]/70'
                 }`}
               variants={itemVariants}
@@ -383,7 +383,7 @@ export default function AboutPage() {
             {/* Enhanced Elegant Ambiance */}
             <motion.div
               className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm border-2 ${theme === 'dark'
-                  ? 'bg-gradient-to-br from-[#5C4300]/80 to-[#bc906b]/80 hover:from-[#5C4300]/90 hover:to-[#bc906b]/90 border-[#f99747]/30 hover:border-[#f99747]/60'
+                  ? 'bg-gradient-to-br from-gray-900/80 to-gray-800/80 hover:from-gray-900/90 hover:to-gray-800/90 border-gray-600 hover:border-gray-500'
                   : 'bg-gradient-to-br from-[#F5F1EC]/80 to-[#f99747]/50 hover:from-[#F5F1EC]/90 hover:to-[#f99747]/60 border-[#bc906b]/50 hover:border-[#bc906b]/70'
                 }`}
               variants={itemVariants}
