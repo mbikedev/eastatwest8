@@ -161,12 +161,7 @@ export default function ReservationsPage() {
     });
   };
 
-  // Real-time validation on form changes
-  useEffect(() => {
-    const validationResult = ReservationValidator.validate(form, t);
-    setValidationErrors(validationResult.errors);
-    setValidationWarnings(validationResult.warnings);
-  }, [form, t]);
+  // Validation only runs on form submission, not on every keystroke
 
   const getFieldError = (fieldName: string): string | undefined => {
     return validationErrors.find(error => error.field === fieldName)?.message;
