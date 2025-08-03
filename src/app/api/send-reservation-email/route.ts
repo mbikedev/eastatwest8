@@ -208,10 +208,10 @@ export async function POST(req: NextRequest) {
               <div style="text-align: center; margin: 30px 0;">
                 <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://eastatwest.com'}/api/cancel-reservation?invoice=${finalInvoiceNumber}" 
                    style="display: inline-block; background-color: #ef4444; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s;">
-                  ${getTranslation(lang, 'reservations.cancelReservation')}
+                  ${getTranslation(lang, 'reservations.cancelReservation') || 'Cancel Reservation'}
                 </a>
                 <p style="color: #6b7280; margin: 10px 0 0 0; font-size: 14px;">
-                  ${getTranslation(lang, 'reservations.cancelInstructions')}
+                  ${getTranslation(lang, 'reservations.cancelInstructions') || 'Click the button above to cancel your reservation. You will receive a confirmation email once cancelled.'}
                 </p>
               </div>
             </div>
