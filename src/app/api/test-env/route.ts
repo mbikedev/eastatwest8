@@ -1,11 +1,17 @@
 import { NextResponse } from 'next/server'
 
 export async function GET() {
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+  const mapId = process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID
+  
   return NextResponse.json({
-    hasUrl: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
-    hasKey: !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-    urlLength: process.env.NEXT_PUBLIC_SUPABASE_URL?.length || 0,
-    keyLength: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.length || 0,
-    urlPreview: process.env.NEXT_PUBLIC_SUPABASE_URL?.substring(0, 30) + '...' || 'not found'
+    apiKeyPresent: !!apiKey,
+    apiKeyLength: apiKey ? apiKey.length : 0,
+    apiKeyPrefix: apiKey ? apiKey.substring(0, 4) : null,
+    mapIdPresent: !!mapId,
+    mapIdLength: mapId ? mapId.length : 0,
+    mapIdPrefix: mapId ? mapId.substring(0, 4) : null,
+    nodeEnv: process.env.NODE_ENV,
+    allEnvVars: Object.keys(process.env).filter(key => key.includes('GOOGLE'))
   })
 } 

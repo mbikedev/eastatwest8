@@ -68,8 +68,9 @@ export default function VeganMenuDisplay() {
                 alt={t('menu.veganMenuDisplay.title')}
                 width={600}
                 height={800}
-                className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
                 priority
+                style={{ width: '100%', height: 'auto' }}
               />
               
               {/* Hover Overlay */}

@@ -20,6 +20,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://eastatwest.be'),
   title: "East @ West — Lebanese Fusion Restaurant in Brussels",
   description: "Authentic Lebanese cuisine meets modern flavors at East @ West in Brussels. Experience handcrafted Mediterranean dishes, fresh ingredients & warm hospitality. Book now!",
   keywords: "Lebanese restaurant Brussels, Mediterranean cuisine, fusion restaurant, Brussels dining, Lebanese food, mezze, authentic cuisine, Restaurant Guru recommended",
@@ -72,8 +73,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* Preload critical fonts */}
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei:wght@400&display=swap" as="style" />
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap" as="style" />
         <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei:wght@400&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap" rel="stylesheet" />
 

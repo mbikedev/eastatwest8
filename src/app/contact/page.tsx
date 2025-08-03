@@ -5,6 +5,7 @@ import { useTheme } from '../../context/ThemeContext'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
+
 export default function ContactPage() {
   const { t } = useTranslation('common')
   const { theme } = useTheme()
@@ -47,7 +48,11 @@ export default function ContactPage() {
       
       {/* Floating Background Elements */}
       <motion.div 
-        className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-20 blur-xl"
+        className={`absolute top-20 left-10 w-32 h-32 rounded-full opacity-20 blur-xl ${
+          theme === 'dark' 
+            ? 'bg-gradient-to-br from-orange-400 to-pink-500' 
+            : 'bg-gradient-to-br from-gray-200 to-gray-300'
+        }`}
         variants={floatingVariants}
         animate="float"
       />
@@ -76,7 +81,11 @@ export default function ContactPage() {
             <span className="inline-block text-6xl mb-4 animate-bounce">📞</span>
           </motion.div>
           <motion.h1 
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text text-transparent" 
+            className={`text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent ${
+              theme === 'dark' 
+                ? 'bg-white' 
+                : 'bg-black'
+            }`}
             style={{ fontFamily: 'Times New Roman, serif' }}
             variants={itemVariants}
           >
@@ -102,7 +111,11 @@ export default function ContactPage() {
         variants={containerVariants}
       >
         {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-100/10 via-transparent to-purple-100/10 pointer-events-none" />
+        <div className={`absolute inset-0 pointer-events-none ${
+          theme === 'dark' 
+            ? 'bg-gray-900' 
+            : 'bg-white'
+        }`} />
         
         <div className="max-w-7xl mx-auto relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -111,19 +124,25 @@ export default function ContactPage() {
               className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${
                 theme === 'dark' 
                   ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20' 
-                  : 'bg-white/80 border-orange-300/50 shadow-orange-200/50'
+                  : 'bg-white/80 border-gray-600 shadow-gray-500/20'
               }`}
               variants={itemVariants}
               whileHover={{ y: -5 }}
             >
-              <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-center text-transparent" style={{ fontFamily: 'Times New Roman, serif' }}>
+              <h2 className={`text-3xl font-bold mb-8 bg-clip-text text-center text-transparent ${
+                theme === 'dark' 
+                  ? 'bg-white' 
+                  : 'bg-black'
+              }`} style={{ fontFamily: 'Times New Roman, serif' }}>
                 {t('contact.contactInformation')}
               </h2>
 
               <div className="space-y-6">
                 {/* Phone */}
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 ${
+                    theme === 'dark' ? 'bg-gray-500' : 'bg-gray-900'
+                  }`}>
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
@@ -136,7 +155,9 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 ${
+                    theme === 'dark' ? 'bg-gray-500' : 'bg-gray-900'
+                  }`}>
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
@@ -149,7 +170,9 @@ export default function ContactPage() {
 
                 {/* Address */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 ${
+                    theme === 'dark' ? 'bg-gray-500' : 'bg-gray-900'
+                  }`}>
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -163,7 +186,9 @@ export default function ContactPage() {
 
                 {/* Hours */}
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 ${
+                    theme === 'dark' ? 'bg-gray-500' : 'bg-gray-900'
+                  }`}>
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -182,17 +207,20 @@ export default function ContactPage() {
 
             {/* Restaurant Image */}
             <motion.div className="relative" variants={itemVariants}>
-              <div className="rounded-xl overflow-hidden shadow-lg h-full min-h-[400px]">
+              <div className="rounded-xl overflow-hidden shadow-lg h-full min-h-[400px] relative">
                 <Image
                   src="/images/banner.webp"
                   alt="East at West Restaurant"
                   fill
                   className="object-cover"
+                  priority
                   unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-8 left-8 right-8 text-white text-center lg:text-left">
-                  <h3 className="text-5xl font-bold mb-2 text-orange-500 " style={{ fontFamily: 'Times New Roman, serif' }}>
+                  <h3 className={`text-5xl font-bold mb-2 ${
+                    theme === 'dark' ? 'text-gray-500' : 'text-gray-900'
+                  }`} style={{ fontFamily: 'Times New Roman, serif' }}>
                     {t('contact.restaurantImageAlt')}
                   </h3>
                   <p className="text-lg">
@@ -205,66 +233,7 @@ export default function ContactPage() {
         </div>
       </motion.section>
 
-      {/* Map Section */}
-      <motion.section 
-        className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'
-        }`}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={containerVariants}
-      >
-        {/* Background Elements */}
-        <motion.div 
-          className="absolute top-10 right-10 w-40 h-40 bg-gradient-to-br from-blue-400 to-green-500 rounded-full opacity-10 blur-2xl"
-          variants={floatingVariants}
-          animate="float"
-        />
-        
-        <div className="max-w-7xl mx-auto relative">
-          <motion.div className="text-center mb-12" variants={itemVariants}>
-            <span className="inline-block text-6xl mb-4 animate-pulse">🗺️</span>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent" style={{ fontFamily: 'Times New Roman, serif' }}>
-              {t('contact.findUs')}
-            </h2>
-            <p className={`text-lg ${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>
-              {t('contact.locationDescription')}
-            </p>
-          </motion.div>
 
-          {/* Map Placeholder */}
-          <motion.div 
-            className={`rounded-xl overflow-hidden shadow-2xl h-96 border-2 transform hover:scale-105 transition-all duration-300 ${
-              theme === 'dark' 
-                ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20' 
-                : 'bg-gray-100/80 border-blue-300/50 shadow-blue-200/50'
-            } flex items-center justify-center backdrop-blur-sm`}
-            variants={itemVariants}
-            whileHover={{ y: -5 }}
-          >
-            <div className="text-center">
-              <motion.svg 
-                className="w-16 h-16 mx-auto mb-4 text-orange-500" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </motion.svg>
-              <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">{t('contact.interactiveMap')}</h3>
-              <p className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>
-                {t('footer.address')}
-              </p>
-              <p className={`text-sm mt-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
-                {t('contact.mapIntegration')}
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </motion.section>
 
       {/* Social Media */}
       <motion.section 
@@ -287,7 +256,11 @@ export default function ContactPage() {
             <span className="inline-block text-6xl mb-4 animate-spin" style={{ animationDuration: '3s' }}>🌟</span>
           </motion.div>
           <motion.h2 
-            className="text-3xl sm:text-4xl font-bold mb-8 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 bg-clip-text text-transparent" 
+            className={`text-3xl sm:text-4xl font-bold mb-8 bg-clip-text text-transparent ${
+              theme === 'dark' 
+                ? 'bg-white' 
+                : 'bg-black'
+            }`}
             style={{ fontFamily: 'Times New Roman, serif' }}
             variants={itemVariants}
           >
@@ -303,7 +276,11 @@ export default function ContactPage() {
           <motion.div className="flex justify-center space-x-6" variants={itemVariants}>
             <a
               href="#"
-              className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors duration-300"
+              className={`w-12 h-12 rounded-full flex items-center justify-center text-white transition-colors duration-300 ${
+                theme === 'dark' 
+                  ? 'bg-gray-500 hover:bg-gray-600' 
+                  : 'bg-gray-900 hover:bg-gray-700'
+              }`}
               aria-label="Facebook"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -312,7 +289,11 @@ export default function ContactPage() {
             </a>
             <a
               href="#"
-              className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors duration-300"
+              className={`w-12 h-12 rounded-full flex items-center justify-center text-white transition-colors duration-300 ${
+                theme === 'dark' 
+                  ? 'bg-gray-500 hover:bg-gray-600' 
+                  : 'bg-gray-900 hover:bg-gray-700'
+              }`}
               aria-label="Instagram"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -321,7 +302,11 @@ export default function ContactPage() {
             </a>
             <a
               href="#"
-              className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors duration-300"
+              className={`w-12 h-12 rounded-full flex items-center justify-center text-white transition-colors duration-300 ${
+                theme === 'dark' 
+                  ? 'bg-gray-500 hover:bg-gray-600' 
+                  : 'bg-gray-900 hover:bg-gray-700'
+              }`}
               aria-label="Twitter"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

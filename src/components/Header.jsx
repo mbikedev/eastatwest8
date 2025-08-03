@@ -119,7 +119,7 @@ const Header = () => {
                 { href: '/takeaway', label: t('nav.takeaway') },
                 { href: '/gallery', label: t('nav.gallery') },
                 { href: '/about', label: t('nav.about') },
-                { href: '/contact', label: t('nav.contact') }
+                { href: '/#contact', label: t('nav.contact') }
               ].map((item, index) => (
                 <motion.div
                   key={item.href}
@@ -215,7 +215,7 @@ const Header = () => {
                   { href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
                   { href: '/gallery', label: t('nav.gallery'), icon: '📸' },
                   { href: '/about', label: t('nav.about'), icon: '👥' },
-                  { href: '/contact', label: t('nav.contact'), icon: '📞' }
+                  { href: '/#contact', label: t('nav.contact'), icon: '📞' }
                 ].map((item, index) => (
                   <motion.div
                     key={item.href}

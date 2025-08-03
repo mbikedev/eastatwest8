@@ -356,7 +356,7 @@
         "price": "6€"
       },
       "assortmentArabicSweets": {
-        "title": "Assortiment van Arabische zoetigheden",
+        "title": "Baklawa",
         "description": "Assortiment van Arabische zoetigheden",
         "price": "6€"
       }
@@ -989,6 +989,7 @@
   },
   "contact": {
     "title": "Contact",
+    "contactUs": "Neem contact met ons op",
     "subtitle": "Neem contact met ons op voor reserveringen, vragen of speciale evenementen",
     "contactInformation": "Contactinformatie",
     "phone": "Telefoon",
@@ -1005,7 +1006,12 @@
     "followUs": "Volg Ons",
     "socialDescription": "Blijf op de hoogte van onze nieuwste gerechten, evenementen en speciale aanbiedingen",
     "restaurantImageAlt": "East at West Restaurant",
-    "restaurantDescription": "Ervaar de beste mediterrane keuken in het hart van Brussel"
+    "restaurantDescription": "Ervaar de beste mediterrane keuken in het hart van Brussel",
+    "contactTooltips": {
+      "phone": "Bel ons",
+      "email": "Stuur ons een email",
+      "address": "Routebeschrijving"
+    }
   },
   "parallax": {
     "title": "Verhef je culinaire beleving",

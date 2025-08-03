@@ -115,7 +115,7 @@ export default function CheckoutPage() {
         language: i18n.language,
         items: cart.items.map(item => ({
           product_id: item.product.id,
-          product_name: item.product.name,
+          product_name: getLocalizedText(item.product.name),
           quantity: item.quantity,
           unit_price: item.product.price,
           total_price: item.product.price * item.quantity
@@ -141,7 +141,7 @@ export default function CheckoutPage() {
           },
           body: JSON.stringify({
             orderId: result.data.id,
-            amount: Math.round(cart.total * 100), // Convert to cents
+            amount: cart.total,
             currency: 'eur'
           })
         })

@@ -479,6 +479,7 @@ export default function MenuPage() {
         price: t("menu.desserts.halw.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/desserts/halw.webp",
       },
       {
         name: t("menu.desserts.assortmentArabicSweets.title"),
@@ -486,6 +487,7 @@ export default function MenuPage() {
         price: t("menu.desserts.assortmentArabicSweets.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/desserts/baklawa.webp",
       },
     ],
     drinks: [
@@ -2719,12 +2721,12 @@ export default function MenuPage() {
       <section
         className={`py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 ${theme === "dark"
           ? "bg-[#1A1A1A] border-t border-white/20"
-          : "bg-[#F5F0E6]"
+          : "bg-[#ebe8e6]"
           }`}
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2
-            className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+            className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ${theme === "dark" ? "text-yellow-900" : "text-[#1A1A1A]"
               }`}
           >
             {t('menu.cta.title')}
@@ -2738,9 +2740,9 @@ export default function MenuPage() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
               href="/reservations"
-              className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${theme === "dark"
-                ? "bg-white text-[#1A1A1A] hover:bg-white/90 focus:ring-white/30"
-                : "bg-[#A8D5BA] text-white hover:bg-[#A8D5BA]/90 focus:ring-[#A8D5BA]/30"
+              className={`inline-block border-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${theme === "dark"
+                ? "border-white text-white hover:bg-white hover:text-[#1A1A1A] focus:ring-white/30"
+                : "border-[#615f5d] text-black hover:bg-[#615f5d] hover:text-white focus:ring-[#A8D5BA]/30"
                 }`}
             >
               {t("nav.reservations")}
@@ -2749,7 +2751,7 @@ export default function MenuPage() {
               href="/takeaway"
               className={`inline-block border-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:ring-4 focus:outline-none ${theme === "dark"
                 ? "border-white text-white hover:bg-white hover:text-[#1A1A1A] focus:ring-white/30"
-                : "border-[#A8D5BA] text-[#A8D5BA] hover:bg-[#A8D5BA] hover:text-white focus:ring-[#A8D5BA]/30"
+                : "border-[#615f5d] text-black hover:bg-[#615f5d] hover:text-white focus:ring-[#A8D5BA]/30"
                 }`}
             >
               {t("nav.takeaway")}

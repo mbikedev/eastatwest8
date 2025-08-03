@@ -357,8 +357,8 @@
         "price": "6€"
       },
       "assortmentArabicSweets": {
-        "title": "Assortiment of Arabic sweets",
-        "description": "Assortiment of Arabic sweets",
+        "title": "Baklawa",
+        "description": "Assortment of Arabic sweets",
         "price": "6€"
       }
     },
@@ -733,7 +733,7 @@
       },
       "traditionalIceCream": {
         "name": "Traditional Ice Cream",
-        "description": "Homemade Middle Eastern ice cream with rose water and pistachios"
+        "description": "Frozen dairy ice cream with pistachio."
       },
       "hummusSandwich": {
         "name": "Hummus Sandwich",
@@ -983,6 +983,7 @@
   },
   "contact": {
     "title": "Contact",
+    "contactUs": "Contact Us",
     "subtitle": "Get in touch with us for reservations, inquiries, or special events",
     "contactInformation": "Contact Information",
     "phone": "Phone",
@@ -999,7 +1000,12 @@
     "followUs": "Follow Us",
     "socialDescription": "Stay updated with our latest dishes, events, and special offers",
     "restaurantImageAlt": "East at West Restaurant",
-    "restaurantDescription": "Experience the finest Mediterranean cuisine in the heart of Brussels"
+    "restaurantDescription": "Experience the finest Mediterranean cuisine in the heart of Brussels",
+    "contactTooltips": {
+      "phone": "Call Us",
+      "email": "Send us an email",
+      "address": "Get directions"
+    }
   },
   "parallax": {
     "title": "Elevate Your Culinary Experience",

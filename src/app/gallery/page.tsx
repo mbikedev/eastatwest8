@@ -300,8 +300,8 @@ export default function GalleryPage() {
             <div className="text-6xl mb-4">🖼️</div>
             <h1 className={`text-4xl sm:text-5xl lg:text-6xl font-black mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`} style={{fontFamily: 'Times New Roman, serif'}}>
               <span
-                className={`font-black ${theme === 'dark' ? 'text-orange-400' : 'text-transparent bg-clip-text'}`}
-                style={theme === 'dark' ? {} : { backgroundColor: 'rgba(212, 142, 26, 1)' }}
+                className={`font-black ${theme === 'dark' ? 'text-white' : 'text-transparent bg-clip-text'}`}
+                style={theme === 'dark' ? {} : { backgroundColor: 'rgb(1, 1, 1)' }}
               >
                 {t('gallery.title')}
               </span>
@@ -388,8 +388,8 @@ export default function GalleryPage() {
               onClick={() => window.location.reload()}
               className={`inline-flex items-center px-8 py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 ${
                 theme === 'dark'
-                  ? 'bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white'
-                  : 'bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white'
+                  ? 'bg-white hover:from-orange-700 hover:to-red-700 text-black'
+                  : 'bg-gray-900 hover:from-orange-600 hover:to-red-600 text-white'
               } shadow-lg hover:shadow-xl`}
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -407,7 +407,7 @@ export default function GalleryPage() {
           href="/"
           className={`inline-flex items-center px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
             theme === 'dark'
-              ? 'text-gray-300 hover:text-white hover:bg-gray-800'
+              ? 'bg-gray-600 text-white hover:text-white hover:bg-gray-800'
               : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
           }`}
         >

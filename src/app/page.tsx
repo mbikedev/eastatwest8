@@ -747,16 +747,14 @@ export default function HomePage() {
                       style={{ cursor: 'pointer' }}
                       aria-label="Restaurant Guru Award 2023 – East @ West Brussels"
                     >
-                      <Image
-                        src={Guru1}
-                        alt="Restaurant Guru Award 2023 – East @ West Brussels"
-                        width={300}
-                        height={192}
-                        className="h-48 w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                        loading="lazy"
-                        quality={85}
-                        sizes="(max-width: 640px) 280px, 300px"
-                      />
+                      <div className="h-48 w-auto">
+                        <img
+                          src={Guru1.src}
+                          alt="Restaurant Guru Award 2023 – East @ West Brussels"
+                          className="h-full w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                          loading="lazy"
+                        />
+                      </div>
                     </a>
 
                   </figure>
@@ -772,16 +770,14 @@ export default function HomePage() {
                       style={{ cursor: 'pointer' }}
                       aria-label="Restaurant Guru Award 2024 – East @ West Brussels"
                     >
-                      <Image
-                        src={Guru2}
-                        alt="Restaurant Guru Award 2024 – East @ West Brussels"
-                        width={300}
-                        height={192}
-                        className="h-48 w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                        loading="lazy"
-                        quality={85}
-                        sizes="(max-width: 640px) 280px, 300px"
-                      />
+                      <div className="h-48 w-auto">
+                        <img
+                          src={Guru2.src}
+                          alt="Restaurant Guru Award 2024 – East @ West Brussels"
+                          className="h-full w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                          loading="lazy"
+                        />
+                      </div>
                     </a>
 
                   </figure>
@@ -830,6 +826,161 @@ export default function HomePage() {
                   })
                 }}
               />
+            </motion.section>
+
+            {/* Contact Section */}
+            <motion.section 
+              id="contact"
+              className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
+              }`}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={containerVariants}
+            >
+              {/* Background Gradient */}
+              <div className={`absolute inset-0 pointer-events-none ${
+                theme === 'dark' 
+                  ? 'bg-gray-900' 
+                  : 'bg-white'
+              }`} />
+              
+              <div className="max-w-7xl mx-auto relative">
+                {/* Section Header */}
+                <motion.div className="mb-12 text-center" variants={itemVariants}>
+                  <h2 className={`text-4xl sm:text-5xl font-black mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                    }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                    <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
+                      }`}>
+                      {t('contact.contactUs')}
+                    </span>
+                  </h2>
+                  <div className="w-32 h-1.5 bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] mx-auto rounded-full mb-4"></div>
+                </motion.div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                  {/* Contact Details */}
+                  <motion.div 
+                    className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${
+                      theme === 'dark' 
+                        ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20' 
+                        : 'bg-white/80 border-gray-600 shadow-gray-500/20'
+                    }`}
+                    variants={itemVariants}
+                    whileHover={{ y: -5 }}
+                  >
+
+
+                    <div className="space-y-6">
+                      {/* Phone */}
+                      <div className="flex items-center">
+                        <a 
+                          href="tel:+32465206024"
+                          title={t('contact.contactTooltips.phone')}
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${
+                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                          }`}
+                        >
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                        </a>
+                        <div>
+                          <h3 className="text-lg font-semibold">{t('contact.phone')}</h3>
+                          <p className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>{t('footer.phone')}</p>
+                        </div>
+                      </div>
+
+                      {/* Email */}
+                      <div className="flex items-center">
+                        <a 
+                          href="mailto:contact@eastatwest.com"
+                          title={t('contact.contactTooltips.email')}
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${
+                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                          }`}
+                        >
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                        </a>
+                        <div>
+                          <h3 className="text-lg font-semibold">{t('contact.email')}</h3>
+                          <p className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>{t('footer.email')}</p>
+                        </div>
+                      </div>
+
+                      {/* Address */}
+                      <div className="flex items-start">
+                        <a 
+                          href="https://maps.google.com/?q=Bld+de+l'Empereur+26+1000+Brussels+Belgium"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={t('contact.contactTooltips.address')}
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${
+                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                          }`}
+                        >
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                        </a>
+                        <div>
+                          <h3 className="text-lg font-semibold">{t('contact.address')}</h3>
+                          <p className={`whitespace-pre-line ${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>{t('footer.address')}</p>
+                        </div>
+                      </div>
+
+                      {/* Hours */}
+                      <div className="flex items-start">
+                        <a 
+                          href="/reservations"
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${
+                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                          }`}
+                        >
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </a>
+                        <div>
+                          <h3 className="text-lg font-semibold">{t('contact.openingHours')}</h3>
+                          <div className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>
+                            <p>{t('contact.mondayFriday')}</p>
+                            <p>{t('contact.saturday')}</p>
+                            <p>{t('contact.sundayClosed')}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  {/* Restaurant Image */}
+                  <motion.div className="relative" variants={itemVariants}>
+                    <div className="rounded-xl overflow-hidden shadow-lg h-full min-h-[400px] relative">
+                      <Image
+                        src="/images/banner.webp"
+                        alt="East at West Restaurant"
+                        fill
+                        className="object-cover"
+                        priority
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      <div className="absolute bottom-8 left-8 right-8 text-white text-center lg:text-left">
+                        <h3 className={`text-5xl font-bold mb-2 ${
+                          theme === 'dark' ? 'text-white' : 'text-white'
+                        }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                          {t('contact.restaurantImageAlt')}
+                        </h3>
+                        <p className="text-lg">
+                          {t('contact.restaurantDescription')}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
             </motion.section>
 
           </div>

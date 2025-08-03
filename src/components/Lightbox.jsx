@@ -154,12 +154,14 @@ export default function Lightbox({
             alt={imageAlt}
             width={1920}
             height={1920}
-            className="lightbox-image max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl"
+            className="lightbox-image object-contain rounded-lg shadow-2xl"
             style={{
               minWidth: '300px',
               minHeight: '300px',
               maxWidth: 'calc(100vw - 8rem)',
-              maxHeight: 'calc(100vh - 8rem)'
+              maxHeight: 'calc(100vh - 8rem)',
+              width: 'auto',
+              height: 'auto'
             }}
             priority
             quality={95}
