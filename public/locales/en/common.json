@@ -1005,6 +1005,14 @@
       "phone": "Call Us",
       "email": "Send us an email",
       "address": "Get directions"
+    },
+    "reservations": {
+      "cancelled": "Reservation Cancelled",
+      "cancelledDetails": "Cancelled Reservation Details",
+      "cancellationNotice": "Cancellation Notice",
+      "cancellationMessage": "Your reservation has been successfully cancelled. If you need to make a new reservation, please visit our website or contact us directly.",
+      "cancelReservation": "Cancel Reservation",
+      "cancelInstructions": "Click the button above to cancel your reservation. You will receive a confirmation email once cancelled."
     }
   },
   "parallax": {

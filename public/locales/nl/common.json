@@ -1011,6 +1011,14 @@
       "phone": "Bel ons",
       "email": "Stuur ons een email",
       "address": "Routebeschrijving"
+    },
+    "reservations": {
+      "cancelled": "Reservering Geannuleerd",
+      "cancelledDetails": "Geannuleerde Reservering Details",
+      "cancellationNotice": "Annuleringsbericht",
+      "cancellationMessage": "Uw reservering is succesvol geannuleerd. Als u een nieuwe reservering wilt maken, bezoek dan onze website of neem rechtstreeks contact met ons op.",
+      "cancelReservation": "Reservering Annuleren",
+      "cancelInstructions": "Klik op de knop hierboven om uw reservering te annuleren. U ontvangt een bevestigingsmail zodra deze is geannuleerd."
     }
   },
   "parallax": {

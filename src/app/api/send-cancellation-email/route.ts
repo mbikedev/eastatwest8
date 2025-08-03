@@ -1,13 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { createClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
 
 // Translation function to get keys from JSON files
 function getTranslation(language: string, key: string): string {
@@ -37,9 +31,9 @@ function getTranslation(language: string, key: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, guests, language, reservationData } = await req.json();
+    const { email, language, reservationData } = await req.json();
 
-    if (!email || !guests || !language || !reservationData) {
+    if (!email || !language || !reservationData) {
       return NextResponse.json(
         { success: false, error: 'Missing required fields' },
         { status: 400 }
@@ -49,49 +43,6 @@ export async function POST(req: NextRequest) {
     const validLanguages = ['en', 'fr', 'nl'] as const;
     type Language = typeof validLanguages[number];
     const lang: Language = validLanguages.includes(language as Language) ? (language as Language) : 'en';
-
-    // Generate invoice number (7 digits)
-    const invoiceNumber = `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
-    
-    // Save reservation to database
-    const { error: saveError } = await supabase
-      .from('reservations')
-      .insert([{
-        invoice_number: invoiceNumber,
-        name: reservationData.name,
-        email: reservationData.email,
-        phone: reservationData.phone,
-        date: reservationData.date,
-        start_time: reservationData.startTime,
-        end_time: reservationData.endTime,
-        guests: reservationData.guests,
-        special_requests: reservationData.specialRequests,
-        status: guests >= 1 && guests <= 6 ? 'confirmed' : 'pending',
-        language: lang,
-        created_at: new Date().toISOString()
-      }])
-
-    if (saveError) {
-      console.error('Failed to save reservation:', saveError)
-      return NextResponse.json(
-        { success: false, error: 'Failed to save reservation' },
-        { status: 500 }
-      )
-    }
-    
-    let subject = '';
-    let statusText = '';
-    let statusColor = '';
-
-    if (guests >= 1 && guests <= 6) {
-      subject = getTranslation(lang, 'reservations.confirmed');
-      statusText = getTranslation(lang, 'reservations.confirmed');
-      statusColor = '#10B981';
-    } else if (guests >= 7 && guests <= 22) {
-      subject = getTranslation(lang, 'reservations.pending');
-      statusText = getTranslation(lang, 'reservations.pending');
-      statusColor = '#F59E0B';
-    }
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -103,18 +54,20 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const subject = getTranslation(lang, 'reservations.cancelled');
+
     const emailResult = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'contact@eastatwest.com',
       to: email,
       subject,
-      text: `Reservation ${statusText} - Invoice: ${invoiceNumber}`,
+      text: `Reservation Cancelled - Invoice: ${reservationData.invoice_number}`,
       html: `
         <!DOCTYPE html>
         <html lang="${lang}">
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Reservation ${statusText}</title>
+          <title>Reservation Cancelled</title>
         </head>
         <body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5;">
           <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
@@ -125,43 +78,30 @@ export async function POST(req: NextRequest) {
             </div>
 
             <!-- Status Banner -->
-            <div style="background-color: ${statusColor}; padding: 20px; text-align: center;">
+            <div style="background-color: #ef4444; padding: 20px; text-align: center;">
               <h2 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-                ${statusText}
+                ${getTranslation(lang, 'reservations.cancelled')}
               </h2>
             </div>
 
             <!-- Content -->
             <div style="padding: 40px 30px;">
               <!-- Invoice Number -->
-              <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid ${statusColor};">
-                <h3 style="color: #374151; margin: 0 0 10px 0; font-size: 18px; font-weight: 600;">${getTranslation(lang, 'reservations.invoiceNumber')}</h3>
-                <p style="color: #6b7280; margin: 0; font-size: 16px; font-family: 'Courier New', monospace; font-weight: bold;">
-                  ${invoiceNumber}
-                </p>
-                <p style="color: #9ca3af; margin: 10px 0 0 0; font-size: 14px;">
-                  ${getTranslation(lang, 'reservations.invoiceKeepForCancellation')}
+              <div style="background-color: #fef2f2; padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #ef4444;">
+                <h3 style="color: #991b1b; margin: 0 0 10px 0; font-size: 18px; font-weight: 600;">${getTranslation(lang, 'reservations.invoiceNumber')}</h3>
+                <p style="color: #dc2626; margin: 0; font-size: 16px; font-family: 'Courier New', monospace; font-weight: bold;">
+                  ${reservationData.invoice_number}
                 </p>
               </div>
 
-              <!-- Reservation Details -->
+              <!-- Cancelled Reservation Details -->
               <div style="margin-bottom: 30px;">
-                <h3 style="color: #374151; margin: 0 0 20px 0; font-size: 20px; font-weight: 600;">${getTranslation(lang, 'reservations.reservationDetails')}</h3>
+                <h3 style="color: #374151; margin: 0 0 20px 0; font-size: 20px; font-weight: 600;">${getTranslation(lang, 'reservations.cancelledDetails')}</h3>
                 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                   <div>
                     <p style="color: #6b7280; margin: 0 0 5px 0; font-size: 14px; font-weight: 500; text-transform: uppercase;">${getTranslation(lang, 'reservations.form.name')}</p>
                     <p style="color: #374151; margin: 0; font-size: 16px; font-weight: 600;">${reservationData.name}</p>
-                  </div>
-                  
-                  <div>
-                    <p style="color: #6b7280; margin: 0 0 5px 0; font-size: 14px; font-weight: 500; text-transform: uppercase;">${getTranslation(lang, 'reservations.form.email')}</p>
-                    <p style="color: #374151; margin: 0; font-size: 16px;">${reservationData.email}</p>
-                  </div>
-                  
-                  <div>
-                    <p style="color: #6b7280; margin: 0 0 5px 0; font-size: 14px; font-weight: 500; text-transform: uppercase;">${getTranslation(lang, 'reservations.form.phone')}</p>
-                    <p style="color: #374151; margin: 0; font-size: 16px;">${reservationData.phone}</p>
                   </div>
                   
                   <div>
@@ -171,12 +111,12 @@ export async function POST(req: NextRequest) {
                   
                   <div>
                     <p style="color: #6b7280; margin: 0 0 5px 0; font-size: 14px; font-weight: 500; text-transform: uppercase;">Start Time</p>
-                    <p style="color: #374151; margin: 0; font-size: 16px;">${reservationData.startTime}</p>
+                    <p style="color: #374151; margin: 0; font-size: 16px;">${reservationData.start_time}</p>
                   </div>
                   
                   <div>
                     <p style="color: #6b7280; margin: 0 0 5px 0; font-size: 14px; font-weight: 500; text-transform: uppercase;">End Time</p>
-                    <p style="color: #374151; margin: 0; font-size: 16px;">${reservationData.endTime}</p>
+                    <p style="color: #374151; margin: 0; font-size: 16px;">${reservationData.end_time}</p>
                   </div>
                   
                   <div>
@@ -186,29 +126,16 @@ export async function POST(req: NextRequest) {
                   
                   <div>
                     <p style="color: #6b7280; margin: 0 0 5px 0; font-size: 14px; font-weight: 500; text-transform: uppercase;">Status</p>
-                    <p style="color: ${statusColor}; margin: 0; font-size: 16px; font-weight: 600;">${statusText}</p>
+                    <p style="color: #ef4444; margin: 0; font-size: 16px; font-weight: 600;">${getTranslation(lang, 'reservations.cancelled')}</p>
                   </div>
                 </div>
               </div>
 
-              <!-- Special Requests -->
-              ${reservationData.specialRequests ? `
-              <div style="margin-bottom: 30px;">
-                <h3 style="color: #374151; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">${getTranslation(lang, 'reservations.form.special_requests')}</h3>
-                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
-                  <p style="color: #374151; margin: 0; font-size: 16px; line-height: 1.6;">${reservationData.specialRequests}</p>
-                </div>
-              </div>
-              ` : ''}
-
-              <!-- Important Notice -->
-              <div style="background-color: #fef3c7; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b; margin-bottom: 30px;">
-                <h4 style="color: #92400e; margin: 0 0 10px 0; font-size: 16px; font-weight: 600;">${getTranslation(lang, 'reservations.importantInformation')}</h4>
-                <p style="color: #92400e; margin: 0; font-size: 14px; line-height: 1.6;">
-                  ${guests >= 7 && guests <= 22 ? 
-                    getTranslation(lang, 'reservations.pending') :
-                    getTranslation(lang, 'reservations.confirmed')
-                  }
+              <!-- Cancellation Notice -->
+              <div style="background-color: #fef2f2; padding: 20px; border-radius: 8px; border-left: 4px solid #ef4444; margin-bottom: 30px;">
+                <h4 style="color: #991b1b; margin: 0 0 10px 0; font-size: 16px; font-weight: 600;">${getTranslation(lang, 'reservations.cancellationNotice')}</h4>
+                <p style="color: #991b1b; margin: 0; font-size: 14px; line-height: 1.6;">
+                  ${getTranslation(lang, 'reservations.cancellationMessage')}
                 </p>
               </div>
 
@@ -224,17 +151,6 @@ export async function POST(req: NextRequest) {
                 <p style="color: #6b7280; margin: 0; font-size: 14px;">
                   <strong>Address:</strong><br>
                   ${getTranslation(lang, 'reservations.contactAddress').replace(/\n/g, '<br>')}
-                </p>
-              </div>
-
-              <!-- Cancel Reservation Button -->
-              <div style="text-align: center; margin: 30px 0;">
-                <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://eastatwest.com'}/api/cancel-reservation?invoice=${invoiceNumber}" 
-                   style="display: inline-block; background-color: #ef4444; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s;">
-                  ${getTranslation(lang, 'reservations.cancelReservation')}
-                </a>
-                <p style="color: #6b7280; margin: 10px 0 0 0; font-size: 14px;">
-                  ${getTranslation(lang, 'reservations.cancelInstructions')}
                 </p>
               </div>
             </div>
@@ -265,11 +181,11 @@ export async function POST(req: NextRequest) {
       }
     });
 
-    console.log('Email sent successfully:', emailResult);
+    console.log('Cancellation email sent successfully:', emailResult);
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending cancellation email:', error);
     return NextResponse.json(
       { success: false, error: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }

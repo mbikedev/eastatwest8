@@ -957,30 +957,7 @@ export default function ReservationsPage() {
               >
                 {isSubmitting ? '⏳ Submitting...' : `✅ ${t("reservations.confirmReservation")}`}
               </button>
-              <button
-                type="button"
-                className={`font-bold text-base py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg ${
-                  theme === "dark"
-                    ? 'bg-gradient-to-r from-gray-700 to-gray-600 text-white hover:from-gray-600 hover:to-gray-500 shadow-gray-700/50'
-                    : 'bg-gradient-to-r from-gray-600 to-gray-500 text-white hover:from-gray-500 hover:to-gray-400 shadow-gray-600/50'
-                }`}
-                onClick={() => {
-                  setForm({
-                    name: "",
-                    email: "",
-                    phone: "",
-                    startTime: "",
-                    endTime: "",
-                    guests: "",
-                    specialRequests: "",
-                    date: "",
-                  });
-                  setValidationErrors([]);
-                  setValidationWarnings([]);
-                }}
-              >
-                🔄 {t("reservations.cancel")}
-              </button>
+
             </div>
           </form>
           </div>

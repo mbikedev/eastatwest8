@@ -1004,6 +1004,14 @@
       "phone": "Appelez-nous",
       "email": "Envoyez-nous un email",
       "address": "Obtenir l'itinéraire"
+    },
+    "reservations": {
+      "cancelled": "Réservation Annulée",
+      "cancelledDetails": "Détails de la Réservation Annulée",
+      "cancellationNotice": "Avis d'Annulation",
+      "cancellationMessage": "Votre réservation a été annulée avec succès. Si vous souhaitez faire une nouvelle réservation, veuillez visiter notre site web ou nous contacter directement.",
+      "cancelReservation": "Annuler la Réservation",
+      "cancelInstructions": "Cliquez sur le bouton ci-dessus pour annuler votre réservation. Vous recevrez un email de confirmation une fois annulée."
     }
   },
   "parallax": {
