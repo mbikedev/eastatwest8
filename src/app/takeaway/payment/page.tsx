@@ -27,7 +27,7 @@ interface PaymentFormProps {
 const PaymentForm: React.FC<PaymentFormProps> = ({ clientSecret, orderId, amount }) => {
   const { t } = useTranslation('common')
   const { theme } = useTheme()
-  const { cart, clearCart } = useCart()
+  const { cart } = useCart()
   const router = useRouter()
   
   const stripe = useStripe()
@@ -35,7 +35,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({ clientSecret, orderId, amount
   
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [success, setSuccess] = useState(false)
+  const [success] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -66,7 +66,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({ clientSecret, orderId, amount
       if (confirmError) {
         setError(confirmError.message || 'Payment failed')
       }
-    } catch (err) {
+    } catch {
       setError('An unexpected error occurred')
     } finally {
       setLoading(false)
@@ -130,10 +130,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({ clientSecret, orderId, amount
             <AddressElement 
               options={{
                 mode: 'billing',
-                allowedCountries: ['BE', 'NL', 'FR', 'DE'],
-                defaultValues: {
-                  country: 'BE'
-                }
+                allowedCountries: ['BE', 'NL', 'FR', 'DE']
               }}
             />
           </div>

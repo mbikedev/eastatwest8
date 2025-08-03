@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
 
     // Create order items
     if (orderData.items && orderData.items.length > 0) {
-      const orderItems = orderData.items.map((item: any) => ({
+      const orderItems = orderData.items.map((item: { product_id: string; product_name: string; quantity: number; unit_price: number; total_price: number }) => ({
         order_id: order.id,
         product_id: item.product_id,
         product_name: item.product_name,

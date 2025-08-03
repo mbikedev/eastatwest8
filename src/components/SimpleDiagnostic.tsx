@@ -3,7 +3,16 @@
 import { useEffect, useState } from 'react'
 
 const SimpleDiagnostic: React.FC = () => {
-  const [diagnosticData, setDiagnosticData] = useState<any>(null)
+  const [diagnosticData, setDiagnosticData] = useState<{
+    status: string;
+    message: string;
+    apiKeyPresent: boolean;
+    apiKeyLength: number;
+    apiKeyPrefix: string | null;
+    mapIdPresent: boolean;
+    mapIdLength: number;
+    mapIdPrefix: string | null;
+  } | null>(null)
 
   useEffect(() => {
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY

@@ -8,10 +8,11 @@ const supabase = createClient(
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params
   try {
-    const orderId = params.id
+    const orderId = id
 
     if (!orderId) {
       return NextResponse.json(
@@ -54,10 +55,11 @@ export async function GET(
 
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params
   try {
-    const orderId = params.id
+    const orderId = id
     const updateData = await request.json()
 
     if (!orderId) {
