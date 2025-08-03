@@ -24,11 +24,14 @@ function getTranslation(language: string, key: string): string {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
+        console.log(`Translation not found for ${language}.${key}, returning key`);
         return key; // Return key if translation not found
       }
     }
     
-    return typeof value === 'string' ? value : key;
+    const result = typeof value === 'string' ? value : key;
+    console.log(`Translation for ${language}.${key}: "${result}"`);
+    return result;
   } catch (error) {
     console.error(`Translation error for ${language}.${key}:`, error);
     return key;
@@ -208,10 +211,10 @@ export async function POST(req: NextRequest) {
               <div style="text-align: center; margin: 30px 0;">
                 <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://eastatwest.com'}/api/cancel-reservation?invoice=${finalInvoiceNumber}" 
                    style="display: inline-block; background-color: #ef4444; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s;">
-                  ${getTranslation(lang, 'reservations.cancelReservation') || 'Cancel Reservation'}
+                  ${lang === 'fr' ? 'Annuler la Réservation' : lang === 'nl' ? 'Reservering Annuleren' : 'Cancel Reservation'}
                 </a>
                 <p style="color: #6b7280; margin: 10px 0 0 0; font-size: 14px;">
-                  ${getTranslation(lang, 'reservations.cancelInstructions') || 'Click the button above to cancel your reservation. You will receive a confirmation email once cancelled.'}
+                  ${lang === 'fr' ? 'Cliquez sur le bouton ci-dessus pour annuler votre réservation. Vous recevrez un email de confirmation une fois annulé.' : lang === 'nl' ? 'Klik op de knop hierboven om uw reservering te annuleren. U ontvangt een bevestigingsmail zodra deze is geannuleerd.' : 'Click the button above to cancel your reservation. You will receive a confirmation email once cancelled.'}
                 </p>
               </div>
             </div>
