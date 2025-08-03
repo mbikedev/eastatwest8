@@ -1,12 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-07-30.basil'
-})
+// Initialize Stripe only if the secret key is available
+const stripe = process.env.STRIPE_SECRET_KEY 
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2025-07-30.basil'
+    })
+  : null
 
 export async function POST(request: NextRequest) {
   try {
+    // Check if Stripe is properly configured
+    if (!stripe) {
+      return NextResponse.json(
+        { success: false, error: 'Payment service not configured' },
+        { status: 503 }
+      )
+    }
+
     const { orderId, amount, currency = 'eur' } = await request.json()
 
     if (!orderId || !amount) {

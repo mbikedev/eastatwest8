@@ -2,25 +2,43 @@ import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 import { createClient } from '@supabase/supabase-js'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-07-30.basil'
-})
+// Initialize Stripe only if the secret key is available
+const stripe = process.env.STRIPE_SECRET_KEY 
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2025-07-30.basil'
+    })
+  : null
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 )
 
-const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!
+const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET
 
 export async function POST(request: NextRequest) {
+  // Check if Stripe is properly configured
+  if (!stripe || !endpointSecret) {
+    return NextResponse.json(
+      { error: 'Webhook service not configured' },
+      { status: 503 }
+    )
+  }
+
   const body = await request.text()
   const sig = request.headers.get('stripe-signature')
+
+  if (!sig) {
+    return NextResponse.json(
+      { error: 'Missing stripe signature' },
+      { status: 400 }
+    )
+  }
 
   let event: Stripe.Event
 
   try {
-    event = stripe.webhooks.constructEvent(body, sig!, endpointSecret)
+    event = stripe.webhooks.constructEvent(body, sig, endpointSecret)
   } catch (err) {
     console.error('Webhook signature verification failed:', err)
     return NextResponse.json(
