@@ -79,8 +79,7 @@ export default function RootLayout({
         {/* Restaurant Guru CSS */}
         <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet" />
 
-        {/* Preload critical images */}
-        <link rel="preload" href="/images/banner.webp" as="image" type="image/webp" />
+        {/* Preload critical images - removed banner.webp as it's not used on all pages */}
         
         {/* Inline ultra-critical CSS for immediate first paint */}
         <style dangerouslySetInnerHTML={{ __html: ultraCriticalCSS }} />
