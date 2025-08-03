@@ -293,10 +293,12 @@ export default function ReservationsPage() {
             // Send emails even in fallback mode
             const guest_count = Number(form.guests);
             const language = i18n.language || 'en';
+            const fallbackInvoiceNumber = `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
             await sendReservationEmail({ 
               email: form.email, 
               guests: guest_count, 
               language,
+              invoiceNumber: fallbackInvoiceNumber,
               reservationData: {
                 name: form.name,
                 email: form.email,
@@ -357,10 +359,12 @@ export default function ReservationsPage() {
             // Send emails even in fallback mode
             const guest_count = Number(form.guests);
             const language = i18n.language || 'en';
+            const fallbackInvoiceNumber = `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
             await sendReservationEmail({ 
               email: form.email, 
               guests: guest_count, 
               language,
+              invoiceNumber: fallbackInvoiceNumber,
               reservationData: {
                 name: form.name,
                 email: form.email,
@@ -474,10 +478,12 @@ export default function ReservationsPage() {
         // Send emails even in fallback mode
         const guest_count = Number(form.guests);
         const language = i18n.language || 'en';
+        const fallbackInvoiceNumber = `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
         await sendReservationEmail({ 
           email: form.email, 
           guests: guest_count, 
           language,
+          invoiceNumber: fallbackInvoiceNumber,
           reservationData: {
             name: form.name,
             email: form.email,
