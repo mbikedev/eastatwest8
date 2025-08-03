@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
           <!-- Header -->
           <div style="background: linear-gradient(135deg, #1f2937 0%, #374151 100%); padding: 30px; text-align: center;">
             <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 300;">East at West</h1>
-            <p style="color: #d1d5db; margin: 10px 0 0 0; font-size: 16px;">Restaurant & Bar</p>
+            <p style="color: #d1d5db; margin: 10px 0 0 0; font-size: 16px;">Restaurant & Take-Away</p>
           </div>
 
           <!-- Status Banner -->
