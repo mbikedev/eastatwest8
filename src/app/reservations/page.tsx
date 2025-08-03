@@ -272,14 +272,12 @@ export default function ReservationsPage() {
           name: form.name,
           email: form.email,
           phone: form.phone,
-          reservation_date: form.date,
+          date: form.date,
           start_time: form.startTime,
           end_time: form.endTime,
-          number_of_guests: guest_count,
+          guests: guest_count,
           special_requests: form.specialRequests,
-          status,
-          invoice_number: invoiceNumber,
-          language: i18n.language || 'en'
+          status
         });
 
       if (error) {
