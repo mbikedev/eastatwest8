@@ -20,10 +20,11 @@ function getFirstDayOfWeek(year: number, month: number) {
 }
 
 // Helper function to send reservation email via API
-async function sendReservationEmail({ email, guests, language, reservationData }: { 
+async function sendReservationEmail({ email, guests, language, invoiceNumber, reservationData }: { 
   email: string, 
   guests: number, 
   language: string,
+  invoiceNumber?: string,
   reservationData: {
     name: string;
     email: string;
@@ -205,10 +206,12 @@ export default function ReservationsPage() {
           // Send emails even in fallback mode
           const guest_count = Number(form.guests);
           const language = i18n.language || 'en';
+          const fallbackInvoiceNumber = `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
           await sendReservationEmail({ 
             email: form.email, 
             guests: guest_count, 
             language,
+            invoiceNumber: fallbackInvoiceNumber,
             reservationData: {
               name: form.name,
               email: form.email,
@@ -259,6 +262,10 @@ export default function ReservationsPage() {
       if (guest_count >= 7 && guest_count <= 22) {
         status = 'pending';
       }
+      
+      // Generate invoice number
+      const invoiceNumber = `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
+      
       const { error } = await supabase
         .from('reservations')
         .insert({
@@ -271,6 +278,9 @@ export default function ReservationsPage() {
           guests: guest_count,
           special_requests: form.specialRequests,
           status,
+          invoice_number: invoiceNumber,
+          language: i18n.language || 'en',
+          created_at: new Date().toISOString()
         });
 
       if (error) {
@@ -427,6 +437,7 @@ export default function ReservationsPage() {
           email: form.email, 
           guests: guest_count, 
           language,
+          invoiceNumber,
           reservationData: {
             name: form.name,
             email: form.email,

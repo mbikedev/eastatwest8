@@ -37,7 +37,7 @@ function getTranslation(language: string, key: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, guests, language, reservationData } = await req.json();
+    const { email, guests, language, invoiceNumber, reservationData } = await req.json();
 
     if (!email || !guests || !language || !reservationData) {
       return NextResponse.json(
@@ -50,34 +50,11 @@ export async function POST(req: NextRequest) {
     type Language = typeof validLanguages[number];
     const lang: Language = validLanguages.includes(language as Language) ? (language as Language) : 'en';
 
-    // Generate invoice number (7 digits)
-    const invoiceNumber = `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
+    // Use provided invoice number or generate one if not provided
+    const finalInvoiceNumber = invoiceNumber || `INV-${String(Date.now()).slice(-4)}${String(Math.floor(Math.random() * 1000)).padStart(3, '0')}`;
     
-    // Save reservation to database
-    const { error: saveError } = await supabase
-      .from('reservations')
-      .insert([{
-        invoice_number: invoiceNumber,
-        name: reservationData.name,
-        email: reservationData.email,
-        phone: reservationData.phone,
-        date: reservationData.date,
-        start_time: reservationData.startTime,
-        end_time: reservationData.endTime,
-        guests: reservationData.guests,
-        special_requests: reservationData.specialRequests,
-        status: guests >= 1 && guests <= 6 ? 'confirmed' : 'pending',
-        language: lang,
-        created_at: new Date().toISOString()
-      }])
-
-    if (saveError) {
-      console.error('Failed to save reservation:', saveError)
-      return NextResponse.json(
-        { success: false, error: 'Failed to save reservation' },
-        { status: 500 }
-      )
-    }
+    // Note: Reservation is already saved in the reservations page
+    // We just need to use the invoice number for the email
     
     let subject = '';
     let statusText = '';
@@ -107,7 +84,7 @@ export async function POST(req: NextRequest) {
       from: process.env.RESEND_FROM_EMAIL || 'contact@eastatwest.com',
       to: email,
       subject,
-      text: `Reservation ${statusText} - Invoice: ${invoiceNumber}`,
+      text: `Reservation ${statusText} - Invoice: ${finalInvoiceNumber}`,
       html: `
         <!DOCTYPE html>
         <html lang="${lang}">
@@ -137,7 +114,7 @@ export async function POST(req: NextRequest) {
               <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid ${statusColor};">
                 <h3 style="color: #374151; margin: 0 0 10px 0; font-size: 18px; font-weight: 600;">${getTranslation(lang, 'reservations.invoiceNumber')}</h3>
                 <p style="color: #6b7280; margin: 0; font-size: 16px; font-family: 'Courier New', monospace; font-weight: bold;">
-                  ${invoiceNumber}
+                  ${finalInvoiceNumber}
                 </p>
                 <p style="color: #9ca3af; margin: 10px 0 0 0; font-size: 14px;">
                   ${getTranslation(lang, 'reservations.invoiceKeepForCancellation')}
@@ -229,7 +206,7 @@ export async function POST(req: NextRequest) {
 
               <!-- Cancel Reservation Button -->
               <div style="text-align: center; margin: 30px 0;">
-                <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://eastatwest.com'}/api/cancel-reservation?invoice=${invoiceNumber}" 
+                <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://eastatwest.com'}/api/cancel-reservation?invoice=${finalInvoiceNumber}" 
                    style="display: inline-block; background-color: #ef4444; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s;">
                   ${getTranslation(lang, 'reservations.cancelReservation')}
                 </a>
