@@ -13,9 +13,9 @@
 # NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
 # NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID
 
-# Secrets scanning configuration
+# Secrets scanning configuration - ignore expected environment variables
 [build.environment]
-  SECRETS_SCAN_ENABLED = "false"
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SUPABASE_ANON_KEY,NEXT_PUBLIC_SUPABASE_URL,RESEND_API_KEY,RESEND_FROM_EMAIL,NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs" 
