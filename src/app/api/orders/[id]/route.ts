@@ -1,10 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@supabase/supabase-js'
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
+import { createClient } from '@/lib/supabaseServer'
 
 export async function GET(
   request: NextRequest,
@@ -12,6 +7,7 @@ export async function GET(
 ) {
   const { id } = await params
   try {
+    const supabase = await createClient()
     const orderId = id
 
     if (!orderId) {
@@ -59,6 +55,7 @@ export async function PATCH(
 ) {
   const { id } = await params
   try {
+    const supabase = await createClient()
     const orderId = id
     const updateData = await request.json()
 

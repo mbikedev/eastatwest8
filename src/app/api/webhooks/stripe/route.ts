@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@/lib/supabaseServer'
 
 // Initialize Stripe only if the secret key is available
 const stripe = process.env.STRIPE_SECRET_KEY 
@@ -8,11 +8,6 @@ const stripe = process.env.STRIPE_SECRET_KEY
       apiVersion: '2025-07-30.basil'
     })
   : null
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
 
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET
 
@@ -87,6 +82,7 @@ async function handlePaymentSuccess(paymentIntent: Stripe.PaymentIntent) {
   }
 
   try {
+    const supabase = await createClient()
     // Update order status to paid
     const { error: updateError } = await supabase
       .from('orders')
@@ -120,6 +116,7 @@ async function handlePaymentFailure(paymentIntent: Stripe.PaymentIntent) {
   }
 
   try {
+    const supabase = await createClient()
     // Update order status to failed
     const { error: updateError } = await supabase
       .from('orders')
@@ -149,6 +146,7 @@ async function handlePaymentCanceled(paymentIntent: Stripe.PaymentIntent) {
   }
 
   try {
+    const supabase = await createClient()
     // Update order status to canceled
     const { error: updateError } = await supabase
       .from('orders')
@@ -171,6 +169,7 @@ async function handlePaymentCanceled(paymentIntent: Stripe.PaymentIntent) {
 
 async function sendOrderConfirmationEmail(orderId: string) {
   try {
+    const supabase = await createClient()
     // Get order details
     const { data: order, error: orderError } = await supabase
       .from('orders')
