@@ -13,14 +13,13 @@ import Guru2 from '../../public/images/guru2024.webp'
 export default function HomePage() {
   const { t } = useTranslation('common')
   const { theme } = useTheme()
-  const [isMuted, setIsMuted] = useState(true)
 
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     const video = videoRef.current
     if (video) {
-      video.muted = isMuted
+      video.muted = true
 
       const playVideo = async () => {
         try {
@@ -42,14 +41,7 @@ export default function HomePage() {
         video.removeEventListener('canplaythrough', playVideo)
       }
     }
-  }, [isMuted])
-
-  const toggleMute = () => {
-    setIsMuted(!isMuted)
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted
-    }
-  }
+  }, [])
 
 
 
@@ -208,7 +200,7 @@ export default function HomePage() {
               className="absolute inset-0 w-full h-full object-cover z-10"
               autoPlay
               loop
-              muted={isMuted}
+              muted={true}
               playsInline
               preload="metadata"
               poster="/images/banner.webp"
@@ -225,28 +217,7 @@ export default function HomePage() {
               }`}></div>
           </div>
 
-          {/* Enhanced Mute/Unmute Toggle */}
-          <motion.button
-            onClick={toggleMute}
-            className={`absolute top-6 right-6 z-30 p-4 rounded-full text-white transition-all duration-300 shadow-2xl backdrop-blur-sm ${theme === 'dark'
-                ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)] hover:from-[rgb(255,255,255)] hover:to-[rgb(255,255,255)] hover:text-[rgb(26,26,26)]'
-                : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] hover:from-[rgb(26,26,26)] hover:to-[rgb(26,26,26)]'
-              }`}
-            aria-label={isMuted ? "Unmute video" : "Mute video"}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {isMuted ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-              </svg>
-            )}
-          </motion.button>
+
 
           {/* Enhanced Hero Content Overlay */}
           <div className="absolute inset-0 flex items-center justify-center z-20">
