@@ -112,7 +112,7 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             {/* Navigation Links */}
-            <div className="hidden sm:flex items-center space-x-0.5 sm:space-x-1 md:space-x-1.5 lg:space-x-2">
+            <div className="hidden lg:flex items-center space-x-0.5 sm:space-x-1 md:space-x-1.5 lg:space-x-2">
               {[
                 { href: '/menu', label: t('nav.menu') },
                 { href: '/reservations', label: t('nav.reservations') },
@@ -154,7 +154,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="sm:hidden">
+            <div className="lg:hidden">
               <motion.button
                 onClick={toggleMobileMenu}
                 className={`relative p-3 rounded-xl transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
@@ -199,7 +199,7 @@ const Header = () => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              className={`absolute top-full left-0 right-0 sm:hidden z-40 ${theme === 'dark'
+              className={`absolute top-full left-0 right-0 lg:hidden z-40 ${theme === 'dark'
                   ? 'bg-black/95 border-b border-white/10'
                   : 'bg-white/95 border-b border-black/10'
                 } backdrop-blur-xl shadow-2xl`}
