@@ -252,11 +252,11 @@ export default function HomePage() {
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <div className="text-center px-4 sm:px-6 lg:px-8 max-w-6xl">
               <div className="mb-8">
-                <div className="text-6xl sm:text-8xl mb-4">🍽️</div>
+                <div className="text-4xl sm:text-6xl md:text-8xl mb-4">🍽️</div>
               </div>
 
               <motion.h1
-                className={`text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:bg-transparent bg-black/40 ${theme === 'dark' ? 'text-white' : 'text-[rgb(255,255,255)]'
+                className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black mb-6 sm:bg-transparent bg-black/40 ${theme === 'dark' ? 'text-white' : 'text-[rgb(255,255,255)]'
                   }`}
                 style={{ fontFamily: '"ZCOOL XiaoWei", serif', backgroundColor: 'rgba(46, 42, 42, 0.23)' }}
                 initial={{ opacity: 0, y: 50 }}
@@ -276,7 +276,7 @@ export default function HomePage() {
               </motion.h1>
 
               <p
-                className="lcp-text text-xl sm:text-2xl text-[rgb(255,255,255)]/90 mb-10 max-w-3xl mx-auto"
+                className="lcp-text text-lg sm:text-xl md:text-2xl text-[rgb(255,255,255)]/90 mb-10 max-w-3xl mx-auto"
                 style={{ font: 'italic 300 20px/32.5px Rozha One, serif', backgroundColor: 'rgba(42, 37, 37, 0.24)' }}
               >
                 {t("hero.description")}
@@ -290,7 +290,7 @@ export default function HomePage() {
               >
                 <Link
                   href="/reservations"
-                                  className={`group relative inline-block text-[rgb(255,255,255)] px-8 py-4 sm:px-10 sm:py-5 rounded-2xl text-lg sm:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
+                                  className={`group relative inline-block text-[rgb(255,255,255)] px-6 py-3 sm:px-8 md:px-10 sm:py-4 md:py-5 rounded-2xl text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
                   ? 'focus:ring-[rgb(26,26,26)]/50'
                   : 'bg-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
                 }`}
@@ -305,7 +305,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/menu"
-                  className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(26,26,26)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-8 py-4 sm:px-10 sm:py-5 rounded-2xl text-lg sm:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                  className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(26,26,26)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-6 py-3 sm:px-8 md:px-10 sm:py-4 md:py-5 rounded-2xl text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                   aria-label="View our restaurant menu"
                   style={{ backgroundColor: 'rgb(48,46,46)' }}
                 >
@@ -313,7 +313,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/gallery"
-                                  className={`group relative inline-block border-2 backdrop-blur-sm text-[rgb(255,255,255)] px-8 py-4 sm:px-10 sm:py-5 rounded-2xl text-lg sm:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 bg-transparent focus:outline-none focus:ring-4 ${theme === 'dark'
+                                  className={`group relative inline-block border-2 backdrop-blur-sm text-[rgb(255,255,255)] px-6 py-3 sm:px-8 md:px-10 sm:py-4 md:py-5 rounded-2xl text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 bg-transparent focus:outline-none focus:ring-4 ${theme === 'dark'
                   ? 'border-[rgb(26,26,26)]/50 hover:border-[rgb(26,26,26)] focus:border-[rgb(26,26,26)] focus:ring-[rgb(26,26,26)]/50'
                   : 'border-[rgb(168,213,186)]/50 hover:border-[rgb(168,213,186)] focus:border-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
                 }`}
@@ -376,10 +376,10 @@ export default function HomePage() {
               role="region"
             >
               <motion.div className="text-center mb-16" variants={itemVariants}>
-                <div className="text-6xl mb-4">✨</div>
+                <div className="text-4xl sm:text-6xl mb-4">✨</div>
                 <h2
                   id="todays-specials-heading"
-                                  className={`text-4xl sm:text-5xl font-black mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                                  className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                   }`}
                   style={{ fontFamily: 'Times New Roman, serif' }}
                 >
@@ -464,12 +464,12 @@ export default function HomePage() {
               role="region"
             >
               <motion.div className="text-center mb-16" variants={itemVariants}>
-                <div className="text-6xl mb-4">🎉</div>
+                <div className="text-4xl sm:text-6xl mb-4">🎉</div>
                 <Link href="/events-catering" aria-label="Learn more about our events and catering services">
                   <div className="relative inline-block">
                     <h2
                       id="events-heading"
-                      className={`text-4xl sm:text-5xl font-black mb-6 cursor-pointer hover:scale-105 focus:scale-105 transition-transform duration-300 ${theme === 'dark' ? 'text-white hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]' : 'text-[rgb(26,26,26)] hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]'
+                      className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 cursor-pointer hover:scale-105 focus:scale-105 transition-transform duration-300 ${theme === 'dark' ? 'text-white hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]' : 'text-[rgb(26,26,26)] hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]'
                         }`}
                       style={{ fontFamily: 'Times New Roman, serif' }}
                     >
@@ -613,7 +613,7 @@ export default function HomePage() {
                 <div className="text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
                   <motion.h2
                     id="parallax-heading"
-                    className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 text-white italic"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 text-white italic"
                     style={{ fontFamily: 'Rozha One, serif' }}
                     variants={itemVariants}
                   >
@@ -621,7 +621,7 @@ export default function HomePage() {
                   </motion.h2>
 
                   <motion.p
-                    className="text-xl sm:text-2xl lg:text-3xl text-white/90 font-light mb-8 italic"
+                    className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 font-light mb-8 italic"
                     style={{ fontFamily: 'Times New Roman, serif' }}
                     variants={itemVariants}
                   >
@@ -630,11 +630,11 @@ export default function HomePage() {
 
                   <motion.div
                     variants={itemVariants}
-                    className="flex justify-center gap-4"
+                    className="flex flex-col sm:flex-row justify-center gap-4"
                   >
                     <Link
                       href="/reservations"
-                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-8 py-4 sm:px-10 sm:py-5 rounded-2xl text-lg sm:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-6 py-3 sm:px-8 md:px-10 sm:py-4 md:py-5 rounded-2xl text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="Book your table - Reserve now at East @ West"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
@@ -642,7 +642,7 @@ export default function HomePage() {
                     </Link>
                     <Link
                       href="/menu"
-                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-8 py-4 sm:px-10 sm:py-5 rounded-2xl text-lg sm:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-6 py-3 sm:px-8 md:px-10 sm:py-4 md:py-5 rounded-2xl text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="View our restaurant menu"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
@@ -665,7 +665,7 @@ export default function HomePage() {
             >
               {/* Section Header */}
               <motion.div className="mb-12" variants={itemVariants}>
-                <h2 className={`text-4xl sm:text-5xl font-black mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                   }`} style={{ fontFamily: 'Times New Roman, serif' }}>
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                     }`}>
@@ -848,7 +848,7 @@ export default function HomePage() {
               <div className="max-w-7xl mx-auto relative">
                 {/* Section Header */}
                 <motion.div className="mb-12 text-center" variants={itemVariants}>
-                  <h2 className={`text-4xl sm:text-5xl font-black mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                  <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                     }`} style={{ fontFamily: 'Times New Roman, serif' }}>
                     <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                       }`}>
