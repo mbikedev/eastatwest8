@@ -551,7 +551,7 @@ export default function HomePage() {
 
             {/* Parallax Section */}
             <motion.section
-              className="relative h-[30vh] sm:h-[35vh] md:h-[40vh] w-full overflow-hidden mb-12 sm:mb-16 md:mb-20"
+              className="relative h-[35vh] sm:h-[40vh] md:h-[50vh] w-full overflow-hidden mb-12 sm:mb-16 md:mb-20"
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
@@ -564,14 +564,14 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed hidden md:block"
                   style={{
-                    backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fad25fd893c9a4f8182c3ce6d0b29aff7?format=webp&width=800')`
+                    backgroundImage: `url('/images/parallax-image.webp')`
                   }}
                 />
                 {/* Static background for mobile */}
                 <div
                   className="absolute inset-0 w-full h-full bg-cover bg-center block md:hidden"
                   style={{
-                    backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fbe215e77a32d4149b4ac6363162e72c1%2Fad25fd893c9a4f8182c3ce6d0b29aff7?format=webp&width=800')`
+                    backgroundImage: `url('/images/parallax-image.webp')`
                   }}
                 />
 
@@ -581,7 +581,7 @@ export default function HomePage() {
 
               {/* Content */}
               <div className="relative z-10 flex items-center justify-center h-full">
-                <div className="text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <div className="text-center mt-4 px-4 sm:px-6 lg:px-8 max-w-4xl">
                   <motion.h2
                     id="parallax-heading"
                     className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 text-white italic"
@@ -605,7 +605,7 @@ export default function HomePage() {
                   >
                     <Link
                       href="/reservations"
-                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                       className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="Book your table - Reserve now at East @ West"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
@@ -613,7 +613,7 @@ export default function HomePage() {
                     </Link>
                     <Link
                       href="/menu"
-                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="View our restaurant menu"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
