@@ -55,8 +55,8 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8 relative">
+        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-12 sm:h-13 md:h-14' : 'h-14 sm:h-15 md:h-16'}`}>
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -74,9 +74,9 @@ const Header = () => {
                   alt="East at West Logo"
                   width={40}
                   height={40}
-                  sizes="(max-width: 768px) 32px, 40px"
+                  sizes="(max-width: 640px) 28px, (max-width: 768px) 32px, 40px"
                   priority
-                  className={`transition-all duration-500 group-hover:scale-110 ${scrolled ? 'h-8' : 'h-10'
+                  className={`transition-all duration-500 group-hover:scale-110 ${scrolled ? 'h-6 sm:h-7 md:h-8' : 'h-8 sm:h-9 md:h-10'
                     } w-auto ${theme === 'dark'
                       ? 'drop-shadow-[0_0_8px_rgba(251,146,60,0.4)] group-hover:drop-shadow-[0_0_12px_rgba(251,146,60,0.6)]'
                       : 'drop-shadow-[0_2px_8px_rgba(0,0,0,0.1)] group-hover:drop-shadow-[0_4px_16px_rgba(251,146,60,0.3)]'
@@ -91,9 +91,9 @@ const Header = () => {
                 />
               </motion.div>
               <div
-                className={`relative ml-5 h-auto italic hidden lg:block ${theme === 'dark' ? 'text-[rgb(255,255,255)]' : 'text-[rgb(168,213,186)]'
+                className={`relative ml-3 sm:ml-4 md:ml-5 h-auto italic hidden md:block ${theme === 'dark' ? 'text-[rgb(255,255,255)]' : 'text-[rgb(168,213,186)]'
                   }`}
-                style={{ font: 'italic 30px Rozha One, serif' }}
+                style={{ font: 'italic 20px sm:text-24px md:text-28px lg:text-30px Rozha One, serif' }}
               >
                 <p>
                   <em></em>East At West
@@ -112,7 +112,7 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             {/* Navigation Links */}
-            <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
+            <div className="hidden sm:flex items-center space-x-0.5 sm:space-x-1 md:space-x-1.5 lg:space-x-2">
               {[
                 { href: '/menu', label: t('nav.menu') },
                 { href: '/reservations', label: t('nav.reservations') },
@@ -129,7 +129,7 @@ const Header = () => {
                 >
                   <Link
                     href={item.href}
-                    className={`relative px-3 lg:px-4 py-2 rounded-xl text-sm lg:text-base font-medium transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
+                    className={`relative px-2 sm:px-2.5 md:px-3 lg:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm md:text-sm lg:text-base font-medium transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
                         ? 'text-white/90 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20'
                         : 'text-white/90 hover:text-white hover:bg-black/10 border border-transparent hover:border-black/20'
                       }`}
@@ -154,7 +154,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="sm:hidden">
               <motion.button
                 onClick={toggleMobileMenu}
                 className={`relative p-3 rounded-xl transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
@@ -184,7 +184,7 @@ const Header = () => {
 
             {/* Controls */}
             <motion.div
-              className="flex items-center space-x-2 lg:space-x-3 ml-3 lg:ml-4 pl-3 lg:pl-4 border-l border-white/20"
+              className="flex items-center space-x-1.5 sm:space-x-2 md:space-x-2.5 lg:space-x-3 ml-2 sm:ml-2.5 md:ml-3 lg:ml-4 pl-2 sm:pl-2.5 md:pl-3 lg:pl-4 border-l border-white/20"
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -199,7 +199,7 @@ const Header = () => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              className={`absolute top-full left-0 right-0 md:hidden z-40 ${theme === 'dark'
+              className={`absolute top-full left-0 right-0 sm:hidden z-40 ${theme === 'dark'
                   ? 'bg-black/95 border-b border-white/10'
                   : 'bg-white/95 border-b border-black/10'
                 } backdrop-blur-xl shadow-2xl`}
@@ -208,7 +208,7 @@ const Header = () => {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <div className="px-6 py-4 space-y-2">
+              <div className="px-4 sm:px-6 py-3 sm:py-4 space-y-1 sm:space-y-2">
                 {[
                   { href: '/menu', label: t('nav.menu'), icon: '🍽️' },
                   { href: '/reservations', label: t('nav.reservations'), icon: '📅' },
@@ -226,13 +226,13 @@ const Header = () => {
                     <Link
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`flex items-center space-x-3 p-4 rounded-xl transition-all duration-300 group ${theme === 'dark'
+                      className={`flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 rounded-lg sm:rounded-xl transition-all duration-300 group ${theme === 'dark'
                           ? 'text-white hover:bg-white/10 border border-transparent hover:border-white/20'
                           : 'text-gray-900 hover:bg-black/10 border border-transparent hover:border-black/20'
                         }`}
                     >
-                      <span className="text-xl">{item.icon}</span>
-                      <span className="font-bold">{item.label}</span>
+                      <span className="text-lg sm:text-xl">{item.icon}</span>
+                      <span className="font-bold text-sm sm:text-base">{item.label}</span>
                       <motion.div
                         className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                       >
@@ -245,9 +245,9 @@ const Header = () => {
                 ))}
 
                 {/* Mobile Controls */}
-                <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between">
-                  <div className="flex items-center space-x-4">
-                    <span className={`text-sm font-medium ${theme === 'dark' ? 'text-white/70' : 'text-gray-700'
+                <div className="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-white/10 flex items-center justify-between">
+                  <div className="flex items-center space-x-2 sm:space-x-4">
+                    <span className={`text-xs sm:text-sm font-medium ${theme === 'dark' ? 'text-white/70' : 'text-gray-700'
                       }`}>
                       Settings
                     </span>
