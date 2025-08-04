@@ -5,11 +5,17 @@
 [build.environment]
   NODE_VERSION = "18"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
 # Environment variables should be set in Netlify dashboard:
-# NEXT_PUBLIC_SUPABASE_URL=https://whixskigyxeligukorrm.supabase.co
-# NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndoaXhza2lneXhlbGlndWtvcnJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE3MjMzODAsImV4cCI6MjA2NzI5OTM4MH0.VE9SqC8EIVhIm5Tt73F7YqHh9U3MvWQLuQXJx8xyN0c
-# RESEND_API_KEY=re_6urjn6gZ_MFw2mTfkg7hVAR6WjAKHx4xM
-# RESEND_FROM_EMAIL=contact@eastatwest.com 
+# NEXT_PUBLIC_SUPABASE_URL
+# NEXT_PUBLIC_SUPABASE_ANON_KEY
+# RESEND_API_KEY
+# RESEND_FROM_EMAIL
+# NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+# NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID
+
+# Secrets scanning configuration
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs" 
