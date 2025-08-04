@@ -73,8 +73,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* Preload critical fonts */}
-        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei:wght@400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei:wght@400&display=swap" rel="stylesheet" preconnect />
+        <link href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap" rel="stylesheet" preconnect />
 
         {/* Restaurant Guru CSS */}
         <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet" />

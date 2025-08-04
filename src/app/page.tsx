@@ -719,11 +719,11 @@ export default function HomePage() {
                       aria-label="Restaurant Guru Award 2023 – East @ West Brussels"
                     >
                       <div className="h-48 w-auto">
-                        <img
-                          src={Guru1.src}
+                        <Image
+                          src={Guru1}
                           alt="Restaurant Guru Award 2023 – East @ West Brussels"
                           className="h-full w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                          loading="lazy"
+                          priority={false}
                         />
                       </div>
                     </a>
@@ -742,11 +742,11 @@ export default function HomePage() {
                       aria-label="Restaurant Guru Award 2024 – East @ West Brussels"
                     >
                       <div className="h-48 w-auto">
-                        <img
-                          src={Guru2.src}
+                        <Image
+                          src={Guru2}
                           alt="Restaurant Guru Award 2024 – East @ West Brussels"
                           className="h-full w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                          loading="lazy"
+                          priority={false}
                         />
                       </div>
                     </a>
