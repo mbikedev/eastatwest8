@@ -212,8 +212,8 @@ export default function HomePage() {
 
             {/* Enhanced Gradient Overlay */}
             <div className={`absolute inset-0 z-15 ${theme === 'dark'
-                ? 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
-                : 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
+              ? 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
+              : 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
               }`}></div>
           </div>
 
@@ -253,50 +253,56 @@ export default function HomePage() {
                 {t("hero.description")}
               </p>
 
-                              <motion.div
-                  className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                >
+              <motion.div
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
                 <Link
                   href="/reservations"
-                                  className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
-                  ? 'focus:ring-[rgb(26,26,26)]/50'
-                  : 'bg-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
-                }`}
+                  className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
+                    ? 'focus:ring-[rgb(26,26,26)]/50'
+                    : 'bg-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
+                    }`}
                   aria-label="Reserve your table at East @ West"
                   style={{ backgroundColor: 'rgb(48,46,46)' }}
                 >
                   <span className="relative z-10">{t("hero.cta")}</span>
-                                    <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
+                  <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
                     ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
                     : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
-                  }`}></div>
+                    }`}></div>
                 </Link>
                 <Link
                   href="/menu"
-                  className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(26,26,26)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                  className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
+                    ? 'focus:ring-[rgb(26,26,26)]/50'
+                    : 'bg-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
+                    }`}
                   aria-label="View our restaurant menu"
                   style={{ backgroundColor: 'rgb(48,46,46)' }}
                 >
                   <span className="relative z-10">{t("hero.viewMenu")}</span>
+                  <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
+                    ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
+                    : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
+                    }`}></div>
                 </Link>
                 <Link
                   href="/gallery"
-                                  className={`group relative inline-block border-2 backdrop-blur-sm text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 bg-transparent focus:outline-none focus:ring-4 ${theme === 'dark'
-                  ? 'border-[rgb(26,26,26)]/50 hover:border-[rgb(26,26,26)] focus:border-[rgb(26,26,26)] focus:ring-[rgb(26,26,26)]/50'
-                  : 'border-[rgb(168,213,186)]/50 hover:border-[rgb(168,213,186)] focus:border-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
-                }`}
+                  className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
+                    ? 'focus:ring-[rgb(26,26,26)]/50'
+                    : 'bg-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
+                    }`}
                   aria-label="View our restaurant gallery"
                   style={{ backgroundColor: 'rgb(48,46,46)' }}
                 >
-                  <span className="relative z-10 flex items-center">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    {t("hero.gallery")}
-                  </span>
+                  <span className="relative z-10">{t("hero.viewGallery")}</span>
+                  <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
+                    ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
+                    : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
+                    }`}></div>
                 </Link>
               </motion.div>
             </div>
@@ -316,19 +322,19 @@ export default function HomePage() {
         >
           {/* Floating Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
-                        <motion.div
+            <motion.div
               className={`absolute top-32 right-10 w-96 h-96 rounded-full blur-3xl ${theme === 'dark'
                 ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/10'
                 : 'bg-gradient-to-r from-[rgb(168,213,186)]/20 to-[rgb(168,213,186)]/10'
-              }`}
+                }`}
               variants={floatingVariants}
               animate="float"
             />
-                        <motion.div
+            <motion.div
               className={`absolute bottom-32 left-10 w-80 h-80 rounded-full blur-3xl ${theme === 'dark'
                 ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/20'
                 : 'bg-gradient-to-r from-[rgb(168,213,186)]/20 to-[rgb(26,26,26)]/20'
-              }`}
+                }`}
               variants={floatingVariants}
               animate="float"
               transition={{ delay: 1.5 }}
@@ -350,8 +356,8 @@ export default function HomePage() {
                 <div className="text-3xl xs:text-4xl sm:text-6xl mb-2 sm:mb-4">✨</div>
                 <h2
                   id="todays-specials-heading"
-                                  className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
-                  }`}
+                  className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                    }`}
                   style={{ fontFamily: 'Times New Roman, serif' }}
                 >
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
@@ -360,8 +366,8 @@ export default function HomePage() {
                   </span>
                 </h2>
                 <div className={`w-32 h-1.5 mx-auto rounded-full ${theme === 'dark'
-                    ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
-                    : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
+                  ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                  : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
                   }`}></div>
                 <p className={`text-sm xs:text-base sm:text-lg mt-4 sm:mt-6 ${theme === 'dark' ? 'text-white' : 'text-black'
                   }`}>
@@ -380,8 +386,8 @@ export default function HomePage() {
                   >
                     {/* Gradient Border Effect */}
                     <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-0.5 ${theme === 'dark'
-                        ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
-                        : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
+                      ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                      : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
                       }`}>
                       <div className={`w-full h-full rounded-3xl ${theme === 'dark' ? 'bg-[rgb(245,240,230)]' : 'bg-[rgb(255,255,255)]'}`}></div>
                     </div>
@@ -399,8 +405,8 @@ export default function HomePage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                         <div className={`absolute top-4 right-4 text-[rgb(255,255,255)] px-4 py-2 rounded-full font-bold text-lg shadow-lg ${theme === 'dark'
-                            ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
-                            : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
+                          ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                          : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
                           }`}>
                           {special.price}
                         </div>
@@ -506,10 +512,10 @@ export default function HomePage() {
                     </motion.div>
                   </div>
                 </Link>
-                              <div className={`w-32 h-1.5 mx-auto rounded-full ${theme === 'dark'
-                ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
-                : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
-              }`}></div>
+                <div className={`w-32 h-1.5 mx-auto rounded-full ${theme === 'dark'
+                  ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                  : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
+                  }`}></div>
                 <p className={`text-sm xs:text-base sm:text-lg mt-4 sm:mt-6 ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`}>
                   {t('realtime.upcomingEventsDescription')}
                 </p>
@@ -519,31 +525,31 @@ export default function HomePage() {
                 {upcomingEvents.map((event) => (
                   <motion.div
                     key={event.id}
-                                      className={`group relative p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(26,26,26)]/80 to-[rgb(168,213,186)]/80 border border-[rgb(168,213,186)]' : 'bg-gradient-to-br from-[rgb(255,255,255)]/80 to-[rgb(81,87,83)]/50 border border-[rgb(81,87,83)]'
-                    }`}
+                    className={`group relative p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(26,26,26)]/80 to-[rgb(168,213,186)]/80 border border-[rgb(168,213,186)]' : 'bg-gradient-to-br from-[rgb(255,255,255)]/80 to-[rgb(81,87,83)]/50 border border-[rgb(81,87,83)]'
+                      }`}
                     variants={itemVariants}
                     whileHover={{ y: -10 }}
                   >
                     <div className="flex items-center mb-6">
-                                          <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mr-6 text-3xl shadow-xl ${theme === 'dark'
-                      ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
-                      : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
-                    }`}>
+                      <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mr-6 text-3xl shadow-xl ${theme === 'dark'
+                        ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                        : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
+                        }`}>
                         {event.icon}
                       </div>
-                                              <div className={`${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`} style={{ fontFamily: 'Times New Roman, serif', fontSize: '20px', lineHeight: '28px' }}>
+                      <div className={`${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`} style={{ fontFamily: 'Times New Roman, serif', fontSize: '20px', lineHeight: '28px' }}>
                         {t(event.titleKey)}
                       </div>
                     </div>
-                                          <p className={`text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`}>
+                    <p className={`text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`}>
                       {t(event.descriptionKey)}
                     </p>
 
                     {/* Hover effect overlay */}
-                                        <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${theme === 'dark'
+                    <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${theme === 'dark'
                       ? 'bg-gradient-to-r from-[rgb(26,26,26)]/10 to-[rgb(26,26,26)]/10'
                       : 'bg-gradient-to-r from-[rgb(168,213,186)]/10 to-[rgb(168,213,186)]/10'
-                    }`}></div>
+                      }`}></div>
                   </motion.div>
                 ))}
               </div>
@@ -603,14 +609,17 @@ export default function HomePage() {
                     variants={itemVariants}
                     className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
                   >
+
                     <Link
                       href="/reservations"
-                       className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="Book your table - Reserve now at East @ West"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
                       <span className="relative z-10">{t('parallax.cta')}</span>
                     </Link>
+
+
                     <Link
                       href="/menu"
                       className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
@@ -800,22 +809,21 @@ export default function HomePage() {
             </motion.section>
 
             {/* Contact Section */}
-            <motion.section 
+            <motion.section
               id="contact"
               className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
-              }`}
+                }`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={containerVariants}
             >
               {/* Background Gradient */}
-              <div className={`absolute inset-0 pointer-events-none ${
-                theme === 'dark' 
-                  ? 'bg-gray-900' 
+              <div className={`absolute inset-0 pointer-events-none ${theme === 'dark'
+                  ? 'bg-gray-900'
                   : 'bg-white'
-              }`} />
-              
+                }`} />
+
               <div className="max-w-7xl mx-auto relative">
                 {/* Section Header */}
                 <motion.div className="mb-12 text-center" variants={itemVariants}>
@@ -830,12 +838,11 @@ export default function HomePage() {
                 </motion.div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                   {/* Contact Details */}
-                  <motion.div 
-                    className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${
-                      theme === 'dark' 
-                        ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20' 
+                  <motion.div
+                    className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${theme === 'dark'
+                        ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20'
                         : 'bg-white/80 border-gray-600 shadow-gray-500/20'
-                    }`}
+                      }`}
                     variants={itemVariants}
                     whileHover={{ y: -5 }}
                   >
@@ -844,12 +851,11 @@ export default function HomePage() {
                     <div className="space-y-6">
                       {/* Phone */}
                       <div className="flex items-center">
-                        <a 
+                        <a
                           href="tel:+32465206024"
                           title={t('contact.contactTooltips.phone')}
-                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${
-                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
-                          }`}
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                            }`}
                         >
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -863,12 +869,11 @@ export default function HomePage() {
 
                       {/* Email */}
                       <div className="flex items-center">
-                        <a 
+                        <a
                           href="mailto:contact@eastatwest.com"
                           title={t('contact.contactTooltips.email')}
-                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${
-                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
-                          }`}
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                            }`}
                         >
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -882,14 +887,13 @@ export default function HomePage() {
 
                       {/* Address */}
                       <div className="flex items-start">
-                        <a 
+                        <a
                           href="https://maps.google.com/?q=Bld+de+l'Empereur+26+1000+Brussels+Belgium"
                           target="_blank"
                           rel="noopener noreferrer"
                           title={t('contact.contactTooltips.address')}
-                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${
-                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
-                          }`}
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                            }`}
                         >
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -904,11 +908,10 @@ export default function HomePage() {
 
                       {/* Hours */}
                       <div className="flex items-start">
-                        <a 
+                        <a
                           href="/reservations"
-                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${
-                            theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
-                          }`}
+                          className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
+                            }`}
                         >
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -939,9 +942,8 @@ export default function HomePage() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                       <div className="absolute bottom-8 left-8 right-8 text-white text-center lg:text-left">
-                        <h3 className={`text-5xl font-bold mb-2 ${
-                          theme === 'dark' ? 'text-white' : 'text-white'
-                        }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                        <h3 className={`text-5xl font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-white'
+                          }`} style={{ fontFamily: 'Times New Roman, serif' }}>
                           {t('contact.restaurantImageAlt')}
                         </h3>
                         <p className="text-lg">

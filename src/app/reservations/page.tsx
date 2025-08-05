@@ -970,44 +970,44 @@ export default function ReservationsPage() {
         }`}>
           <div className={`text-center font-bold py-3 rounded-xl mb-4 ${
             theme === "dark"
-              ? "text-[#A8D5BA]"
-              : "text-[#1A1A1A]"
+              ? "text-white"
+              : "text-black"
           } shadow-lg`}>
-            🕐 <span className="text-3xl text-[#A8D5BA]">{t("reservations.businessHours")}</span>
+            🕐 <span className={`text-3xl ${theme === "dark" ? "text-white" : "text-black"}`}>{t("reservations.businessHours")}</span>
           </div>
 
           <div className="flex flex-col text-center w-full">
-            <div className="text-[#A8D5BA] text-2xl font-bold mb-1">
+            <div className={`text-2xl font-bold mb-1 ${theme === "dark" ? "text-white" : "text-black"}`}>
               12:00 – 14:00
             </div>
-            <div className="text-[#A8D5BA] text-2xl font-bold">
+            <div className={`text-2xl font-bold ${theme === "dark" ? "text-white" : "text-black"}`}>
               18:00 – 22:00
             </div>
           </div>
 
           <div className="w-full">
-            <div className={`text-[#A8D5BA] text-2xl font-black text-center mb-2 mt-3`}>
+            <div className={`text-2xl font-black text-center mb-2 mt-3 ${theme === "dark" ? "text-white" : "text-black"}`}>
               🍽️ LUNCH
             </div>
-            <div className={`text-center ${theme === "dark" ? "text-[#F5F0E6]" : "text-[#1A1A1A]"}`}>
+            <div className={`text-center ${theme === "dark" ? "text-white" : "text-black"}`}>
               <p className="text-2xl font-semibold">12:00 – 14:00</p>
               <p className="text-2xl font-medium mt-6">Last reservation at 13:30</p>
             </div>
 
-            <div className={`text-[#A8D5BA] text-2xl font-black text-center mb-4 mt-6`}>
-              �� DINNER
+            <div className={`text-2xl font-black text-center mb-4 mt-6 ${theme === "dark" ? "text-white" : "text-black"}`}>
+              🍽️ DINNER
             </div>
-            <div className={`text-center ${theme === "dark" ? "text-[#F5F0E6]" : "text-[#1A1A1A]"}`}>
+            <div className={`text-center ${theme === "dark" ? "text-white" : "text-black"}`}>
               <p className="text-2xl font-semibold">18:00 – 22:00</p>
               <p className="text-2xl font-medium my-6">Last reservation at 20:30</p>
             </div>
           </div>
 
           <div className="w-full">
-            <div className={`text-[#A8D5BA] text-2xl font-black text-center mb-2`}>
+            <div className={`text-2xl font-black text-center mb-2 ${theme === "dark" ? "text-white" : "text-black"}`}>
               🎉 Saturday
             </div>
-            <div className={`text-center text-2xl ${theme === "dark" ? "text-[#F5F0E6]" : "text-[#1A1A1A]"}`}>
+            <div className={`text-center text-2xl ${theme === "dark" ? "text-white" : "text-black"}`}>
               18:00 – 22:00
             </div>
           </div>
