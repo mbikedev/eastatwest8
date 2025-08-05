@@ -1,21 +1,31 @@
 'use client'
 
+// Import React hooks for state management and effects
 import { useState, useEffect, useRef } from 'react'
+// Import translation hook for internationalization
 import { useTranslation } from 'react-i18next'
+// Import theme context for dark/light mode
 import { useTheme } from '../context/ThemeContext'
+// Import Framer Motion for animations
 import { motion, easeInOut } from 'framer-motion'
+// Import Next.js components for routing and images
 import Link from 'next/link'
 import Image from 'next/image'
+// Import award images
 import Guru1 from '../../public/images/guru2023.webp'
 import Guru2 from '../../public/images/guru2024.webp'
 
 
 export default function HomePage() {
+  // Translation hook for multi-language support
   const { t } = useTranslation('common')
+  // Theme context for dark/light mode switching
   const { theme } = useTheme()
 
+  // Video reference for hero section autoplay
   const videoRef = useRef<HTMLVideoElement>(null)
 
+  // Video autoplay effect for hero section
   useEffect(() => {
     const video = videoRef.current
     if (video) {
@@ -43,9 +53,8 @@ export default function HomePage() {
     }
   }, [])
 
-
-
-  // Mock data for enhanced sections
+  // ===== MOCK DATA SECTION =====
+  // Today's Specials data for the specials section
   const [todaysSpecials] = useState([
     {
       id: 1,
@@ -70,6 +79,7 @@ export default function HomePage() {
     }
   ])
 
+  // Upcoming Events data for the events section
   const [upcomingEvents] = useState([
     {
       id: 1,
@@ -99,6 +109,8 @@ export default function HomePage() {
 
   // Note: Seasonal promotions feature is available but not currently displayed
 
+  // ===== ANIMATION VARIANTS SECTION =====
+  // Container animation variants for staggered animations
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -109,6 +121,7 @@ export default function HomePage() {
     }
   }
 
+  // Individual item animation variants
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -120,6 +133,7 @@ export default function HomePage() {
     }
   }
 
+  // Floating animation variants for background elements
   const floatingVariants = {
     float: {
       y: [-10, 10, -10],
@@ -131,7 +145,8 @@ export default function HomePage() {
     }
   }
 
-  // JSON-LD Schema for Restaurant
+  // ===== SEO SCHEMA SECTION =====
+  // JSON-LD Schema for Restaurant SEO optimization
   const schema = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Restaurant",
@@ -162,29 +177,38 @@ export default function HomePage() {
 
   return (
     <>
-      {/* JSON-LD Schema for Restaurant */}
+      {/* ===== SEO SCHEMA SCRIPT ===== */}
+      {/* JSON-LD Schema for Restaurant SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: schema }}
       />
+      {/* ===== MAIN PAGE CONTAINER ===== */}
+      {/* Main page wrapper with theme-based styling */}
       <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'bg-[rgb(26,26,26)] text-[rgb(245,240,230)]' : 'bg-[rgb(245,240,230)] text-[rgb(26,26,26)]'
         }`} itemScope itemType="https://schema.org/Restaurant">
-        {/* Enhanced Hero Video Section */}
+
+        {/* ===== HERO VIDEO SECTION ===== */}
+        {/* Enhanced Hero Video Section with Background Video */}
         <header className="relative h-screen w-full overflow-hidden" role="banner" aria-label="East @ West Restaurant Hero Section">
-          {/* Floating Background Elements */}
+          {/* ===== FLOATING BACKGROUND ELEMENTS ===== */}
+          {/* Floating Background Elements for Visual Interest */}
           <div className="absolute inset-0 overflow-hidden z-5">
+            {/* First Floating Element - Top Left */}
             <motion.div
               className={`absolute top-20 left-10 w-32 h-32 rounded-full opacity-20 blur-xl ${theme === 'dark' ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]' : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
                 }`}
               variants={floatingVariants}
               animate="float"
             />
+            {/* Second Floating Element - Top Right */}
             <motion.div
               className="absolute top-40 right-20 w-48 h-48 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-20 blur-xl"
               variants={floatingVariants}
               animate="float"
               transition={{ delay: 1 }}
             />
+            {/* Third Floating Element - Bottom Left */}
             <motion.div
               className="absolute bottom-32 left-1/4 w-40 h-40 bg-gradient-to-r from-green-400 to-teal-400 rounded-full opacity-20 blur-xl"
               variants={floatingVariants}
@@ -193,8 +217,10 @@ export default function HomePage() {
             />
           </div>
 
-          {/* Video Background */}
+          {/* ===== VIDEO BACKGROUND SECTION ===== */}
+          {/* Video Background Container */}
           <div className="absolute inset-0 w-full h-full">
+            {/* Hero Background Video */}
             <video
               ref={videoRef}
               className="absolute inset-0 w-full h-full object-cover z-10"
@@ -210,30 +236,35 @@ export default function HomePage() {
               Your browser does not support the video tag.
             </video>
 
-            {/* Enhanced Gradient Overlay */}
+            {/* ===== GRADIENT OVERLAY SECTION ===== */}
+            {/* Enhanced Gradient Overlay for Text Readability */}
             <div className={`absolute inset-0 z-15 ${theme === 'dark'
               ? 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
               : 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
               }`}></div>
           </div>
 
-
-
-          {/* Enhanced Hero Content Overlay */}
+          {/* ===== HERO CONTENT OVERLAY SECTION ===== */}
+          {/* Enhanced Hero Content Overlay with Text and Buttons */}
           <div className="absolute inset-0 flex items-center justify-center z-20">
+            {/* Hero Content Container */}
             <div className="text-center px-4 sm:px-6 lg:px-8 max-w-6xl">
+              {/* Hero Emoji Icon */}
               <div className="mb-8">
                 <div className="text-3xl xs:text-4xl sm:text-6xl md:text-8xl mb-2 sm:mb-4">🍽️</div>
               </div>
 
+              {/* ===== HERO TITLE SECTION ===== */}
+              {/* Main Hero Title with Animation */}
               <motion.h1
-                className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black mb-4 sm:mb-6 sm:bg-transparent bg-black/40 ${theme === 'dark' ? 'text-white' : 'text-[rgb(255,255,255)]'
+                className={`text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-black mb-4 sm:mb-6 sm:bg-transparent bg-black/40 ${theme === 'dark' ? 'text-white' : 'text-[rgb(255,255,255)]'
                   }`}
                 style={{ fontFamily: '"ZCOOL XiaoWei", serif', backgroundColor: 'rgba(46, 42, 42, 0.23)' }}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
+                {/* Hero Title Text with Styling */}
                 <span
                   className="font-black text-transparent bg-clip-text italic sm:bg-white bg-[rgba(246,242,236,1)]"
                   style={{
@@ -246,6 +277,8 @@ export default function HomePage() {
                 </span>
               </motion.h1>
 
+              {/* ===== HERO DESCRIPTION SECTION ===== */}
+              {/* Hero Subtitle/Description Text */}
               <p
                 className="lcp-text text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-[rgb(255,255,255)]/90 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto"
                 style={{ font: 'italic 300 20px/32.5px Rozha One, serif', backgroundColor: 'rgba(42, 37, 37, 0.24)' }}
@@ -253,12 +286,16 @@ export default function HomePage() {
                 {t("hero.description")}
               </p>
 
+              {/* ===== HERO BUTTONS SECTION ===== */}
+              {/* Hero Call-to-Action Buttons Container */}
               <motion.div
                 className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
+                {/* ===== RESERVATIONS BUTTON ===== */}
+                {/* First CTA Button - Reservations */}
                 <Link
                   href="/reservations"
                   className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
@@ -268,12 +305,17 @@ export default function HomePage() {
                   aria-label="Reserve your table at East @ West"
                   style={{ backgroundColor: 'rgb(48,46,46)' }}
                 >
+                  {/* Reservations Button Text */}
                   <span className="relative z-10">{t("hero.cta")}</span>
+                  {/* Reservations Button Hover Effect */}
                   <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
                     ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
                     : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
                     }`}></div>
                 </Link>
+
+                {/* ===== MENU BUTTON ===== */}
+                {/* Second CTA Button - Menu */}
                 <Link
                   href="/menu"
                   className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
@@ -283,12 +325,17 @@ export default function HomePage() {
                   aria-label="View our restaurant menu"
                   style={{ backgroundColor: 'rgb(48,46,46)' }}
                 >
+                  {/* Menu Button Text */}
                   <span className="relative z-10">{t("hero.viewMenu")}</span>
+                  {/* Menu Button Hover Effect */}
                   <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
                     ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
                     : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
                     }`}></div>
                 </Link>
+
+                {/* ===== GALLERY BUTTON ===== */}
+                {/* Third CTA Button - Gallery */}
                 <Link
                   href="/gallery"
                   className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
@@ -298,7 +345,9 @@ export default function HomePage() {
                   aria-label="View our restaurant gallery"
                   style={{ backgroundColor: 'rgb(48,46,46)' }}
                 >
+                  {/* Gallery Button Text */}
                   <span className="relative z-10">{t("hero.viewGallery")}</span>
+                  {/* Gallery Button Hover Effect */}
                   <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
                     ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
                     : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
@@ -308,20 +357,21 @@ export default function HomePage() {
             </div>
           </div>
 
-
-
           {/* Minimal Loading Overlay - removed to improve LCP */}
         </header>
 
-        {/* Main Content */}
+        {/* ===== MAIN CONTENT SECTION ===== */}
+        {/* Main Content Container with Background Styling */}
         <main
           className={`relative py-24 px-4 sm:px-6 lg:px-8 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(26,26,26)] via-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]' : 'bg-gradient-to-br from-[rgb(245,240,230)] via-[rgb(168,213,186)]/30 to-[rgb(245,240,230)]'
             }`}
           role="main"
           aria-label="Restaurant content and sections"
         >
-          {/* Floating Background Elements */}
+          {/* ===== FLOATING BACKGROUND ELEMENTS ===== */}
+          {/* Floating Background Elements for Main Content */}
           <div className="absolute inset-0 overflow-hidden">
+            {/* First Floating Element - Top Right */}
             <motion.div
               className={`absolute top-32 right-10 w-96 h-96 rounded-full blur-3xl ${theme === 'dark'
                 ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/10'
@@ -330,6 +380,7 @@ export default function HomePage() {
               variants={floatingVariants}
               animate="float"
             />
+            {/* Second Floating Element - Bottom Left */}
             <motion.div
               className={`absolute bottom-32 left-10 w-80 h-80 rounded-full blur-3xl ${theme === 'dark'
                 ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/20'
@@ -341,8 +392,11 @@ export default function HomePage() {
             />
           </div>
 
+          {/* ===== MAIN CONTENT CONTAINER ===== */}
+          {/* Main Content Wrapper */}
           <div className="max-w-7xl mx-auto relative z-10">
-            {/* Enhanced Today's Specials */}
+            {/* ===== TODAY'S SPECIALS SECTION ===== */}
+            {/* Enhanced Today's Specials Section with Animation */}
             <motion.section
               className="mb-12 sm:mb-16 md:mb-20"
               variants={containerVariants}
@@ -352,30 +406,41 @@ export default function HomePage() {
               aria-labelledby="todays-specials-heading"
               role="region"
             >
+              {/* ===== SPECIALS SECTION HEADER ===== */}
+              {/* Specials Section Title and Description */}
               <motion.div className="text-center mb-8 sm:mb-12 md:mb-16" variants={itemVariants}>
+                {/* Specials Section Emoji Icon */}
                 <div className="text-3xl xs:text-4xl sm:text-6xl mb-2 sm:mb-4">✨</div>
+                {/* Specials Section Main Title */}
                 <h2
                   id="todays-specials-heading"
-                  className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                  className={` text-5xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                     }`}
                   style={{ fontFamily: 'Times New Roman, serif' }}
                 >
+                  {/* Specials Title Text with Theme Styling */}
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                     }`}>
                     {t('realtime.todaysSpecials')}
                   </span>
                 </h2>
+                {/* Specials Section Divider Line */}
                 <div className={`w-32 h-1.5 mx-auto rounded-full ${theme === 'dark'
                   ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
                   : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
                   }`}></div>
+                {/* Specials Section Description */}
                 <p className={`text-sm xs:text-base sm:text-lg mt-4 sm:mt-6 ${theme === 'dark' ? 'text-white' : 'text-black'
                   }`}>
                   {t('realtime.todaysSpecialsDescription')}
                 </p>
               </motion.div>
 
+              {/* ===== SPECIALS CARDS GRID ===== */}
+              {/* Specials Cards Container */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* ===== SPECIALS CARD LOOP ===== */}
+                {/* Map through today's specials to create cards */}
                 {todaysSpecials.map((special) => (
                   <motion.div
                     key={special.id}
@@ -384,7 +449,8 @@ export default function HomePage() {
                     variants={itemVariants}
                     whileHover={{ y: -10 }}
                   >
-                    {/* Gradient Border Effect */}
+                    {/* ===== SPECIAL CARD GRADIENT BORDER ===== */}
+                    {/* Gradient Border Effect for Special Cards */}
                     <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-0.5 ${theme === 'dark'
                       ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
                       : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
@@ -392,8 +458,13 @@ export default function HomePage() {
                       <div className={`w-full h-full rounded-3xl ${theme === 'dark' ? 'bg-[rgb(245,240,230)]' : 'bg-[rgb(255,255,255)]'}`}></div>
                     </div>
 
+                    {/* ===== SPECIAL CARD CONTENT ===== */}
+                    {/* Special Card Content Container */}
                     <div className="relative z-10">
+                      {/* ===== SPECIAL CARD IMAGE SECTION ===== */}
+                      {/* Special Card Image Container */}
                       <div className="relative h-64 overflow-hidden">
+                        {/* Special Card Food Image */}
                         <Image
                           src={special.image}
                           alt={t(special.descriptionKey)}
@@ -403,22 +474,32 @@ export default function HomePage() {
                           loading="lazy"
                           quality={75}
                         />
+                        {/* ===== SPECIAL CARD IMAGE OVERLAY ===== */}
+                        {/* Image Gradient Overlay for Text Readability */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        {/* ===== SPECIAL CARD PRICE BADGE ===== */}
+                        {/* Price Badge on Special Card */}
                         <div className={`absolute top-4 right-4 text-[rgb(255,255,255)] px-4 py-2 rounded-full font-bold text-lg shadow-lg ${theme === 'dark'
                           ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
                           : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
                           }`}>
                           {special.price}
                         </div>
+                        {/* ===== SPECIAL CARD STAR RATING ===== */}
+                        {/* Star Rating Icon on Special Card */}
                         <div className="absolute bottom-4 left-4 text-[rgb(255,255,255)]">
                           <div className="text-3xl mb-1">⭐</div>
                         </div>
                       </div>
+                      {/* ===== SPECIAL CARD TEXT CONTENT ===== */}
+                      {/* Special Card Text Information */}
                       <div className="p-8">
+                        {/* Special Card Title */}
                         <h3 className={`text-2xl font-bold mb-3 ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'
                           }`} style={{ fontFamily: 'Times New Roman, serif', color: 'rgba(0, 0, 0, 1)' }}>
                           {t(special.nameKey)}
                         </h3>
+                        {/* Special Card Description */}
                         <p className={`text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'
                           }`} style={{ color: 'rgba(0, 0, 0, 1)' }}>
                           {t(special.descriptionKey)}
@@ -430,7 +511,8 @@ export default function HomePage() {
               </div>
             </motion.section>
 
-            {/* Enhanced Upcoming Events */}
+            {/* ===== UPCOMING EVENTS SECTION ===== */}
+            {/* Enhanced Upcoming Events Section with Animation */}
             <motion.section
               className="mb-12 sm:mb-16 md:mb-20"
               variants={containerVariants}
@@ -440,22 +522,29 @@ export default function HomePage() {
               aria-labelledby="events-heading"
               role="region"
             >
+              {/* ===== EVENTS SECTION HEADER ===== */}
+              {/* Events Section Title and Description */}
               <motion.div className="text-center mb-8 sm:mb-12 md:mb-16" variants={itemVariants}>
+                {/* Events Section Emoji Icon */}
                 <div className="text-3xl xs:text-4xl sm:text-6xl mb-2 sm:mb-4">🎉</div>
+                {/* Events Section Main Title with Link */}
                 <Link href="/events-catering" aria-label="Learn more about our events and catering services">
                   <div className="relative inline-block">
+                    {/* Events Section Title */}
                     <h2
                       id="events-heading"
-                      className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 cursor-pointer hover:scale-105 focus:scale-105 transition-transform duration-300 ${theme === 'dark' ? 'text-white hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]' : 'text-[rgb(26,26,26)] hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]'
+                      className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 cursor-pointer hover:scale-105 focus:scale-105 transition-transform duration-300 ${theme === 'dark' ? 'text-white hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]' : 'text-[rgb(26,26,26)] hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]'
                         }`}
                       style={{ fontFamily: 'Times New Roman, serif' }}
                     >
+                      {/* Events Title Text with Theme Styling */}
                       <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                         }`}>
                         {t('realtime.reserveEvents')}
                       </span>
                     </h2>
-                    {/* Animated Hand Pointer */}
+                    {/* ===== ANIMATED HAND POINTER ===== */}
+                    {/* Desktop Animated Hand Pointer */}
                     <motion.div
                       className="absolute -right-16 top-1/2 transform -translate-y-1/2 hidden sm:block"
                       animate={{
@@ -468,6 +557,7 @@ export default function HomePage() {
                         ease: "easeInOut"
                       }}
                     >
+                      {/* Desktop Hand Pointer SVG */}
                       <svg
                         className={`w-12 h-12 ${theme === 'dark' ? 'text-[rgb(168,213,186)]' : 'text-[rgb(168,213,186)]'
                           }`}
@@ -483,7 +573,8 @@ export default function HomePage() {
                         />
                       </svg>
                     </motion.div>
-                    {/* Mobile Hand Pointer - positioned below */}
+                    {/* ===== MOBILE HAND POINTER ===== */}
+                    {/* Mobile Animated Hand Pointer */}
                     <motion.div
                       className="block sm:hidden mt-2"
                       animate={{
@@ -496,6 +587,7 @@ export default function HomePage() {
                         ease: "easeInOut"
                       }}
                     >
+                      {/* Mobile Hand Pointer SVG */}
                       <svg
                         className={`w-8 h-8 mx-auto ${theme === 'dark' ? 'text-[rgb(168,213,186)]' : 'text-[rgb(168,213,186)]'
                           }`}
@@ -512,16 +604,24 @@ export default function HomePage() {
                     </motion.div>
                   </div>
                 </Link>
+                {/* ===== EVENTS SECTION DIVIDER ===== */}
+                {/* Events Section Divider Line */}
                 <div className={`w-32 h-1.5 mx-auto rounded-full ${theme === 'dark'
                   ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
                   : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
                   }`}></div>
+                {/* ===== EVENTS SECTION DESCRIPTION ===== */}
+                {/* Events Section Description Text */}
                 <p className={`text-sm xs:text-base sm:text-lg mt-4 sm:mt-6 ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`}>
                   {t('realtime.upcomingEventsDescription')}
                 </p>
               </motion.div>
 
+              {/* ===== EVENTS CARDS GRID ===== */}
+              {/* Events Cards Container */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* ===== EVENTS CARD LOOP ===== */}
+                {/* Map through upcoming events to create cards */}
                 {upcomingEvents.map((event) => (
                   <motion.div
                     key={event.id}
@@ -530,22 +630,31 @@ export default function HomePage() {
                     variants={itemVariants}
                     whileHover={{ y: -10 }}
                   >
+                    {/* ===== EVENT CARD HEADER ===== */}
+                    {/* Event Card Header with Icon and Title */}
                     <div className="flex items-center mb-6">
+                      {/* ===== EVENT CARD ICON ===== */}
+                      {/* Event Card Icon Container */}
                       <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mr-6 text-3xl shadow-xl ${theme === 'dark'
                         ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
                         : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
                         }`}>
                         {event.icon}
                       </div>
+                      {/* ===== EVENT CARD TITLE ===== */}
+                      {/* Event Card Title Text */}
                       <div className={`${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`} style={{ fontFamily: 'Times New Roman, serif', fontSize: '20px', lineHeight: '28px' }}>
                         {t(event.titleKey)}
                       </div>
                     </div>
+                    {/* ===== EVENT CARD DESCRIPTION ===== */}
+                    {/* Event Card Description Text */}
                     <p className={`text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'}`}>
                       {t(event.descriptionKey)}
                     </p>
 
-                    {/* Hover effect overlay */}
+                    {/* ===== EVENT CARD HOVER EFFECT ===== */}
+                    {/* Hover Effect Overlay for Event Cards */}
                     <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${theme === 'dark'
                       ? 'bg-gradient-to-r from-[rgb(26,26,26)]/10 to-[rgb(26,26,26)]/10'
                       : 'bg-gradient-to-r from-[rgb(168,213,186)]/10 to-[rgb(168,213,186)]/10'
@@ -555,7 +664,8 @@ export default function HomePage() {
               </div>
             </motion.section>
 
-            {/* Parallax Section */}
+            {/* ===== PARALLAX SECTION ===== */}
+            {/* Parallax Section with Background Image */}
             <motion.section
               className="relative h-[35vh] sm:h-[40vh] md:h-[50vh] w-full overflow-hidden mb-12 sm:mb-16 md:mb-20"
               variants={containerVariants}
@@ -565,15 +675,19 @@ export default function HomePage() {
               aria-labelledby="parallax-heading"
               role="region"
             >
-              {/* Parallax Background Image */}
+              {/* ===== PARALLAX BACKGROUND SECTION ===== */}
+              {/* Parallax Background Image Container */}
               <div className="absolute inset-0 w-full h-full">
+                {/* ===== DESKTOP PARALLAX BACKGROUND ===== */}
+                {/* Desktop Parallax Background Image */}
                 <div
                   className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed hidden md:block"
                   style={{
                     backgroundImage: `url('/images/parallax-image.webp')`
                   }}
                 />
-                {/* Static background for mobile */}
+                {/* ===== MOBILE PARALLAX BACKGROUND ===== */}
+                {/* Static Background for Mobile Devices */}
                 <div
                   className="absolute inset-0 w-full h-full bg-cover bg-center block md:hidden"
                   style={{
@@ -581,13 +695,19 @@ export default function HomePage() {
                   }}
                 />
 
-                {/* Translucent Overlay */}
+                {/* ===== PARALLAX OVERLAY ===== */}
+                {/* Translucent Overlay for Text Readability */}
                 <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]"></div>
               </div>
 
-              {/* Content */}
+              {/* ===== PARALLAX CONTENT SECTION ===== */}
+              {/* Parallax Content Container */}
               <div className="relative z-10 flex items-center justify-center h-full">
+                {/* ===== PARALLAX TEXT CONTENT ===== */}
+                {/* Parallax Text Content Container */}
                 <div className="text-center mt-4 px-4 sm:px-6 lg:px-8 max-w-4xl">
+                  {/* ===== PARALLAX TITLE ===== */}
+                  {/* Parallax Section Main Title */}
                   <motion.h2
                     id="parallax-heading"
                     className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 text-white italic"
@@ -597,6 +717,8 @@ export default function HomePage() {
                     {t('parallax.title')}
                   </motion.h2>
 
+                  {/* ===== PARALLAX SUBTITLE ===== */}
+                  {/* Parallax Section Subtitle */}
                   <motion.p
                     className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/90 font-light mb-6 sm:mb-8 italic"
                     style={{ fontFamily: 'Times New Roman, serif' }}
@@ -605,27 +727,33 @@ export default function HomePage() {
                     {t('parallax.subtitle')}
                   </motion.p>
 
+                  {/* ===== PARALLAX BUTTONS ===== */}
+                  {/* Parallax Section Call-to-Action Buttons */}
                   <motion.div
                     variants={itemVariants}
                     className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
                   >
-
+                    {/* ===== PARALLAX RESERVATIONS BUTTON ===== */}
+                    {/* First Parallax CTA Button - Reservations */}
                     <Link
                       href="/reservations"
                       className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="Book your table - Reserve now at East @ West"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
+                      {/* Parallax Reservations Button Text */}
                       <span className="relative z-10">{t('parallax.cta')}</span>
                     </Link>
 
-
+                    {/* ===== PARALLAX MENU BUTTON ===== */}
+                    {/* Second Parallax CTA Button - Menu */}
                     <Link
                       href="/menu"
                       className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="View our restaurant menu"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
+                      {/* Parallax Menu Button Text */}
                       <span className="relative z-10">VIEW THE MENU</span>
                     </Link>
                   </motion.div>
@@ -633,6 +761,7 @@ export default function HomePage() {
               </div>
             </motion.section>
 
+            {/* ===== RESTAURANT GURU AWARDS SECTION ===== */}
             {/* Restaurant Guru Awards Section - SEO Optimized */}
             <motion.section
               className="mb-12 sm:mb-16 md:mb-20 text-center"
@@ -643,32 +772,44 @@ export default function HomePage() {
               itemScope
               itemType="https://schema.org/Organization"
             >
-              {/* Section Header */}
+              {/* ===== AWARDS SECTION HEADER ===== */}
+              {/* Awards Section Header with Title and Description */}
               <motion.div className="mb-8 sm:mb-10 md:mb-12" variants={itemVariants}>
-                <h2 className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                {/* ===== AWARDS SECTION TITLE ===== */}
+                {/* Awards Section Main Title */}
+                <h2 className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                   }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                  {/* Awards Title Text with Theme Styling */}
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                     }`}>
                     {t('awards.title')}
                   </span>
                 </h2>
+                {/* ===== AWARDS SECTION DIVIDER ===== */}
+                {/* Awards Section Divider Line */}
                 <div className="w-32 h-1.5 bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] mx-auto rounded-full mb-4"></div>
+                {/* ===== AWARDS SECTION SUBTITLE ===== */}
+                {/* Awards Section Subtitle Text */}
                 <p className={`text-sm xs:text-base sm:text-lg md:text-xl ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'
                   }`} style={{ fontFamily: 'Times New Roman, serif' }}>
                   {t('awards.subtitle')}
                 </p>
               </motion.div>
 
-              {/* Awards Row */}
+              {/* ===== AWARDS ROW SECTION ===== */}
+              {/* Awards Row Container */}
               <motion.div
                 className="flex flex-col sm:flex-row gap-8 lg:gap-12 justify-center items-center px-4"
                 variants={itemVariants}
                 role="list"
                 aria-label="Restaurant Guru Awards"
               >
-                {/* 1. Restaurant Guru 2021 Badge */}
+                {/* ===== RESTAURANT GURU 2021 BADGE ===== */}
+                {/* First Award - Restaurant Guru 2021 Badge */}
                 <article className="flex-shrink-0 flex justify-center" role="listitem">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
+                    {/* ===== 2021 AWARD BADGE ===== */}
+                    {/* Interactive Restaurant Guru 2021 Badge */}
                     <div
                       id="rest_circ5"
                       onClick={(e) => {
@@ -683,7 +824,11 @@ export default function HomePage() {
                       role="img"
                       aria-label="Restaurant Guru Recommended 2021 – East @ West Brussels"
                     >
+                      {/* ===== 2021 BADGE CONTAINER ===== */}
+                      {/* 2021 Badge Container */}
                       <div className="circ_cont">
+                        {/* ===== 2021 BADGE IMAGE ===== */}
+                        {/* 2021 Badge Background Image */}
                         <div
                           className="circ_img"
                           style={{ background: "url('https://awards.infcdn.net/img/star_red.svg') no-repeat center" }}
@@ -692,6 +837,8 @@ export default function HomePage() {
                         >
                           &nbsp;
                         </div>
+                        {/* ===== 2021 BADGE TOP TITLE ===== */}
+                        {/* 2021 Badge Top Title Link */}
                         <a
                           href="https://restaurantguru.com"
                           target="_blank"
@@ -701,7 +848,11 @@ export default function HomePage() {
                         >
                           Restaurant Guru 2021
                         </a>
+                        {/* ===== 2021 BADGE STATUS ===== */}
+                        {/* 2021 Badge Status Text */}
                         <span>Recommended</span>
+                        {/* ===== 2021 BADGE BOTTOM TITLE ===== */}
+                        {/* 2021 Badge Bottom Title Link */}
                         <a
                           href="https://restaurantguru.com/East-and-West-Eatery-Brussels"
                           className="circ_bot_title"
@@ -717,9 +868,12 @@ export default function HomePage() {
                   </figure>
                 </article>
 
-                {/* 2. Restaurant Guru 2023 */}
+                {/* ===== RESTAURANT GURU 2023 ===== */}
+                {/* Second Award - Restaurant Guru 2023 */}
                 <article className="flex-shrink-0 flex justify-center" role="listitem">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
+                    {/* ===== 2023 AWARD LINK ===== */}
+                    {/* Restaurant Guru 2023 Award Link */}
                     <a
                       href="https://restaurantguru.com/"
                       target="_blank"
@@ -727,7 +881,11 @@ export default function HomePage() {
                       style={{ cursor: 'pointer' }}
                       aria-label="Restaurant Guru Award 2023 – East @ West Brussels"
                     >
+                      {/* ===== 2023 AWARD IMAGE CONTAINER ===== */}
+                      {/* 2023 Award Image Container */}
                       <div className="h-48 w-auto">
+                        {/* ===== 2023 AWARD IMAGE ===== */}
+                        {/* Restaurant Guru 2023 Award Image */}
                         <Image
                           src={Guru1}
                           alt="Restaurant Guru Award 2023 – East @ West Brussels"
@@ -740,9 +898,12 @@ export default function HomePage() {
                   </figure>
                 </article>
 
-                {/* 3. Restaurant Guru 2024 */}
+                {/* ===== RESTAURANT GURU 2024 ===== */}
+                {/* Third Award - Restaurant Guru 2024 */}
                 <article className="flex-shrink-0 flex justify-center" role="listitem">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
+                    {/* ===== 2024 AWARD LINK ===== */}
+                    {/* Restaurant Guru 2024 Award Link */}
                     <a
                       href="https://restaurantguru.com/"
                       target="_blank"
@@ -750,7 +911,11 @@ export default function HomePage() {
                       style={{ cursor: 'pointer' }}
                       aria-label="Restaurant Guru Award 2024 – East @ West Brussels"
                     >
+                      {/* ===== 2024 AWARD IMAGE CONTAINER ===== */}
+                      {/* 2024 Award Image Container */}
                       <div className="h-48 w-auto">
+                        {/* ===== 2024 AWARD IMAGE ===== */}
+                        {/* Restaurant Guru 2024 Award Image */}
                         <Image
                           src={Guru2}
                           alt="Restaurant Guru Award 2024 – East @ West Brussels"
@@ -764,6 +929,7 @@ export default function HomePage() {
                 </article>
               </motion.div>
 
+              {/* ===== AWARDS JSON-LD SCHEMA ===== */}
               {/* JSON-LD Schema for Rich Snippets */}
               <script
                 type="application/ld+json"
@@ -808,7 +974,8 @@ export default function HomePage() {
               />
             </motion.section>
 
-            {/* Contact Section */}
+            {/* ===== CONTACT SECTION ===== */}
+            {/* Contact Section with Contact Information and Restaurant Image */}
             <motion.section
               id="contact"
               className={`py-20 px-4 sm:px-6 lg:px-8 relative ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'
@@ -818,75 +985,107 @@ export default function HomePage() {
               viewport={{ once: true }}
               variants={containerVariants}
             >
-              {/* Background Gradient */}
+              {/* ===== CONTACT BACKGROUND GRADIENT ===== */}
+              {/* Background Gradient for Contact Section */}
               <div className={`absolute inset-0 pointer-events-none ${theme === 'dark'
-                  ? 'bg-gray-900'
-                  : 'bg-white'
+                ? 'bg-gray-900'
+                : 'bg-white'
                 }`} />
 
+              {/* ===== CONTACT CONTENT CONTAINER ===== */}
+              {/* Contact Content Wrapper */}
               <div className="max-w-7xl mx-auto relative">
-                {/* Section Header */}
+                {/* ===== CONTACT SECTION HEADER ===== */}
+                {/* Contact Section Header with Title */}
                 <motion.div className="mb-12 text-center" variants={itemVariants}>
-                  <h2 className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                  {/* ===== CONTACT SECTION TITLE ===== */}
+                  {/* Contact Section Main Title */}
+                  <h2 className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                     }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                    {/* Contact Title Text with Theme Styling */}
                     <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                       }`}>
                       {t('contact.contactUs')}
                     </span>
                   </h2>
+                  {/* ===== CONTACT SECTION DIVIDER ===== */}
+                  {/* Contact Section Divider Line */}
                   <div className="w-32 h-1.5 bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] mx-auto rounded-full mb-4"></div>
                 </motion.div>
+
+                {/* ===== CONTACT GRID SECTION ===== */}
+                {/* Contact Information Grid Container */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                  {/* Contact Details */}
+                  {/* ===== CONTACT DETAILS SECTION ===== */}
+                  {/* Contact Details Card */}
                   <motion.div
                     className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${theme === 'dark'
-                        ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20'
-                        : 'bg-white/80 border-gray-600 shadow-gray-500/20'
+                      ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20'
+                      : 'bg-white/80 border-gray-600 shadow-gray-500/20'
                       }`}
                     variants={itemVariants}
                     whileHover={{ y: -5 }}
                   >
-
-
+                    {/* ===== CONTACT DETAILS LIST ===== */}
+                    {/* Contact Details List Container */}
                     <div className="space-y-6">
-                      {/* Phone */}
+                      {/* ===== PHONE CONTACT ===== */}
+                      {/* Phone Contact Information */}
                       <div className="flex items-center">
+                        {/* ===== PHONE ICON LINK ===== */}
+                        {/* Phone Icon with Link */}
                         <a
                           href="tel:+32465206024"
                           title={t('contact.contactTooltips.phone')}
                           className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
                             }`}
                         >
+                          {/* Phone Icon SVG */}
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                           </svg>
                         </a>
+                        {/* ===== PHONE TEXT INFO ===== */}
+                        {/* Phone Text Information */}
                         <div>
+                          {/* Phone Label */}
                           <h3 className="text-lg font-semibold">{t('contact.phone')}</h3>
+                          {/* Phone Number */}
                           <p className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>{t('footer.phone')}</p>
                         </div>
                       </div>
 
-                      {/* Email */}
+                      {/* ===== EMAIL CONTACT ===== */}
+                      {/* Email Contact Information */}
                       <div className="flex items-center">
+                        {/* ===== EMAIL ICON LINK ===== */}
+                        {/* Email Icon with Link */}
                         <a
                           href="mailto:contact@eastatwest.com"
                           title={t('contact.contactTooltips.email')}
                           className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
                             }`}
                         >
+                          {/* Email Icon SVG */}
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                           </svg>
                         </a>
+                        {/* ===== EMAIL TEXT INFO ===== */}
+                        {/* Email Text Information */}
                         <div>
+                          {/* Email Label */}
                           <h3 className="text-lg font-semibold">{t('contact.email')}</h3>
+                          {/* Email Address */}
                           <p className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>{t('footer.email')}</p>
                         </div>
                       </div>
 
-                      {/* Address */}
+                      {/* ===== ADDRESS CONTACT ===== */}
+                      {/* Address Contact Information */}
                       <div className="flex items-start">
+                        {/* ===== ADDRESS ICON LINK ===== */}
+                        {/* Address Icon with Google Maps Link */}
                         <a
                           href="https://maps.google.com/?q=Bld+de+l'Empereur+26+1000+Brussels+Belgium"
                           target="_blank"
@@ -895,33 +1094,49 @@ export default function HomePage() {
                           className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
                             }`}
                         >
+                          {/* Address Icon SVG */}
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
                         </a>
+                        {/* ===== ADDRESS TEXT INFO ===== */}
+                        {/* Address Text Information */}
                         <div>
+                          {/* Address Label */}
                           <h3 className="text-lg font-semibold">{t('contact.address')}</h3>
+                          {/* Address Text */}
                           <p className={`whitespace-pre-line ${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>{t('footer.address')}</p>
                         </div>
                       </div>
 
-                      {/* Hours */}
+                      {/* ===== HOURS CONTACT ===== */}
+                      {/* Opening Hours Contact Information */}
                       <div className="flex items-start">
+                        {/* ===== HOURS ICON LINK ===== */}
+                        {/* Hours Icon with Reservations Link */}
                         <a
                           href="/reservations"
                           className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
                             }`}
                         >
+                          {/* Hours Icon SVG */}
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </a>
+                        {/* ===== HOURS TEXT INFO ===== */}
+                        {/* Hours Text Information */}
                         <div>
+                          {/* Hours Label */}
                           <h3 className="text-lg font-semibold">{t('contact.openingHours')}</h3>
+                          {/* Hours Details */}
                           <div className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'}`}>
+                            {/* Monday to Friday Hours */}
                             <p>{t('contact.mondayFriday')}</p>
+                            {/* Saturday Hours */}
                             <p>{t('contact.saturday')}</p>
+                            {/* Sunday Closed */}
                             <p>{t('contact.sundayClosed')}</p>
                           </div>
                         </div>
@@ -929,9 +1144,14 @@ export default function HomePage() {
                     </div>
                   </motion.div>
 
-                  {/* Restaurant Image */}
+                  {/* ===== RESTAURANT IMAGE SECTION ===== */}
+                  {/* Restaurant Image Card */}
                   <motion.div className="relative" variants={itemVariants}>
+                    {/* ===== RESTAURANT IMAGE CONTAINER ===== */}
+                    {/* Restaurant Image Container */}
                     <div className="rounded-xl overflow-hidden shadow-lg h-full min-h-[400px] relative">
+                      {/* ===== RESTAURANT IMAGE ===== */}
+                      {/* Restaurant Banner Image */}
                       <Image
                         src="/images/banner.webp"
                         alt="East at West Restaurant"
@@ -940,13 +1160,21 @@ export default function HomePage() {
                         priority
                         unoptimized
                       />
+                      {/* ===== RESTAURANT IMAGE OVERLAY ===== */}
+                      {/* Image Gradient Overlay for Text Readability */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                      <div className="absolute bottom-8 left-8 right-8 text-white text-center lg:text-left">
-                        <h3 className={`text-5xl font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-white'
-                          }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                      {/* ===== RESTAURANT IMAGE TEXT ===== */}
+                      {/* Restaurant Image Text Overlay */}
+                      <div className="absolute top-20 left-8 right-8 text-white text-center">
+                        {/* ===== RESTAURANT IMAGE TITLE ===== */}
+                        {/* Restaurant Image Title */}
+                        <h3 className={`text-4xl font-bold mb-2 italic   ${theme === 'dark' ? 'text-white' : 'text-white'
+                          }`} style={{ fontFamily: 'Rozha One, serif' }}>
                           {t('contact.restaurantImageAlt')}
                         </h3>
-                        <p className="text-lg">
+                        {/* ===== RESTAURANT IMAGE DESCRIPTION ===== */}
+                        {/* Restaurant Image Description */}
+                        <p className="text-lg italic" style={{ fontFamily: 'Rozha One, serif' }}>
                           {t('contact.restaurantDescription')}
                         </p>
                       </div>
@@ -958,8 +1186,6 @@ export default function HomePage() {
 
           </div>
         </main>
-
-
 
       </div>
     </>
