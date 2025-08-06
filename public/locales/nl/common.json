@@ -176,6 +176,11 @@
         "title": "Moussakan (Vegan)",
         "description": "Aubergine, ui, kikkererwten en tomaat",
         "price": "7,5€"
+      },
+      "zahra": {
+        "title": "Zahra (Vegan)",
+        "description": "Gekookte bloemkool, gemarineerd in zelfgemaakte saus (tomaat, knoflook en citroen). Topped met citrus tahini saus.",
+        "price": "7,5€"
       }
     },
     "hotMezzes": {

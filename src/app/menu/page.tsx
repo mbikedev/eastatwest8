@@ -194,6 +194,14 @@ export default function MenuPage() {
         vegetarian: true,
         image: "/images/cold-mezzes/mousaka.webp",
       },
+      {
+        name: t("menu.coldMezzes.zahra.title"),
+        description: t("menu.coldMezzes.zahra.description"),
+        price: t("menu.coldMezzes.zahra.price"),
+        spicy: false,
+        vegetarian: true,
+        image: "/images/cold-mezzes/zahra.webp",
+      },
     ],
     hotMezzes: [
       {

@@ -176,6 +176,11 @@
         "title": "Moussakan (Végan)",
         "description": "Aubergine, oignon, pois chiches et tomate",
         "price": "7,5€"
+      },
+      "zahra": {
+        "title": "Zahra (Végan)",
+        "description": "Chou-fleur cuit, mariné dans une sauce maison (tomate, ail et citron). Garni d'une sauce tahini aux agrumes.",
+        "price": "7,5€"
       }
     },
     "hotMezzes": {

@@ -177,6 +177,11 @@
         "title": "Moussakan (Vegan)",
         "description": "Eggplant, onion, chickpeas and tomato",
         "price": "7.5€"
+      },
+      "zahra": {
+        "title": "Zahra (Vegan)",
+        "description": "Cooked Cauliflower, marinated in homemade sauce (tomato, garlic and lemon). Topped with citrus tahini sauce.",
+        "price": "7.5€"
       }
     },
     "hotMezzes": {
