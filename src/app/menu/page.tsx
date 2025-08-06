@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../context/ThemeContext";
 import { useLightbox } from "../../context/LightboxContext";
@@ -29,6 +29,7 @@ type MenuItem = {
   vegetarian: boolean;
   isMenuDisplay?: boolean;
   isVeganMenuDisplay?: boolean;
+  isTakeawayDeal?: boolean;
   image?: string;
   id?: string;
   section?: string;
@@ -536,6 +537,7 @@ export default function MenuPage() {
         spicy: false,
         vegetarian: true,
         image: "/images/sandwiches/take-away-vegan.webp",
+        isTakeawayDeal: true,
       },
       {
         name: t("menu.sandwiches.takeawayWithMeat.title"),
@@ -544,6 +546,7 @@ export default function MenuPage() {
         spicy: false,
         vegetarian: false,
         image: "/images/sandwiches/take-away-with-meat.webp",
+        isTakeawayDeal: true,
       },
       {
         name: t("menu.sandwiches.meatFoodie.title"),
@@ -552,6 +555,7 @@ export default function MenuPage() {
         spicy: false,
         vegetarian: false,
         image: "/images/sandwiches/meat-foodie.webp",
+        isTakeawayDeal: true,
       },
       {
         name: t("menu.sandwiches.veganFoodie.title"),
@@ -560,6 +564,7 @@ export default function MenuPage() {
         spicy: false,
         vegetarian: true,
         image: "/images/sandwiches/vegan-foodie.webp",
+        isTakeawayDeal: true,
       },
     ],
     skewers: [
@@ -2465,7 +2470,131 @@ export default function MenuPage() {
                       const isLastTwo = index >= totalItems - 2;
                       const isLastItem = index === totalItems - 1;
 
-                      // Desktop-specific column spanning logic
+                      // Special handling for sandwiches takeaway deals
+                      if (activeCategory === "sandwiches" && item.isTakeawayDeal) {
+                        // Check if this is the first takeaway deal to add horizontal line
+                        const previousItems = menuItems[activeCategory]?.slice(0, index) || [];
+                        const isFirstTakeawayDeal = !previousItems.some(item => item.isTakeawayDeal);
+                        
+                        return (
+                          <React.Fragment key={index}>
+                            {isFirstTakeawayDeal && (
+                              <div className="col-span-full mb-8">
+                                <hr className={`border-t-2 ${theme === "dark" ? "border-white/20" : "border-gray-300"}`} />
+                              </div>
+                            )}
+                            <div
+                              className={`rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center flex flex-col h-full ${theme === "dark"
+                                ? "bg-[#1A1A1A] shadow-xl shadow-white/10"
+                                : "bg-white"
+                                } lg:col-span-3`}
+                            >
+                              {/* Circular Image */}
+                              {item.image && (
+                                <div className="flex justify-center mb-4">
+                                  <div
+                                    className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg cursor-pointer group transition-all duration-300 hover:shadow-xl"
+                                    onClick={() =>
+                                      openLightbox(item.image!, item.name)
+                                    }
+                                  >
+                                    <Image
+                                      src={item.image!}
+                                      alt={item.name}
+                                      width={96}
+                                      height={96}
+                                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                    />
+
+                                    {/* Hover Overlay */}
+                                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                      <div
+                                        className={`p-2 rounded-full ${theme === "dark"
+                                          ? "bg-white/90"
+                                          : "bg-black/80"
+                                          } `}
+                                      >
+                                        <svg
+                                          className={`w-4 h-4 ${theme === "dark"
+                                            ? "text-gray-900"
+                                            : "text-white"
+                                            }`}
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* Title */}
+                              <h3
+                                className={`text-lg font-bold mb-2 ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                                  }`}
+                              >
+                                {item.name}
+                              </h3>
+
+                              {/* Spicy badge */}
+                              {item.spicy && (
+                                <div className="flex justify-center mb-3">
+                                  <span
+                                    className={`text-xs font-medium px-3 py-1 rounded-full ${theme === "dark"
+                                      ? "bg-red-900/50 text-red-200 border border-red-400/40"
+                                      : "bg-red-100 text-red-700 border border-red-400"
+                                      }`}
+                                  >
+                                    🌶️ Spicy
+                                  </span>
+                                </div>
+                              )}
+
+                              {/* Vegetarian badge */}
+                              {item.vegetarian && (
+                                <div className="flex justify-center mb-3">
+                                  <span
+                                    className={`text-xs font-medium px-3 py-1 rounded-full ${theme === "dark"
+                                      ? "bg-emerald-900/50 text-emerald-200 border border-emerald-400/40"
+                                      : "bg-emerald-100 text-emerald-700 border border-emerald-400"
+                                      }`}
+                                  >
+                                    🌱 Vegetarian
+                                  </span>
+                                </div>
+                              )}
+
+                              {/* Description */}
+                              <p
+                                className={`text-sm mb-4 flex-grow ${theme === "dark" ? "text-gray-300" : "text-gray-600"
+                                  }`}
+                              >
+                                {item.description}
+                              </p>
+
+                              {/* Price */}
+                              <div className="mt-auto">
+                                <span
+                                  className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                                    }`}
+                                >
+                                  {item.price}
+                                </span>
+                              </div>
+                            </div>
+                          </React.Fragment>
+                        );
+                      }
+
+                      // Desktop-specific column spanning logic for regular items
                       let columnSpanClass = "";
                       if (
                         activeCategory === "coldMezzes" ||
