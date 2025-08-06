@@ -117,9 +117,9 @@ const Header = () => {
                 { href: '/menu', label: t('nav.menu') },
                 { href: '/reservations', label: t('nav.reservations') },
                 { href: '/takeaway', label: t('nav.takeaway') },
-                { href: '/gallery', label: t('nav.gallery') },
-                { href: '/about', label: t('nav.about') },
-                { href: '/#contact', label: t('nav.contact') }
+                { href: '/blog', label: t('nav.blog') },
+                { href: '/events-catering', label: t('nav.events') },
+                { href: '/about', label: t('nav.about') }
               ].map((item, index) => (
                 <motion.div
                   key={item.href}
@@ -213,9 +213,9 @@ const Header = () => {
                   { href: '/menu', label: t('nav.menu'), icon: '🍽️' },
                   { href: '/reservations', label: t('nav.reservations'), icon: '📅' },
                   { href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
-                  { href: '/gallery', label: t('nav.gallery'), icon: '📸' },
-                  { href: '/about', label: t('nav.about'), icon: '👥' },
-                  { href: '/#contact', label: t('nav.contact'), icon: '📞' }
+                  { href: '/blog', label: t('nav.blog'), icon: '📝' },
+                  { href: '/events-catering', label: t('nav.events'), icon: '🎉' },
+                  { href: '/about', label: t('nav.about'), icon: '👥' }
                 ].map((item, index) => (
                   <motion.div
                     key={item.href}

@@ -416,7 +416,7 @@ export default function HomePage() {
                   id="todays-specials-heading"
                   className={` text-5xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                     }`}
-                  style={{ fontFamily: 'Times New Roman, serif' }}
+                  style={{ fontFamily: 'Rozha One, serif' }}
                 >
                   {/* Specials Title Text with Theme Styling */}
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
@@ -535,7 +535,7 @@ export default function HomePage() {
                       id="events-heading"
                       className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 cursor-pointer hover:scale-105 focus:scale-105 transition-transform duration-300 ${theme === 'dark' ? 'text-white hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]' : 'text-[rgb(26,26,26)] hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]'
                         }`}
-                      style={{ fontFamily: 'Times New Roman, serif' }}
+                      style={{ fontFamily: 'Rozha One, serif' }}
                     >
                       {/* Events Title Text with Theme Styling */}
                       <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
@@ -778,7 +778,7 @@ export default function HomePage() {
                 {/* ===== AWARDS SECTION TITLE ===== */}
                 {/* Awards Section Main Title */}
                 <h2 className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
-                  }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                  }`} style={{ fontFamily: 'Rozha One, serif' }}>
                   {/* Awards Title Text with Theme Styling */}
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                     }`}>
@@ -791,7 +791,7 @@ export default function HomePage() {
                 {/* ===== AWARDS SECTION SUBTITLE ===== */}
                 {/* Awards Section Subtitle Text */}
                 <p className={`text-sm xs:text-base sm:text-lg md:text-xl ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'
-                  }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                  }`} style={{ fontFamily: 'Rozha One, serif' }}>
                   {t('awards.subtitle')}
                 </p>
               </motion.div>
@@ -1001,7 +1001,7 @@ export default function HomePage() {
                   {/* ===== CONTACT SECTION TITLE ===== */}
                   {/* Contact Section Main Title */}
                   <h2 className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
-                    }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                    }`} style={{ fontFamily: 'Rozha One, serif' }}>
                     {/* Contact Title Text with Theme Styling */}
                     <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                       }`}>
