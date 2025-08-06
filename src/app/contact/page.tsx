@@ -48,7 +48,7 @@ export default function ContactPage() {
       
       {/* Floating Background Elements */}
       <motion.div 
-        className={`absolute top-20 left-10 w-32 h-32 rounded-full opacity-20 blur-xl ${
+        className={`absolute top-20 left-10 w-32 h-32 rounded-full opacity-20  ${
           theme === 'dark' 
             ? 'bg-gradient-to-br from-orange-400 to-pink-500' 
             : 'bg-gradient-to-br from-gray-200 to-gray-300'
@@ -57,13 +57,13 @@ export default function ContactPage() {
         animate="float"
       />
       <motion.div 
-        className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 blur-xl"
+        className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 "
         variants={floatingVariants}
         animate="float"
         transition={{ delay: 0.5 }}
       />
       <motion.div 
-        className="absolute bottom-20 left-1/4 w-20 h-20 bg-gradient-to-br from-green-400 to-teal-500 rounded-full opacity-20 blur-xl"
+        className="absolute bottom-20 left-1/4 w-20 h-20 bg-gradient-to-br from-green-400 to-teal-500 rounded-full opacity-20 "
         variants={floatingVariants}
         animate="float"
         transition={{ delay: 1 }}
@@ -121,7 +121,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Details */}
             <motion.div 
-              className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${
+              className={`p-8 rounded-xl shadow-2xl  border-2 transform hover:scale-105 transition-all duration-300  ${
                 theme === 'dark' 
                   ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20' 
                   : 'bg-white/80 border-gray-600 shadow-gray-500/20'
@@ -246,7 +246,7 @@ export default function ContactPage() {
       >
         {/* Background Elements */}
         <motion.div 
-          className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-10 blur-2xl"
+          className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-10 "
           variants={floatingVariants}
           animate="float"
         />

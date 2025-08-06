@@ -182,7 +182,7 @@ export default function BlogPage() {
 
         {/* Search and Filter Section */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className={`p-6 rounded-2xl backdrop-blur-sm border ${
+          <div className={`p-6 rounded-2xl  border ${
             theme === 'dark' 
               ? 'bg-white/5 border-white/10' 
               : 'bg-white/80 border-gray-200 shadow-lg'
@@ -272,7 +272,7 @@ export default function BlogPage() {
                   variants={itemVariants}
                   className={`mb-12 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 hover:transform hover:scale-[1.02] ${
                     theme === 'dark' 
-                      ? 'bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10' 
+                      ? 'bg-white/5  border border-white/10 hover:bg-white/10' 
                       : 'bg-white border border-gray-100 hover:shadow-3xl'
                   }`}
                 >
@@ -335,7 +335,7 @@ export default function BlogPage() {
                       variants={itemVariants}
                       className={`rounded-2xl overflow-hidden transition-all duration-300 hover:transform hover:scale-105 ${
                         theme === 'dark' 
-                          ? 'bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10' 
+                          ? 'bg-white/5  border border-white/10 hover:bg-white/10' 
                           : 'bg-white shadow-lg border border-gray-100 hover:shadow-xl'
                       }`}
                     >
@@ -353,7 +353,7 @@ export default function BlogPage() {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                           {blog.tags && blog.tags.length > 0 && (
                             <div className="absolute top-3 left-3">
-                              <span className="bg-black/50 backdrop-blur-sm text-white px-2 py-1 rounded-lg text-xs font-medium capitalize">
+                              <span className="bg-black/50  text-white px-2 py-1 rounded-lg text-xs font-medium capitalize">
                                 {blog.tags[0]}
                               </span>
                             </div>

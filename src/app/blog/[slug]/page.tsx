@@ -313,7 +313,7 @@ export default function BlogPostPage() {
           {/* Breadcrumb */}
           <div className="absolute top-8 left-8 z-10">
             <Link href="/blog">
-              <span className="bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-black/70 transition-colors duration-300">
+              <span className="bg-black/50  text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-black/70 transition-colors duration-300">
                 ← {t('blog.backToBlog')}
               </span>
             </Link>
@@ -330,7 +330,7 @@ export default function BlogPostPage() {
               {blog.tags && blog.tags.length > 0 && (
                 <div className="flex flex-wrap justify-center gap-2 mb-6">
                   {blog.tags.map(tag => (
-                    <span key={tag} className="bg-[#A8D5BA]/80 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium capitalize">
+                    <span key={tag} className="bg-[#A8D5BA]/80  text-white px-3 py-1 rounded-full text-sm font-medium capitalize">
                       {tag}
                     </span>
                   ))}
@@ -390,7 +390,7 @@ export default function BlogPostPage() {
           {/* Table of Contents */}
           <motion.div 
             variants={itemVariants}
-            className={`relative z-10 p-6 rounded-2xl backdrop-blur-sm border mb-8 ${
+            className={`relative z-10 p-6 rounded-2xl  border mb-8 ${
               theme === 'dark' 
                 ? 'bg-white/5 border-white/10' 
                 : 'bg-white/80 border-gray-200 shadow-lg'
@@ -428,7 +428,7 @@ export default function BlogPostPage() {
           {/* Main Content */}
           <motion.div 
             variants={itemVariants}
-            className={`relative z-10 p-8 rounded-3xl backdrop-blur-sm border ${
+            className={`relative z-10 p-8 rounded-3xl  border ${
               theme === 'dark' 
                 ? 'bg-white/5 border-white/10' 
                 : 'bg-white/80 border-gray-200 shadow-lg'
@@ -443,7 +443,7 @@ export default function BlogPostPage() {
           {blog.author_name && (
             <motion.div 
               variants={itemVariants}
-              className={`relative z-10 mt-12 p-6 rounded-2xl backdrop-blur-sm border ${
+              className={`relative z-10 mt-12 p-6 rounded-2xl  border ${
                 theme === 'dark' 
                   ? 'bg-white/5 border-white/10' 
                   : 'bg-white/80 border-gray-200 shadow-lg'
@@ -468,7 +468,7 @@ export default function BlogPostPage() {
           {/* Share Section */}
           <motion.div 
             variants={itemVariants}
-            className={`relative z-10 mt-12 p-6 rounded-2xl backdrop-blur-sm border ${
+            className={`relative z-10 mt-12 p-6 rounded-2xl  border ${
               theme === 'dark' 
                 ? 'bg-white/5 border-white/10' 
                 : 'bg-white/80 border-gray-200 shadow-lg'
@@ -532,7 +532,7 @@ export default function BlogPostPage() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className={`rounded-2xl overflow-hidden transition-all duration-300 hover:transform hover:scale-105 ${
                     theme === 'dark' 
-                      ? 'bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10' 
+                      ? 'bg-white/5  border border-white/10 hover:bg-white/10' 
                       : 'bg-white shadow-lg border border-gray-100 hover:shadow-xl'
                   }`}
                 >

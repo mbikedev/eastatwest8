@@ -424,21 +424,21 @@ export default function HomePage() {
           <div className="absolute inset-0 overflow-hidden z-5">
             {/* First Floating Element - Top Left */}
             <motion.div
-              className={`absolute top-20 left-10 w-32 h-32 rounded-full opacity-20 blur-xl ${theme === 'dark' ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]' : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
-                }`}
+                              className={`absolute top-20 left-10 w-32 h-32 rounded-full opacity-20 ${theme === 'dark' ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]' : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
+                  }`}
               variants={floatingVariants}
               animate="float"
             />
             {/* Second Floating Element - Top Right */}
             <motion.div
-              className="absolute top-40 right-20 w-48 h-48 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-20 blur-xl"
+                              className="absolute top-40 right-20 w-48 h-48 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full opacity-20"
               variants={floatingVariants}
               animate="float"
               transition={{ delay: 1 }}
             />
             {/* Third Floating Element - Bottom Left */}
             <motion.div
-              className="absolute bottom-32 left-1/4 w-40 h-40 bg-gradient-to-r from-green-400 to-teal-400 rounded-full opacity-20 blur-xl"
+                              className="absolute bottom-32 left-1/4 w-40 h-40 bg-gradient-to-r from-green-400 to-teal-400 rounded-full opacity-20"
               variants={floatingVariants}
               animate="float"
               transition={{ delay: 2 }}
@@ -601,7 +601,7 @@ export default function HomePage() {
           <div className="absolute inset-0 overflow-hidden">
             {/* First Floating Element - Top Right */}
             <motion.div
-              className={`absolute top-32 right-10 w-96 h-96 rounded-full blur-3xl ${theme === 'dark'
+                              className={`absolute top-32 right-10 w-96 h-96 rounded-full ${theme === 'dark'
                 ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/10'
                 : 'bg-gradient-to-r from-[rgb(168,213,186)]/20 to-[rgb(168,213,186)]/10'
                 }`}
@@ -610,7 +610,7 @@ export default function HomePage() {
             />
             {/* Second Floating Element - Bottom Left */}
             <motion.div
-              className={`absolute bottom-32 left-10 w-80 h-80 rounded-full blur-3xl ${theme === 'dark'
+                              className={`absolute bottom-32 left-10 w-80 h-80 rounded-full ${theme === 'dark'
                 ? 'bg-gradient-to-r from-[rgb(26,26,26)]/20 to-[rgb(26,26,26)]/20'
                 : 'bg-gradient-to-r from-[rgb(168,213,186)]/20 to-[rgb(26,26,26)]/20'
                 }`}
@@ -996,7 +996,7 @@ export default function HomePage() {
                 {upcomingEvents.map((event) => (
                   <motion.div
                     key={event.id}
-                    className={`group relative p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(26,26,26)]/80 to-[rgb(168,213,186)]/80 border border-[rgb(168,213,186)]' : 'bg-gradient-to-br from-[rgb(255,255,255)]/80 to-[rgb(81,87,83)]/50 border border-[rgb(81,87,83)]'
+                    className={`group relative p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(26,26,26)]/80 to-[rgb(168,213,186)]/80 border border-[rgb(168,213,186)]' : 'bg-gradient-to-br from-[rgb(255,255,255)]/80 to-[rgb(81,87,83)]/50 border border-[rgb(81,87,83)]'
                       }`}
                     variants={itemVariants}
                     whileHover={{ y: -10 }}
@@ -1068,7 +1068,7 @@ export default function HomePage() {
 
                 {/* ===== PARALLAX OVERLAY ===== */}
                 {/* Translucent Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]"></div>
+                <div className="absolute inset-0 bg-black/50"></div>
               </div>
 
               {/* ===== PARALLAX CONTENT SECTION ===== */}
@@ -1108,7 +1108,7 @@ export default function HomePage() {
                     {/* First Parallax CTA Button - Reservations */}
                     <Link
                       href="/reservations"
-                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                      className="group relative inline-block border-3 border-[rgb(255,255,255)] text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="Book your table - Reserve now at East @ West"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
@@ -1120,7 +1120,7 @@ export default function HomePage() {
                     {/* Second Parallax CTA Button - Menu */}
                     <Link
                       href="/menu"
-                      className="group relative inline-block border-3 border-[rgb(255,255,255)] backdrop-blur-sm text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
+                      className="group relative inline-block border-3 border-[rgb(255,255,255)] text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="View our restaurant menu"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
                     >
@@ -1390,7 +1390,7 @@ export default function HomePage() {
                   {/* ===== CONTACT DETAILS SECTION ===== */}
                   {/* Contact Details Card */}
                   <motion.div
-                    className={`p-8 rounded-xl shadow-2xl backdrop-blur-sm border-2 transform hover:scale-105 transition-all duration-300  ${theme === 'dark'
+                    className={`p-8 rounded-xl shadow-2xl border-2 transform hover:scale-105 transition-all duration-300  ${theme === 'dark'
                       ? 'bg-gray-900/80 border-gray-600 shadow-gray-500/20'
                       : 'bg-white/80 border-gray-600 shadow-gray-500/20'
                       }`}

@@ -82,7 +82,7 @@ const nonCriticalCSS = `
   display:inline-block;
   border:3px solid #F5F1EC;
   background:rgba(245,241,236,0.1);
-  backdrop-filter:blur(4px);
+
   color:#F5F1EC;
   padding:1.25rem 2.5rem;
   border-radius:1rem;
@@ -102,7 +102,7 @@ const nonCriticalCSS = `
 .nav-header{
   position:fixed;top:0;left:0;right:0;
   z-index:50;
-  backdrop-filter:blur(12px);
+
   background:rgba(92,67,0,0.9);
 }
 

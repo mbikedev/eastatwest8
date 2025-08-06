@@ -14,8 +14,6 @@ interface OptimizedImageProps {
   quality?: number
   sizes?: string
   loading?: 'lazy' | 'eager'
-  placeholder?: 'blur' | 'empty'
-  blurDataURL?: string
 }
 
 export default function OptimizedImage({
@@ -29,8 +27,6 @@ export default function OptimizedImage({
   quality = 65, // Aggressive default compression
   sizes,
   loading = 'lazy',
-  placeholder = 'empty',
-  blurDataURL,
   ...props
 }: OptimizedImageProps) {
   const [imageError, setImageError] = useState(false)
@@ -56,24 +52,7 @@ export default function OptimizedImage({
     return '(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
   }
 
-  // Generate low-quality placeholder for blur effect
-  const generateBlurDataURL = (w: number = 10, h: number = 10) => {
-    const canvas = document.createElement('canvas')
-    canvas.width = w
-    canvas.height = h
-    const ctx = canvas.getContext('2d')
-    
-    if (ctx) {
-      // Create a simple gradient as placeholder
-      const gradient = ctx.createLinearGradient(0, 0, w, h)
-      gradient.addColorStop(0, '#f99747')
-      gradient.addColorStop(1, '#bc906b')
-      ctx.fillStyle = gradient
-      ctx.fillRect(0, 0, w, h)
-    }
-    
-    return canvas.toDataURL()
-  }
+
 
   // Error fallback image
   const fallbackSrc = '/images/placeholder.svg'
@@ -90,8 +69,7 @@ export default function OptimizedImage({
       quality={quality}
       sizes={getOptimizedSizes()}
       loading={loading}
-      placeholder={placeholder}
-      blurDataURL={blurDataURL || (placeholder === 'blur' ? generateBlurDataURL() : undefined)}
+
       onError={() => setImageError(true)}
       {...props}
     />
@@ -104,8 +82,7 @@ export const ImagePresets = {
   hero: {
     quality: 80,
     priority: true,
-    sizes: '100vw',
-    placeholder: 'blur' as const
+    sizes: '100vw'
   },
   
   // Gallery thumbnails - aggressive compression

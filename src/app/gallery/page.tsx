@@ -31,7 +31,7 @@ const Lightbox = ({ image, isOpen, onClose, title, description }: {
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -65,7 +65,7 @@ const Lightbox = ({ image, isOpen, onClose, title, description }: {
         </div>
         
         {(title || description) && (
-          <div className="mt-4 p-4 bg-white/90 dark:bg-gray-800/90 rounded-lg backdrop-blur-sm">
+          <div className="mt-4 p-4 bg-white/90 dark:bg-gray-800/90 rounded-lg ">
             {title && (
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                 {title}
@@ -355,7 +355,7 @@ export default function GalleryPage() {
                     
                     {/* Zoom icon */}
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="p-3 bg-white/90 dark:bg-gray-800/90 rounded-full backdrop-blur-sm">
+                      <div className="p-3 bg-white/90 dark:bg-gray-800/90 rounded-full ">
                         <svg className="w-6 h-6 text-gray-900 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                         </svg>

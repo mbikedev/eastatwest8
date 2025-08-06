@@ -973,7 +973,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1035,7 +1035,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1102,7 +1102,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1164,7 +1164,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1240,7 +1240,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1302,7 +1302,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1368,7 +1368,7 @@ export default function MenuPage() {
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                               <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                } `}>
                                 <svg
                                   className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                   fill="none"
@@ -1441,7 +1441,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1503,7 +1503,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1568,7 +1568,7 @@ export default function MenuPage() {
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                               <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                } `}>
                                 <svg
                                   className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                   fill="none"
@@ -1626,7 +1626,7 @@ export default function MenuPage() {
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                               <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                } `}>
                                 <svg
                                   className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                   fill="none"
@@ -1687,7 +1687,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1747,7 +1747,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1812,7 +1812,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1869,7 +1869,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1934,7 +1934,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -1994,7 +1994,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -2058,7 +2058,7 @@ export default function MenuPage() {
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                               <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                } `}>
                                 <svg
                                   className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                   fill="none"
@@ -2125,7 +2125,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -2179,7 +2179,7 @@ export default function MenuPage() {
                               {/* Hover Overlay */}
                               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                  } backdrop-blur-sm`}>
+                                  } `}>
                                   <svg
                                     className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                     fill="none"
@@ -2237,7 +2237,7 @@ export default function MenuPage() {
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                               <div className={`p-2 rounded-full ${theme === 'dark' ? 'bg-white/90' : 'bg-black/80'
-                                } backdrop-blur-sm`}>
+                                } `}>
                                 <svg
                                   className={`w-4 h-4 ${theme === 'dark' ? 'text-gray-900' : 'text-white'}`}
                                   fill="none"
@@ -2329,7 +2329,7 @@ export default function MenuPage() {
                                     : theme === "dark"
                                       ? "bg-gradient-to-br from-gray-800/60 to-gray-700/20"
                                       : "bg-gradient-to-br from-gray-50/90 to-gray-100/30"
-                      } backdrop-blur-sm -z-10 ${theme === "dark" ? "shadow-xl shadow-white/5" : ""
+                      }  -z-10 ${theme === "dark" ? "shadow-xl shadow-white/5" : ""
                       }`}
                   />
 
@@ -2395,7 +2395,7 @@ export default function MenuPage() {
                                     className={`p-2 rounded-full ${theme === "dark"
                                       ? "bg-white/90"
                                       : "bg-black/80"
-                                      } backdrop-blur-sm`}
+                                      } `}
                                   >
                                     <svg
                                       className={`w-4 h-4 ${theme === "dark"
@@ -2554,8 +2554,8 @@ export default function MenuPage() {
                         : "p-6"
                         } ${activeCategory === "setMenus"
                           ? theme === "dark"
-                            ? "bg-[#F5F0E6]/95 hover:bg-[#F5F0E6]/90 border-2 border-[#A8D5BA]/40 shadow-[#A8D5BA]/30 hover:shadow-[#A8D5BA]/50 backdrop-blur-sm shadow-xl shadow-white/10"
-                            : "bg-[#FFFFFF]/98 hover:bg-[#FFFFFF] border-2 border-[#A8D5BA]/60 shadow-[#A8D5BA]/20 hover:shadow-[#A8D5BA]/40 backdrop-blur-sm"
+                            ? "bg-[#F5F0E6]/95 hover:bg-[#F5F0E6]/90 border-2 border-[#A8D5BA]/40 shadow-[#A8D5BA]/30 hover:shadow-[#A8D5BA]/50  shadow-xl shadow-white/10"
+                            : "bg-[#FFFFFF]/98 hover:bg-[#FFFFFF] border-2 border-[#A8D5BA]/60 shadow-[#A8D5BA]/20 hover:shadow-[#A8D5BA]/40 "
                           : theme === "dark"
                             ? "bg-[#F5F0E6] hover:bg-[#F5F0E6] border border-[#A8D5BA] shadow-[#A8D5BA]/30 shadow-xl shadow-white/10"
                             : "bg-[#FFFFFF] hover:bg-[#A8D5BA] shadow-[#A8D5BA]/50"
@@ -2587,7 +2587,7 @@ export default function MenuPage() {
                                   className={`p-2 sm:p-3 rounded-full ${theme === "dark"
                                     ? "bg-[#A8D5BA]/90"
                                     : "bg-[#A8D5BA]/80"
-                                    } backdrop-blur-sm`}
+                                    } `}
                                 >
                                   <svg
                                     className={`w-6 h-6 sm:w-8 sm:h-8 ${theme === "dark"
@@ -2787,7 +2787,7 @@ export default function MenuPage() {
       {/* Set Menu Modal */}
       {modalOpen && modalContent && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 "
           onClick={closeModal}
         >
           <div

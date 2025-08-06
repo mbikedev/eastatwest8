@@ -58,13 +58,13 @@ export default function AboutPage() {
         <div className="absolute inset-0 overflow-hidden">
           {/* First Floating Element - Top Left */}
           <motion.div
-            className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-full blur-3xl"
+            className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-full "
             variants={floatingVariants}
             animate="float"
           />
           {/* Second Floating Element - Bottom Right */}
           <motion.div
-            className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-[#bc906b]/20 to-[#5C4300]/20 rounded-full blur-3xl"
+            className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-[#bc906b]/20 to-[#5C4300]/20 rounded-full "
             variants={floatingVariants}
             animate="float"
             transition={{ delay: 1.5 }}
@@ -109,7 +109,7 @@ export default function AboutPage() {
       {/* ===== ABOUT US CONTENT SECTION ===== */}
       {/* Enhanced About Section with Background Pattern */}
       <motion.section
-        className={`relative py-20 px-4 sm:px-8 shadow-2xl backdrop-blur-md ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-100 to-gray-300'
+        className={`relative py-20 px-4 sm:px-8 shadow-2xl  ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-100 to-gray-300'
           }`}
         style={{ fontFamily: '"Times New Roman", sans-serif' }}
         variants={containerVariants}
@@ -143,7 +143,7 @@ export default function AboutPage() {
 
           {/* First Paragraph Container */}
           <motion.div
-            className={`text-lg sm:text-xl leading-relaxed mb-8 p-8 rounded-3xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+            className={`text-lg sm:text-xl leading-relaxed mb-8 p-8 rounded-3xl  border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
               }`}
             variants={itemVariants}
           >
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
           {/* Second Paragraph Container */}
           <motion.div
-            className={`text-lg sm:text-xl leading-relaxed p-8 rounded-3xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+            className={`text-lg sm:text-xl leading-relaxed p-8 rounded-3xl  border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
               }`}
             variants={itemVariants}
           >
@@ -177,13 +177,13 @@ export default function AboutPage() {
         <div className="absolute inset-0 overflow-hidden">
           {/* First Floating Element - Top Right */}
           <motion.div
-            className="absolute top-32 right-10 w-96 h-96 bg-gradient-to-r from-[#0b4f37]/20 to-[#0b4f37]/20 rounded-full blur-3xl"
+            className="absolute top-32 right-10 w-96 h-96 bg-gradient-to-r from-[#0b4f37]/20 to-[#0b4f37]/20 rounded-full "
             variants={floatingVariants}
             animate="float"
           />
           {/* Second Floating Element - Bottom Left */}
           <motion.div
-            className="absolute bottom-32 left-10 w-80 h-80 bg-gradient-to-r from-[#0b4f37]/20 to-[#0b4f37]/20 rounded-full blur-3xl"
+            className="absolute bottom-32 left-10 w-80 h-80 bg-gradient-to-r from-[#0b4f37]/20 to-[#0b4f37]/20 rounded-full "
             variants={floatingVariants}
             animate="float"
             transition={{ delay: 1 }}
@@ -228,7 +228,7 @@ export default function AboutPage() {
             >
               <div className="relative">
                 {/* Gradient Border Effect for Image */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#75726f] via-[#8c8987] to-[#5C4300] rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#75726f] via-[#8c8987] to-[#5C4300] rounded-2xl  opacity-30 group-hover:opacity-50 transition duration-500"></div>
                 <div className="relative">
                   {/* Chef Hanna Portrait Image */}
                   <Image
@@ -284,7 +284,7 @@ export default function AboutPage() {
 
               {/* First Chef Description Paragraph */}
               <motion.div
-                className={`p-6 rounded-2xl backdrop-blur-sm border mb-6 ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+                className={`p-6 rounded-2xl  border mb-6 ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
                   }`}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
@@ -298,7 +298,7 @@ export default function AboutPage() {
 
               {/* Second Chef Description Paragraph */}
               <motion.div
-                className={`p-6 rounded-2xl backdrop-blur-sm border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
+                className={`p-6 rounded-2xl  border ${theme === 'dark' ? 'bg-gray-900/80 border-gray-700' : 'bg-[#F5F1EC]/70 border-[#bc906b]/50'
                   }`}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
@@ -328,13 +328,13 @@ export default function AboutPage() {
         <div className="absolute inset-0 overflow-hidden">
           {/* First Floating Element - Top Left */}
           <motion.div
-            className="absolute top-40 left-20 w-96 h-96 bg-gradient-to-r from-[#52514e]/20 to-[#52514e]/20 rounded-full blur-3xl"
+            className="absolute top-40 left-20 w-96 h-96 bg-gradient-to-r from-[#52514e]/20 to-[#52514e]/20 rounded-full "
             variants={floatingVariants}
             animate="float"
           />
           {/* Second Floating Element - Bottom Right */}
           <motion.div
-            className="absolute bottom-40 right-20 w-80 h-80 bg-gradient-to-r from-[#52514e]/20 to-[#52514e]/20 rounded-full blur-3xl"
+            className="absolute bottom-40 right-20 w-80 h-80 bg-gradient-to-r from-[#52514e]/20 to-[#52514e]/20 rounded-full "
             variants={floatingVariants}
             animate="float"
             transition={{ delay: 2 }}
@@ -368,7 +368,7 @@ export default function AboutPage() {
             {/* ===== FEATURE CARD 1: FUSION CUISINE ===== */}
             {/* Enhanced Fusion Cuisine Feature Card */}
             <motion.div
-              className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm border-2 ${theme === 'dark'
+              className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105  border-2 ${theme === 'dark'
                   ? 'bg-gradient-to-br from-gray-900/80 to-gray-800/80 hover:from-gray-900/90 hover:to-gray-800/90 border-gray-600 hover:border-gray-500'
                   : 'bg-gray-500/50 hover:from-[#F5F1EC]/90 hover:to-[#f99747]/60 border-[#bc906b]/50 hover:border-[#bc906b]/70'
                 }`}
@@ -376,7 +376,7 @@ export default function AboutPage() {
               whileHover={{ y: -10 }}
             >
               {/* Glow Effect for Hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 "></div>
 
               <div className="relative z-10">
                 {/* Fusion Cuisine Icon Container */}
@@ -406,7 +406,7 @@ export default function AboutPage() {
             {/* ===== FEATURE CARD 2: FRESH INGREDIENTS ===== */}
             {/* Enhanced Fresh Ingredients Feature Card */}
             <motion.div
-              className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm border-2 ${theme === 'dark'
+              className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105  border-2 ${theme === 'dark'
                   ? 'bg-gradient-to-br from-gray-900/80 to-gray-800/80 hover:from-gray-900/90 hover:to-gray-800/90 border-gray-600 hover:border-gray-500'
                   : 'bg-gray-500/50 hover:from-[#F5F1EC]/90 hover:to-[#f99747]/60 border-[#bc906b]/50 hover:border-[#bc906b]/70'
                 }`}
@@ -414,7 +414,7 @@ export default function AboutPage() {
               whileHover={{ y: -10 }}
             >
               {/* Glow Effect for Hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 "></div>
 
               <div className="relative z-10">
                 {/* Fresh Ingredients Icon Container */}
@@ -444,7 +444,7 @@ export default function AboutPage() {
             {/* ===== FEATURE CARD 3: ELEGANT AMBIANCE ===== */}
             {/* Enhanced Elegant Ambiance Feature Card */}
             <motion.div
-              className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105 backdrop-blur-sm border-2 ${theme === 'dark'
+              className={`group relative text-center p-10 rounded-3xl transition-all duration-500 transform hover:scale-105  border-2 ${theme === 'dark'
                   ? 'bg-gradient-to-br from-gray-900/80 to-gray-800/80 hover:from-gray-900/90 hover:to-gray-800/90 border-gray-600 hover:border-gray-500'
                   : 'bg-gray-500/50 to-[#f99747]/50 hover:from-[#F5F1EC]/90 hover:to-[#f99747]/60 border-[#bc906b]/50 hover:border-[#bc906b]/70'
                 }`}
@@ -452,7 +452,7 @@ export default function AboutPage() {
               whileHover={{ y: -10 }}
             >
               {/* Glow Effect for Hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#f99747]/20 to-[#bc906b]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 "></div>
 
               <div className="relative z-10">
                 {/* Elegant Ambiance Icon Container */}

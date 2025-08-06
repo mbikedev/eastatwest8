@@ -254,8 +254,8 @@ export default function TakeawayPage() {
           <div className="lg:col-span-1">
             <div className={`p-6 rounded-xl sticky top-24 ${
               theme === 'dark' 
-                ? 'bg-gray-900/80 backdrop-blur-sm border border-gray-700' 
-                : 'bg-white/80 backdrop-blur-sm border border-[#bc906b]/20'
+                ? 'bg-gray-900/80  border border-gray-700' 
+                : 'bg-white/80  border border-[#bc906b]/20'
             }`}>
               <h3 className="text-xl font-bold mb-4">{t('takeaway.categories.title')}</h3>
               <div className="space-y-2">
@@ -334,8 +334,8 @@ export default function TakeawayPage() {
                     key={product.id}
                     className={`group p-6 rounded-xl transition-all duration-300 hover:transform hover:scale-105 ${
                       theme === 'dark'
-                        ? 'bg-gray-900/80 hover:bg-gray-800 backdrop-blur-sm border border-gray-700'
-                        : 'bg-white hover:bg-white/80 backdrop-blur-sm border border-[#bc906b]/20 shadow-lg hover:shadow-xl'
+                        ? 'bg-gray-900/80 hover:bg-gray-800  border border-gray-700'
+                        : 'bg-white hover:bg-white/80  border border-[#bc906b]/20 shadow-lg hover:shadow-xl'
                     }`}
                   >
                     {/* Only show image container if product has an image_url or is not a sandwich */}
@@ -409,7 +409,7 @@ export default function TakeawayPage() {
       <div>
         {isCartOpen && (
           <div
-            className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm"
+            className="fixed inset-0 z-50 bg-black/50 "
             onClick={() => setIsCartOpen(false)}
           >
             <div

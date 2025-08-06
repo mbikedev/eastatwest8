@@ -594,7 +594,7 @@ export default function ReservationsPage() {
       <div className="relative z-10 w-full max-w-7xl px-4 mb-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Calendar Container - Left Column */}
-          <div className={`p-4 sm:p-6 rounded-3xl shadow-2xl backdrop-blur-md border-4 flex flex-col ${
+          <div className={`p-4 sm:p-6 rounded-3xl shadow-2xl  border-4 flex flex-col ${
             theme === "dark"
               ? "bg-gradient-to-br from-[#1A1A1A]/95 to-[#1A1A1A]/95 border-[#A8D5BA]"
               : "bg-gradient-to-br from-[#FFFFFF]/95 to-[#FFFFFF]/95 border-[#A8D5BA]"
@@ -688,7 +688,7 @@ export default function ReservationsPage() {
           </div>
 
           {/* Form Container - Right Column */}
-          <div className={`backdrop-blur-md rounded-2xl shadow-2xl border-2 ${
+          <div className={` rounded-2xl shadow-2xl border-2 ${
             theme === "dark"
               ? "bg-gradient-to-br from-[#1A1A1A]/95 to-[#1A1A1A]/95 border-[#A8D5BA]/50"
               : "bg-gradient-to-br from-[#FFFFFF]/95 to-[#FFFFFF]/95 border-[#A8D5BA]/70"
@@ -963,7 +963,7 @@ export default function ReservationsPage() {
 
       {/* Enhanced Business Hours Section - Below Main Container */}
       <div className="relative z-10 w-full max-w-7xl px-4 mb-6">
-        <div className={`p-4 sm:p-5 rounded-2xl shadow-2xl backdrop-blur-md border-2 text-center ${
+        <div className={`p-4 sm:p-5 rounded-2xl shadow-2xl  border-2 text-center ${
           theme === "dark"
             ? "bg-gradient-to-br from-[#1A1A1A]/90 to-[#1A1A1A]/90 border-[#A8D5BA]/50"
             : "bg-gradient-to-br from-[#FFFFFF]/95 to-[#FFFFFF]/95 border-[#A8D5BA]/70"

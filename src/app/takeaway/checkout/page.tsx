@@ -224,8 +224,8 @@ export default function CheckoutPage() {
           <motion.div 
             className={`p-8 rounded-xl ${
               theme === 'dark' 
-                ? 'bg-[#1A1A1A]/20 backdrop-blur-sm border border-[#A8D5BA]/20' 
-                : 'bg-white/80 backdrop-blur-sm border border-[#A8D5BA]/20 shadow-lg'
+                ? 'bg-[#1A1A1A]/20  border border-[#A8D5BA]/20' 
+                : 'bg-white/80  border border-[#A8D5BA]/20 shadow-lg'
             }`}
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -277,8 +277,8 @@ export default function CheckoutPage() {
           <motion.div 
             className={`p-8 rounded-xl ${
               theme === 'dark' 
-                ? 'bg-[#1A1A1A]/20 backdrop-blur-sm border border-[#A8D5BA]/20' 
-                : 'bg-white/80 backdrop-blur-sm border border-[#A8D5BA]/20 shadow-lg'
+                ? 'bg-[#1A1A1A]/20  border border-[#A8D5BA]/20' 
+                : 'bg-white/80  border border-[#A8D5BA]/20 shadow-lg'
             }`}
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
