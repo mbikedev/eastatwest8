@@ -251,7 +251,7 @@ export default function HomePage() {
             <div className="text-center px-4 sm:px-6 lg:px-8 max-w-6xl">
               {/* Hero Emoji Icon */}
               <div className="mb-8">
-                <div className="text-3xl xs:text-4xl sm:text-6xl md:text-8xl mb-2 sm:mb-4">🍽️</div>
+                <div className="text-3xl xs:text-4xl sm:text-6xl sm-mt-8 md:text-8xl mb-2  sm:mb-4">🍽️</div>
               </div>
 
               {/* ===== HERO TITLE SECTION ===== */}
