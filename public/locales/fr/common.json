@@ -212,7 +212,7 @@
       "batataHarra": {
         "title": "Batata harra",
         "description": "Cubes de pommes de terre frits avec poivrons rouges, coriandre, ail et viande",
-        "price": "10€"
+        "price": "7.5€"
       },
       "rkakat": {
         "title": "Rkakat",
@@ -322,6 +322,21 @@
         "title": "Toshka Leban",
         "description": "Plat traditionnel avec sauce yaourt et viande épicée",
         "price": "17,00€"
+      },
+      "breakMixVegan": {
+        "title": "Break mix végan",
+        "description": "Houmous, warak eneb, itch (boulgour), chou-fleur cuit et fattouche.",
+        "price": "14,50€"
+      },
+      "breakMix": {
+        "title": "Break mix",
+        "description": "Houmous, itch (boulgour), kabab/chich taouk, chou-fleur cuit et fattouche.",
+        "price": "16,50€"
+      },
+      "chefsDish": {
+        "title": "Plat du Chef",
+        "description": "1 brochette kebeb, 1 brochette chich taouk, warak eneb, kibbeh, chou-fleur cuit, muhammara et fattouch.",
+        "price": "23,50€"
       }
     },
     "sandwiches": {

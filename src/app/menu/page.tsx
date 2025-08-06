@@ -409,6 +409,30 @@ export default function MenuPage() {
         vegetarian: false,
         image: "/images/lunch-dishes/kebab-dish.webp",
       },
+      {
+        name: t("menu.lunchDishes.breakMixVegan.title"),
+        description: t("menu.lunchDishes.breakMixVegan.description"),
+        price: t("menu.lunchDishes.breakMixVegan.price"),
+        spicy: false,
+        vegetarian: true,
+        image: "/images/lunch-dishes/break-mix-vegan.webp",
+      },
+      {
+        name: t("menu.lunchDishes.breakMix.title"),
+        description: t("menu.lunchDishes.breakMix.description"),
+        price: t("menu.lunchDishes.breakMix.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/lunch-dishes/break-mix.webp",
+      },
+      {
+        name: t("menu.lunchDishes.chefsDish.title"),
+        description: t("menu.lunchDishes.chefsDish.description"),
+        price: t("menu.lunchDishes.chefsDish.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/lunch-dishes/chef's dish.webp",
+      },
     ],
     sandwiches: [
       {

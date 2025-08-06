@@ -213,7 +213,7 @@
       "batataHarra": {
         "title": "Batata harra",
         "description": "Fried potato cubes with red peppers, cilantro, garlic and meat",
-        "price": "10€"
+        "price": "7.5€"
       },
       "rkakat": {
         "title": "Rkakat",
@@ -323,6 +323,21 @@
         "title": "Toshka Leban",
         "description": "Traditional dish with yogurt sauce and spiced meat",
         "price": "17.00€"
+      },
+      "breakMixVegan": {
+        "title": "Break mix vegan",
+        "description": "Hummus, warak eneb, itch (bulgur), cooked cauliflower and fattouche.",
+        "price": "14.50€"
+      },
+      "breakMix": {
+        "title": "Break mix",
+        "description": "Hummus, itch (bulgur), kabab/chich taouk, cooked cauliflower and fattouche.",
+        "price": "16.50€"
+      },
+      "chefsDish": {
+        "title": "Chef's Dish",
+        "description": "1 kebeb skewer, 1 chich taouk skewer, warak eneb, kibbeh, cooked cauliflower, muhammara and fattouch.",
+        "price": "23.50€"
       }
     },
     "sandwiches": {

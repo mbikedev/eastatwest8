@@ -212,7 +212,7 @@
       "batataHarra": {
         "title": "Batata harra",
         "description": "Gefrituurde aardappelblokjes met rode paprika's, koriander, knoflook en vlees",
-        "price": "10€"
+        "price": "7.5€"
       },
       "rkakat": {
         "title": "Rkakat",
@@ -322,6 +322,21 @@
         "title": "Toshka Leban",
         "description": "Traditioneel gerecht met yoghurtsaus en gekruide vlees",
         "price": "17,00€"
+      },
+      "breakMixVegan": {
+        "title": "Break mix vegan",
+        "description": "Hummus, warak eneb, itch (bulgur), gekookte bloemkool en fattouche.",
+        "price": "14,50€"
+      },
+      "breakMix": {
+        "title": "Break mix",
+        "description": "Hummus, itch (bulgur), kabab/chich taouk, gekookte bloemkool en fattouche.",
+        "price": "16,50€"
+      },
+      "chefsDish": {
+        "title": "Chef's Dish",
+        "description": "1 kebeb spies, 1 chich taouk spies, warak eneb, kibbeh, gekookte bloemkool, muhammara en fattouch.",
+        "price": "23,50€"
       }
     },
     "sandwiches": {
