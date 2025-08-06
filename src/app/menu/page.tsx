@@ -2277,9 +2277,11 @@ export default function MenuPage() {
                         ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Skewers: 2 items side by side
                         : activeCategory === "desserts"
                           ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Desserts: 2 columns, 2 rows
-                          : activeCategory === "sandwiches"
-                            ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Sandwiches: default with last item full width
-                            : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Default: 3 columns
+                          : activeCategory === "setMenus"
+                            ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Set Menus: 2 columns, 2 rows
+                            : activeCategory === "sandwiches"
+                              ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Sandwiches: default with last item full width
+                              : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Default: 3 columns
                     } ${theme === "dark" ? "shadow-2xl shadow-white/10" : ""}`}
                 >
                   {/* Enhanced background for each section */}
