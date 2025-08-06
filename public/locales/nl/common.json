@@ -66,49 +66,52 @@
     },
     "menuDisplay": {
       "title": "Menu East@West",
-      "pricePerPerson": "64€/2pers.",
-      "setMenuTitle": "Vast Menu East @ West 64€/2pers",
+      "pricePerPerson": "67.50€/2pers.",
+      "setMenuTitle": "Vast Menu East @ West 67.50€/2pers",
       "items": {
-        "hummus": "Hummus (kikkererwten puree met tahini (sesampasta))",
-        "moutabal": "Moutabal (gegrilde aubergine kaviaar met tahini (sesampasta))",
-        "moussaka": "Moussaka (aubergine, ui, kikkererwten en tomaten)",
-        "fattoush": "Fattoush salade (tomaten, sla, rode kool, radijs, komkommer, ui, gebakken brood met granaatappel melasse en speciale kruiden)",
-        "falafel": "Falafel x2 (gefrituurde kikkererwten balletjes)",
-        "rkakat": "Rkakat x2 (gefrituurde gerolde bladerdeeg gevuld met kaas)",
-        "kebabSkewers": "Kebab spiesjes x2 (gegrilde gehakte rundvlees spiesjes)",
-        "chichTaouk": "Chich taouk spiesjes x2 (gegrilde kip blokjes spiesjes)",
-        "dessert": "Dessert x2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water en pistache)"
+        "fattoush": "Fattoush salade",
+        "hummus": "Hummus",
+        "moutabal": "Moutabal",
+        "zahra": "Zahra",
+        "falafel": "Falafel",
+        "kibbeh": "2X Kibbeh",
+        "kebabSkewers": "2X Kabab spiesjes",
+        "chichTaouk": "2X Chich taouk spiesjes",
+        "dessert": "2X Dessert: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
       }
     },
     "veganMenuDisplay": {
-      "title": "Vegan Menu East@West",
-      "pricePerPerson": "63€",
-      "setMenuTitle": "Vegan Menu 63€",
-      "description": "Gegrilde aubergine, paprika, tomaat en ui met een speciale saus, geserveerd met hummus, moutabal, Fattoush",
+      "title": "Menu Vegan",
+      "pricePerPerson": "64.50€/2pers.",
+      "setMenuTitle": "Menu Vegan 64.50€/2pers",
+      "description": "Fattoush Salade, Hummus, Moutabal, Moussaka, Itch, Zahra, Falafel ×2, Batata Harra, Dessert ×2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)",
       "items": {
-        "grilledEggplant": "Gegrilde aubergine met paprika, tomaat en ui",
-        "specialSauce": "Geserveerd met onze speciale mediterrane saus",
-        "hummus": "Traditionele hummus (kikkererwten puree met tahini)",
-        "moutabal": "Moutabal (gegrilde aubergine kaviaar met tahini)",
-        "fattoush": "Verse Fattoush salade met seizoensgroenten",
-        "extraBread": "Geserveerd met warm pitabrood"
+        "fattoush": "Fattoush Salade",
+        "hummus": "Hummus",
+        "moutabal": "Moutabal",
+        "moussaka": "Moussaka",
+        "itch": "Itch",
+        "zahra": "Zahra",
+        "falafel": "Falafel ×2",
+        "batataHarra": "Batata Harra",
+        "dessert": "Dessert ×2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
       }
     },
     "lazeezMenuDisplay": {
       "title": "Menu Lazeez (Vegan)",
-      "pricePerPerson": "63€/2pers.",
-      "setMenuTitle": "Vast Menu Lazeez Vegan 63€/2pers",
-      "description": "Hummus (kikkererwten puree met tahini (sesampasta)). Moutabal (gegrilde aubergine kaviaar met tahini (sesampasta)). Foul moudamas (Tuinbonen gemarineerd in citroensap, tomaten, komijn, knoflook, olijfolie en tahini saus (sesampasta)). Muhammara (Dip van gegrilde rode paprika's, granaatappel melasse en walnoten). Warak enab (Druivenbladeren gevuld met rijst en kruiden, gemarineerd in olijfolie, munt en granaatappel melasse). Tabbouleh (Peterselie, tomaten, ui, citroensap, bulgur, munt en olijfolie). Batata harra (Gefrituurde aardappelblokjes met rode paprika's, koriander en knoflook). Falafel x2 (gefrituurde kikkererwten balletjes). Dessert x2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water en pistache)."
+      "pricePerPerson": "65.50€/2pers.",
+      "setMenuTitle": "Menu Lazeez (Vegan) 65.50€/2pers",
+      "description": "Tabouleh, Hummus, Moutabal, Mouhamara, Warak Enēb, Moussaka, Foul Moudamas, Falafel ×2, Dessert ×2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
     },
     "setMenus": {
       "menuEastWest": {
-        "description": "• Hummus (kikkererwten puree met tahini (sesampasta)).\n• Moutabal (gegrilde aubergine kaviaar met tahini (sesampasta)).\n• Moussaka (aubergine, ui, kikkererwten en tomaten).\n• Fattoush salade (tomaten, sla, rode kool, radijs, komkommer, ui, gefrituurd brood met granaatappel melasse en speciale kruiden).\n• Falafel x2 (gefrituurde kikkererwten balletjes)\nRkakat x2 (gefrituurde gerolde bladerdeeg gevuld met kaas).\n• Kebab spiesjes x2 (gegrilde gehakt spiesjes).\n• Chich taouk spiesjes x2 (gegrilde kip blokjes spiesjes).\n• Dessert x2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water en pistache)."
+        "description": "• Fattoush salade\n• Hummus\n• Moutabal\n• Zahra\n• Falafel\n• 2X Kibbeh\n• 2X Kabab spiesjes\n• 2X Chich taouk spiesjes\n• 2X Dessert: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
       },
       "veganEastWest": {
-        "description": "• Hummus (kikkererwten puree met tahini (sesampasta)).\n• Moutabal (gegrilde aubergine kaviaar met tahini (sesampasta)).\n• Moussaka (aubergine, ui, kikkererwten en tomaten).\n• Fattoush salade (tomaten, sla, rode kool, radijs, komkommer, ui, gefrituurd brood met granaatappel melasse en speciale kruiden).\n• Falafel x2 (gefrituurde kikkererwten balletjes).\n• Kibbeh vegan x2 (gefrituurde bulgur kroketten gevuld met ui, walnoten en granaatappel melasse).\n• Makdous (baby aubergines gevuld met walnoten en paprika, gemarineerd in olijfolie).\n• Itch (bulgur gekookt in tomatensaus met paprika, ui, peterselie en granaatappel melasse).\n• Dessert x2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water en pistache)."
+        "description": "• Fattoush Salade\n• Hummus\n• Moutabal\n• Moussaka\n• Itch\n• Zahra\n• Falafel ×2\n• Batata Harra\n• Dessert ×2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
       },
       "lazeezVegan": {
-        "description": "• Hummus (kikkererwten puree met tahirži (sesampasta)).\n• Moutabal (gegrilde aubergine kaviaar met tahini (sesampasta)).\n• Foul moudamas (Tuinbonen gemarineerd in citroensap, tomaten, komijn, knoflook, olijfolie en tahini saus (sesampasta).\n• Muhammara (Dip van gegrilde rode paprika's, granaatappel melasse en walnoten).\n• Warak enab (Druivenbladeren gevuld met rijst en kruiden, gemarineerd in olijfolie, munt en granaatappel melasse).\n• Tabbouleh (Peterselie, tomaten, ui? citroensap, bulgur, munt en olijfolie).\n• Batata harra (Gefrituurde aardappelblokjes met rode paprika's, koriander en knoflook).\n• Falafel x2 (gefrituurde kikkererwten balletjes).\n• Dessert x2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water en pistache)."
+        "description": "• Tabouleh\n• Hummus\n• Moutabal\n• Mouhamara\n• Warak Enēb\n• Moussaka\n• Foul Moudamas\n• Falafel ×2\n• Dessert ×2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
       },
       "readMore": "Meer Lezen",
       "readLess": "Minder Lezen"

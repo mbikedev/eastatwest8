@@ -66,49 +66,52 @@
     },
     "menuDisplay": {
       "title": "Menu East@West",
-      "pricePerPerson": "64€/2pers.",
-      "setMenuTitle": "Menu Fixe East @ West 64€/2pers",
+      "pricePerPerson": "67.50€/2pers.",
+      "setMenuTitle": "Menu Fixe East @ West 67.50€/2pers",
       "items": {
-        "hummus": "Houmous (purée de pois chiches au tahini (pâte de sésame))",
-        "moutabal": "Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame))",
-        "moussaka": "Moussaka (aubergine, oignon, pois chiches et tomates)",
-        "fattoush": "Salade Fattoush (tomates, laitue, chou rouge, radis, concombre, oignon, pain frit aux mélasses de grenade et herbes spéciales)",
-        "falafel": "Falafel x2 (boulettes de pois chiches frits)",
-        "rkakat": "Rkakat x2 (pâte feuilletée frite roulée farcie au fromage)",
-        "kebabSkewers": "Brochettes de kebab x2 (brochettes de bœuf haché grillé)",
-        "chichTaouk": "Brochettes chich taouk x2 (brochettes de cubes de poulet grillé)",
-        "dessert": "Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)"
+        "fattoush": "Salade Fattoush",
+        "hummus": "Houmous",
+        "moutabal": "Moutabal",
+        "zahra": "Zahra",
+        "falafel": "Falafel",
+        "kibbeh": "2X Kibbeh",
+        "kebabSkewers": "2X Brochettes de Kabab",
+        "chichTaouk": "2X Brochettes Chich taouk",
+        "dessert": "2X Dessert : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger & pistache)"
       }
     },
     "veganMenuDisplay": {
-      "title": "Menu Végan East@West",
-      "pricePerPerson": "63€",
-      "setMenuTitle": "Menu Végan 63€",
-      "description": "Aubergine grillée, poivron, tomate et oignon avec une sauce spéciale, accompagnés de houmous, moutabal, Fattoush",
+      "title": "Menu Végan",
+      "pricePerPerson": "64.50€/2pers.",
+      "setMenuTitle": "Menu Végan 64.50€/2pers",
+      "description": "Salade Fattoush, Houmous, Moutabal, Moussaka, Itch, Zahra, Falafel ×2, Batata Harra, Dessert ×2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger & pistache)",
       "items": {
-        "grilledEggplant": "Aubergine grillée avec poivron, tomate et oignon",
-        "specialSauce": "Servie avec notre sauce méditerranéenne spéciale",
-        "hummus": "Houmous traditionnel (purée de pois chiches au tahini)",
-        "moutabal": "Moutabal (caviar d'aubergine grillée au tahini)",
-        "fattoush": "Salade Fattoush fraîche aux légumes de saison",
-        "extraBread": "Servie avec du pain pita chaud"
+        "fattoush": "Salade Fattoush",
+        "hummus": "Houmous",
+        "moutabal": "Moutabal",
+        "moussaka": "Moussaka",
+        "itch": "Itch",
+        "zahra": "Zahra",
+        "falafel": "Falafel ×2",
+        "batataHarra": "Batata Harra",
+        "dessert": "Dessert ×2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger & pistache)"
       }
     },
     "lazeezMenuDisplay": {
       "title": "Menu Lazeez (Végan)",
-      "pricePerPerson": "63€/2pers.",
-      "setMenuTitle": "Menu Fixe Lazeez Végan 63€/2pers",
-      "description": "Houmous (purée de pois chiches au tahini (pâte de sésame)). Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame)). Foul moudamas (Fèves marinées dans le jus de citron, tomates, cumin, ail, huile d'olive et sauce tahini (pâte de sésame)). Muhammara (Trempette de poivrons rouges grillés, mélasse de grenade et noix). Warak enab (Feuilles de vigne farcies au riz et aux herbes, marinées à l'huile d'olive, menthe et mélasse de grenade). Tabbouleh (Persil, tomates, oignon, jus de citron, boulgour, menthe et huile d'olive). Batata harra (Cubes de pommes de terre frits avec poivrons rouges, coriandre et ail). Falafel x2 (boulettes de pois chiches frits). Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)."
+      "pricePerPerson": "65.50€/2pers.",
+      "setMenuTitle": "Menu Lazeez (Végan) 65.50€/2pers",
+      "description": "Tabouleh, Houmous, Moutabal, Mouhamara, Warak Enēb, Moussaka, Foul Moudamas, Falafel ×2, Dessert ×2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger & pistache)"
     },
     "setMenus": {
       "menuEastWest": {
-        "description": "• Houmous (purée de pois chiches au tahini (pâte de sésame)).\n• Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame)).\n• Moussaka (aubergine, oignon, pois chiches et tomates).\n• Salade Fattoush (tomates, laitue, chou rouge, radis, concombre, oignon, pain frit aux mélasses de grenade et herbes spéciales).\n• Falafel x2 (boulettes de pois chiches frits)\nRkakat x2 (pâte feuilletée frite roulée farcie au fromage).\n• Brochettes de kebab x2 (brochettes de bœuf haché grillé).\n• Brochettes chich taouk x2 (brochettes de cubes de poulet grillé).\n• Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)."
+        "description": "• Salade Fattoush\n• Houmous\n• Moutabal\n• Zahra\n• Falafel\n• 2X Kibbeh\n• 2X Brochettes de Kabab\n• 2X Brochettes Chich taouk\n• 2X Dessert : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger & pistache)"
       },
       "veganEastWest": {
-        "description": "• Houmous (purée de pois chiches au tahini (pâte de sésame)).\n• Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame)).\n• Moussaka (aubergine, oignon, pois chiches et tomates).\n• Salade Fattoush (tomates, laitue, chou rouge, radis, concombre, oignon, pain frit aux mélasses de grenade et herbes spéciales).\n• Falafel x2 (boulettes de pois chiches frits).\n• Kibbeh végan x2 (croquettes de boulgour frites farcies à l'oignon, noix et mélasse de grenade).\n• Makdous (petites aubergines farcies aux noix et poivrons, marinées à l'huile d'olive).\n• Itch (boulgour cuit dans une sauce tomate avec paprika, oignon, persil et mélasse de grenade).\n• Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)."
+        "description": "• Salade Fattoush\n• Houmous\n• Moutabal\n• Moussaka\n• Itch\n• Zahra\n• Falafel ×2\n• Batata Harra\n• Dessert ×2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger & pistache)"
       },
       "lazeezVegan": {
-        "description": "• Houmous (purée de pois chiches au tahirži (pâte de sésame)).\n• Moutabal (caviar d'aubergine grillée au tahini (pâte de sésame)).\n• Foul moudamas (Fèves marinées dans le jus de citron, tomates, cumin, ail, huile d'olive et sauce tahini (pâte de sésame).\n• Muhammara (Trempette de poivrons rouges grillés, mélasse de grenade et noix).\n• Warak enab (Feuilles de vigne farcies au riz et aux herbes, marinées à l'huile d'olive, menthe et mélasse de grenade).\n• Tabbouleh (Persil, tomates, oignon? jus de citron, boulgour, menthe et huile d'olive).\n• Batata harra (Cubes de pommes de terre frits avec poivrons rouges, coriandre et ail).\n• Falafel x2 (boulettes de pois chiches frits).\n• Dessert x2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger et pistache)."
+        "description": "• Tabouleh\n• Houmous\n• Moutabal\n• Mouhamara\n• Warak Enēb\n• Moussaka\n• Foul Moudamas\n• Falafel ×2\n• Dessert ×2 : Aish el Saraya (biscuit sucré, pudding végan, eau de fleur d'oranger & pistache)"
       },
       "readMore": "Lire Plus",
       "readLess": "Lire Moins"

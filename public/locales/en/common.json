@@ -66,49 +66,52 @@
     },
     "menuDisplay": {
       "title": "Menu East@West",
-      "pricePerPerson": "64€/2per.",
-      "setMenuTitle": "Set Menu East @ West 64€/2per",
+      "pricePerPerson": "67.50€/2per.",
+      "setMenuTitle": "Set Menu East @ West 67.50€/2per",
       "items": {
-        "hummus": "Hummus (chickpeas puree with tahini (sesame paste))",
-        "moutabal": "Moutabal (grilled eggplant caviar with tahini (sesame paste))",
-        "moussaka": "Moussaka (eggplant, onion, chickpeas and tomatoes)",
-        "fattoush": "Fattoush salad (tomatoes, lettuce, red cabbage, radish, cucumber, onion, fried bread with pomegranate molasses and special herbs)",
-        "falafel": "Falafel x2 (deep-fried mashed chickpeas balls)",
-        "rkakat": "Rkakat x2 (fried rolled puff pastry stuffed with cheese)",
-        "kebabSkewers": "Kebab skewers x2 (grilled minced beef skewers)",
-        "chichTaouk": "Chich taouk skewers x2 (grilled chicken cubes skewers)",
-        "dessert": "Dessert x2: Aish el Saraya (sweeten biscuit, vegan pudding, orange blossom water and Pistachio)"
+        "fattoush": "Fattoush salad",
+        "hummus": "Hummus",
+        "moutabal": "Moutabal",
+        "zahra": "Zahra",
+        "falafel": "Falafel",
+        "kibbeh": "2X Kibbeh",
+        "kebabSkewers": "2X Kabab skewers",
+        "chichTaouk": "2X Chich taouk skewers",
+        "dessert": "2X Dessert: Aish el Saraya (sweetened biscuit, vegan pudding, orange blossom water & Pistachio)"
       }
     },
     "veganMenuDisplay": {
-      "title": "Vegan Menu East@West",
-      "pricePerPerson": "63€/2per.",
-      "setMenuTitle": "Vegan Set Menu 63€/2per",
-      "description": "Grilled eggplant, paprika, tomato and onion with a special sauce, accompanied by hummus, moutabal, Fattoush",
+      "title": "Menu Vegan",
+      "pricePerPerson": "64.50€/2per.",
+      "setMenuTitle": "Menu Vegan 64.50€/2per",
+      "description": "Fattoush Salad, Hummus, Moutabal, Moussaka, Itch, Zahra, Falafel ×2, Batata Harra, Dessert ×2: Aish el Saraya (sweetened biscuit, vegan pudding, orange blossom water & pistachio)",
       "items": {
-        "grilledEggplant": "Grilled eggplant with paprika, tomato and onion",
-        "specialSauce": "Served with our special Mediterranean sauce",
-        "hummus": "Traditional hummus (chickpeas puree with tahini)",
-        "moutabal": "Moutabal (grilled eggplant caviar with tahini)",
-        "fattoush": "Fresh Fattoush salad with seasonal vegetables",
-        "extraBread": "Served with warm pita bread"
+        "fattoush": "Fattoush Salad",
+        "hummus": "Hummus",
+        "moutabal": "Moutabal",
+        "moussaka": "Moussaka",
+        "itch": "Itch",
+        "zahra": "Zahra",
+        "falafel": "Falafel ×2",
+        "batataHarra": "Batata Harra",
+        "dessert": "Dessert ×2: Aish el Saraya (sweetened biscuit, vegan pudding, orange blossom water & pistachio)"
       }
     },
     "lazeezMenuDisplay": {
       "title": "Menu Lazeez (Vegan)",
-      "pricePerPerson": "63€/2per.",
-      "setMenuTitle": "Set Menu Lazeez Vegan 63€/2per",
-      "description": "Hummus (chickpeas puree with tahini (sesame paste)). Moutabal (grilled eggplant caviar with tahini (sesame paste)). Foul moudamas (Fava beans marinated in lemon juice, tomatoes, cumin, garlic, olive oil and tahini sauce (sesame paste)). Muhammara (Dip of grilled red peppers, pomegranate molasses and walnuts). Warak enab (Vine leaves stuffed with rice and herbs, marinated in olive oil, mint and pomegranate molasses). Tabbouleh (Parsley, tomatoes, onion, lemon juice, bulgur, mint and olive oil). Batata harra (Fried potatoes cubes with red peppers, cilantro and garlic). Falafel x2 (deep-fried mashed chickpeas balls). Dessert x2: Aish el Saraya (sweeten biscuit, vegan pudding, orange blossom water and Pistachio)."
+      "pricePerPerson": "65.50€/2per.",
+      "setMenuTitle": "Menu Lazeez (Vegan) 65.50€/2per",
+      "description": "Tabouleh, Hummus, Moutabal, Mouhamara, Warak Enēb, Moussaka, Foul Moudamas, Falafel ×2, Dessert ×2: Aish el Saraya (sweetened biscuit, vegan pudding, orange blossom water & pistachio)"
     },
     "setMenus": {
       "menuEastWest": {
-        "description": "• Hummus (chickpeas puree with tahini (sesame paste)).\n• Moutabal (grilled eggplant caviar with tahini (sesame paste)).\n• Moussaka (eggplant, onion, chickpeas and tomatoes).\n• Fattoush salad (tomatoes, lettuce, red cabbage, radish, cucumber, onion, fried bread with pomegranate molasses and special herbs).\n• Falafel x2 (deep-fried mashed chickpeas balls)\nRkakat x2 (fried rolled puff pastry stuffed with cheese).\n• Kebab skewers x2 (grilled minced beef skewers).\n• Chich taouk skewers x2 (grilled chicken cubes skewers).\n• Dessert x2: Aish el Saraya (sweeten biscuit, vegan pudding, orange blossom water and Pistachio)."
+        "description": "• Fattoush salad\n• Hummus\n• Moutabal\n• Zahra\n• Falafel\n• 2X Kibbeh\n• 2X Kabab skewers\n• 2X Chich taouk skewers\n• 2X Dessert: Aish el Saraya (sweetened biscuit, vegan pudding, orange blossom water & Pistachio)"
       },
       "veganEastWest": {
-        "description": "• Hummus (chickpeas puree with tahini (sesame paste)).\n• Moutabal (grilled eggplant caviar with tahini (sesame paste)).\n• Moussaka (eggplant, onion, chickpeas and tomatoes).\n• Fattoush salad (tomatoes, lettuce, red cabbage, radish, cucumber, onion, fried bread with pomegranate molasses and special herbs).\n• Falafel x2 (deep-fried mashed chickpeas balls).\n• Kibbeh vegan x2 (deepfried bulgur croquettes stuffed with onion, walnuts and pomegranate molasses).\n• Makdous (baby eggplant stuffed with walnuts and pepper, marinated in olive oil).\n• Itch (bulgur cooked in tomato sauce with paprika, onion, parsley and pomegranate molasses).\n• Dessert x2: Aish el Saraya (sweeten biscuit, vegan pudding, orange blossom water and Pistachio)."
+        "description": "• Fattoush Salad\n• Hummus\n• Moutabal\n• Moussaka\n• Itch\n• Zahra\n• Falafel ×2\n• Batata Harra\n• Dessert ×2: Aish el Saraya (sweetened biscuit, vegan pudding, orange blossom water & pistachio)"
       },
       "lazeezVegan": {
-        "description": "• Hummus (chickpeas puree with tahirži (sesame paste)).\n• Moutabal (grilled eggplant caviar with tahini (sesame paste)).\n• Foul moudamas (Fava beans marinated in lemon juice, tomatoes, cumin, garlic, olive oil and tahini sauce (sesame paste).\n• Muhammara (Dip of grilled red peppers, pomegranate molasses and walnuts).\n• Warak enab (Vine leaves stuffed with rice and herbs, marinated in olive oil, mint and pomegranate molasses).\n• Tabbouleh (Parsley, tomatoes, onion? lemon juice, bulgur, mint and olive oil).\n• Batata harra (Fried potatoes cubes with red peppers, cilantro and garlic).\n• Falafel x2 (deep-fried mashed chickpeas balls).\n• Dessert x2: Aish el Saraya (sweeten biscuit, vegan pudding, orange blossom water and Pistachio)."
+        "description": "• Tabouleh\n• Hummus\n• Moutabal\n• Mouhamara\n• Warak Enēb\n• Moussaka\n• Foul Moudamas\n• Falafel ×2\n• Dessert ×2: Aish el Saraya (sweetened biscuit, vegan pudding, orange blossom water & pistachio)"
       },
       
       "readMore": "Read More",

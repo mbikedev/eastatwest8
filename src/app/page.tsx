@@ -676,7 +676,7 @@ export default function HomePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 {/* ===== HUMUS SPECIAL CARD ===== */}
                 <motion.article
-                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(223, 211, 211)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
                   whileHover={{ y: -8 }}
@@ -723,7 +723,7 @@ export default function HomePage() {
 
                 {/* ===== FALAFEL SPECIAL CARD ===== */}
                 <motion.article
-                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
                   whileHover={{ y: -8 }}
@@ -770,7 +770,7 @@ export default function HomePage() {
 
                 {/* ===== KEBBE SPECIAL CARD ===== */}
                 <motion.article
-                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
                   whileHover={{ y: -8 }}
@@ -817,7 +817,7 @@ export default function HomePage() {
 
                 {/* ===== AISH EL SARAYA SPECIAL CARD ===== */}
                 <motion.article
-                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
                   whileHover={{ y: -8 }}
