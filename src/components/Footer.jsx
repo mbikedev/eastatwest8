@@ -26,9 +26,8 @@ const Footer = () => {
       <div className="relative z-10">
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
             
-            {/* Row 1 - Logo and Social Media */}
             {/* Left Section - Logo and Brand */}
             <section className="flex flex-col items-center lg:items-start space-y-4" aria-labelledby="restaurant-info">
               <div className="relative group">
@@ -55,7 +54,7 @@ const Footer = () => {
               </div>
             </section>
 
-            {/* Social Media Section */}
+            {/* Center Section - Social Media */}
             <section className="flex flex-col items-center space-y-4" aria-labelledby="social-media">
               <h2 id="social-media" className="text-lg font-semibold mb-4" style={{ fontFamily: 'Rozha One, serif' }}>
                 {t('footer.followUs', 'Follow Us')}
@@ -89,7 +88,6 @@ const Footer = () => {
               </nav>
             </section>
 
-            {/* Row 2 - Quick Links and Contact */}
             {/* Quick Links Section */}
             <section className="flex flex-col items-center space-y-4" aria-labelledby="quick-links">
               <h2 id="quick-links" className="text-lg font-semibold mb-4" style={{ fontFamily: 'Rozha One, serif' }}>
@@ -120,7 +118,7 @@ const Footer = () => {
               </nav>
             </section>
 
-            {/* Contact Information Section */}
+            {/* Right Section - Contact Information */}
             <section className="flex flex-col items-center lg:items-end space-y-3" aria-labelledby="contact-info">
               <h2 id="contact-info" className="text-lg font-semibold mb-4" style={{ fontFamily: 'Rozha One, serif' }}>
                 {t('footer.contact', 'Contact')}
