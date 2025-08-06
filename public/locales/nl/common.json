@@ -337,6 +337,21 @@
         "title": "Chef's Dish",
         "description": "1 kebeb spies, 1 chich taouk spies, warak eneb, kibbeh, gekookte bloemkool, muhammara en fattouch.",
         "price": "23,50€"
+      },
+      "falafelSandwichFattouch": {
+        "title": "Falafel sandwich + fattouch salade",
+        "description": "Falafel, tomaat, tahini saus, augurken en sla.",
+        "price": "12,50€"
+      },
+      "chichTaoukFattouch": {
+        "title": "Chich taouk + Fattouch salade",
+        "description": "Gegrilde kip spies, sla, tomaat en knoflooksaus.",
+        "price": "12,50€"
+      },
+      "kebabFattouch": {
+        "title": "Kebab + Fattouch salade",
+        "description": "Gegrilde gekruide gehakte rundvlees spies, hummus, tomaat, sla, ui en sumac.",
+        "price": "12,50€"
       }
     },
     "sandwiches": {

@@ -337,6 +337,21 @@
         "title": "Plat du Chef",
         "description": "1 brochette kebeb, 1 brochette chich taouk, warak eneb, kibbeh, chou-fleur cuit, muhammara et fattouch.",
         "price": "23,50€"
+      },
+      "falafelSandwichFattouch": {
+        "title": "Sandwich falafel + salade fattouch",
+        "description": "Falafel, tomate, sauce tahini, cornichons et laitue.",
+        "price": "12,50€"
+      },
+      "chichTaoukFattouch": {
+        "title": "Chich taouk + Salade fattouch",
+        "description": "Brochette de poulet grillé, laitue, tomate et sauce à l'ail.",
+        "price": "12,50€"
+      },
+      "kebabFattouch": {
+        "title": "Kebab + Salade fattouch",
+        "description": "Brochette de bœuf haché grillé et assaisonné, houmous, tomate, laitue, oignon et sumac.",
+        "price": "12,50€"
       }
     },
     "sandwiches": {

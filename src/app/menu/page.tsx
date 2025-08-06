@@ -433,6 +433,30 @@ export default function MenuPage() {
         vegetarian: false,
         image: "/images/lunch-dishes/chef's dish.webp",
       },
+      {
+        name: t("menu.lunchDishes.falafelSandwichFattouch.title"),
+        description: t("menu.lunchDishes.falafelSandwichFattouch.description"),
+        price: t("menu.lunchDishes.falafelSandwichFattouch.price"),
+        spicy: false,
+        vegetarian: true,
+        image: "/images/lunch-dishes/falafel-sandwich- fattouch-salad.webp",
+      },
+      {
+        name: t("menu.lunchDishes.chichTaoukFattouch.title"),
+        description: t("menu.lunchDishes.chichTaoukFattouch.description"),
+        price: t("menu.lunchDishes.chichTaoukFattouch.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/lunch-dishes/chich-taouk-fattouch-salad.webp",
+      },
+      {
+        name: t("menu.lunchDishes.kebabFattouch.title"),
+        description: t("menu.lunchDishes.kebabFattouch.description"),
+        price: t("menu.lunchDishes.kebabFattouch.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/lunch-dishes/kebab-fattouch-salad.webp",
+      },
     ],
     sandwiches: [
       {
