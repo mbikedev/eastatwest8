@@ -103,6 +103,23 @@
       "setMenuTitle": "Menu Lazeez (Vegan) 65.50€/2pers",
       "description": "Tabouleh, Hummus, Moutabal, Mouhamara, Warak Enēb, Moussaka, Foul Moudamas, Falafel ×2, Dessert ×2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
     },
+    "sahtenMenuDisplay": {
+      "title": "Menu Sahten",
+      "pricePerPerson": "84€/2pers.",
+      "setMenuTitle": "Menu Sahten 84€/2pers",
+      "description": "Tabouleh, Hummus, Toshka, Sujuk, Kippenlever, 2X Kibbeh, 2X Kabab spiesjes, 2X Chich taouk spiesjes, 2X Dessert: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & Pistache)",
+      "items": {
+        "tabouleh": "Tabouleh",
+        "hummus": "Hummus",
+        "toshka": "Toshka",
+        "sujuk": "Sujuk",
+        "chickenLiver": "Kippenlever",
+        "kibbeh": "2X Kibbeh",
+        "kebabSkewers": "2X Kabab spiesjes",
+        "chichTaouk": "2X Chich taouk spiesjes",
+        "dessert": "2X Dessert: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & Pistache)"
+      }
+    },
     "setMenus": {
       "menuEastWest": {
         "description": "• Fattoush salade\n• Hummus\n• Moutabal\n• Zahra\n• Falafel\n• 2X Kibbeh\n• 2X Kabab spiesjes\n• 2X Chich taouk spiesjes\n• 2X Dessert: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
@@ -112,6 +129,9 @@
       },
       "lazeezVegan": {
         "description": "• Tabouleh\n• Hummus\n• Moutabal\n• Mouhamara\n• Warak Enēb\n• Moussaka\n• Foul Moudamas\n• Falafel ×2\n• Dessert ×2: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & pistache)"
+      },
+      "sahten": {
+        "description": "• Tabouleh\n• Hummus\n• Toshka\n• Sujuk\n• Kippenlever\n• 2X Kibbeh\n• 2X Kabab spiesjes\n• 2X Chich taouk spiesjes\n• 2X Dessert: Aish el Saraya (zoete biscuit, vegan pudding, oranjebloesem water & Pistache)"
       },
       "readMore": "Meer Lezen",
       "readLess": "Minder Lezen"

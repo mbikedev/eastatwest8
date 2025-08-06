@@ -118,6 +118,16 @@ export default function MenuPage() {
         image: "/images/menus/menu-lazeez.webp",
         id: "menu-lazeez-vegan",
       },
+      {
+        name: t("menu.sahtenMenuDisplay.title"),
+        description: t("menu.setMenus.sahten.description"),
+        price: t("menu.sahtenMenuDisplay.pricePerPerson"),
+        spicy: false,
+        vegetarian: false,
+        isMenuDisplay: true,
+        image: "/images/menus/menu-sahten.webp",
+        id: "menu-sahten",
+      },
     ],
     coldMezzes: [
       {
