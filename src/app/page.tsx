@@ -265,31 +265,7 @@ const MENU_ITEMS = [
   }
 ]
 
-// ===== UTILITY FUNCTIONS =====
-// Function to get today's date as a string for localStorage key
-const getTodayKey = () => {
-  const today = new Date()
-  return `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`
-}
 
-// Function to get random daily specials
-const getDailySpecials = () => {
-  const todayKey = getTodayKey()
-  const storedSpecials = localStorage.getItem(`dailySpecials_${todayKey}`)
-  
-  if (storedSpecials) {
-    return JSON.parse(storedSpecials)
-  }
-  
-  // Generate new random specials for today
-  const shuffled = [...MENU_ITEMS].sort(() => 0.5 - Math.random())
-  const dailySpecials = shuffled.slice(0, 3)
-  
-  // Store in localStorage
-  localStorage.setItem(`dailySpecials_${todayKey}`, JSON.stringify(dailySpecials))
-  
-  return dailySpecials
-}
 
 export default function HomePage() {
   // Translation hook for multi-language support
@@ -300,14 +276,7 @@ export default function HomePage() {
   // Video reference for hero section autoplay
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  // State for today's specials
-  const [todaysSpecials, setTodaysSpecials] = useState<Array<typeof MENU_ITEMS[0]>>([])
 
-  // Effect to load daily specials
-  useEffect(() => {
-    const specials = getDailySpecials()
-    setTodaysSpecials(specials)
-  }, [])
 
   // Video autoplay effect for hero section
   useEffect(() => {
@@ -655,7 +624,7 @@ export default function HomePage() {
           {/* Main Content Wrapper */}
           <div className="max-w-7xl mx-auto relative z-10">
             {/* ===== TODAY'S SPECIALS SECTION ===== */}
-            {/* Enhanced Today's Specials Section with Animation */}
+            {/* Modern Today's Specials Section with SEO Optimization */}
             <motion.section
               className="mb-12 sm:mb-16 md:mb-20"
               variants={containerVariants}
@@ -664,110 +633,253 @@ export default function HomePage() {
               viewport={{ once: true, margin: "-100px" }}
               aria-labelledby="todays-specials-heading"
               role="region"
+              itemScope
+              itemType="https://schema.org/Restaurant"
             >
               {/* ===== SPECIALS SECTION HEADER ===== */}
               {/* Specials Section Title and Description */}
               <motion.div className="text-center mb-8 sm:mb-12 md:mb-16" variants={itemVariants}>
                 {/* Specials Section Emoji Icon */}
-                <div className="text-3xl xs:text-4xl sm:text-6xl mb-2 sm:mb-4">✨</div>
+                <div className="text-3xl xs:text-4xl sm:text-6xl mb-2 sm:mb-4">🌟</div>
                 {/* Specials Section Main Title */}
                 <h2
                   id="todays-specials-heading"
-                  className={` text-5xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
+                  className={`text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                     }`}
                   style={{ fontFamily: 'Rozha One, serif' }}
                 >
                   {/* Specials Title Text with Theme Styling */}
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                     }`}>
-                    {t('realtime.todaysSpecials')}
+                    {t('specials.title')}
                   </span>
                 </h2>
+                {/* Specials Section Subtitle */}
+                <p className={`text-lg xs:text-xl sm:text-2xl font-semibold mb-3 ${theme === 'dark' ? 'text-[rgb(168,213,186)]' : 'text-[rgb(168,213,186)]'
+                  }`} style={{ fontFamily: 'Times New Roman, serif' }}>
+                  {t('specials.subtitle')}
+                </p>
                 {/* Specials Section Divider Line */}
-                <div className={`w-32 h-1.5 mx-auto rounded-full ${theme === 'dark'
-                  ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                <div className={`w-32 h-1.5 mx-auto rounded-full mb-4 ${theme === 'dark'
+                  ? 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
                   : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)]'
                   }`}></div>
                 {/* Specials Section Description */}
-                <p className={`text-sm xs:text-base sm:text-lg mt-4 sm:mt-6 ${theme === 'dark' ? 'text-white' : 'text-black'
+                <p className={`text-sm xs:text-base sm:text-lg mt-4 sm:mt-6 max-w-3xl mx-auto ${theme === 'dark' ? 'text-white/90' : 'text-[rgb(26,26,26)]/80'
                   }`}>
-                  {t('realtime.todaysSpecialsDescription')}
+                  {t('specials.description')}
                 </p>
               </motion.div>
 
               {/* ===== SPECIALS CARDS GRID ===== */}
               {/* Specials Cards Container */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* ===== SPECIALS CARD LOOP ===== */}
-                {/* Map through today's specials to create cards */}
-                {todaysSpecials.map((special) => (
-                  <motion.div
-                    key={special.id}
-                    className={`group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(230, 245, 236)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(60, 55, 55)] to-[rgb(81,87,83)]/50'
-                      }`}
-                    variants={itemVariants}
-                    whileHover={{ y: -10 }}
-                  >
-                    {/* ===== SPECIAL CARD GRADIENT BORDER ===== */}
-                    {/* Gradient Border Effect for Special Cards */}
-                    <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-0.5 ${theme === 'dark'
-                      ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
-                      : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                {/* ===== HUMUS SPECIAL CARD ===== */}
+                <motion.article
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                    }`}
+                  variants={itemVariants}
+                  whileHover={{ y: -8 }}
+                  itemScope
+                  itemType="https://schema.org/MenuItem"
+                >
+                  {/* ===== CARD IMAGE SECTION ===== */}
+                  <div className="relative h-48 sm:h-56 overflow-hidden">
+                    <Image
+                      src="/images/gallery/houmos.webp"
+                      alt={t('specials.items.hummus.description')}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
+                      loading="lazy"
+                      quality={85}
+                    />
+                    {/* ===== IMAGE OVERLAY ===== */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    {/* ===== PRICE BADGE ===== */}
+                    <div className={`absolute top-3 right-3 text-white px-3 py-1 rounded-full font-bold text-sm shadow-lg ${theme === 'dark'
+                      ? 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
+                      : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
                       }`}>
-                      <div className={`w-full h-full rounded-3xl ${theme === 'dark' ? 'bg-[rgb(245,240,230)]' : 'bg-[rgb(255,255,255)]'}`}></div>
+                      {t('specials.items.hummus.price')}
                     </div>
+                    {/* ===== SPECIAL BADGE ===== */}
+                    <div className="absolute top-3 left-3 text-white">
+                      <div className="text-2xl">⭐</div>
+                    </div>
+                  </div>
+                  {/* ===== CARD CONTENT ===== */}
+                  <div className="p-4 sm:p-6">
+                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${theme === 'dark' ? 'text-[rgb(26,26,26)]' : 'text-[rgb(26,26,26)]'
+                      }`} style={{ fontFamily: 'Times New Roman, serif' }} itemProp="name">
+                      {t('specials.items.hummus.title')}
+                    </h3>
+                    <p className={`text-sm sm:text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(26,26,26)]/80' : 'text-[rgb(26,26,26)]/70'
+                      }`} itemProp="description">
+                      {t('specials.items.hummus.description')}
+                    </p>
+                  </div>
+                </motion.article>
 
-                    {/* ===== SPECIAL CARD CONTENT ===== */}
-                    {/* Special Card Content Container */}
-                    <div className="relative z-10">
-                      {/* ===== SPECIAL CARD IMAGE SECTION ===== */}
-                      {/* Special Card Image Container */}
-                      <div className="relative h-64 overflow-hidden">
-                        {/* Special Card Food Image */}
-                        <Image
-                          src={special.image}
-                          alt={t(special.descriptionKey)}
-                          fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-110"
-                          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                          loading="lazy"
-                          quality={75}
-                        />
-                        {/* ===== SPECIAL CARD IMAGE OVERLAY ===== */}
-                        {/* Image Gradient Overlay for Text Readability */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        {/* ===== SPECIAL CARD PRICE BADGE ===== */}
-                        {/* Price Badge on Special Card */}
-                        <div className={`absolute top-4 right-4 text-[rgb(255,255,255)] px-4 py-2 rounded-full font-bold text-lg shadow-lg ${theme === 'dark'
-                          ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
-                          : 'bg-gradient-to-r from-[rgb(37,38,37)] to-[rgb(37,38,37)]'
-                          }`}>
-                          {special.price}
-                        </div>
-                        {/* ===== SPECIAL CARD STAR RATING ===== */}
-                        {/* Star Rating Icon on Special Card */}
-                        <div className="absolute bottom-4 left-4 text-[rgb(255,255,255)]">
-                          <div className="text-3xl mb-1">⭐</div>
-                        </div>
-                      </div>
-                      {/* ===== SPECIAL CARD TEXT CONTENT ===== */}
-                      {/* Special Card Text Information */}
-                      <div className="p-8">
-                        {/* Special Card Title */}
-                        <h3 className={`text-2xl font-bold mb-3 ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'
-                          }`} style={{ fontFamily: 'Times New Roman, serif', color: 'rgba(0, 0, 0, 1)' }}>
-                          {t(special.nameKey)}
-                        </h3>
-                        {/* Special Card Description */}
-                        <p className={`text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(245,240,230)]' : 'text-[rgb(26,26,26)]'
-                          }`} style={{ color: 'rgba(0, 0, 0, 1)' }}>
-                          {t(special.descriptionKey)}
-                        </p>
-                      </div>
+                {/* ===== FALAFEL SPECIAL CARD ===== */}
+                <motion.article
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                    }`}
+                  variants={itemVariants}
+                  whileHover={{ y: -8 }}
+                  itemScope
+                  itemType="https://schema.org/MenuItem"
+                >
+                  {/* ===== CARD IMAGE SECTION ===== */}
+                  <div className="relative h-48 sm:h-56 overflow-hidden">
+                    <Image
+                      src="/images/gallery/falafel.webp"
+                      alt={t('specials.items.falafel.description')}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
+                      loading="lazy"
+                      quality={85}
+                    />
+                    {/* ===== IMAGE OVERLAY ===== */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    {/* ===== PRICE BADGE ===== */}
+                    <div className={`absolute top-3 right-3 text-white px-3 py-1 rounded-full font-bold text-sm shadow-lg ${theme === 'dark'
+                      ? 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
+                      : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
+                      }`}>
+                      {t('specials.items.falafel.price')}
                     </div>
-                  </motion.div>
-                ))}
+                    {/* ===== SPECIAL BADGE ===== */}
+                    <div className="absolute top-3 left-3 text-white">
+                      <div className="text-2xl">⭐</div>
+                    </div>
+                  </div>
+                  {/* ===== CARD CONTENT ===== */}
+                  <div className="p-4 sm:p-6">
+                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${theme === 'dark' ? 'text-[rgb(26,26,26)]' : 'text-[rgb(26,26,26)]'
+                      }`} style={{ fontFamily: 'Times New Roman, serif' }} itemProp="name">
+                      {t('specials.items.falafel.title')}
+                    </h3>
+                    <p className={`text-sm sm:text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(26,26,26)]/80' : 'text-[rgb(26,26,26)]/70'
+                      }`} itemProp="description">
+                      {t('specials.items.falafel.description')}
+                    </p>
+                  </div>
+                </motion.article>
+
+                {/* ===== KEBBE SPECIAL CARD ===== */}
+                <motion.article
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                    }`}
+                  variants={itemVariants}
+                  whileHover={{ y: -8 }}
+                  itemScope
+                  itemType="https://schema.org/MenuItem"
+                >
+                  {/* ===== CARD IMAGE SECTION ===== */}
+                  <div className="relative h-48 sm:h-56 overflow-hidden">
+                    <Image
+                      src="/images/gallery/kebbe.webp"
+                      alt={t('specials.items.kebbe.description')}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
+                      loading="lazy"
+                      quality={85}
+                    />
+                    {/* ===== IMAGE OVERLAY ===== */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    {/* ===== PRICE BADGE ===== */}
+                    <div className={`absolute top-3 right-3 text-white px-3 py-1 rounded-full font-bold text-sm shadow-lg ${theme === 'dark'
+                      ? 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
+                      : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
+                      }`}>
+                      {t('specials.items.kebbe.price')}
+                    </div>
+                    {/* ===== SPECIAL BADGE ===== */}
+                    <div className="absolute top-3 left-3 text-white">
+                      <div className="text-2xl">⭐</div>
+                    </div>
+                  </div>
+                  {/* ===== CARD CONTENT ===== */}
+                  <div className="p-4 sm:p-6">
+                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${theme === 'dark' ? 'text-[rgb(26,26,26)]' : 'text-[rgb(26,26,26)]'
+                      }`} style={{ fontFamily: 'Times New Roman, serif' }} itemProp="name">
+                      {t('specials.items.kebbe.title')}
+                    </h3>
+                    <p className={`text-sm sm:text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(26,26,26)]/80' : 'text-[rgb(26,26,26)]/70'
+                      }`} itemProp="description">
+                      {t('specials.items.kebbe.description')}
+                    </p>
+                  </div>
+                </motion.article>
+
+                {/* ===== AISH EL SARAYA SPECIAL CARD ===== */}
+                <motion.article
+                  className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(245,240,230)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(255,255,255)] to-[rgb(255,255,255)]'
+                    }`}
+                  variants={itemVariants}
+                  whileHover={{ y: -8 }}
+                  itemScope
+                  itemType="https://schema.org/MenuItem"
+                >
+                  {/* ===== CARD IMAGE SECTION ===== */}
+                  <div className="relative h-48 sm:h-56 overflow-hidden">
+                    <Image
+                      src="/images/gallery/aish el saraya.webp"
+                      alt={t('specials.items.aishElSaraya.description')}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
+                      loading="lazy"
+                      quality={85}
+                    />
+                    {/* ===== IMAGE OVERLAY ===== */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    {/* ===== PRICE BADGE ===== */}
+                    <div className={`absolute top-3 right-3 text-white px-3 py-1 rounded-full font-bold text-sm shadow-lg ${theme === 'dark'
+                      ? 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
+                      : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] text-[rgb(26,26,26)]'
+                      }`}>
+                      {t('specials.items.aishElSaraya.price')}
+                    </div>
+                    {/* ===== SPECIAL BADGE ===== */}
+                    <div className="absolute top-3 left-3 text-white">
+                      <div className="text-2xl">⭐</div>
+                    </div>
+                  </div>
+                  {/* ===== CARD CONTENT ===== */}
+                  <div className="p-4 sm:p-6">
+                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${theme === 'dark' ? 'text-[rgb(26,26,26)]' : 'text-[rgb(26,26,26)]'
+                      }`} style={{ fontFamily: 'Times New Roman, serif' }} itemProp="name">
+                      {t('specials.items.aishElSaraya.title')}
+                    </h3>
+                    <p className={`text-sm sm:text-base leading-relaxed ${theme === 'dark' ? 'text-[rgb(26,26,26)]/80' : 'text-[rgb(26,26,26)]/70'
+                      }`} itemProp="description">
+                      {t('specials.items.aishElSaraya.description')}
+                    </p>
+                  </div>
+                </motion.article>
               </div>
+
+              {/* ===== CTA BUTTON SECTION ===== */}
+              <motion.div className="text-center mt-8 sm:mt-12" variants={itemVariants}>
+                <Link
+                  href="/menu"
+                  className={`group relative inline-block text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-xl focus:outline-none focus:ring-4 ${theme === 'dark'
+                    ? 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
+                    : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
+                    }`}
+                  aria-label={t('specials.seeFullMenu')}
+                >
+                  <span className="relative z-10">{t('specials.seeFullMenu')}</span>
+                  <div className={`absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
+                    ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                    : 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(26,26,26)]'
+                    }`}></div>
+                </Link>
+              </motion.div>
             </motion.section>
 
             {/* ===== UPCOMING EVENTS SECTION ===== */}

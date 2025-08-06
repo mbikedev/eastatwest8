@@ -46,7 +46,6 @@ const nextConfig = {
       config.target = ['web', 'es2020']
       
       // Disable CSS chunk extraction to prevent render blocking
-      // CSS will be handled by our AdvancedCSSOptimizer component
       delete config.optimization.splitChunks.cacheGroups.default
       delete config.optimization.splitChunks.cacheGroups.styles
       
@@ -79,13 +78,6 @@ const nextConfig = {
           chunks: 'all',
         },
         
-        // Separate React Time Picker
-        reactTimePicker: {
-          test: /[\\/]node_modules[\\/]react-time-picker[\\/]/,
-          name: 'react-time-picker',
-          priority: 20,
-          chunks: 'all',
-        },
         
         // Component chunks
         components: {
