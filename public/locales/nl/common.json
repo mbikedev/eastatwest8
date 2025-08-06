@@ -274,6 +274,11 @@
         "title": "Grill Mix",
         "description": "1 kebab spies en 1 chich taouk spies geserveerd met hummus, itch (bulgur), fattoush",
         "price": "19€"
+      },
+      "toshkaLeban": {
+        "title": "Toshka Leban",
+        "description": "Traditioneel gerecht met yoghurtsaus en gekruide vlees",
+        "price": "17,00€"
       }
     },
     "sandwiches": {
@@ -361,6 +366,11 @@
         "title": "Baklawa",
         "description": "Assortiment van Arabische zoetigheden",
         "price": "6€"
+      },
+      "baklawa": {
+        "title": "Baklawa",
+        "description": "Traditioneel Midden-Oosters gebak gemaakt met filodeeg, noten en honing",
+        "price": "5,50€"
       }
     },
     "drinks": {
@@ -923,17 +933,31 @@
     "seasonalPromotions": "Seizoensaanbiedingen"
   },
   "specials": {
-    "taratorChicken": {
-      "title": "Tarator Kip",
-      "description": "Gepureerde gekookte kip en tahini (sesampasta)."
-    },
-    "kibbeh": {
-      "title": "Kibbeh x2stks",
-      "description": "Gebakken bulgur kroketten gevuld met gehakt, ui en walnoten."
-    },
-    "vegan": {
-      "title": "Vegan (Veganistisch)",
-      "description": "Gegrilde aubergine, paprika, tomaat en ui met speciale saus, vergezeld van hummus, moutabal, Fattoush."
+    "title": "Dagelijkse Specialiteiten",
+    "subtitle": "Chef's Dagelijkse Aanbevelingen",
+    "description": "Ontdek de zorgvuldig samengestelde selectie van onze chef van de meest uitzonderlijke gerechten van vandaag, bereid met de beste ingrediënten en authentieke mediterrane technieken.",
+    "seeFullMenu": "Bekijk Volledige Menu",
+    "items": {
+      "hummus": {
+        "title": "Traditionele Hummus",
+        "description": "Romige kikkererwtenpuree met tahini, olijfolie en authentieke Libanese kruiden",
+        "price": "€7.50"
+      },
+      "falafel": {
+        "title": "Knapperige Falafel",
+        "description": "Gouden gefrituurde kikkererwtenbeignets geserveerd met tahinisaus en verse kruiden",
+        "price": "€8.50"
+      },
+      "kebbe": {
+        "title": "Kebbe Special",
+        "description": "Traditionele bulgur kroketten gevuld met gekruid gehakt en walnoten",
+        "price": "€9.00"
+      },
+      "aishElSaraya": {
+        "title": "Aish El Saraya",
+        "description": "Gelaagd dessert met gezoete koekjes, vegan pudding en oranjebloesem water",
+        "price": "€6.50"
+      }
     }
   },
   "events": {

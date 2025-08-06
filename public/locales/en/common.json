@@ -275,6 +275,11 @@
         "title": "Grill Mix",
         "description": "1 kebab skewer and 1 chich taouk skewer accompanied by hummus, itch (bulgur), fattoush",
         "price": "19€"
+      },
+      "toshkaLeban": {
+        "title": "Toshka Leban",
+        "description": "Traditional dish with yogurt sauce and spiced meat",
+        "price": "17.00€"
       }
     },
     "sandwiches": {
@@ -362,6 +367,11 @@
         "title": "Baklawa",
         "description": "Assortment of Arabic sweets",
         "price": "6€"
+      },
+      "baklawa": {
+        "title": "Baklawa",
+        "description": "Traditional Middle Eastern pastry made with phyllo dough, nuts, and honey",
+        "price": "5.50€"
       }
     },
     "drinks": {
@@ -917,19 +927,34 @@
     "seasonalPromotions": "Seasonal Promotions"
   },
   "specials": {
-    "taratorChicken": {
-      "title": "Tarator Chicken",
-      "description": "Mashed cooked chicken and tahini (sesame paste)."
-    },
-    "kibbeh": {
-      "title": "Kibbeh x2pcs",
-      "description": "Fried bulgur croquettes stuffed with minced beef, onion and walnuts."
-    },
-    "vegan": {
-      "title": "Vegan (Vegan)",
-      "description": "Grilled eggplant, paprika, tomato and onion with a special sauce, accompanied by hummus, moutabal, Fattoush."
+    "title": "Today's Specials",
+    "subtitle": "Chef's Daily Recommendations",
+    "description": "Discover our chef's carefully curated selection of today's most exceptional dishes, prepared with the finest ingredients and authentic Mediterranean techniques.",
+    "seeFullMenu": "See Full Menu",
+    "items": {
+      "hummus": {
+        "title": "Traditional Hummus",
+        "description": "Creamy chickpea puree with tahini, olive oil, and authentic Lebanese spices",
+        "price": "€7.50"
+      },
+      "falafel": {
+        "title": "Crispy Falafel",
+        "description": "Golden-fried chickpea fritters served with tahini sauce and fresh herbs",
+        "price": "€8.50"
+      },
+      "kebbe": {
+        "title": "Kebbe Special",
+        "description": "Traditional bulgur croquettes stuffed with seasoned minced beef and walnuts",
+        "price": "€9.00"
+      },
+      "aishElSaraya": {
+        "title": "Aish El Saraya",
+        "description": "Layered dessert with sweetened biscuits, vegan pudding, and orange blossom water",
+        "price": "€6.50"
+      }
     }
   },
+
   "events": {
     "title": "Events & Catering",
     "subtitle": "Creating Memorable Culinary Experiences",
