@@ -357,6 +357,10 @@
     },
     "sandwiches": {
       "takeAwayOnly": "Take Away Only",
+      "takeAwayDeals": {
+        "title": "Take Away Deals",
+        "subtitle": "Dishes"
+      },
       "hummus": {
         "title": "Hummus(Vegan)",
         "description": "Hummus, tomato, pickles and lettuce",

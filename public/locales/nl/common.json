@@ -356,6 +356,10 @@
     },
     "sandwiches": {
       "takeAwayOnly": "Enkel Afhalen",
+      "takeAwayDeals": {
+        "title": "Afhaal Aanbiedingen",
+        "subtitle": "Gerechten"
+      },
       "hummus": {
         "title": "Hummus(Vegan)",
         "description": "Hummus, tomaat, augurken en sla",

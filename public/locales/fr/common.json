@@ -356,6 +356,10 @@
     },
     "sandwiches": {
       "takeAwayOnly": "À Emporter Uniquement",
+      "takeAwayDeals": {
+        "title": "Offres à Emporter",
+        "subtitle": "Plats"
+      },
       "hummus": {
         "title": "Houmous(Végan)",
         "description": "Houmous, tomate, cornichons et laitue",

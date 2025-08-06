@@ -948,6 +948,28 @@ export default function MenuPage() {
                 </div>
               )}
 
+              {/* Take Away Deals title for Sandwiches section */}
+              {activeCategory === "sandwiches" && (
+                <div className="text-center mb-6 sm:mb-8">
+                  <h2
+                    className={`text-xl sm:text-2xl md:text-3xl font-bold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg sm:rounded-xl inline-block animate-bounce ${theme === "dark"
+                      ? "bg-gradient-to-r from-white/20 to-white/40 text-white border-2 border-white/60 shadow-xl sm:shadow-2xl shadow-white/50"
+                      : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
+                      }`}
+                  >
+                    <span className="block sm:inline">
+                      🍽️ {t("menu.sandwiches.takeAwayDeals.title")} 🍽️
+                    </span>
+                  </h2>
+                  <p
+                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
+                      }`}
+                  >
+                    {t("menu.sandwiches.takeAwayDeals.subtitle")}
+                  </p>
+                </div>
+              )}
+
               {/* Grilled to Perfection title for Skewers section */}
               {activeCategory === "skewers" && (
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
