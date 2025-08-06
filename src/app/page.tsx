@@ -64,7 +64,7 @@ const MENU_ITEMS = [
     nameKey: 'menu.coldMezzes.moutabal.title',
     descriptionKey: 'menu.coldMezzes.moutabal.description',
     price: '€7.00',
-    image: '/images/gallery/moutabal.webp',
+    image: '/images/cold-mezzes/moutabal.webp',
     category: 'coldMezzes'
   },
   {
@@ -73,6 +73,14 @@ const MENU_ITEMS = [
     descriptionKey: 'menu.coldMezzes.warakEnab.description',
     price: '€8.00',
     image: '/images/gallery/warak-enab.webp',
+    category: 'coldMezzes'
+  },
+  {
+    id: 'moussaka',
+    nameKey: 'menu.coldMezzes.moussaka.title',
+    descriptionKey: 'menu.coldMezzes.moussaka.description',
+    price: '€7.50',
+    image: '/images/cold-mezzes/mousaka.webp',
     category: 'coldMezzes'
   },
   // Hot Mezzes
@@ -86,16 +94,16 @@ const MENU_ITEMS = [
   },
   {
     id: 'batataHarra',
-    nameKey: 'menu.hotMezzes.batataHarra.title',
-    descriptionKey: 'menu.hotMezzes.batataHarra.description',
+    nameKey: 'menu.hotMezzes.batataHarraVegan.title',
+    descriptionKey: 'menu.hotMezzes.batataHarraVegan.description',
     price: '€7.50',
     image: '/images/gallery/batata-harra.webp',
     category: 'hotMezzes'
   },
   {
     id: 'falafelSalad',
-    nameKey: 'menu.hotMezzes.falafelSalad.title',
-    descriptionKey: 'menu.hotMezzes.falafelSalad.description',
+    nameKey: 'menu.hotMezzes.falafelVegan.title',
+    descriptionKey: 'menu.hotMezzes.falafelVegan.description',
     price: '€8.50',
     image: '/images/gallery/falafel.webp',
     category: 'hotMezzes'
@@ -110,16 +118,16 @@ const MENU_ITEMS = [
   },
   {
     id: 'grilledCheese',
-    nameKey: 'menu.hotMezzes.grilledCheese.title',
-    descriptionKey: 'menu.hotMezzes.grilledCheese.description',
+    nameKey: 'menu.hotMezzes.grilledSyrianCheese.title',
+    descriptionKey: 'menu.hotMezzes.grilledSyrianCheese.description',
     price: '€8.00',
     image: '/images/gallery/grilled-cheese.webp',
     category: 'hotMezzes'
   },
   {
     id: 'kebbeVegan',
-    nameKey: 'menu.hotMezzes.kebbeVegan.title',
-    descriptionKey: 'menu.hotMezzes.kebbeVegan.description',
+    nameKey: 'menu.hotMezzes.kibbehVeganist.title',
+    descriptionKey: 'menu.hotMezzes.kibbehVeganist.description',
     price: '€8.50',
     image: '/images/gallery/kebbe.webp',
     category: 'hotMezzes'
@@ -167,8 +175,8 @@ const MENU_ITEMS = [
   },
   {
     id: 'taboule',
-    nameKey: 'menu.salads.taboule.title',
-    descriptionKey: 'menu.salads.taboule.description',
+    nameKey: 'menu.salads.originalTabouleh.title',
+    descriptionKey: 'menu.salads.originalTabouleh.description',
     price: '€7.00',
     image: '/images/Salads/taboule.webp',
     category: 'salads'
@@ -176,8 +184,8 @@ const MENU_ITEMS = [
   // Lunch Dishes
   {
     id: 'alepoMix',
-    nameKey: 'menu.lunchDishes.alepoMix.title',
-    descriptionKey: 'menu.lunchDishes.alepoMix.description',
+    nameKey: 'menu.lunchDishes.aleppoMix.title',
+    descriptionKey: 'menu.lunchDishes.aleppoMix.description',
     price: '€18.50',
     image: '/images/lunch-dishes/alepo-mix.webp',
     category: 'lunchDishes'
@@ -192,24 +200,24 @@ const MENU_ITEMS = [
   },
   {
     id: 'kebabDish',
-    nameKey: 'menu.lunchDishes.kebabDish.title',
-    descriptionKey: 'menu.lunchDishes.kebabDish.description',
+    nameKey: 'menu.lunchDishes.kebab.title',
+    descriptionKey: 'menu.lunchDishes.kebab.description',
     price: '€19.50',
     image: '/images/lunch-dishes/kebab-dish.webp',
     category: 'lunchDishes'
   },
   {
     id: 'platVegan',
-    nameKey: 'menu.lunchDishes.platVegan.title',
-    descriptionKey: 'menu.lunchDishes.platVegan.description',
+    nameKey: 'menu.lunchDishes.vegan.title',
+    descriptionKey: 'menu.lunchDishes.vegan.description',
     price: '€17.50',
     image: '/images/lunch-dishes/plat-vegan.webp',
     category: 'lunchDishes'
   },
   {
     id: 'shishTaouk',
-    nameKey: 'menu.lunchDishes.shishTaouk.title',
-    descriptionKey: 'menu.lunchDishes.shishTaouk.description',
+    nameKey: 'menu.lunchDishes.chichTaouk.title',
+    descriptionKey: 'menu.lunchDishes.chichTaouk.description',
     price: '€18.50',
     image: '/images/lunch-dishes/shish-taouk.webp',
     category: 'lunchDishes'
