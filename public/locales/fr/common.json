@@ -243,6 +243,21 @@
         "title": "Toshka",
         "description": "Pain libanais cuit farci de bœuf haché et fromage syrien",
         "price": "12,50€"
+      },
+      "orientalEggplant": {
+        "title": "Aubergine orientale",
+        "description": "Aubergine grillée, garnie de viande hachée cuite avec oignon, tomate et poivron. Présentée avec sauce tomate et grenade maison.",
+        "price": "13,5€"
+      },
+      "chickenLiver": {
+        "title": "Foie de poulet",
+        "description": "Foie de poulet cuit avec oignon et épices spéciales (non épicé). Présenté avec sauce grenade",
+        "price": "11,5€"
+      },
+      "fatteh": {
+        "title": "Fatteh",
+        "description": "Pois chiches cuits, pain libanais frit, ail et sauce tahini aux agrumes maison.",
+        "price": "7,5€"
       }
     },
     "salads": {

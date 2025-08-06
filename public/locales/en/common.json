@@ -244,6 +244,21 @@
         "title": "Toshka",
         "description": "Baked Lebanese bread stuffed with minced beef and Syrian cheese",
         "price": "12.50€"
+      },
+      "orientalEggplant": {
+        "title": "Oriental eggplant",
+        "description": "Grilled eggplant, topped with cooked minced meat with onion, tomato and pepper. Presented with homemade tomato and pomegranate sauce.",
+        "price": "13.5€"
+      },
+      "chickenLiver": {
+        "title": "Chicken liver",
+        "description": "Cooked chicken liver with onion and special spices (not spicy). Presented with pomegranate sauce",
+        "price": "11.5€"
+      },
+      "fatteh": {
+        "title": "Fatteh",
+        "description": "Cooked chickpeas, fried Lebanese bread, garlic and homemade citrus tahini sauce.",
+        "price": "7.5€"
       }
     },
     "salads": {

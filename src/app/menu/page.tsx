@@ -293,6 +293,30 @@ export default function MenuPage() {
         vegetarian: false,
         image: "/images/hot-mezzes/sujuk.webp",
       },
+      {
+        name: t("menu.hotMezzes.orientalEggplant.title"),
+        description: t("menu.hotMezzes.orientalEggplant.description"),
+        price: t("menu.hotMezzes.orientalEggplant.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/hot-mezzes/oriental-eggplant.webp",
+      },
+      {
+        name: t("menu.hotMezzes.chickenLiver.title"),
+        description: t("menu.hotMezzes.chickenLiver.description"),
+        price: t("menu.hotMezzes.chickenLiver.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/hot-mezzes/chicken-liver.webp",
+      },
+      {
+        name: t("menu.hotMezzes.fatteh.title"),
+        description: t("menu.hotMezzes.fatteh.description"),
+        price: t("menu.hotMezzes.fatteh.price"),
+        spicy: false,
+        vegetarian: true,
+        image: "/images/hot-mezzes/fatteh.webp",
+      },
     ],
     salads: [
       {

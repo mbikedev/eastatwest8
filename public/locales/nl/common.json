@@ -243,6 +243,21 @@
         "title": "Toshka",
         "description": "Gebakken Libanees brood gevuld met gehakt en Syrische kaas",
         "price": "12,50€"
+      },
+      "orientalEggplant": {
+        "title": "Orientaalse aubergine",
+        "description": "Gegrilde aubergine, gegarneerd met gekookt gehakt met ui, tomaat en paprika. Geserveerd met zelfgemaakte tomaten- en granaatappelsaus.",
+        "price": "13,5€"
+      },
+      "chickenLiver": {
+        "title": "Kippenlever",
+        "description": "Gekookte kippenlever met ui en speciale kruiden (niet pittig). Geserveerd met granaatappelsaus",
+        "price": "11,5€"
+      },
+      "fatteh": {
+        "title": "Fatteh",
+        "description": "Gekookte kikkererwten, gebakken Libanees brood, knoflook en zelfgemaakte citrus tahini saus.",
+        "price": "7,5€"
       }
     },
     "salads": {
