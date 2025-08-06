@@ -360,6 +360,26 @@
         "title": "Offres à Emporter",
         "subtitle": "Plats"
       },
+      "takeawayVegan": {
+        "title": "À emporter végan",
+        "description": "Houmous, itch, cornichons et fattouche. (pain inclus)",
+        "price": "12€"
+      },
+      "takeawayWithMeat": {
+        "title": "À emporter avec viande",
+        "description": "Houmous, itch, 1 brochette (soit kabab ou chich taouk), cornichons, ail, sauce et fattouche (pain inclus).",
+        "price": "13.50€"
+      },
+      "meatFoodie": {
+        "title": "Foodie Viande",
+        "description": "Houmous, Zahra, Kibbeh, 1X Chich taouk, 1X Kabab, Foul moudamas, Fattouche",
+        "price": "24€"
+      },
+      "veganFoodie": {
+        "title": "Foodie Végan",
+        "description": "Houmous, Zahra, 2X Warak eneb, 2X Falafel, Batata harra, Foul moudamas, Fattouche.",
+        "price": "24€"
+      },
       "hummus": {
         "title": "Houmous(Végan)",
         "description": "Houmous, tomate, cornichons et laitue",

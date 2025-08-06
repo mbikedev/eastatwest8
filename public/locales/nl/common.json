@@ -360,6 +360,26 @@
         "title": "Afhaal Aanbiedingen",
         "subtitle": "Gerechten"
       },
+      "takeawayVegan": {
+        "title": "Afhaal vegan",
+        "description": "Hummus, itch, augurken en fattouche. (brood inbegrepen)",
+        "price": "12€"
+      },
+      "takeawayWithMeat": {
+        "title": "Afhaal met vlees",
+        "description": "Hummus, itch, 1 spies (kabab of chich taouk), augurken, knoflook, saus en fattouche (brood inbegrepen).",
+        "price": "13.50€"
+      },
+      "meatFoodie": {
+        "title": "Vlees Foodie",
+        "description": "Hummus, Zahra, Kibbeh, 1X Chich taouk, 1X Kabab, Foul moudamas, Fattouche",
+        "price": "24€"
+      },
+      "veganFoodie": {
+        "title": "Vegan Foodie",
+        "description": "Hummus, Zahra, 2X Warak eneb, 2X Falafel, Batata harra, Foul moudamas, Fattouche.",
+        "price": "24€"
+      },
       "hummus": {
         "title": "Hummus(Vegan)",
         "description": "Hummus, tomaat, augurken en sla",

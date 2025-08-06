@@ -529,6 +529,38 @@ export default function MenuPage() {
         spicy: false,
         vegetarian: true,
       },
+      {
+        name: t("menu.sandwiches.takeawayVegan.title"),
+        description: t("menu.sandwiches.takeawayVegan.description"),
+        price: t("menu.sandwiches.takeawayVegan.price"),
+        spicy: false,
+        vegetarian: true,
+        image: "/images/sandwiches/take-away-vegan.webp",
+      },
+      {
+        name: t("menu.sandwiches.takeawayWithMeat.title"),
+        description: t("menu.sandwiches.takeawayWithMeat.description"),
+        price: t("menu.sandwiches.takeawayWithMeat.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/sandwiches/take-away-with-meat.webp",
+      },
+      {
+        name: t("menu.sandwiches.meatFoodie.title"),
+        description: t("menu.sandwiches.meatFoodie.description"),
+        price: t("menu.sandwiches.meatFoodie.price"),
+        spicy: false,
+        vegetarian: false,
+        image: "/images/sandwiches/meat-foodie.webp",
+      },
+      {
+        name: t("menu.sandwiches.veganFoodie.title"),
+        description: t("menu.sandwiches.veganFoodie.description"),
+        price: t("menu.sandwiches.veganFoodie.price"),
+        spicy: false,
+        vegetarian: true,
+        image: "/images/sandwiches/vegan-foodie.webp",
+      },
     ],
     skewers: [
       {

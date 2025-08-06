@@ -361,6 +361,26 @@
         "title": "Take Away Deals",
         "subtitle": "Dishes"
       },
+      "takeawayVegan": {
+        "title": "Takeaway vegan",
+        "description": "Hummus, itch, pickles and fattouche. (bread included)",
+        "price": "12€"
+      },
+      "takeawayWithMeat": {
+        "title": "Takeaway with meat",
+        "description": "Hummus, itch, 1 skewer (either kabab or chich taouk), pickles, garlic, sauce and fattouche (bread included).",
+        "price": "13.50€"
+      },
+      "meatFoodie": {
+        "title": "Meat Foodie",
+        "description": "Hummus, Zahra, Kibbeh, 1X Chich taouk, 1X Kabab, Foul moudamas, Fattouche",
+        "price": "24€"
+      },
+      "veganFoodie": {
+        "title": "Vegan Foodie",
+        "description": "Hummus, Zahra, 2X Warak eneb, 2X Falafel, Batata harra, Foul moudamas, Fattouche.",
+        "price": "24€"
+      },
       "hummus": {
         "title": "Hummus(Vegan)",
         "description": "Hummus, tomato, pickles and lettuce",
