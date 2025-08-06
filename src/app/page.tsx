@@ -15,6 +15,273 @@ import Image from 'next/image'
 import Guru1 from '../../public/images/guru2023.webp'
 import Guru2 from '../../public/images/guru2024.webp'
 
+// ===== MENU DATA STRUCTURE =====
+// Complete menu data for random selection
+const MENU_ITEMS = [
+  // Cold Mezzes
+  {
+    id: 'taratorChicken',
+    nameKey: 'menu.coldMezzes.taratorChicken.title',
+    descriptionKey: 'menu.coldMezzes.taratorChicken.description',
+    price: '€8.50',
+    image: '/images/gallery/poulet-torator.webp',
+    category: 'coldMezzes'
+  },
+  {
+    id: 'muhammara',
+    nameKey: 'menu.coldMezzes.muhammara.title',
+    descriptionKey: 'menu.coldMezzes.muhammara.description',
+    price: '€8.00',
+    image: '/images/gallery/muhamara.webp',
+    category: 'coldMezzes'
+  },
+  {
+    id: 'makdous',
+    nameKey: 'menu.coldMezzes.makdous.title',
+    descriptionKey: 'menu.coldMezzes.makdous.description',
+    price: '€7.00',
+    image: '/images/gallery/makdous.webp',
+    category: 'coldMezzes'
+  },
+  {
+    id: 'itch',
+    nameKey: 'menu.coldMezzes.itch.title',
+    descriptionKey: 'menu.coldMezzes.itch.description',
+    price: '€7.50',
+    image: '/images/gallery/iche.webp',
+    category: 'coldMezzes'
+  },
+  {
+    id: 'hummus',
+    nameKey: 'menu.coldMezzes.hummus.title',
+    descriptionKey: 'menu.coldMezzes.hummus.description',
+    price: '€6.50',
+    image: '/images/gallery/houmos.webp',
+    category: 'coldMezzes'
+  },
+  {
+    id: 'moutabal',
+    nameKey: 'menu.coldMezzes.moutabal.title',
+    descriptionKey: 'menu.coldMezzes.moutabal.description',
+    price: '€7.00',
+    image: '/images/gallery/moutabal.webp',
+    category: 'coldMezzes'
+  },
+  {
+    id: 'warakEnab',
+    nameKey: 'menu.coldMezzes.warakEnab.title',
+    descriptionKey: 'menu.coldMezzes.warakEnab.description',
+    price: '€8.00',
+    image: '/images/gallery/warak-enab.webp',
+    category: 'coldMezzes'
+  },
+  // Hot Mezzes
+  {
+    id: 'arayesCheese',
+    nameKey: 'menu.hotMezzes.arayesCheese.title',
+    descriptionKey: 'menu.hotMezzes.arayesCheese.description',
+    price: '€9.00',
+    image: '/images/gallery/aleppo-mortadella.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'batataHarra',
+    nameKey: 'menu.hotMezzes.batataHarra.title',
+    descriptionKey: 'menu.hotMezzes.batataHarra.description',
+    price: '€7.50',
+    image: '/images/gallery/batata-harra.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'falafelSalad',
+    nameKey: 'menu.hotMezzes.falafelSalad.title',
+    descriptionKey: 'menu.hotMezzes.falafelSalad.description',
+    price: '€8.50',
+    image: '/images/gallery/falafel.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'foulMoudamas',
+    nameKey: 'menu.hotMezzes.foulMoudamas.title',
+    descriptionKey: 'menu.hotMezzes.foulMoudamas.description',
+    price: '€7.50',
+    image: '/images/gallery/foul-moudamas.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'grilledCheese',
+    nameKey: 'menu.hotMezzes.grilledCheese.title',
+    descriptionKey: 'menu.hotMezzes.grilledCheese.description',
+    price: '€8.00',
+    image: '/images/gallery/grilled-cheese.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'kebbeVegan',
+    nameKey: 'menu.hotMezzes.kebbeVegan.title',
+    descriptionKey: 'menu.hotMezzes.kebbeVegan.description',
+    price: '€8.50',
+    image: '/images/gallery/kebbe.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'nakanek',
+    nameKey: 'menu.hotMezzes.nakanek.title',
+    descriptionKey: 'menu.hotMezzes.nakanek.description',
+    price: '€9.00',
+    image: '/images/gallery/nakanek.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'rkakat',
+    nameKey: 'menu.hotMezzes.rkakat.title',
+    descriptionKey: 'menu.hotMezzes.rkakat.description',
+    price: '€7.50',
+    image: '/images/gallery/rkakat.webp',
+    category: 'hotMezzes'
+  },
+  {
+    id: 'sujuk',
+    nameKey: 'menu.hotMezzes.sujuk.title',
+    descriptionKey: 'menu.hotMezzes.sujuk.description',
+    price: '€9.50',
+    image: '/images/gallery/sujuk.webp',
+    category: 'hotMezzes'
+  },
+  // Salads
+  {
+    id: 'falafelSalad',
+    nameKey: 'menu.salads.falafel.title',
+    descriptionKey: 'menu.salads.falafel.description',
+    price: '€8.50',
+    image: '/images/Salads/falafel.webp',
+    category: 'salads'
+  },
+  {
+    id: 'fattoush',
+    nameKey: 'menu.salads.fattoush.title',
+    descriptionKey: 'menu.salads.fattoush.description',
+    price: '€7.50',
+    image: '/images/Salads/fattoush.webp',
+    category: 'salads'
+  },
+  {
+    id: 'taboule',
+    nameKey: 'menu.salads.taboule.title',
+    descriptionKey: 'menu.salads.taboule.description',
+    price: '€7.00',
+    image: '/images/Salads/taboule.webp',
+    category: 'salads'
+  },
+  // Lunch Dishes
+  {
+    id: 'alepoMix',
+    nameKey: 'menu.lunchDishes.alepoMix.title',
+    descriptionKey: 'menu.lunchDishes.alepoMix.description',
+    price: '€18.50',
+    image: '/images/lunch-dishes/alepo-mix.webp',
+    category: 'lunchDishes'
+  },
+  {
+    id: 'falafelLunch',
+    nameKey: 'menu.lunchDishes.falafel.title',
+    descriptionKey: 'menu.lunchDishes.falafel.description',
+    price: '€16.50',
+    image: '/images/lunch-dishes/falafel.webp',
+    category: 'lunchDishes'
+  },
+  {
+    id: 'kebabDish',
+    nameKey: 'menu.lunchDishes.kebabDish.title',
+    descriptionKey: 'menu.lunchDishes.kebabDish.description',
+    price: '€19.50',
+    image: '/images/lunch-dishes/kebab-dish.webp',
+    category: 'lunchDishes'
+  },
+  {
+    id: 'platVegan',
+    nameKey: 'menu.lunchDishes.platVegan.title',
+    descriptionKey: 'menu.lunchDishes.platVegan.description',
+    price: '€17.50',
+    image: '/images/lunch-dishes/plat-vegan.webp',
+    category: 'lunchDishes'
+  },
+  {
+    id: 'shishTaouk',
+    nameKey: 'menu.lunchDishes.shishTaouk.title',
+    descriptionKey: 'menu.lunchDishes.shishTaouk.description',
+    price: '€18.50',
+    image: '/images/lunch-dishes/shish-taouk.webp',
+    category: 'lunchDishes'
+  },
+  {
+    id: 'toshkaLeban',
+    nameKey: 'menu.lunchDishes.toshkaLeban.title',
+    descriptionKey: 'menu.lunchDishes.toshkaLeban.description',
+    price: '€17.00',
+    image: '/images/lunch-dishes/toshka-leban.webp',
+    category: 'lunchDishes'
+  },
+  // Desserts
+  {
+    id: 'aishElSaraya',
+    nameKey: 'menu.desserts.aishElSaraya.title',
+    descriptionKey: 'menu.desserts.aishElSaraya.description',
+    price: '€6.50',
+    image: '/images/desserts/aish-el-saraya.webp',
+    category: 'desserts'
+  },
+  {
+    id: 'baklawa',
+    nameKey: 'menu.desserts.baklawa.title',
+    descriptionKey: 'menu.desserts.baklawa.description',
+    price: '€5.50',
+    image: '/images/desserts/baklawa.webp',
+    category: 'desserts'
+  },
+  {
+    id: 'halw',
+    nameKey: 'menu.desserts.halw.title',
+    descriptionKey: 'menu.desserts.halw.description',
+    price: '€4.50',
+    image: '/images/desserts/halw.webp',
+    category: 'desserts'
+  },
+  {
+    id: 'traditionalIceCream',
+    nameKey: 'menu.desserts.traditionalIceCream.title',
+    descriptionKey: 'menu.desserts.traditionalIceCream.description',
+    price: '€4.00',
+    image: '/images/desserts/traditional-ice-cream.webp',
+    category: 'desserts'
+  }
+]
+
+// ===== UTILITY FUNCTIONS =====
+// Function to get today's date as a string for localStorage key
+const getTodayKey = () => {
+  const today = new Date()
+  return `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`
+}
+
+// Function to get random daily specials
+const getDailySpecials = () => {
+  const todayKey = getTodayKey()
+  const storedSpecials = localStorage.getItem(`dailySpecials_${todayKey}`)
+  
+  if (storedSpecials) {
+    return JSON.parse(storedSpecials)
+  }
+  
+  // Generate new random specials for today
+  const shuffled = [...MENU_ITEMS].sort(() => 0.5 - Math.random())
+  const dailySpecials = shuffled.slice(0, 3)
+  
+  // Store in localStorage
+  localStorage.setItem(`dailySpecials_${todayKey}`, JSON.stringify(dailySpecials))
+  
+  return dailySpecials
+}
 
 export default function HomePage() {
   // Translation hook for multi-language support
@@ -24,6 +291,15 @@ export default function HomePage() {
 
   // Video reference for hero section autoplay
   const videoRef = useRef<HTMLVideoElement>(null)
+
+  // State for today's specials
+  const [todaysSpecials, setTodaysSpecials] = useState<Array<typeof MENU_ITEMS[0]>>([])
+
+  // Effect to load daily specials
+  useEffect(() => {
+    const specials = getDailySpecials()
+    setTodaysSpecials(specials)
+  }, [])
 
   // Video autoplay effect for hero section
   useEffect(() => {
@@ -54,31 +330,6 @@ export default function HomePage() {
   }, [])
 
   // ===== MOCK DATA SECTION =====
-  // Today's Specials data for the specials section
-  const [todaysSpecials] = useState([
-    {
-      id: 1,
-      nameKey: "specials.taratorChicken.title",
-      descriptionKey: "specials.taratorChicken.description",
-      price: "€8.50",
-      image: "/images/gallery/poulet-torator.webp"
-    },
-    {
-      id: 2,
-      nameKey: "specials.kibbeh.title",
-      descriptionKey: "specials.kibbeh.description",
-      price: "€5.00",
-      image: "/images/gallery/kebbe.webp"
-    },
-    {
-      id: 3,
-      nameKey: "specials.vegan.title",
-      descriptionKey: "specials.vegan.description",
-      price: "€18.50",
-      image: "/images/gallery/eggplant.jpg"
-    }
-  ])
-
   // Upcoming Events data for the events section
   const [upcomingEvents] = useState([
     {
