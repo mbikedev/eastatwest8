@@ -203,12 +203,12 @@
       "kibbeh2pcs": {
         "title": "Kibbeh (2pcs)",
         "description": "Fried bulgar croquettes stuffed with minced beef,onion and walnuts. ",
-        "price": "5€"
+        "price": "7€"
       },
       "batataHarraVegan": {
         "title": "Batata harra (Vegan)",
         "description": "Fried potato cubes with red peppers, cilantro and garlic",
-        "price": "8€"
+        "price": "7.5€"
       },
       "batataHarra": {
         "title": "Batata harra",
@@ -218,17 +218,17 @@
       "rkakat": {
         "title": "Rkakat",
         "description": "Fried rolled puff pastry stuffed with cheese",
-        "price": "8€"
+        "price": "4€"
       },
       "falafelVegan": {
         "title": "Falafel (Vegan)",
         "description": "Deep-fried mashed chickpea balls served with tahini sauce",
-        "price": "7€"
+        "price": "4€"
       },
       "kibbehVeganist": {
         "title": "Kibbeh veganist",
         "description": "Vegan version of traditional kibbeh with bulgur and vegetables",
-        "price": "8€"
+        "price": "5€"
       },
       "grilledSyrianCheese": {
         "title": "Grilled Syrian cheese",

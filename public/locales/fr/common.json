@@ -202,12 +202,12 @@
       "kibbeh2pcs": {
         "title": "Kibbeh (2pcs)",
         "description": "Coquilles de boulgour frites farcies à la viande hachée et aux pignons",
-        "price": "5€"
+        "price": "7€"
       },
       "batataHarraVegan": {
         "title": "Batata harra (Végan)",
         "description": "Cubes de pommes de terre frits avec poivrons rouges, coriandre et ail",
-        "price": "8€"
+        "price": "7,5€"
       },
       "batataHarra": {
         "title": "Batata harra",
@@ -217,17 +217,17 @@
       "rkakat": {
         "title": "Rkakat",
         "description": "Pâte feuilletée frite roulée farcie au fromage",
-        "price": "8€"
+        "price": "4€"
       },
       "falafelVegan": {
         "title": "Falafel (Végan)",
         "description": "Boulettes de pois chiches frits servies avec sauce tahini",
-        "price": "7€"
+        "price": "4€"
       },
       "kibbehVeganist": {
         "title": "Kibbeh végan",
         "description": "Version végane du kibbeh traditionnel avec boulgour et légumes",
-        "price": "8€"
+        "price": "5€"
       },
       "grilledSyrianCheese": {
         "title": "Fromage syrien grillé",
