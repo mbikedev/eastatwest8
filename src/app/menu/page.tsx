@@ -326,7 +326,7 @@ export default function MenuPage() {
         price: t("menu.salads.originalTabouleh.price"),
         spicy: false,
         vegetarian: true,
-        image: "/images/Salads/taboule.webp",
+        image: "/images/salads/original-taboule.webp",
       },
       {
         name: t("menu.salads.fattoush.title"),
@@ -334,7 +334,7 @@ export default function MenuPage() {
         price: t("menu.salads.fattoush.price"),
         spicy: false,
         vegetarian: true,
-        image: "/images/Salads/fattoush.webp",
+        image: "/images/salads/fattouche-vegan.webp",
       },
       {
         name: t("menu.salads.falafel.title"),
@@ -342,7 +342,7 @@ export default function MenuPage() {
         price: t("menu.salads.falafel.price"),
         spicy: false,
         vegetarian: true,
-        image: "/images/Salads/falafel.webp",
+        image: "/images/salads/falafel-vegan-salad.webp",
       },
     ],
     lunchDishes: [
@@ -584,6 +584,7 @@ export default function MenuPage() {
         price: t("menu.skewers.kebab.price"),
         spicy: false,
         vegetarian: false,
+        image: "/images/skewers/2x-kebab.webp",
       },
       {
         name: t("menu.skewers.chichTaouk.title"),
@@ -591,6 +592,7 @@ export default function MenuPage() {
         price: t("menu.skewers.chichTaouk.price"),
         spicy: false,
         vegetarian: false,
+        image: "/images/skewers/2x-chich-taouk.webp",
       },
     ],
     desserts: [
@@ -932,7 +934,7 @@ export default function MenuPage() {
                       : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
                       }`}
                   >
-                    🥗 Fresh & Delicious 🥗
+                    🥗 {t("menu.sectionTitles.freshAndDelicious")} 🥗
                   </h2>
                 </div>
               )}
@@ -946,7 +948,7 @@ export default function MenuPage() {
                       : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
                       }`}
                   >
-                    🌶️ Hot & Spicy 🌶️
+                    🌶️ {t("menu.sectionTitles.hotAndSpicy")} 🌶️
                   </h2>
                 </div>
               )}
@@ -960,7 +962,7 @@ export default function MenuPage() {
                       : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
                       }`}
                   >
-                    🥬 Garden Fresh
+                    🥬 {t("menu.sectionTitles.gardenFresh")}
                   </h2>
                 </div>
               )}
@@ -974,7 +976,7 @@ export default function MenuPage() {
                       : "bg-gradient-to-r from-[#FFFFFF] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 border-[#A8D5BA] shadow-xl sm:shadow-2xl shadow-[#A8D5BA]/40"
                       }`}
                   >
-                    🍽️ Hearty & Satisfying 🍽️
+                    🍽️ {t("menu.sectionTitles.heartyAndSatisfying")} 🍽️
                   </h2>
                 </div>
               )}
@@ -1027,7 +1029,7 @@ export default function MenuPage() {
                       }`}
                   >
                     <span className="block sm:inline">
-                      🔥 Authentic Grilled Skewers 🔥
+                      🔥 {t("menu.sectionTitles.authenticGrilledSkewers")} 🔥
                     </span>
                   </h2>
                   <p
@@ -1048,7 +1050,7 @@ export default function MenuPage() {
                       : "bg-gradient-to-r from-[#F5F0E6] to-[#A8D5BA]/60 text-[#1A1A1A] border-2 md:border-3 border-[#A8D5BA] shadow-2xl md:shadow-3xl shadow-[#A8D5BA]/80"
                       }`}
                   >
-                    🍰 Sweet Delights 🍰
+                    🍰 {t("menu.sectionTitles.sweetDelights")} 🍰
                   </h2>
                   <p
                     className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"

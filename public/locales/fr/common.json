@@ -42,11 +42,19 @@
       "hotMezzes": "Mezzés Chauds",
       "salads": "Salades",
       "lunchDishes": "Plats du Déjeuner",
-      "sandwiches": "Sandwiches",
+      "sandwiches": "Sandwichs",
       "skewers": "Brochettes",
       "mains": "Plats Principaux",
       "desserts": "Desserts",
       "drinks": "Boissons"
+    },
+    "sectionTitles": {
+      "freshAndDelicious": "Frais & Délicieux",
+      "hotAndSpicy": "Chaud & Épicé",
+      "gardenFresh": "Frais du Jardin",
+      "heartyAndSatisfying": "Copieux & Satisfaisant",
+      "authenticGrilledSkewers": "Brochettes Grillées Authentiques",
+      "sweetDelights": "Délices Sucrés"
     },
     "items": {
       "spring_rolls": "Rouleaux de Printemps Asiatiques",

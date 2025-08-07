@@ -48,6 +48,14 @@
       "desserts": "Desserts",
       "drinks": "Drinks"
     },
+    "sectionTitles": {
+      "freshAndDelicious": "Fresh & Delicious",
+      "hotAndSpicy": "Hot & Spicy",
+      "gardenFresh": "Garden Fresh",
+      "heartyAndSatisfying": "Hearty & Satisfying",
+      "authenticGrilledSkewers": "Authentic Grilled Skewers",
+      "sweetDelights": "Sweet Delights"
+    },
     "items": {
       "spring_rolls": "Asian Spring Rolls",
       "spring_rolls_desc": "Fresh vegetables wrapped in rice paper with sweet chili sauce",

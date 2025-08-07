@@ -48,6 +48,14 @@
       "desserts": "Desserts",
       "drinks": "Drankjes"
     },
+    "sectionTitles": {
+      "freshAndDelicious": "Vers & Heerlijk",
+      "hotAndSpicy": "Heet & Pittig",
+      "gardenFresh": "Tuin Vers",
+      "heartyAndSatisfying": "Hartig & Bevredigend",
+      "authenticGrilledSkewers": "Authentieke Gegrilde Spiesen",
+      "sweetDelights": "Zoete Verrukkingen"
+    },
     "items": {
       "spring_rolls": "Aziatische Loempia's",
       "spring_rolls_desc": "Verse groenten gewikkeld in rijstpapier met zoete chilisaus",
