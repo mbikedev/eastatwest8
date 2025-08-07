@@ -584,7 +584,7 @@ export default function MenuPage() {
         price: t("menu.skewers.kebab.price"),
         spicy: false,
         vegetarian: false,
-        image: "/images/skewers/2x-kebab.webp",
+        image: "/images/skewers/2x-kebab-skewers.webp",
       },
       {
         name: t("menu.skewers.chichTaouk.title"),
