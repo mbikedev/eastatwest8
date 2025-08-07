@@ -466,6 +466,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.hummus.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/sandwiches/hummus-vegan.webp",
       },
       {
         name: t("menu.sandwiches.chichTaouk.title"),
@@ -473,6 +474,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.chichTaouk.price"),
         spicy: false,
         vegetarian: false,
+        image: "/images/sandwiches/chich-taouk.webp",
       },
       {
         name: t("menu.sandwiches.moutabal.title"),
@@ -480,6 +482,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.moutabal.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/sandwiches/moutabal-vegan.webp",
       },
       {
         name: t("menu.sandwiches.toshka.title"),
@@ -487,6 +490,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.toshka.price"),
         spicy: false,
         vegetarian: false,
+        image: "/images/sandwiches/toshka.webp",
       },
       {
         name: t("menu.sandwiches.falafel.title"),
@@ -494,6 +498,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.falafel.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/sandwiches/falafel-vegan.webp",
       },
       {
         name: t("menu.sandwiches.kebab.title"),
@@ -501,6 +506,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.kebab.price"),
         spicy: false,
         vegetarian: false,
+        image: "/images/sandwiches/kebab.webp",
       },
       {
         name: t("menu.sandwiches.veganGrill.title"),
@@ -508,6 +514,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.veganGrill.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/sandwiches/vegan-grill.webp",
       },
       {
         name: t("menu.sandwiches.makdous.title"),
@@ -515,6 +522,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.makdous.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/sandwiches/makdous.webp",
       },
       {
         name: t("menu.sandwiches.toratorChicken.title"),
@@ -522,6 +530,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.toratorChicken.price"),
         spicy: false,
         vegetarian: false,
+        image: "/images/sandwiches/torator-chicken.webp",
       },
       {
         name: t("menu.sandwiches.cheese.title"),
@@ -529,6 +538,7 @@ export default function MenuPage() {
         price: t("menu.sandwiches.cheese.price"),
         spicy: false,
         vegetarian: true,
+        image: "/images/sandwiches/cheese-veget.webp",
       },
       {
         name: t("menu.sandwiches.takeawayVegan.title"),
@@ -2419,7 +2429,7 @@ export default function MenuPage() {
                           : activeCategory === "setMenus"
                             ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Set Menus: 2 columns, 2 rows
                             : activeCategory === "sandwiches"
-                              ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Sandwiches: default with last item full width
+                              ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6" // Sandwiches: 6-column grid for flexible layout
                               : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // Default: 3 columns
                     } ${theme === "dark" ? "shadow-2xl shadow-white/10" : ""}`}
                 >
@@ -2615,8 +2625,14 @@ export default function MenuPage() {
                           columnSpanClass = "lg:col-span-2";
                         }
                       } else if (activeCategory === "sandwiches") {
-                        // Last item stretches to take full row width
-                        columnSpanClass = isLastItem ? "lg:col-span-3" : "";
+                        // First 4 items (takeaway deals) - 2x2 grid (each spans 3 columns)
+                        if (index < 4) {
+                          columnSpanClass = "lg:col-span-3";
+                        } else {
+                          // Regular sandwiches - 3 per row (each spans 2 columns)
+                          // Last 3 items (Toshka, Kebab, Makdous) - 3 per row
+                          columnSpanClass = "lg:col-span-2";
+                        }
                       }
 
                       return (
