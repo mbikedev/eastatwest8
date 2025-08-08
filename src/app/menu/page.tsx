@@ -2795,8 +2795,6 @@ export default function MenuPage() {
                                   switch (activeCategory) {
                                     case "setMenus":
                                       return "Vegan";
-                                    case "coldMezzes":
-                                      return "Vegan";
                                     case "hotMezzes":
                                       return "Vegan";
                                     case "salads":
@@ -2809,8 +2807,6 @@ export default function MenuPage() {
                                       return "Grilled";
                                     case "desserts":
                                       return "Sweet";
-                                    case "drinks":
-                                      return "Refreshing";
                                     default:
                                       return "Vegan";
                                   }
