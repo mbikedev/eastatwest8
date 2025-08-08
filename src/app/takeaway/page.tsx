@@ -55,11 +55,37 @@ export default function TakeawayPage() {
     if (selectedCategory === 'all') {
       setFilteredProducts(productsWithoutSandwiches)
     } else {
-      setFilteredProducts(productsWithoutSandwiches.filter(product => product.category === selectedCategory))
+      // Map Menu category IDs to Take Away category names
+      const categoryMapping: { [key: string]: string } = {
+        'setMenus': 'set-menus',
+        'coldMezzes': 'cold-mezzes',
+        'hotMezzes': 'hot-mezzes',
+        'salads': 'salads',
+        'lunchDishes': 'lunch-dishes',
+        'sandwiches': 'sandwiches',
+        'skewers': 'skewers',
+        'desserts': 'desserts',
+        'drinks': 'drinks'
+      }
+      const mappedCategory = categoryMapping[selectedCategory] || selectedCategory
+      setFilteredProducts(productsWithoutSandwiches.filter(product => product.category === mappedCategory))
     }
   }, [selectedCategory, products])
 
-  // Category names for display
+  // Union of Menu and Take Away categories
+  const categories = [
+    { id: "setMenus", name: t("menu.categories.setMenus") },
+    { id: "coldMezzes", name: t("menu.categories.coldMezzes") },
+    { id: "hotMezzes", name: t("menu.categories.hotMezzes") },
+    { id: "salads", name: t("menu.categories.salads") },
+    { id: "lunchDishes", name: t("menu.categories.lunchDishes") },
+    { id: "sandwiches", name: t("menu.categories.sandwiches") },
+    { id: "skewers", name: t("menu.categories.skewers") },
+    { id: "desserts", name: t("menu.categories.desserts") },
+    { id: "drinks", name: t("menu.categories.drinks") },
+  ];
+
+  // Category names for display (for backward compatibility)
   const getCategoryName = (category: string) => {
     const categoryMap: { [key: string]: string } = {
       'all': t('takeaway.categories.all'),
@@ -248,10 +274,68 @@ export default function TakeawayPage() {
         </div>
       </section>
 
+      {/* Category Navigation */}
+      <section className="px-4 sm:px-6 lg:px-8 mb-12">
+        <div className="max-w-7xl mx-auto">
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-9 gap-3 justify-center">
+            <button
+              onClick={() => setSelectedCategory('all')}
+              className={`px-4 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm ${selectedCategory === 'all'
+                ? theme === "dark"
+                  ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
+                  : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
+                : theme === "dark"
+                  ? "bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 hover:border-white/40 shadow-md"
+                  : "bg-white/90 text-[#1A1A1A] hover:bg-white border-2 border-[#A8D5BA]/40 hover:border-[#A8D5BA]/70 shadow-md"
+                }`}
+            >
+              All
+            </button>
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category.id)}
+                className={`px-4 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm ${selectedCategory === category.id
+                  ? theme === "dark"
+                    ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
+                    : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
+                  : theme === "dark"
+                    ? "bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 hover:border-white/40 shadow-md"
+                    : "bg-white/90 text-[#1A1A1A] hover:bg-white border-2 border-[#A8D5BA]/40 hover:border-[#A8D5BA]/70 shadow-md"
+                  }`}
+              >
+                {category.name}
+              </button>
+            ))}
+          </div>
+
+          {/* Tablet and Mobile Layout - 3x3 Grid */}
+          <div className="grid grid-cols-3 gap-3 lg:hidden">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category.id)}
+                className={`px-3 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm ${selectedCategory === category.id
+                  ? theme === "dark"
+                    ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
+                    : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
+                  : theme === "dark"
+                    ? "bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 hover:border-white/40 shadow-md"
+                    : "bg-white/90 text-[#1A1A1A] hover:bg-white border-2 border-[#A8D5BA]/40 hover:border-[#A8D5BA]/70 shadow-md"
+                  }`}
+              >
+                {category.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Categories Filter */}
-          <div className="lg:col-span-1">
+          <div className="hidden lg:block lg:col-span-1">
             <div className={`p-6 rounded-xl sticky top-24 ${
               theme === 'dark' 
                 ? 'bg-gray-900/80  border border-gray-700' 
@@ -271,7 +355,7 @@ export default function TakeawayPage() {
                         : 'hover:bg-[#bc906b]/10 text-[#5C4300]'
                   }`}
                 >
-                  {getCategoryName('all')}
+                  All
                 </button>
                 {PRODUCT_CATEGORIES.filter(category => category !== 'sandwiches').map((category) => (
                   <button
@@ -296,13 +380,7 @@ export default function TakeawayPage() {
 
           {/* Products Grid */}
           <div className="lg:col-span-3">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold">
-                {selectedCategory === 'all' 
-                  ? t('takeaway.allProducts')
-                  : getCategoryName(selectedCategory)
-                }
-              </h2>
+            <div className="flex justify-end items-center mb-6">
               <button
                 onClick={() => setIsCartOpen(true)}
                 className={`relative px-6 py-3 rounded-lg transition-all duration-300 ${

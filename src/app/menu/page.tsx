@@ -850,13 +850,13 @@ export default function MenuPage() {
       {/* Category Navigation */}
       <section className="px-4 sm:px-6 lg:px-8 mb-12">
         <div className="max-w-7xl mx-auto">
-          {/* Desktop/Tablet Layout */}
-          <div className="hidden sm:flex flex-wrap justify-center gap-3 lg:gap-4">
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid grid-cols-9 gap-3 justify-center">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id as Category)}
-                className={`px-4 py-3 md:px-6 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm md:text-base ${activeCategory === category.id
+                className={`px-4 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm ${activeCategory === category.id
                   ? theme === "dark"
                     ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
                     : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
@@ -870,44 +870,24 @@ export default function MenuPage() {
             ))}
           </div>
 
-          {/* Mobile Layout - Horizontal Scroll */}
-          <div className="sm:hidden">
-            <div className="flex overflow-x-auto scrollbar-hide gap-3 pb-4 px-2 -mx-2">
-              {categories.map((category) => (
-                <button
-                  key={category.id}
-                  onClick={() => setActiveCategory(category.id as Category)}
-                  className={`flex-shrink-0 px-5 py-3 rounded-xl font-semibold transition-all duration-300 text-sm whitespace-nowrap min-w-max ${activeCategory === category.id
-                    ? theme === "dark"
-                      ? "bg-white text-[#1A1A1A] shadow-xl shadow-white/40 border-2 border-white/60"
-                      : "bg-[#A8D5BA] text-white shadow-xl shadow-[#A8D5BA]/40 border-2 border-[#A8D5BA]/60"
-                    : theme === "dark"
-                      ? "bg-white/10 text-white border-2 border-white/30 shadow-lg"
-                      : "bg-white text-[#1A1A1A] border-2 border-[#A8D5BA]/50 shadow-lg"
-                    }`}
-                >
-                  {category.name}
-                </button>
-              ))}
-            </div>
-
-            {/* Mobile Scroll Indicator */}
-            <div className="flex justify-center mt-2">
-              <div
-                className={`h-1 w-16 rounded-full ${theme === "dark" ? "bg-white/30" : "bg-[#A8D5BA]/40"
+          {/* Tablet and Mobile Layout - 3x3 Grid */}
+          <div className="grid grid-cols-3 gap-3 lg:hidden">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setActiveCategory(category.id as Category)}
+                className={`px-3 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm ${activeCategory === category.id
+                  ? theme === "dark"
+                    ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
+                    : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
+                  : theme === "dark"
+                    ? "bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 hover:border-white/40 shadow-md"
+                    : "bg-white/90 text-[#1A1A1A] hover:bg-white border-2 border-[#A8D5BA]/40 hover:border-[#A8D5BA]/70 shadow-md"
                   }`}
               >
-                <div
-                  className={`h-full w-4 rounded-full transition-transform duration-300 ${theme === "dark" ? "bg-white" : "bg-[#A8D5BA]"
-                    }`}
-                  style={{
-                    transform: `translateX(${categories.findIndex((cat) => cat.id === activeCategory) *
-                      12
-                      }px)`,
-                  }}
-                />
-              </div>
-            </div>
+                {category.name}
+              </button>
+            ))}
           </div>
         </div>
       </section>

@@ -719,12 +719,15 @@
     "categories": {
       "title": "Catégories",
       "all": "Tous les Produits",
+      "setMenus": "Menus Complets",
       "coldMezzes": "Mezzes Froids",
       "hotMezzes": "Mezzes Chauds",
       "salads": "Salades",
-      "sandwiches": "Sandwichs",
       "lunchDishes": "Plats du Déjeuner",
-      "desserts": "Desserts"
+      "sandwiches": "Sandwichs",
+      "skewers": "Brochettes",
+      "desserts": "Desserts",
+      "drinks": "Boissons"
     },
     "allProducts": "Tous les Produits",
     "cart": "Panier",

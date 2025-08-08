@@ -720,12 +720,15 @@
     "categories": {
       "title": "Categories",
       "all": "All Products",
+      "setMenus": "Set Menus",
       "coldMezzes": "Cold Mezzes",
       "hotMezzes": "Hot Mezzes",
       "salads": "Salads",
-      "sandwiches": "Sandwiches",
       "lunchDishes": "Lunch Dishes",
-      "desserts": "Desserts"
+      "sandwiches": "Sandwiches",
+      "skewers": "Skewers",
+      "desserts": "Desserts",
+      "drinks": "Drinks"
     },
     "allProducts": "All Products",
     "cart": "Cart",

@@ -726,12 +726,15 @@
     "categories": {
       "title": "Categorieën",
       "all": "Alle Producten",
+      "setMenus": "Complete Menu's",
       "coldMezzes": "Koude Mezzes",
       "hotMezzes": "Warme Mezzes",
       "salads": "Salades",
-      "sandwiches": "Sandwiches",
       "lunchDishes": "Lunchgerechten",
-      "desserts": "Desserts"
+      "sandwiches": "Sandwiches",
+      "skewers": "Spiezen",
+      "desserts": "Desserts",
+      "drinks": "Dranken"
     },
     "allProducts": "Alle Producten",
     "cart": "Winkelwagen",
