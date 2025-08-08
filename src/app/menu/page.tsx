@@ -2395,10 +2395,11 @@ export default function MenuPage() {
                 <div
                   className={`gap-6 relative ${
                     // Special layouts for categories with last-2-items-span-full-width requirement
-                    activeCategory === "coldMezzes" ||
-                      activeCategory === "hotMezzes" ||
-                      activeCategory === "lunchDishes"
-                      ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6" // Use 6-column grid for flexible spanning
+                    activeCategory === "coldMezzes"
+                      ? "grid grid-cols-1 md:grid-cols-2 gap-6" // Cold Mezzes: 2-column card layout
+                      : activeCategory === "hotMezzes" ||
+                        activeCategory === "lunchDishes"
+                        ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6" // Use 6-column grid for flexible spanning
                       : activeCategory === "skewers"
                         ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" // Skewers: 2 items side by side
                         : activeCategory === "desserts"
@@ -2586,10 +2587,86 @@ export default function MenuPage() {
                         );
                       }
 
+                      // Special handling for Cold Mezzes - card layout
+                      if (activeCategory === "coldMezzes") {
+                        return (
+                          <div
+                            key={index}
+                            className={`col-span-full rounded-xl border shadow-sm p-4 hover:shadow-md transition-all duration-300 ${
+                              theme === "dark" 
+                                ? "bg-black/50 border-neutral-700/60" 
+                                : "bg-white/90 border-neutral-200/60"
+                            }`}
+                          >
+                            <div className="flex gap-4">
+                              {/* Image (left) */}
+                              <div className="shrink-0">
+                                <img
+                                  src={item.image}
+                                  alt={item.name}
+                                  className="w-20 h-20 md:w-24 md:h-24 rounded-md object-cover cursor-pointer hover:scale-105 transition-transform duration-300"
+                                  loading="lazy"
+                                  onClick={() => openLightbox(item.image!, item.name)}
+                                />
+                              </div>
+
+                              {/* Content (right) */}
+                              <div className="flex-1 min-w-0">
+                                {/* Title + Price row */}
+                                <div className="flex items-start justify-between gap-3">
+                                  <h3 className={`font-semibold truncate ${
+                                    theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                                  }`}>
+                                    {item.name}
+                                  </h3>
+                                  <span className={`whitespace-nowrap ${
+                                    theme === "dark" ? "text-[#E5B57A]" : "text-[#C49358]"
+                                  }`}>
+                                    {item.price}
+                                  </span>
+                                </div>
+
+                                {/* Description */}
+                                <p className={`mt-1 text-sm ${
+                                  theme === "dark" ? "text-neutral-300" : "text-neutral-700"
+                                }`}>
+                                  {item.description}
+                                </p>
+                                
+                                {/* Badges */}
+                                <div className="flex gap-2 mt-2">
+                                  {item.spicy && (
+                                    <span
+                                      className={`text-xs font-medium px-2 py-1 rounded-full ${
+                                        theme === "dark"
+                                          ? "bg-red-900/50 text-red-200 border border-red-400/40"
+                                          : "bg-red-100 text-red-700 border border-red-400"
+                                      }`}
+                                    >
+                                      🌶️ Spicy
+                                    </span>
+                                  )}
+                                  {item.vegetarian && (
+                                    <span
+                                      className={`text-xs font-medium px-2 py-1 rounded-full ${
+                                        theme === "dark"
+                                          ? "bg-emerald-900/50 text-emerald-200 border border-emerald-400/40"
+                                          : "bg-emerald-100 text-emerald-700 border border-emerald-400"
+                                      }`}
+                                    >
+                                      🌱 Vegetarian
+                                    </span>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      }
+
                       // Desktop-specific column spanning logic for regular items
                       let columnSpanClass = "";
                       if (
-                        activeCategory === "coldMezzes" ||
                         activeCategory === "hotMezzes" ||
                         activeCategory === "lunchDishes"
                       ) {
@@ -2721,6 +2798,8 @@ export default function MenuPage() {
                                       return "Grilled";
                                     case "desserts":
                                       return "Sweet";
+                                    case "drinks":
+                                      return "Refreshing";
                                     default:
                                       return "Vegan";
                                   }
