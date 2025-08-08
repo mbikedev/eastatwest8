@@ -2660,16 +2660,7 @@ export default function MenuPage() {
                                 )}
                               </div>
 
-                              {/* Add to Cart Button */}
-                              <button
-                                className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 ${
-                                  theme === "dark"
-                                    ? "bg-[#D2691E] hover:bg-[#B8540F] text-white"
-                                    : "bg-[#D2691E] hover:bg-[#B8540F] text-white"
-                                }`}
-                              >
-                                Add to Cart
-                              </button>
+
                             </div>
                           </div>
                         );
