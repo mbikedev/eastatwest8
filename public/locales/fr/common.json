@@ -364,6 +364,9 @@
     },
     "sandwiches": {
       "takeAwayOnly": "À Emporter Uniquement",
+      "dishes": {
+        "title": "Plats"
+      },
       "takeAwayDeals": {
         "title": "Offres à Emporter",
         "subtitle": "Plats"

@@ -365,6 +365,9 @@
     },
     "sandwiches": {
       "takeAwayOnly": "Take Away Only",
+      "dishes": {
+        "title": "Dishes"
+      },
       "takeAwayDeals": {
         "title": "Take Away Deals",
         "subtitle": "Dishes"

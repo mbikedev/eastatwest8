@@ -364,6 +364,9 @@
     },
     "sandwiches": {
       "takeAwayOnly": "Enkel Afhalen",
+      "dishes": {
+        "title": "Gerechten"
+      },
       "takeAwayDeals": {
         "title": "Afhaal Aanbiedingen",
         "subtitle": "Gerechten"

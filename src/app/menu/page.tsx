@@ -1010,12 +1010,7 @@ export default function MenuPage() {
                       🍽️ {t("menu.sandwiches.takeAwayDeals.title")} 🍽️
                     </span>
                   </h2>
-                  <p
-                    className={`text-base sm:text-lg mt-3 sm:mt-4 font-medium px-4 ${theme === "dark" ? "text-[#E6E6E6]" : "text-[#1A1A1A]"
-                      }`}
-                  >
-                    {t("menu.sandwiches.takeAwayDeals.subtitle")}
-                  </p>
+
                 </div>
               )}
 
@@ -2492,7 +2487,10 @@ export default function MenuPage() {
                           <React.Fragment key={index}>
                             {isFirstTakeawayDeal && (
                               <div className="col-span-full mb-8">
-                                <hr className={`border-t-2 ${theme === "dark" ? "border-white/20" : "border-gray-300"}`} />
+                                <h3 className={`text-2xl font-bold mb-2 mt-10 text-center ${theme === 'dark' ? 'text-white' : 'text-[#1A1A1A]'
+                                  }`}>
+                                  {t('menu.sandwiches.dishes.title')}
+                                </h3>
                               </div>
                             )}
                             <div
@@ -2592,10 +2590,12 @@ export default function MenuPage() {
                                 {item.description}
                               </p>
 
-                              {/* Price */}
-                              <div className="mt-auto">
+                              {/* Price Badge */}
+                              <div className="flex justify-center mt-auto pt-4">
                                 <span
-                                  className={`text-xl font-bold ${theme === "dark" ? "text-white" : "text-[#1A1A1A]"
+                                  className={`px-4 py-2 rounded-full text-sm font-bold shadow-md ${theme === "dark"
+                                    ? "bg-white text-[#1A1A1A]"
+                                    : "bg-[#252927] text-white"
                                     }`}
                                 >
                                   {item.price}
