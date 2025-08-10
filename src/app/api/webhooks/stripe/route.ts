@@ -5,7 +5,7 @@ import { createClient } from '@/lib/supabaseServer'
 // Initialize Stripe only if the secret key is available
 const stripe = process.env.STRIPE_SECRET_KEY 
   ? new Stripe(process.env.STRIPE_SECRET_KEY, {
-      apiVersion: '2025-07-30.basil'
+      apiVersion: '2024-06-20'
     })
   : null
 

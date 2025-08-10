@@ -1,9 +1,29 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@/lib/supabaseServer'
+import { createClient as createSSRClient } from '@/lib/supabaseServer'
+import { createClient as createAdminClient } from '@supabase/supabase-js'
+
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
 
 export async function POST(request: NextRequest) {
   try {
-    const supabase = await createClient()
+    // Prefer service-role for writes (bypass RLS issues) if available; fallback to SSR anon client
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+    const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+    const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+
+    if (!url) {
+      console.error('Supabase URL missing: set NEXT_PUBLIC_SUPABASE_URL')
+      return NextResponse.json({ success: false, error: 'Server config error: NEXT_PUBLIC_SUPABASE_URL is not set' }, { status: 500 })
+    }
+
+    if (!serviceKey && !anonKey) {
+      console.error('Supabase keys missing: set SUPABASE_SERVICE_ROLE_KEY or NEXT_PUBLIC_SUPABASE_ANON_KEY')
+      return NextResponse.json({ success: false, error: 'Server config error: missing SUPABASE keys' }, { status: 500 })
+    }
+    const supabase = serviceKey
+      ? createAdminClient(url, serviceKey, { auth: { persistSession: false } })
+      : await createSSRClient()
     const orderData = await request.json()
 
     // Validate required fields
@@ -17,37 +37,76 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // Normalize fields
+    const normalizedTotal = Number(orderData.total_amount) || 0
+    const normalizedTime = typeof orderData.delivery_time === 'string' && orderData.delivery_time.length === 5
+      ? `${orderData.delivery_time}:00`
+      : orderData.delivery_time
+    const normalizedAddress = orderData.delivery_type === 'delivery' ? orderData.delivery_address : null
+
+    // Validate formats early
+    const dateOk = /^\d{4}-\d{2}-\d{2}$/.test(orderData.delivery_date)
+    const timeOk = /^\d{2}:\d{2}(:\d{2})?$/.test(normalizedTime)
+    if (!dateOk) {
+      return NextResponse.json({ success: false, error: 'Invalid delivery_date format. Expected YYYY-MM-DD.' }, { status: 400 })
+    }
+    if (!timeOk) {
+      return NextResponse.json({ success: false, error: 'Invalid delivery_time format. Expected HH:MM or HH:MM:SS.' }, { status: 400 })
+    }
+
+    // Preflight: check table accessibility to give actionable error
+    const preflight = await supabase
+      .from('orders')
+      .select('id', { head: true, count: 'exact' })
+      .limit(0)
+    if ((preflight as any)?.error) {
+      const e = (preflight as any).error
+      console.error('Orders table preflight failed:', e)
+      return NextResponse.json(
+        { success: false, error: `Orders table access failed: ${e.message || e.code || 'unknown'}` },
+        { status: 500 }
+      )
+    }
+
     // Create order in database
-    const { data: order, error: orderError } = await supabase
+    console.log('Creating order with payload:', {
+      ...orderData,
+      total_amount: normalizedTotal,
+      delivery_time: normalizedTime,
+      delivery_address: normalizedAddress,
+    })
+
+    const { data: orderRows, error: orderError } = await supabase
       .from('orders')
       .insert([{
         customer_name: orderData.customer_name,
         customer_email: orderData.customer_email,
         customer_phone: orderData.customer_phone,
         delivery_type: orderData.delivery_type,
-        delivery_address: orderData.delivery_address,
-        delivery_date: orderData.delivery_date,
-        delivery_time: orderData.delivery_time,
+        delivery_address: normalizedAddress,
+        // Ensure proper Postgres types
+        delivery_date: orderData.delivery_date, // YYYY-MM-DD
+        delivery_time: normalizedTime, // HH:MM[:SS]
         additional_notes: orderData.additional_notes,
-        total_amount: orderData.total_amount,
+        total_amount: normalizedTotal,
         status: 'pending',
         language: orderData.language || 'en'
       }])
       .select()
-      .single()
 
-    if (orderError) {
+    if (orderError || !orderRows || orderRows.length === 0) {
       console.error('Order creation error:', orderError)
-      return NextResponse.json(
-        { success: false, error: 'Failed to create order' },
-        { status: 500 }
-      )
+      const pieces = [orderError.message as any, (orderError as any).details, (orderError as any).hint, (orderError as any).code]
+        .filter(Boolean)
+      const errorText = pieces.length > 0 ? pieces.join(' | ') : JSON.stringify(orderError)
+      return NextResponse.json({ success: false, error: errorText }, { status: 500 })
     }
 
     // Create order items
     if (orderData.items && orderData.items.length > 0) {
+      const newOrder = orderRows[0]
       const orderItems = orderData.items.map((item: { product_id: string; product_name: string; quantity: number; unit_price: number; total_price: number }) => ({
-        order_id: order.id,
+        order_id: newOrder.id,
         product_id: item.product_id,
         product_name: item.product_name,
         quantity: item.quantity,
@@ -67,13 +126,14 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      data: order
+      data: orderRows[0]
     })
 
   } catch (error) {
-    console.error('Order creation error:', error)
+    console.error('Order creation error (catch):', error)
+    const message = (error as any)?.message || (typeof error === 'string' ? error : JSON.stringify(error))
     return NextResponse.json(
-      { success: false, error: 'Failed to create order' },
+      { success: false, error: `Order creation failed: ${message}` },
       { status: 500 }
     )
   }
@@ -81,7 +141,7 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    const supabase = await createClient()
+    const supabase = await createSSRClient()
     const { searchParams } = new URL(request.url)
     const orderId = searchParams.get('id')
 

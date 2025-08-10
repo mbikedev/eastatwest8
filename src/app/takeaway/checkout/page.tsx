@@ -130,7 +130,11 @@ export default function CheckoutPage() {
         body: JSON.stringify(orderData)
       })
 
-      const result = await response.json()
+      let result: any
+      result = await response.json()
+      if (!response.ok) {
+        throw new Error(`Order API ${response.status}: ${result?.error || JSON.stringify(result)}`)
+      }
 
       if (result.success) {
         // Create Stripe payment intent
@@ -146,7 +150,11 @@ export default function CheckoutPage() {
           })
         })
 
-        const paymentResult = await paymentResponse.json()
+        let paymentResult: any
+        paymentResult = await paymentResponse.json()
+        if (!paymentResponse.ok) {
+          throw new Error(`Payment API ${paymentResponse.status}: ${paymentResult?.error || JSON.stringify(paymentResult)}`)
+        }
 
         if (paymentResult.success) {
           // Redirect to payment page
@@ -157,9 +165,9 @@ export default function CheckoutPage() {
       } else {
         throw new Error(result.error || 'Order creation failed')
       }
-    } catch (error) {
+      } catch (error: any) {
       console.error('Checkout error:', error)
-      alert(t('checkout.error'))
+      alert(error?.message || t('checkout.error'))
     } finally {
       setLoading(false)
     }

@@ -107,12 +107,15 @@ export interface ApiResponse<T = unknown> {
 
 // Categories
 export const PRODUCT_CATEGORIES = [
+  'set-menus',
   'cold-mezzes',
   'hot-mezzes',
   'salads',
   'sandwiches',
   'lunch-dishes',
-  'desserts'
+  'skewers',
+  'desserts',
+  'drinks'
 ] as const
 
 export type ProductCategory = typeof PRODUCT_CATEGORIES[number] 

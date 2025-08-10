@@ -31,13 +31,13 @@ The Take Away checkout now includes a fully functional payment system using **St
 3. Get your API keys from the Dashboard
 
 ### 2. Environment Variables
-Add these to your `.env.local` file:
+Add these to your `.env.local` file (use your own keys from the Stripe dashboard – do NOT commit real keys):
 
 ```bash
 # Stripe Configuration
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_publishable_key_here
-STRIPE_SECRET_KEY=sk_test_your_secret_key_here
-STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_your_publishable_key
+STRIPE_SECRET_KEY=sk_live_your_secret_key
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret
 
 # Base URL for webhooks (update for production)
 NEXT_PUBLIC_BASE_URL=http://localhost:3000

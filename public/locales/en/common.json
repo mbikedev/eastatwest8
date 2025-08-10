@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
+    "digital-menu": "Digital Menu",
     "reservations": "Reservations",
     "takeaway": "Take-Away",
     "blog": "Blog",
@@ -1118,6 +1119,12 @@
       "event": "Professional event catering service",
       "platter": "Authentic Lebanese food platter"
     }
+  },
+  "digitalMenu": {
+    "brand": "EAST AT WEST",
+    "title": "Digital Menu",
+    "subtitle": "Explore our authentic Lebanese flavors and house specialties.",
+    "alt": "Lebanese moussaka bowl"
   },
   "contact": {
     "title": "Contact",

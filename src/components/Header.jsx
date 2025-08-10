@@ -114,7 +114,7 @@ const Header = () => {
             {/* Navigation Links */}
             <div className="hidden lg:flex items-center space-x-0.5 sm:space-x-1 md:space-x-1.5 lg:space-x-2">
               {[
-                { href: '/menu', label: t('nav.menu') },
+                { href: '/digital-menu', label: t('nav.digital-menu') },
                 { href: '/reservations', label: t('nav.reservations') },
                 { href: '/takeaway', label: t('nav.takeaway') },
                 { href: '/blog', label: t('nav.blog') },
@@ -210,7 +210,7 @@ const Header = () => {
             >
               <div className="px-4 sm:px-6 py-3 sm:py-4 space-y-1 sm:space-y-2">
                 {[
-                  { href: '/menu', label: t('nav.menu'), icon: '🍽️' },
+                  { href: '/digital-menu', label: t('nav.digital-menu'), icon: '🍽️' },
                   { href: '/reservations', label: t('nav.reservations'), icon: '📅' },
                   { href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
                   { href: '/blog', label: t('nav.blog'), icon: '📝' },

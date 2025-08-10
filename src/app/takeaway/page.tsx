@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from '../../context/ThemeContext'
@@ -12,8 +13,9 @@ import { Product, PRODUCT_CATEGORIES } from '../../types/takeaway'
 // import { motion, AnimatePresence } from 'framer-motion'
 
 export default function TakeawayPage() {
-  const { t } = useTranslation('common')
+  const { t, i18n } = useTranslation('common')
   const { theme } = useTheme()
+  const router = useRouter()
   // Note: Language switching could be added here for product names/descriptions
   const { cart, addItem, removeItem, updateQuantity, isCartOpen, setIsCartOpen } = useCart()
   const { openLightbox } = useLightbox()
@@ -24,53 +26,61 @@ export default function TakeawayPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  // Fetch products
+  // Fetch products dynamically per selected category
   useEffect(() => {
-    const fetchProducts = async () => {
+    const controller = new AbortController()
+
+    const fetchByCategory = async () => {
       try {
         setLoading(true)
-        const response = await fetch('/api/products')
+        setError(null)
+
+        // Map Menu category IDs to Take Away category slugs used in DB
+        const categoryMapping: { [key: string]: string } = {
+          'setMenus': 'set-menus',
+          'coldMezzes': 'cold-mezzes',
+          'hotMezzes': 'hot-mezzes',
+          'salads': 'salads',
+          'lunchDishes': 'lunch-dishes',
+          'sandwiches': 'sandwiches',
+          'skewers': 'skewers',
+          'desserts': 'desserts',
+          'drinks': 'drinks'
+        }
+
+        let url = '/api/products'
+        if (selectedCategory !== 'all') {
+          const mapped = categoryMapping[selectedCategory] || selectedCategory
+          url = `/api/products?category=${encodeURIComponent(mapped)}`
+        }
+
+        const response = await fetch(url, { signal: controller.signal })
         const result = await response.json()
-        
+
         if (result.success) {
-          setProducts(result.data)
-          setFilteredProducts(result.data)
+          let data: Product[] = result.data || []
+          // Exclude sandwiches from "All" view (include set menus)
+          if (selectedCategory === 'all') {
+            data = data.filter((p: Product) => p.category !== 'sandwiches')
+          }
+          setProducts(data)
+          setFilteredProducts(data)
         } else {
           setError(result.error || 'Failed to load products')
         }
-      } catch (err) {
-        setError('Failed to load products')
-        console.error('Error fetching products:', err)
+      } catch (err: any) {
+        if (err?.name !== 'AbortError') {
+          setError('Failed to load products')
+          console.error('Error fetching products:', err)
+        }
       } finally {
         setLoading(false)
       }
     }
 
-    fetchProducts()
-  }, [])
-
-  // Filter products by category (excluding sandwiches)
-  useEffect(() => {
-    const productsWithoutSandwiches = products.filter(product => product.category !== 'sandwiches')
-    if (selectedCategory === 'all') {
-      setFilteredProducts(productsWithoutSandwiches)
-    } else {
-      // Map Menu category IDs to Take Away category names
-      const categoryMapping: { [key: string]: string } = {
-        'setMenus': 'set-menus',
-        'coldMezzes': 'cold-mezzes',
-        'hotMezzes': 'hot-mezzes',
-        'salads': 'salads',
-        'lunchDishes': 'lunch-dishes',
-        'sandwiches': 'sandwiches',
-        'skewers': 'skewers',
-        'desserts': 'desserts',
-        'drinks': 'drinks'
-      }
-      const mappedCategory = categoryMapping[selectedCategory] || selectedCategory
-      setFilteredProducts(productsWithoutSandwiches.filter(product => product.category === mappedCategory))
-    }
-  }, [selectedCategory, products])
+    fetchByCategory()
+    return () => controller.abort()
+  }, [selectedCategory])
 
   // Union of Menu and Take Away categories
   const categories = [
@@ -80,7 +90,6 @@ export default function TakeawayPage() {
     { id: "salads", name: t("menu.categories.salads") },
     { id: "lunchDishes", name: t("menu.categories.lunchDishes") },
     { id: "sandwiches", name: t("menu.categories.sandwiches") },
-    { id: "skewers", name: t("menu.categories.skewers") },
     { id: "desserts", name: t("menu.categories.desserts") },
     { id: "drinks", name: t("menu.categories.drinks") },
   ];
@@ -182,18 +191,10 @@ export default function TakeawayPage() {
     return nameMapping[productName] || 'hummus' // fallback
   }
 
-  // Get product name and description using translation keys
+  // Get product name/description directly from DB in current language
   const getLocalizedText = (multilingualText: MultilingualText, isDescription: boolean = false) => {
-    // Extract the English name from the multilingual text to get the translation key
-    const firstKey = Object.keys(multilingualText)[0] as keyof MultilingualText
-    const englishName = multilingualText.en || multilingualText[firstKey] || ''
-    const translationKey = getProductTranslationKey(englishName)
-    
-    if (isDescription) {
-      return t(`takeaway.products.${translationKey}.description`)
-    } else {
-      return t(`takeaway.products.${translationKey}.name`)
-    }
+    const lang = (i18n.language || 'en') as keyof MultilingualText
+    return multilingualText[lang] || multilingualText.en || multilingualText.fr || multilingualText.nl || ''
   }
 
   // Handle image click for lightbox
@@ -279,19 +280,6 @@ export default function TakeawayPage() {
         <div className="max-w-7xl mx-auto">
           {/* Desktop Layout */}
           <div className="hidden lg:grid grid-cols-9 gap-3 justify-center">
-            <button
-              onClick={() => setSelectedCategory('all')}
-              className={`px-4 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-sm ${selectedCategory === 'all'
-                ? theme === "dark"
-                  ? "bg-white text-[#1A1A1A] shadow-lg shadow-white/30 border-2 border-white/50"
-                  : "bg-[#A8D5BA] text-white shadow-lg shadow-[#A8D5BA]/30 border-2 border-[#A8D5BA]/50"
-                : theme === "dark"
-                  ? "bg-white/10 text-white hover:bg-white/20 border-2 border-white/20 hover:border-white/40 shadow-md"
-                  : "bg-white/90 text-[#1A1A1A] hover:bg-white border-2 border-[#A8D5BA]/40 hover:border-[#A8D5BA]/70 shadow-md"
-                }`}
-            >
-              All
-            </button>
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -333,53 +321,11 @@ export default function TakeawayPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Categories Filter */}
-          <div className="hidden lg:block lg:col-span-1">
-            <div className={`p-6 rounded-xl sticky top-24 ${
-              theme === 'dark' 
-                ? 'bg-gray-900/80  border border-gray-700' 
-                : 'bg-white/80  border border-[#bc906b]/20'
-            }`}>
-              <h3 className="text-xl font-bold mb-4">{t('takeaway.categories.title')}</h3>
-              <div className="space-y-2">
-                <button
-                  onClick={() => setSelectedCategory('all')}
-                  className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-300 ${
-                    selectedCategory === 'all'
-                      ? theme === 'dark'
-                        ? 'bg-[#f99747] text-[#000000]'
-                        : 'bg-[#f99747] text-white'
-                      : theme === 'dark'
-                        ? 'hover:bg-[#5C4300]/30 text-[#000000]'
-                        : 'hover:bg-[#bc906b]/10 text-[#5C4300]'
-                  }`}
-                >
-                  All
-                </button>
-                {PRODUCT_CATEGORIES.filter(category => category !== 'sandwiches').map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-300 ${
-                      selectedCategory === category
-                        ? theme === 'dark'
-                          ? 'bg-[#f99747] text-[#000000]'
-                          : 'bg-[#f99747] text-white'
-                        : theme === 'dark'
-                          ? 'hover:bg-gray-800 text-white'
-                          : 'hover:bg-[#bc906b]/10 text-[#5C4300]'
-                    }`}
-                  >
-                    {getCategoryName(category)}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 gap-8">
+          {/* Categories Filter removed for all devices */}
 
           {/* Products Grid */}
-          <div className="lg:col-span-3">
+          <div className="w-full">
             <div className="flex justify-end items-center mb-6">
               <button
                 onClick={() => setIsCartOpen(true)}
@@ -604,8 +550,12 @@ export default function TakeawayPage() {
 
                     <button
                       onClick={() => {
-                        setIsCartOpen(false)
-                        window.location.href = '/takeaway/checkout'
+                        if (cart.itemCount > 0) {
+                          setIsCartOpen(false)
+                          router.push('/takeaway/checkout')
+                        } else {
+                          alert(t('takeaway.emptyCart'))
+                        }
                       }}
                       className="w-full bg-gradient-to-r from-[#A8D5BA] to-[#A8D5BA] text-white py-4 rounded-lg text-lg font-semibold hover:from-[#A8D5BA] hover:to-[#A8D5BA] transition-all duration-300"
                     >

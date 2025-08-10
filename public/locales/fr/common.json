@@ -2,6 +2,7 @@
   "nav": {
     "home": "Accueil",
     "menu": "Carte",
+    "digital-menu": "Menu Digital",
     "reservations": "Réservations",
     "takeaway": "À Emporter",
     "blog": "Blog",
@@ -1207,6 +1208,12 @@
   "awards": {
     "title": "Fièrement reconnu par Restaurant Guru",
     "subtitle": "Célébration d'années d'excellence de 2021 à 2024"
+  },
+  "digitalMenu": {
+    "brand": "EAST AT WEST",
+    "title": "Menu Digital",
+    "subtitle": "Découvrez nos saveurs libanaises authentiques et nos spécialités maison.",
+    "alt": "Bol de moussaka libanaise"
   },
   "upcomingEvents": {
     "wineTasting": {

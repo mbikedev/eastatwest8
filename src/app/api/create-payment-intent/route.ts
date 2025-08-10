@@ -4,7 +4,7 @@ import Stripe from 'stripe'
 // Initialize Stripe only if the secret key is available
 const stripe = process.env.STRIPE_SECRET_KEY 
   ? new Stripe(process.env.STRIPE_SECRET_KEY, {
-      apiVersion: '2025-07-30.basil'
+      apiVersion: '2024-06-20'
     })
   : null
 
@@ -27,18 +27,14 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create payment intent
+    // Create payment intent (let Stripe determine the eligible payment methods)
     const paymentIntent = await stripe.paymentIntents.create({
       amount: Math.round(amount * 100), // Convert to cents
       currency,
       metadata: {
         orderId,
-        integration_check: 'accept_a_payment'
       },
-      automatic_payment_methods: {
-        enabled: true,
-      },
-      payment_method_types: ['card', 'paypal'],
+      automatic_payment_methods: { enabled: true },
       description: `Order ${orderId} - East at West Restaurant`,
     })
 
