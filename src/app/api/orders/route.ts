@@ -96,10 +96,14 @@ export async function POST(request: NextRequest) {
 
     if (orderError || !orderRows || orderRows.length === 0) {
       console.error('Order creation error:', orderError)
-      const pieces = [orderError.message as any, (orderError as any).details, (orderError as any).hint, (orderError as any).code]
-        .filter(Boolean)
-      const errorText = pieces.length > 0 ? pieces.join(' | ') : JSON.stringify(orderError)
-      return NextResponse.json({ success: false, error: errorText }, { status: 500 })
+      const pieces = [
+        orderError?.message as any,
+        (orderError as any)?.details,
+        (orderError as any)?.hint,
+        (orderError as any)?.code,
+      ].filter(Boolean)
+      const errorText = pieces.length > 0 ? pieces.join(' | ') : 'Failed to create order'
+      return NextResponse.json({ success: false, error: errorText, debug: orderError ?? undefined }, { status: 500 })
     }
 
     // Create order items
