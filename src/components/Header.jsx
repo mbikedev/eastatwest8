@@ -114,7 +114,7 @@ const Header = () => {
             {/* Navigation Links */}
             <div className="hidden lg:flex items-center space-x-0.5 sm:space-x-1 md:space-x-1.5 lg:space-x-2">
               {[
-                { href: '/digital-menu', label: t('nav.digital-menu') },
+                { href: '/pdfs/allmenus.pdf', label: t('nav.menu') },
                 { href: '/reservations', label: t('nav.reservations') },
                 { href: '/takeaway', label: t('nav.takeaway') },
                 { href: '/blog', label: t('nav.blog') },
@@ -129,6 +129,8 @@ const Header = () => {
                 >
                   <Link
                     href={item.href}
+                    target={item.href.endsWith('.pdf') ? '_blank' : undefined}
+                    rel={item.href.endsWith('.pdf') ? 'noopener noreferrer' : undefined}
                     className={`relative px-2 sm:px-2.5 md:px-3 lg:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm md:text-sm lg:text-base font-medium transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
                         ? 'text-white/90 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20'
                         : 'text-white/90 hover:text-white hover:bg-black/10 border border-transparent hover:border-black/20'
@@ -210,7 +212,7 @@ const Header = () => {
             >
               <div className="px-4 sm:px-6 py-3 sm:py-4 space-y-1 sm:space-y-2">
                 {[
-                  { href: '/digital-menu', label: t('nav.digital-menu'), icon: '🍽️' },
+                  { href: '/pdfs/allmenus.pdf', label: t('nav.menu'), icon: '🍽️' },
                   { href: '/reservations', label: t('nav.reservations'), icon: '📅' },
                   { href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
                   { href: '/blog', label: t('nav.blog'), icon: '📝' },
@@ -225,6 +227,8 @@ const Header = () => {
                   >
                     <Link
                       href={item.href}
+                      target={item.href.endsWith('.pdf') ? '_blank' : undefined}
+                      rel={item.href.endsWith('.pdf') ? 'noopener noreferrer' : undefined}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 rounded-lg sm:rounded-xl transition-all duration-300 group ${theme === 'dark'
                           ? 'text-white hover:bg-white/10 border border-transparent hover:border-white/20'

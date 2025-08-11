@@ -131,9 +131,9 @@ export default function HomePage() {
     "servesCuisine": ["Mediterranean", "Middle Eastern", "Lebanese"],
     "priceRange": "$$",
     "image": "/images/banner.webp",
-    "hasMenu": "/menu",
+    "hasMenu": "/pdfs/allmenus.pdf",
     "acceptsReservations": true,
-    "menu": "/menu",
+    "menu": "/pdfs/allmenus.pdf",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -293,7 +293,9 @@ export default function HomePage() {
                 {/* ===== MENU BUTTON ===== */}
                 {/* Second CTA Button - Menu */}
                 <Link
-                  href="/menu"
+                  href="/pdfs/allmenus.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
                     ? 'focus:ring-[rgb(26,26,26)]/50'
                     : 'bg-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
@@ -614,7 +616,9 @@ export default function HomePage() {
               {/* ===== CTA BUTTON SECTION ===== */}
               <motion.div className="text-center mt-8 sm:mt-12" variants={itemVariants}>
                 <Link
-                  href="/menu"
+                  href="/pdfs/allmenus.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`group relative inline-block text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-base sm:text-lg font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-xl focus:outline-none focus:ring-4 ${theme === 'dark'
                     ? 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
                     : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
@@ -867,7 +871,7 @@ export default function HomePage() {
                     {/* ===== PARALLAX MENU BUTTON ===== */}
                     {/* Second Parallax CTA Button - Menu */}
                     <Link
-                      href="/menu"
+                      href="/pdfs/allmenus.pdf"
                       className="group relative inline-block border-3 border-[rgb(255,255,255)] text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="View our restaurant menu"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
