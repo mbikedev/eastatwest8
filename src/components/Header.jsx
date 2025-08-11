@@ -113,8 +113,45 @@ const Header = () => {
           >
             {/* Navigation Links */}
             <div className="hidden lg:flex items-center space-x-0.5 sm:space-x-1 md:space-x-1.5 lg:space-x-2">
+              {/* Menu dropdown (desktop) */}
+              <div className="relative group">
+                <button
+                  className={`relative px-2 sm:px-2.5 md:px-3 lg:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm md:text-sm lg:text-base font-medium transition-all duration-300 backdrop-blur-sm ${theme === 'dark'
+                    ? 'text-white/90 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20'
+                    : 'text-white/90 hover:text-white hover:bg-black/10 border border-transparent hover:border-black/20'
+                    }`}
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span className="relative z-10">{t('nav.menu')}</span>
+                </button>
+                <div
+                  className={`absolute left-0 mt-2 w-56 rounded-lg shadow-xl border ${theme === 'dark'
+                    ? 'bg-black/90 border-white/10'
+                    : 'bg-white/95 border-black/10'
+                    } hidden group-hover:block`}
+                >
+                  <Link
+                    href="/pdfs/menus.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block px-4 py-3 rounded-t-lg transition ${theme === 'dark' ? 'text-white hover:bg-white/10' : 'text-gray-900 hover:bg-black/10'}`}
+                  >
+                    Menu
+                  </Link>
+                  <Link
+                    href="/pdfs/take-away-only.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block px-4 py-3 rounded-b-lg transition ${theme === 'dark' ? 'text-white hover:bg-white/10' : 'text-gray-900 hover:bg-black/10'}`}
+                  >
+                    Take-Away-Only
+                  </Link>
+                </div>
+              </div>
+
+              {/* Other nav items */}
               {[
-                { href: '/pdfs/allmenus.pdf', label: t('nav.menu') },
                 { href: '/reservations', label: t('nav.reservations') },
                 { href: '/takeaway', label: t('nav.takeaway') },
                 { href: '/blog', label: t('nav.blog') },
@@ -129,8 +166,6 @@ const Header = () => {
                 >
                   <Link
                     href={item.href}
-                    target={item.href.endsWith('.pdf') ? '_blank' : undefined}
-                    rel={item.href.endsWith('.pdf') ? 'noopener noreferrer' : undefined}
                     className={`relative px-2 sm:px-2.5 md:px-3 lg:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm md:text-sm lg:text-base font-medium transition-all duration-300 group backdrop-blur-sm ${theme === 'dark'
                         ? 'text-white/90 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20'
                         : 'text-white/90 hover:text-white hover:bg-black/10 border border-transparent hover:border-black/20'
@@ -212,7 +247,8 @@ const Header = () => {
             >
               <div className="px-4 sm:px-6 py-3 sm:py-4 space-y-1 sm:space-y-2">
                 {[
-                  { href: '/pdfs/allmenus.pdf', label: t('nav.menu'), icon: '🍽️' },
+                  { href: '/pdfs/menus.pdf', label: 'Menu', icon: '🍽️' },
+                  { href: '/pdfs/take-away-only.pdf', label: 'Take-Away-Only', icon: '🥡' },
                   { href: '/reservations', label: t('nav.reservations'), icon: '📅' },
                   { href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
                   { href: '/blog', label: t('nav.blog'), icon: '📝' },
