@@ -32,7 +32,17 @@
   },
   "menu": {
     "title": "Notre Menu",
-    "subtitle": "Découvrez Nos Créations Fusion",
+    "subtitle": "Tout notre menu est disponible à emporter sur demande.",
+    "description": "Découvrez nos plats authentiques préparés avec des ingrédients frais. Sur place ou à emporter sur demande.",
+    "buttons": {
+      "menu": "Menu",
+      "menuTakeawayOnly": "Menu uniquement à emporter"
+    },
+    "seo": {
+      "title": "Menu | EastAtWest",
+      "description": "Découvrez notre menu complet de plats authentiques. Sur place ou à emporter sur demande."
+    },
+    "heroAlt": "Image héro des plats du restaurant",
     "cta": {
       "title": "Prêt à Découvrir Notre Cuisine ?",
       "subtitle": "Réservez une table et savourez nos plats fusion dans notre restaurant élégant."

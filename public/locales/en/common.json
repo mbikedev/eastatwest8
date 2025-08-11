@@ -32,7 +32,17 @@
   },
   "menu": {
     "title": "Our Menu",
-    "subtitle": "Discover Our Fusion Creations",
+    "subtitle": "All our Menu can be Take away on demand.",
+    "description": "Discover our authentic dishes crafted with fresh ingredients. Order to dine in or take away on request.",
+    "buttons": {
+      "menu": "Menu",
+      "menuTakeawayOnly": "Menu Only Take-away"
+    },
+    "seo": {
+      "title": "Menu | EastAtWest",
+      "description": "Explore our full menu of authentic dishes. Dine in or order take-away on demand."
+    },
+    "heroAlt": "Restaurant dishes hero image",
     "cta": {
       "title": "Ready to Experience Our Cuisine?",
       "subtitle": "Book a table and enjoy our fusion dishes in our elegant restaurant."

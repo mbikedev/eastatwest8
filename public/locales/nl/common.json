@@ -32,7 +32,17 @@
   },
   "menu": {
     "title": "Ons Menu",
-    "subtitle": "Ontdek Onze Fusie Creaties",
+    "subtitle": "Ons volledige menu is op aanvraag af te halen.",
+    "description": "Ontdek onze authentieke gerechten met verse ingrediënten. Ter plaatse of op aanvraag als afhaal.",
+    "buttons": {
+      "menu": "Menu",
+      "menuTakeawayOnly": "Menu enkel Afhaal"
+    },
+    "seo": {
+      "title": "Menu | EastAtWest",
+      "description": "Ontdek ons volledige menu met authentieke gerechten. Ter plaatse of op aanvraag als afhaal."
+    },
+    "heroAlt": "Hero-afbeelding met restaurantgerechten",
     "cta": {
       "title": "Klaar om Onze Keuken te Ervaren?",
       "subtitle": "Reserveer een tafel en geniet van onze fusion gerechten in ons elegante restaurant."
