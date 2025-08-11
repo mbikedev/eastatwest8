@@ -214,6 +214,7 @@ const Header = () => {
               <div className="px-4 sm:px-6 py-3 sm:py-4 space-y-1 sm:space-y-2">
                 {[
                   { href: '/pdfs/menus.pdf', label: t('nav.menu'), icon: '🍽️' },
+                  { href: '/pdfs/take-away-only.pdf', label: 'Take-away-only', icon: '🥡' },
                   { href: '/reservations', label: t('nav.reservations'), icon: '📅' },
                   //{ href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
                   { href: '/blog', label: t('nav.blog'), icon: '📝' },
