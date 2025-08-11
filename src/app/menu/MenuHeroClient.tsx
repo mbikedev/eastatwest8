@@ -31,7 +31,9 @@ export default function MenuHeroClient() {
 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <a
-              href="#menu-list"
+              href="/pdfs/menus.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={t('menu.buttons.menu')}
               className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-lg focus:outline-none focus:ring-4 ${theme === 'dark'
                 ? 'bg-white text-[#1A1A1A] focus:ring-white/30'
@@ -42,7 +44,9 @@ export default function MenuHeroClient() {
             </a>
 
             <a
-              href="/takeaway"
+              href="/pdfs/take-away-only.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={t('menu.buttons.menuTakeawayOnly')}
               className={`inline-block border-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:outline-none focus:ring-4 ${theme === 'dark'
                 ? 'border-white text-white hover:bg-white hover:text-[#1A1A1A] focus:ring-white/30'
