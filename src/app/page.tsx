@@ -131,9 +131,9 @@ export default function HomePage() {
     "servesCuisine": ["Mediterranean", "Middle Eastern", "Lebanese"],
     "priceRange": "$$",
     "image": "/images/banner.webp",
-    "hasMenu": "/pdfs/allmenus.pdf",
+    "hasMenu": "/pdfs/menus.pdf",
     "acceptsReservations": true,
-    "menu": "/pdfs/allmenus.pdf",
+    "menu": "/pdfs/menus.pdf",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -293,7 +293,7 @@ export default function HomePage() {
                 {/* ===== MENU BUTTON ===== */}
                 {/* Second CTA Button - Menu */}
                 <Link
-                  href="/pdfs/allmenus.pdf"
+                  href="/pdfs/menus.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
@@ -306,6 +306,25 @@ export default function HomePage() {
                   {/* Menu Button Text */}
                   <span className="relative z-10">{t("hero.viewMenu")}</span>
                   {/* Menu Button Hover Effect */}
+                  <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
+                    ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
+                    : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
+                    }`}></div>
+                </Link>
+
+                {/* ===== TAKE-AWAY-ONLY BUTTON ===== */}
+                <Link
+                  href="/pdfs/take-away-only.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group relative inline-block text-[rgb(255,255,255)] px-4 py-2 sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl focus:outline-none focus:ring-4 ${theme === 'dark'
+                    ? 'focus:ring-[rgb(26,26,26)]/50'
+                    : 'bg-[rgb(168,213,186)] focus:ring-[rgb(168,213,186)]/50'
+                    }`}
+                  aria-label="View our take-away-only menu"
+                  style={{ backgroundColor: 'rgb(48,46,46)' }}
+                >
+                  <span className="relative z-10">Take-Away-Only</span>
                   <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 ${theme === 'dark'
                     ? 'bg-gradient-to-r from-[rgb(26,26,26)] to-[rgb(255,255,255)] text-[rgb(26,26,26)]'
                     : 'bg-gradient-to-r from-[rgb(168,213,186)] to-[rgb(26,26,26)]'
@@ -871,7 +890,7 @@ export default function HomePage() {
                     {/* ===== PARALLAX MENU BUTTON ===== */}
                     {/* Second Parallax CTA Button - Menu */}
                     <Link
-                      href="/pdfs/allmenus.pdf"
+                      href="/pdfs/menus.pdf"
                       className="group relative inline-block border-3 border-[rgb(255,255,255)] text-[rgb(255,255,255)] hover:bg-[rgb(255,255,255)] hover:text-[rgb(43,242,12)] focus:bg-[rgb(255,255,255)] focus:text-[rgb(26,26,26)] px-1 py-2 sm:px-2 md:px-3 lg:px-4 sm:py-3 md:py-4 lg:py-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg lg:text-xl font-bold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-2xl bg-transparent focus:outline-none focus:ring-4 focus:ring-white/50"
                       aria-label="View our restaurant menu"
                       style={{ backgroundColor: 'rgb(56, 42, 42)' }}
