@@ -35,9 +35,9 @@ Add these to your `.env.local` file (use your own keys from the Stripe dashboard
 
 ```bash
 # Stripe Configuration
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_your_publishable_key
-STRIPE_SECRET_KEY=sk_live_your_secret_key
-STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_publishable_key_here
+STRIPE_SECRET_KEY=sk_test_your_secret_key_here
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
 
 # Base URL for webhooks (update for production)
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
@@ -152,9 +152,9 @@ Use the PayPal sandbox for testing PayPal payments.
 ### 1. Update Environment Variables
 ```bash
 # Production Stripe keys
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_your_live_key
-STRIPE_SECRET_KEY=sk_live_your_live_key
-STRIPE_WEBHOOK_SECRET=whsec_your_live_webhook_secret
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_publishable_key_here
+STRIPE_SECRET_KEY=sk_test_your_secret_key_here
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
 
 # Production base URL
 NEXT_PUBLIC_BASE_URL=https://yourdomain.com
