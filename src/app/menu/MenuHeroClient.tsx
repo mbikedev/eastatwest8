@@ -43,7 +43,7 @@ export default function MenuHeroClient() {
               aria-label={t('menu.buttons.menu')}
               className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-lg focus:outline-none focus:ring-4 ${theme === 'dark'
                 ? 'bg-gradient-to-b from-gray-100 via-gray-700 to-gray-900 text-[#1A1A1A] focus:ring-white/30 text-white'
-                : 'bg-[#1A1A1A] text-white focus:ring-[#1A1A1A]/30'}
+                : 'bg-gradient-to-b from-[#2A7B9B] via-[#1A703E] to-green-900 text-[#3F423A] focus:ring-white/30 text-white'}
               `}
             >
               {t('menu.buttons.menu')}
@@ -56,7 +56,7 @@ export default function MenuHeroClient() {
               aria-label={t('menu.buttons.menuTakeawayOnly')}
               className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-lg focus:outline-none focus:ring-4 ${theme === 'dark'
                 ? 'bg-gradient-to-b from-gray-100 via-gray-700 to-gray-900 text-[#1A1A1A] focus:ring-white/30 text-white'
-                : 'bg-[#1A1A1A] text-white focus:ring-[#1A1A1A]/30'}
+                : 'bg-gradient-to-b from-[#2A7B9B] via-[#1A703E] to-green-900 text-[#3F423A] focus:ring-white/30 text-white'}
               `}
             >
               {t('menu.buttons.menuTakeawayOnly')}
