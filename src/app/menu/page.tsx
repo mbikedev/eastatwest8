@@ -1,4 +1,4 @@
-import MenuHeroClient from './MenuHeroClient'
+import MenuHeroClient from '@/app/menu/MenuHeroClient'
 
 export const metadata = {
   title: 'Menu | EastAtWest',

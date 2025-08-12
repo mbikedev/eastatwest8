@@ -26,8 +26,14 @@ export default function MenuHeroClient() {
         <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative z-10 max-w-4xl w-full px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">{t('menu.title')}</h1>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl opacity-90">{t('menu.subtitle')}</p>
+          <h1 className={`text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight ${theme === 'dark'
+            ? 'bg-gradient-to-b from-gray-100 via-gray-300 to-gray-900 bg-clip-text text-transparent'
+            : 'text-gray-400'}
+`}>{t('menu.title')}</h1>
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl opacity-90 text-white ${theme === 'dark'
+                ? ' text-[#1A1A1A] focus:ring-white/30 text-white'
+                :  text-white focus:ring-[#1A1A1A]/30'}
+              `}">{t('menu.subtitle')}</p>
 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <a
@@ -36,9 +42,9 @@ export default function MenuHeroClient() {
               rel="noopener noreferrer"
               aria-label={t('menu.buttons.menu')}
               className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-lg focus:outline-none focus:ring-4 ${theme === 'dark'
-                ? 'bg-white text-[#1A1A1A] focus:ring-white/30'
-                : 'bg-[#1A1A1A] text-white focus:ring-[#1A1A1A]/30'
-              }`}
+                ? 'bg-gradient-to-b from-gray-100 via-gray-700 to-gray-900 text-[#1A1A1A] focus:ring-white/30 text-white'
+                : 'bg-[#1A1A1A] text-white focus:ring-[#1A1A1A]/30'}
+              `}
             >
               {t('menu.buttons.menu')}
             </a>
@@ -48,10 +54,10 @@ export default function MenuHeroClient() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t('menu.buttons.menuTakeawayOnly')}
-              className={`inline-block border-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg focus:outline-none focus:ring-4 ${theme === 'dark'
-                ? 'border-white text-white hover:bg-white hover:text-[#1A1A1A] focus:ring-white/30'
-                : 'border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white focus:ring-[#1A1A1A]/30'
-              }`}
+              className={`inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 focus:scale-105 shadow-lg focus:outline-none focus:ring-4 ${theme === 'dark'
+                ? 'bg-gradient-to-b from-gray-100 via-gray-700 to-gray-900 text-[#1A1A1A] focus:ring-white/30 text-white'
+                : 'bg-[#1A1A1A] text-white focus:ring-[#1A1A1A]/30'}
+              `}
             >
               {t('menu.buttons.menuTakeawayOnly')}
             </a>

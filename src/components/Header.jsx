@@ -116,7 +116,7 @@ const Header = () => {
               {[
                 { href: '/menu', label: t('nav.menu') },
                 { href: '/reservations', label: t('nav.reservations') },
-                //{ href: '/takeaway', label: t('nav.takeaway') },
+                { href: '/takeaway', label: t('nav.takeaway') },
                 { href: '/blog', label: t('nav.blog') },
                 { href: '/events-catering', label: t('nav.events') },
                 { href: '/about', label: t('nav.about') }
@@ -214,7 +214,7 @@ const Header = () => {
                 {[
                   { href: '/menu', label: t('nav.menu'), icon: '🍽️' },
                   { href: '/reservations', label: t('nav.reservations'), icon: '📅' },
-                  //{ href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
+                  { href: '/takeaway', label: t('nav.takeaway'), icon: '🥡' },
                   { href: '/blog', label: t('nav.blog'), icon: '📝' },
                   { href: '/events-catering', label: t('nav.events'), icon: '🎉' },
                   { href: '/about', label: t('nav.about'), icon: '👥' }
