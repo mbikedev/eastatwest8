@@ -160,12 +160,9 @@ export default function GalleryPage() {
     '/images/events-catering/plat-fattouche-libanais-restaurant.webp',
     '/images/events-catering/plat-libanais-restaurant-libanais-bruxelles.webp',
     '/images/events-catering/plat-libanais-restaurant-libanais-event.webp',
-    '/images/events-catering/plat-libanais-restaurant-libanais.webp',
+    '/images/events-catering/plat-libanais-restaurant-libanais.webp'
     
-    // Other notable images
-    '/images/banner.webp',
-    '/images/about-us.webp',
-    '/images/hanna.webp'
+    
   ], [])
 
   // Randomize and select 12 images each time the page loads
