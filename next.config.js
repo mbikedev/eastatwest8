@@ -21,7 +21,7 @@ const nextConfig = {
   compress: true,
   // Disable automatic CSS to prevent render blocking
   experimental: {
-    optimizeCss: false, // Disable to prevent automatic CSS generation
+    optimizeCss: true,
     optimizeServerReact: true,
 // cssChunking: false, // Disabled to prevent experimental warning
   },

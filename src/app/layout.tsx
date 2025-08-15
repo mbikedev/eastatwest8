@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Roboto, Rozha_One, ZCOOL_XiaoWei } from "next/font/google";
 import "./globals.css";
 import ZeroCSSBlocking, { ultraCriticalCSS } from '../components/ZeroCSSBlocking';
 import { ThemeProvider } from "../context/ThemeContext";
@@ -17,6 +17,22 @@ const roboto = Roboto({
   subsets: ["latin"],
   display: 'swap',
   preload: true,
+});
+
+// Self-host display fonts to avoid render-blocking external CSS
+const rozha = Rozha_One({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-rozha',
+});
+const zcool = ZCOOL_XiaoWei({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-xiaowei',
 });
 
 export const metadata: Metadata = {
@@ -72,9 +88,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-        {/* Preload critical fonts */}
-        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei:wght@400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400&display=swap" rel="stylesheet" />
+        {/* Removed external Google Fonts; using next/font for self-hosted, preloaded fonts */}
 
         {/* Restaurant Guru CSS */}
         <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet" />
@@ -98,7 +112,7 @@ export default function RootLayout({
           `
         }} />
       </head>
-      <body className={`${inter.className} ${roboto.className}`}>
+      <body className={`${inter.className} ${roboto.className} ${rozha.variable} ${zcool.variable}`}>
         <I18nProvider>
           <LanguageProvider>
             <ThemeProvider>

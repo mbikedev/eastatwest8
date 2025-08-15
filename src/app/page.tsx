@@ -14,6 +14,8 @@ import Image from 'next/image'
 // Import award images
 import Guru1 from '../../public/images/guru2023.webp'
 import Guru2 from '../../public/images/guru2024.webp'
+// Import hero banner for LCP-optimized image
+import Banner from '../../public/images/banner.webp'
 
 export default function HomePage() {
   // Translation hook for multi-language support
@@ -21,38 +23,50 @@ export default function HomePage() {
   // Theme context for dark/light mode switching
   const { theme } = useTheme()
 
-  // Video reference for hero section autoplay
+  // Video reference for hero section autoplay, defer until after first paint
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [showVideo, setShowVideo] = useState(false)
 
-
-
-  // Video autoplay effect for hero section
+  // Defer background video until after first paint/user intent to improve LCP
   useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-data: reduce)')
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    // Only enable video if user does not prefer reduced data/motion
+    if (!mediaQuery.matches && !reducedMotion.matches) {
+      // Show video after initial frame to avoid competing with LCP image
+      const t = setTimeout(() => setShowVideo(true), 1200)
+      const onFirstInput = () => setShowVideo(true)
+      window.addEventListener('pointerdown', onFirstInput, { once: true })
+      return () => {
+        clearTimeout(t)
+        window.removeEventListener('pointerdown', onFirstInput)
+      }
+    }
+  }, [])
+
+  // Video autoplay effect once video is revealed
+  useEffect(() => {
+    if (!showVideo) return
     const video = videoRef.current
     if (video) {
       video.muted = true
-
       const playVideo = async () => {
         try {
-          console.log('Attempting to play video...')
           await video.play()
-          console.log('Video playing successfully')
         } catch (error) {
-          console.log('Video autoplay failed:', error)
+          // ignore autoplay failures
         }
       }
-
       if (video.readyState >= 3) {
         playVideo()
       } else {
         video.addEventListener('canplaythrough', playVideo)
       }
-
       return () => {
         video.removeEventListener('canplaythrough', playVideo)
       }
     }
-  }, [])
+  }, [showVideo])
 
   // ===== MOCK DATA SECTION =====
   // Upcoming Events data for the events section
@@ -159,6 +173,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: schema }}
       />
+      
       {/* ===== MAIN PAGE CONTAINER ===== */}
       {/* Main page wrapper with theme-based styling */}
       <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'bg-[rgb(26,26,26)] text-[rgb(245,240,230)]' : 'bg-[rgb(245,240,230)] text-[rgb(26,26,26)]'
@@ -193,24 +208,37 @@ export default function HomePage() {
             />
           </div>
 
-          {/* ===== VIDEO BACKGROUND SECTION ===== */}
-          {/* Video Background Container */}
+          {/* ===== VIDEO/IMAGE BACKGROUND SECTION ===== */}
+          {/* Background container: paint LCP with optimized Image, defer video */}
           <div className="absolute inset-0 w-full h-full">
-            {/* Hero Background Video */}
-            <video
-              ref={videoRef}
+            {/* LCP hero image (served immediately) */}
+            <Image
+              src={Banner}
+              alt={t('hero.imageAlt') || 'East @ West hero'}
+              fill
+              priority
+              fetchPriority="high"
+              sizes="100vw"
               className="absolute inset-0 w-full h-full object-cover z-10"
-              autoPlay
-              loop
-              muted={true}
-              playsInline
-              preload="metadata"
-              poster="/images/banner.webp"
-            >
-              <source src="/videos/hero-video.mp4" type="video/mp4" />
-              <source src="/videos/hero-video.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
+            />
+
+            {/* Background video (deferred) */}
+            {showVideo && (
+              <video
+                ref={videoRef}
+                className="absolute inset-0 w-full h-full object-cover z-10"
+                autoPlay
+                loop
+                muted={true}
+                playsInline
+                preload="none"
+                poster="/images/banner.webp"
+              >
+                <source src="/videos/hero-video.mp4" type="video/mp4" />
+                <source src="/videos/hero-video.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            )}
 
             {/* ===== GRADIENT OVERLAY SECTION ===== */}
             {/* Enhanced Gradient Overlay for Text Readability */}
@@ -235,7 +263,7 @@ export default function HomePage() {
               <motion.h1
                 className={`text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-black mb-4 sm:mb-6 sm:bg-transparent bg-black/40 ${theme === 'dark' ? 'text-white' : 'text-[rgb(255,255,255)]'
                   }`}
-                style={{ fontFamily: '"ZCOOL XiaoWei", serif', backgroundColor: 'rgba(46, 42, 42, 0.23)' }}
+                style={{ fontFamily: 'var(--font-xiaowei), serif', backgroundColor: 'rgba(46, 42, 42, 0.23)' }}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
@@ -245,7 +273,7 @@ export default function HomePage() {
                   className="font-black text-transparent bg-clip-text italic sm:bg-white bg-[rgba(246,242,236,1)]"
                   style={{
                     backgroundColor: 'rgba(255, 255, 255, 1)',
-                    fontFamily: 'Rozha One, serif',
+                    fontFamily: 'var(--font-rozha), serif',
                     filter: 'drop-shadow(rgba(0, 0, 0, 0.15) 0px 25px 25px)'
                   }}
                 >
@@ -415,7 +443,7 @@ export default function HomePage() {
                   id="todays-specials-heading"
                   className={`text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-black mb-4 sm:mb-6 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
                     }`}
-                  style={{ fontFamily: 'Rozha One, serif' }}
+                  style={{ fontFamily: 'var(--font-rozha), serif' }}
                 >
                   {/* Specials Title Text with Theme Styling */}
                   <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
@@ -677,7 +705,7 @@ export default function HomePage() {
                       id="events-heading"
                       className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 cursor-pointer hover:scale-105 focus:scale-105 transition-transform duration-300 ${theme === 'dark' ? 'text-white hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]' : 'text-[rgb(26,26,26)] hover:text-[rgb(168,213,186)] focus:text-[rgb(168,213,186)]'
                         }`}
-                      style={{ fontFamily: 'Rozha One, serif' }}
+                      style={{ fontFamily: 'var(--font-rozha), serif' }}
                     >
                       {/* Events Title Text with Theme Styling */}
                       <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
@@ -853,7 +881,7 @@ export default function HomePage() {
                   <motion.h2
                     id="parallax-heading"
                     className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 text-white italic"
-                    style={{ fontFamily: 'Rozha One, serif' }}
+                    style={{ fontFamily: 'var(--font-rozha), serif' }}
                     variants={itemVariants}
                   >
                     {t('parallax.title')}
@@ -1032,7 +1060,7 @@ export default function HomePage() {
                           src={Guru1}
                           alt="Restaurant Guru Award 2023 – East @ West Brussels"
                           className="h-full w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                          priority={false}
+                          loading="lazy"
                         />
                       </div>
                     </a>
@@ -1062,7 +1090,7 @@ export default function HomePage() {
                           src={Guru2}
                           alt="Restaurant Guru Award 2024 – East @ West Brussels"
                           className="h-full w-auto object-contain rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                          priority={false}
+                          loading="lazy"
                         />
                       </div>
                     </a>
@@ -1143,7 +1171,7 @@ export default function HomePage() {
                   {/* ===== CONTACT SECTION TITLE ===== */}
                   {/* Contact Section Main Title */}
                   <h2 className={`text-5xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 ${theme === 'dark' ? 'text-white' : 'text-[rgb(26,26,26)]'
-                    }`} style={{ fontFamily: 'Rozha One, serif' }}>
+                    }`} style={{ fontFamily: 'var(--font-rozha), serif' }}>
                     {/* Contact Title Text with Theme Styling */}
                     <span className={`font-black ${theme === 'dark' ? 'text-white' : 'bg-clip-text text-transparent bg-black'
                       }`}>
@@ -1295,12 +1323,12 @@ export default function HomePage() {
                       {/* ===== RESTAURANT IMAGE ===== */}
                       {/* Restaurant Banner Image */}
                       <Image
-                        src="/images/banner.webp"
+                        src={Banner}
                         alt="East at West Restaurant"
                         fill
                         className="object-cover"
-                        priority
-                        unoptimized
+                        loading="lazy"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
                       />
                       {/* ===== RESTAURANT IMAGE OVERLAY ===== */}
                       {/* Image Gradient Overlay for Text Readability */}
@@ -1316,7 +1344,7 @@ export default function HomePage() {
                         </h3>
                         {/* ===== RESTAURANT IMAGE DESCRIPTION ===== */}
                         {/* Restaurant Image Description */}
-                        <p className="text-lg italic" style={{ fontFamily: 'Rozha One, serif' }}>
+                        <p className="text-lg italic" style={{ fontFamily: 'var(--font-rozha), serif' }}>
                           {t('contact.restaurantDescription')}
                         </p>
                       </div>
