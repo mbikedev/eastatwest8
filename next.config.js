@@ -19,10 +19,14 @@ const nextConfig = {
   },
   // Enable compression
   compress: true,
+  // Enable SWC minification
+  swcMinify: true,
   // Disable automatic CSS to prevent render blocking
   experimental: {
     optimizeCss: true,
     optimizeServerReact: true,
+    browsersListForSwc: true,
+    legacyBrowsers: false,
 // cssChunking: false, // Disabled to prevent experimental warning
   },
   // SWC compiler optimizations for modern browsers
