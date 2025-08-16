@@ -270,7 +270,7 @@ export default function HomePage() {
               <motion.h1
                 className={`text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-black mb-4 sm:mb-6 sm:bg-transparent bg-black/40 ${theme === 'dark' ? 'text-white' : 'text-[rgb(255,255,255)]'
                   }`}
-                style={{ fontFamily: 'var(--font-xiaowei), serif', backgroundColor: 'rgba(46, 42, 42, 0.23)' }}
+                style={{ fontFamily: 'var(--font-xiaowei), serif', backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: '1rem', borderRadius: '0.75rem' }}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
@@ -291,8 +291,8 @@ export default function HomePage() {
               {/* ===== HERO DESCRIPTION SECTION ===== */}
               {/* Hero Subtitle/Description Text */}
               <p
-                className="lcp-text text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-[rgb(255,255,255)]/90 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto"
-                style={{ font: 'italic 300 20px/32.5px Rozha One, serif', backgroundColor: 'rgba(42, 37, 37, 0.24)' }}
+                className="lcp-text text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto"
+                style={{ font: 'italic 300 20px/32.5px Rozha One, serif', backgroundColor: 'rgba(0, 0, 0, 0.75)', padding: '1rem', borderRadius: '0.5rem' }}
               >
                 {t("hero.description")}
               </p>
@@ -874,7 +874,7 @@ export default function HomePage() {
 
                 {/* ===== PARALLAX OVERLAY ===== */}
                 {/* Translucent Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute inset-0 bg-black/70"></div>
               </div>
 
               {/* ===== PARALLAX CONTENT SECTION ===== */}

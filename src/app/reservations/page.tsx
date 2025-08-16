@@ -570,7 +570,7 @@ export default function ReservationsPage() {
 
   return (
     <div className="min-h-screen w-full relative flex flex-col items-center justify-center" style={{ backgroundImage: "url(/images/reser-back.webp)", backgroundSize: "cover", backgroundPosition: "center" }}>
-      <div className={`absolute inset-0 z-0 transition-colors duration-300 ${theme === "dark" ? "bg-black/80" : "bg-white/70"}`} />
+      <div className={`absolute inset-0 z-0 transition-colors duration-300 ${theme === "dark" ? "bg-black/85" : "bg-black/60"}`} />
       
       {/* Enhanced Header Section */}
       <div className="relative z-10 w-full pt-16 pb-6 flex flex-col items-center px-4">
@@ -578,12 +578,12 @@ export default function ReservationsPage() {
           <h1 className={`text-5xl font-black mb-2 md:mt-12 ${
             theme === "dark"
               ? "text-white"
-              : "text-black"
+              : "text-white"
           } drop-shadow-2xl`}>
             {t("reservations.howToMakeReservation")}
           </h1>
           <p className={`text-base sm:text-lg font-medium ${
-            theme === "dark" ? "text-[#F5F0E6]" : "text-[#1A1A1A]"
+            theme === "dark" ? "text-white" : "text-white"
           } drop-shadow-lg`}>
             Reserve your table for an unforgettable dining experience
           </p>
