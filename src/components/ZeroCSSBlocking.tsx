@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 // Ultra-minimal critical CSS - only absolute essentials for first paint
-const ultraCriticalCSS = `
+export const ultraCriticalCSS = `
 /* Reset and base */
 *,::before,::after{box-sizing:border-box;border-width:0}
 html,body{margin:0;padding:0}
@@ -28,6 +28,9 @@ body{background:var(--bg);color:var(--fg)}
 .flex-col{flex-direction:column}
 .items-center{align-items:center}
 .justify-center{justify-content:center}
+.overflow-hidden{overflow:hidden}
+.aspect-square{aspect-ratio:1/1}
+.object-cover{object-fit:cover}
 
 /* Typography */
 .text-center{text-align:center}
@@ -216,11 +219,17 @@ export default function ZeroCSSBlocking() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    // Immediately inject ultra-critical CSS for first paint
-    const criticalStyle = document.createElement('style')
-    criticalStyle.textContent = ultraCriticalCSS
-    criticalStyle.setAttribute('data-critical', 'true')
-    document.head.insertBefore(criticalStyle, document.head.firstChild)
+    // Check if critical CSS is already injected (prevent duplication)
+    if (document.getElementById('ultra-critical-css')) {
+      console.log('Critical CSS already injected by layout')
+    } else {
+      // Fallback: inject ultra-critical CSS if not present
+      const criticalStyle = document.createElement('style')
+      criticalStyle.id = 'ultra-critical-css'
+      criticalStyle.textContent = ultraCriticalCSS
+      criticalStyle.setAttribute('data-critical', 'true')
+      document.head.insertBefore(criticalStyle, document.head.firstChild)
+    }
 
     // Load non-critical CSS after first paint
     const loadNonCriticalCSS = () => {
@@ -276,10 +285,27 @@ export default function ZeroCSSBlocking() {
       Object.assign(link, hint)
       document.head.appendChild(link)
     })
+
+    // Load the actual deferred CSS file
+    const loadFullCSS = () => {
+      const deferredLink = document.createElement('link')
+      deferredLink.rel = 'stylesheet'
+      deferredLink.href = '/deferred-styles.css'
+      deferredLink.onload = () => {
+        console.log('Deferred styles loaded successfully')
+      }
+      deferredLink.onerror = () => {
+        console.error('Failed to load deferred styles')
+      }
+      document.head.appendChild(deferredLink)
+    }
+
+    // Load deferred CSS after a short delay
+    const timeoutId = setTimeout(loadFullCSS, 100)
+    return () => clearTimeout(timeoutId)
   }, [])
 
   return null
 }
 
-// Export for use in layout
-export { ultraCriticalCSS }
+// ultraCriticalCSS is already exported above

@@ -138,7 +138,10 @@ export default function RootLayout({
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap" />
 
-        <style dangerouslySetInnerHTML={{ __html: ultraCriticalCSS }} />
+        <style 
+          id="ultra-critical-css"
+          dangerouslySetInnerHTML={{ __html: ultraCriticalCSS }} 
+        />
         <script dangerouslySetInnerHTML={{
           __html: `
             (function() {
