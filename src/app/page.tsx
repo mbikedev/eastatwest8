@@ -976,7 +976,7 @@ export default function HomePage() {
               >
                 {/* ===== RESTAURANT GURU 2021 BADGE ===== */}
                 {/* First Award - Restaurant Guru 2021 Badge */}
-                <div className="flex-shrink-0 flex justify-center">
+                <div className="flex-shrink-0 flex justify-center" role="listitem">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
                     {/* ===== 2021 AWARD BADGE ===== */}
                     {/* Interactive Restaurant Guru 2021 Badge */}
@@ -1040,7 +1040,7 @@ export default function HomePage() {
 
                 {/* ===== RESTAURANT GURU 2023 ===== */}
                 {/* Second Award - Restaurant Guru 2023 */}
-                <div className="flex-shrink-0 flex justify-center">
+                <div className="flex-shrink-0 flex justify-center" role="listitem">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
                     {/* ===== 2023 AWARD LINK ===== */}
                     {/* Restaurant Guru 2023 Award Link */}
@@ -1070,7 +1070,7 @@ export default function HomePage() {
 
                 {/* ===== RESTAURANT GURU 2024 ===== */}
                 {/* Third Award - Restaurant Guru 2024 */}
-                <div className="flex-shrink-0 flex justify-center">
+                <div className="flex-shrink-0 flex justify-center" role="listitem">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
                     {/* ===== 2024 AWARD LINK ===== */}
                     {/* Restaurant Guru 2024 Award Link */}
