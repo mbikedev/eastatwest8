@@ -483,7 +483,7 @@ export default function HomePage() {
                   className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(223, 211, 211)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
-                  whileHover={{ y: -8 }}
+                  whileHover={{ scale: 1.02 }}
                   itemScope
                   itemType="https://schema.org/MenuItem"
                 >
@@ -530,7 +530,7 @@ export default function HomePage() {
                   className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
-                  whileHover={{ y: -8 }}
+                  whileHover={{ scale: 1.02 }}
                   itemScope
                   itemType="https://schema.org/MenuItem"
                 >
@@ -577,7 +577,7 @@ export default function HomePage() {
                   className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
-                  whileHover={{ y: -8 }}
+                  whileHover={{ scale: 1.02 }}
                   itemScope
                   itemType="https://schema.org/MenuItem"
                 >
@@ -624,7 +624,7 @@ export default function HomePage() {
                   className={`group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(245,240,230)]' : 'bg-gradient-to-br from-[rgb(51, 61, 42)] to-[rgb(255,255,255)]'
                     }`}
                   variants={itemVariants}
-                  whileHover={{ y: -8 }}
+                  whileHover={{ scale: 1.02 }}
                   itemScope
                   itemType="https://schema.org/MenuItem"
                 >
@@ -776,7 +776,7 @@ export default function HomePage() {
                     className={`group relative p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 ${theme === 'dark' ? 'bg-gradient-to-br from-[rgb(26,26,26)]/80 to-[rgb(168,213,186)]/80 border border-[rgb(168,213,186)]' : 'bg-gradient-to-br from-[rgb(255,255,255)]/80 to-[rgb(81,87,83)]/50 border border-[rgb(81,87,83)]'
                       }`}
                     variants={itemVariants}
-                    whileHover={{ y: -10 }}
+                    whileHover={{ scale: 1.02 }}
                   >
                     {/* ===== EVENT CARD HEADER ===== */}
                     {/* Event Card Header with Icon and Title */}
@@ -1172,7 +1172,7 @@ export default function HomePage() {
                       : 'bg-white/80 border-gray-600 shadow-gray-500/20'
                       }`}
                     variants={itemVariants}
-                    whileHover={{ y: -5 }}
+                    whileHover={{ scale: 1.02 }}
                   >
                     {/* ===== CONTACT DETAILS LIST ===== */}
                     {/* Contact Details List Container */}
