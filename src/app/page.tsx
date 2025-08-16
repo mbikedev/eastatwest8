@@ -236,6 +236,13 @@ export default function HomePage() {
               >
                 <source src="/videos/hero-video.mp4" type="video/mp4" />
                 <source src="/videos/hero-video.webm" type="video/webm" />
+                <track
+                  kind="captions"
+                  src="/videos/hero-video-captions.vtt"
+                  srcLang="en"
+                  label="English captions"
+                  default
+                />
                 Your browser does not support the video tag.
               </video>
             )}
@@ -243,8 +250,8 @@ export default function HomePage() {
             {/* ===== GRADIENT OVERLAY SECTION ===== */}
             {/* Enhanced Gradient Overlay for Text Readability */}
             <div className={`absolute inset-0 z-15 ${theme === 'dark'
-              ? 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
-              : 'bg-gradient-to-br from-black/60 via-[rgb(26,26,26)]/30 to-[rgb(26,26,26)]/40'
+              ? 'bg-gradient-to-br from-black/70 via-black/50 to-black/60'
+              : 'bg-gradient-to-br from-black/70 via-black/50 to-black/60'
               }`}></div>
           </div>
 

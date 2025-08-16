@@ -82,6 +82,13 @@ const HeroVideo = () => {
         >
           <source src="/videos/hero-video.mp4" type="video/mp4" />
           <source src="/videos/hero-video.webm" type="video/webm" />
+          <track
+            kind="captions"
+            src="/videos/hero-video-captions.vtt"
+            srcLang="en"
+            label="English captions"
+            default
+          />
           {/* Fallback image */}
           Your browser does not support the video tag.
         </video>
