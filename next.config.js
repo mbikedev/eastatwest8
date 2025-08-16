@@ -21,17 +21,19 @@ const nextConfig = {
   },
   // Enable compression
   compress: true,
-  // Disable automatic CSS to prevent render blocking
+  // Experimental features with proper CSS handling
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false, // Disable to prevent CSS syntax errors
     optimizeServerReact: true,
-// cssChunking: false, // Disabled to prevent experimental warning
   },
   // SWC compiler optimizations for modern browsers
   compiler: {
     // Remove React DevTools in production
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  
+  // Enable source maps for production debugging
+  productionBrowserSourceMaps: true,
 
   // Target modern environments
   env: {
@@ -47,9 +49,10 @@ const nextConfig = {
       // Target modern browsers to avoid polyfills
       config.target = ['web', 'es2020']
       
-      // Disable CSS chunk extraction to prevent render blocking
-      delete config.optimization.splitChunks.cacheGroups.default
-      delete config.optimization.splitChunks.cacheGroups.styles
+      // Configure CSS handling to prevent syntax errors
+      if (config.optimization.splitChunks?.cacheGroups?.styles) {
+        delete config.optimization.splitChunks.cacheGroups.styles
+      }
       
       // Enhanced code splitting for better performance
       config.optimization.splitChunks.cacheGroups = {
