@@ -95,39 +95,42 @@ export default function RootLayout({
         <link rel="preload" as="style" href="/deferred-styles.css" />
         <link rel="preload" as="style" href="https://awards.infcdn.net/circ5_n.css" />
 
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              var css1 = document.createElement('link');
-              css1.rel = 'stylesheet';
-              css1.href = '/css/21dd575f6da5a64f.css';
-              css1.media = 'print';
-              css1.onload = function() { this.media = 'all'; };
-              document.head.appendChild(css1);
-              
-              var css2 = document.createElement('link');
-              css2.rel = 'stylesheet';
-              css2.href = '/css/824db010a7f7a3f8.css';
-              css2.media = 'print';
-              css2.onload = function() { this.media = 'all'; };
-              document.head.appendChild(css2);
-              
-              var css3 = document.createElement('link');
-              css3.rel = 'stylesheet';
-              css3.href = 'https://awards.infcdn.net/circ5_n.css';
-              css3.media = 'print';
-              css3.onload = function() { this.media = 'all'; };
-              document.head.appendChild(css3);
-              
-              var css4 = document.createElement('link');
-              css4.rel = 'stylesheet';
-              css4.href = '/deferred-styles.css';
-              css4.media = 'print';
-              css4.onload = function() { this.media = 'all'; };
-              document.head.appendChild(css4);
-            })();
-          `
-        }} />
+        <script 
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var css1 = document.createElement('link');
+                css1.rel = 'stylesheet';
+                css1.href = '/css/21dd575f6da5a64f.css';
+                css1.media = 'print';
+                css1.onload = function() { this.media = 'all'; };
+                document.head.appendChild(css1);
+                
+                var css2 = document.createElement('link');
+                css2.rel = 'stylesheet';
+                css2.href = '/css/824db010a7f7a3f8.css';
+                css2.media = 'print';
+                css2.onload = function() { this.media = 'all'; };
+                document.head.appendChild(css2);
+                
+                var css3 = document.createElement('link');
+                css3.rel = 'stylesheet';
+                css3.href = 'https://awards.infcdn.net/circ5_n.css';
+                css3.media = 'print';
+                css3.onload = function() { this.media = 'all'; };
+                document.head.appendChild(css3);
+                
+                var css4 = document.createElement('link');
+                css4.rel = 'stylesheet';
+                css4.href = '/deferred-styles.css';
+                css4.media = 'print';
+                css4.onload = function() { this.media = 'all'; };
+                document.head.appendChild(css4);
+              })();
+            `
+          }} 
+        />
 
         <noscript>
           <link rel="stylesheet" href="/css/21dd575f6da5a64f.css" />
@@ -140,22 +143,26 @@ export default function RootLayout({
 
         <style 
           id="ultra-critical-css"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: ultraCriticalCSS }} 
         />
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              try {
-                var theme = localStorage.getItem('theme') || 'light';
-                if (theme === 'dark') {
-                  document.documentElement.classList.add('dark');
-                } else {
-                  document.documentElement.classList.remove('dark');
-                }
-              } catch(e) {}
-            })();
-          `
-        }} />
+        <script 
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme') || 'light';
+                  if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch(e) {}
+              })();
+            `
+          }} 
+        />
       </head>
       <body className={`${inter.className} ${roboto.className} ${rozha.variable} ${zcool.variable}`}>
         <I18nProvider>
