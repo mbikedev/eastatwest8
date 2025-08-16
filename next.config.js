@@ -6,7 +6,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['localhost', 'cdn.builder.io'],
+    domains: ['localhost', 'cdn.builder.io', 'eastatwest.be'],
     // Enable modern image formats (AVIF first for better compression)
     formats: ['image/avif', 'image/webp'],
     // Optimized responsive image sizes for better performance
@@ -16,6 +16,8 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 365, // 1 year
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // Add error handling for image optimization
+    unoptimized: process.env.NODE_ENV === 'development',
   },
   // Enable compression
   compress: true,
