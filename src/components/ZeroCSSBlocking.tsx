@@ -219,19 +219,10 @@ export default function ZeroCSSBlocking() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    // Check if critical CSS is already injected (prevent duplication)
-    if (document.getElementById('ultra-critical-css')) {
-      console.log('Critical CSS already injected by layout')
-    } else {
-      // Fallback: inject ultra-critical CSS if not present
-      const criticalStyle = document.createElement('style')
-      criticalStyle.id = 'ultra-critical-css'
-      criticalStyle.textContent = ultraCriticalCSS
-      criticalStyle.setAttribute('data-critical', 'true')
-      document.head.insertBefore(criticalStyle, document.head.firstChild)
-    }
+    // Critical CSS is already injected by layout.tsx - no need to inject here
+    console.log('ZeroCSSBlocking: Critical CSS handled by layout')
 
-    // Load non-critical CSS after first paint
+    // Load non-critical CSS after first paint (removed duplicate loading)
     const loadNonCriticalCSS = () => {
       if (isLoaded) return
       
@@ -250,23 +241,8 @@ export default function ZeroCSSBlocking() {
       setTimeout(loadNonCriticalCSS, 50)
     }
 
-    // Also load on user interaction
-    const events = ['mousedown', 'touchstart', 'keydown', 'scroll']
-    const handleInteraction = () => {
-      loadNonCriticalCSS()
-      events.forEach(event => {
-        document.removeEventListener(event, handleInteraction)
-      })
-    }
-
-    events.forEach(event => {
-      document.addEventListener(event, handleInteraction, { passive: true } as AddEventListenerOptions)
-    })
-
     return () => {
-      events.forEach(event => {
-        document.removeEventListener(event, handleInteraction)
-      })
+      // Cleanup function
     }
   }, [isLoaded])
 
@@ -286,23 +262,10 @@ export default function ZeroCSSBlocking() {
       document.head.appendChild(link)
     })
 
-    // Load the actual deferred CSS file
-    const loadFullCSS = () => {
-      const deferredLink = document.createElement('link')
-      deferredLink.rel = 'stylesheet'
-      deferredLink.href = '/deferred-styles.css'
-      deferredLink.onload = () => {
-        console.log('Deferred styles loaded successfully')
-      }
-      deferredLink.onerror = () => {
-        console.error('Failed to load deferred styles')
-      }
-      document.head.appendChild(deferredLink)
+    // Resource hints only - CSS loading is handled above
+    return () => {
+      // Cleanup function
     }
-
-    // Load deferred CSS after a short delay
-    const timeoutId = setTimeout(loadFullCSS, 100)
-    return () => clearTimeout(timeoutId)
   }, [])
 
   return null
