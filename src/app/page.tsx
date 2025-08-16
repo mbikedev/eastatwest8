@@ -976,7 +976,7 @@ export default function HomePage() {
               >
                 {/* ===== RESTAURANT GURU 2021 BADGE ===== */}
                 {/* First Award - Restaurant Guru 2021 Badge */}
-                <article className="flex-shrink-0 flex justify-center" role="listitem">
+                <div className="flex-shrink-0 flex justify-center">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
                     {/* ===== 2021 AWARD BADGE ===== */}
                     {/* Interactive Restaurant Guru 2021 Badge */}
@@ -1036,11 +1036,11 @@ export default function HomePage() {
                     </div>
 
                   </figure>
-                </article>
+                </div>
 
                 {/* ===== RESTAURANT GURU 2023 ===== */}
                 {/* Second Award - Restaurant Guru 2023 */}
-                <article className="flex-shrink-0 flex justify-center" role="listitem">
+                <div className="flex-shrink-0 flex justify-center">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
                     {/* ===== 2023 AWARD LINK ===== */}
                     {/* Restaurant Guru 2023 Award Link */}
@@ -1066,11 +1066,11 @@ export default function HomePage() {
                     </a>
 
                   </figure>
-                </article>
+                </div>
 
                 {/* ===== RESTAURANT GURU 2024 ===== */}
                 {/* Third Award - Restaurant Guru 2024 */}
-                <article className="flex-shrink-0 flex justify-center" role="listitem">
+                <div className="flex-shrink-0 flex justify-center">
                   <figure className="text-center hover:scale-105 transition-transform duration-300">
                     {/* ===== 2024 AWARD LINK ===== */}
                     {/* Restaurant Guru 2024 Award Link */}
@@ -1096,7 +1096,7 @@ export default function HomePage() {
                     </a>
 
                   </figure>
-                </article>
+                </div>
               </motion.div>
 
               {/* ===== AWARDS JSON-LD SCHEMA ===== */}
@@ -1289,9 +1289,10 @@ export default function HomePage() {
                           href="/reservations"
                           className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 cursor-pointer hover:scale-110 transition-transform duration-300 ${theme === 'dark' ? 'bg-gray-500 hover:bg-green-500' : 'bg-gray-900 hover:bg-green-600'
                             }`}
+                          aria-label="Make a reservation at East @ West"
                         >
                           {/* Hours Icon SVG */}
-                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </a>
