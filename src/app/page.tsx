@@ -721,7 +721,7 @@ export default function HomePage() {
                       </span>
                     </h2>
                     {/* ===== ANIMATED HAND POINTER ===== */}
-                    {/* Desktop Animated Hand Pointer */}
+                    {/* Responsive Animated Hand Pointer */}
                     <motion.div
                       className="absolute -right-16 top-1/2 transform -translate-y-1/2 hidden sm:block"
                       animate={{
@@ -747,35 +747,6 @@ export default function HomePage() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           fill="none"
-                        />
-                      </svg>
-                    </motion.div>
-                    {/* ===== MOBILE HAND POINTER ===== */}
-                    {/* Mobile Animated Hand Pointer */}
-                    <motion.div
-                      className="block sm:hidden mt-2"
-                      animate={{
-                        y: [0, -5, 0],
-                        scale: [1, 1.1, 1]
-                      }}
-                      transition={{
-                        duration: 1.5,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                    >
-                      {/* Mobile Hand Pointer SVG */}
-                      <svg
-                        className={`w-8 h-8 mx-auto ${theme === 'dark' ? 'text-[rgb(168,213,186)]' : 'text-[rgb(168,213,186)]'
-                          }`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M9 5L16 12L9 19"
-                          stroke="currentColor"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
                         />
                       </svg>
                     </motion.div>
